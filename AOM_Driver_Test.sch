@@ -6,36 +6,36 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,18 +53,18 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="Invisible" color="7" fill="1" visible="no" active="no"/>
-<layer number="61" name="stand" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="Invisible" color="7" fill="1" visible="yes" active="no"/>
+<layer number="61" name="stand" color="7" fill="1" visible="yes" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -1512,11 +1512,11 @@ www.minicircuits.com&lt;br&gt;
 <part name="L2" library="rlc-jqi" deviceset="INDUCTOR" device="-1206" value="Ferrite 1k">
 <attribute name="PARTNO" value="445-5223-1-ND"/>
 </part>
-<part name="C1" library="rlc-jqi" deviceset="CAP" device="0603" value="1uF">
-<attribute name="PARTNO" value="445-7414-1-ND"/>
+<part name="C1" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
+<attribute name="PARTNO" value="1276-2396-1-ND"/>
 </part>
-<part name="C2" library="rlc-jqi" deviceset="CAP" device="0603" value="1uF">
-<attribute name="PARTNO" value="445-7414-1-ND"/>
+<part name="C2" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
+<attribute name="PARTNO" value="1276-2396-1-ND"/>
 </part>
 <part name="C3" library="rlc-jqi" deviceset="CAP" device="1206" value="47uF">
 <attribute name="PARTNO" value="445-8047-1-ND"/>
@@ -1538,9 +1538,11 @@ www.minicircuits.com&lt;br&gt;
 </part>
 <part name="P+4" library="supply1" deviceset="V+" device=""/>
 <part name="P-3" library="supply1" deviceset="V-" device=""/>
-<part name="X1" library="connector-jqi" deviceset="SMA" device="J502" value="SMAJ502"/>
+<part name="X1" library="connector-jqi" deviceset="SMA" device="J502" value="SMAJ502">
+<attribute name="PARTNO" value="J502-ND"/>
+</part>
 <part name="C7" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
-<attribute name="PARTNO" value="1276-1009-1-ND"/>
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="R1" library="rlc-jqi" deviceset="RES" device="0603" value="50R">
 <attribute name="PARTNO" value="P49.9HCT-ND"/>
@@ -1552,9 +1554,13 @@ www.minicircuits.com&lt;br&gt;
 <attribute name="PARTNO" value="YAT-X"/>
 </part>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X3" device=""/>
-<part name="X3" library="connector-jqi" deviceset="BNC" device="-H"/>
+<part name="X3" library="connector-jqi" deviceset="BNC" device="-H">
+<attribute name="PARTNO" value="A32260-ND"/>
+</part>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="X4" library="connector-jqi" deviceset="SMA" device="J502" value="SMAJ502"/>
+<part name="X4" library="connector-jqi" deviceset="SMA" device="J502" value="SMAJ502">
+<attribute name="PARTNO" value="J502-ND"/>
+</part>
 <part name="C11" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF">
 <attribute name="PARTNO" value="1276-1009-1-ND"/>
 </part>
@@ -1564,19 +1570,33 @@ www.minicircuits.com&lt;br&gt;
 </part>
 <part name="RF3" library="rf-jqi" deviceset="PMA-5452" device=""/>
 <part name="C8" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
-<attribute name="PARTNO" value="1276-1009-1-ND"/>
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
-<part name="L5" library="rlc-jqi" deviceset="INDUCTOR" device="-0603" value="390nH"/>
-<part name="R2" library="rlc-jqi" deviceset="RES" device="0603" value="1k"/>
+<part name="L5" library="rlc-jqi" deviceset="INDUCTOR" device="-0603" value="390nH">
+<attribute name="PARTNO" value="445-6240-1-ND"/>
+</part>
+<part name="R2" library="rlc-jqi" deviceset="RES" device="0603" value="1k">
+<attribute name="PARTNO" value="P1.00KHCT-ND"/>
+</part>
 <part name="U3" library="rf-jqi" deviceset="TCCH-80" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="supply1" deviceset="+3V" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="C9" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF"/>
-<part name="C10" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF"/>
-<part name="C12" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF"/>
-<part name="C13" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF"/>
-<part name="C24" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF"/>
+<part name="C9" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
+<attribute name="PARTNO" value="1276-2890-1-ND"/>
+</part>
+<part name="C10" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
+<attribute name="PARTNO" value="1276-2396-1-ND"/>
+</part>
+<part name="C12" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
+<attribute name="PARTNO" value="1276-2890-1-ND"/>
+</part>
+<part name="C13" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
+<attribute name="PARTNO" value="1276-2890-1-ND"/>
+</part>
+<part name="C24" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
+<attribute name="PARTNO" value="1276-2396-1-ND"/>
+</part>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
@@ -1586,20 +1606,22 @@ www.minicircuits.com&lt;br&gt;
 </part>
 <part name="P+1" library="supply1" deviceset="V+" device=""/>
 <part name="C21" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
-<attribute name="PARTNO" value="1276-1009-1-ND"/>
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
 <part name="RLP1" library="rf-jqi" deviceset="RLP-LOWPASS" device="" value="RLP-105+">
 <attribute name="PARTNO" value="RLP-105+"/>
 </part>
 <part name="GND18" library="supply1" deviceset="GND" device=""/>
-<part name="X2" library="connector-jqi" deviceset="SMA" device="J502" value="SMAJ502"/>
+<part name="X2" library="connector-jqi" deviceset="SMA" device="J502" value="SMAJ502">
+<attribute name="PARTNO" value="J502-ND"/>
+</part>
 <part name="C22" library="rlc-jqi" deviceset="CAP" device="0603" value="10nF">
 <attribute name="PARTNO" value="1276-1009-1-ND"/>
 </part>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="supply1" deviceset="+3V" device=""/>
 <part name="R3" library="rlc-jqi" deviceset="RES" device="0603" value="1k">
-<attribute name="PARTNO" value="P49.9HCT-ND"/>
+<attribute name="PARTNO" value="P1.00KHCT-ND"/>
 </part>
 </parts>
 <sheets>
@@ -1616,6 +1638,10 @@ www.minicircuits.com&lt;br&gt;
 <text x="-143.51" y="102.87" size="1.778" layer="91">TUF or ADE series High-reliability mixers?</text>
 <text x="-44.45" y="-5.08" size="1.778" layer="91">Mon/pickoff, possibly DNI</text>
 <text x="-127" y="97.79" size="1.778" layer="91">current limit.... not sure what value</text>
+<text x="-154.94" y="83.82" size="1.778" layer="91">ADE-R1L</text>
+<text x="-154.94" y="81.28" size="1.778" layer="91">ADE-R2ASK</text>
+<text x="-154.94" y="88.9" size="1.778" layer="91">ADEX-R10+</text>
+<text x="-154.94" y="91.44" size="1.778" layer="91">Try:</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="-113.03" y="167.64"/>
@@ -1659,7 +1685,9 @@ www.minicircuits.com&lt;br&gt;
 </instance>
 <instance part="P+4" gate="1" x="-33.02" y="189.23"/>
 <instance part="P-3" gate="1" x="-33.02" y="153.67"/>
-<instance part="X1" gate="G$1" x="-187.96" y="66.04"/>
+<instance part="X1" gate="G$1" x="-187.96" y="66.04">
+<attribute name="PARTNO" x="-187.96" y="66.04" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C7" gate="G$1" x="-31.75" y="33.02">
 <attribute name="PARTNO" x="-31.75" y="33.02" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
@@ -1673,9 +1701,13 @@ www.minicircuits.com&lt;br&gt;
 <attribute name="PARTNO" x="104.14" y="33.02" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="JP1" gate="A" x="-143.51" y="170.18" rot="R180"/>
-<instance part="X3" gate="G$1" x="-86.36" y="93.98" rot="MR0"/>
+<instance part="X3" gate="G$1" x="-86.36" y="93.98" rot="MR0">
+<attribute name="PARTNO" x="-86.36" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND10" gate="1" x="106.68" y="20.32"/>
-<instance part="X4" gate="G$1" x="157.48" y="33.02" rot="MR0"/>
+<instance part="X4" gate="G$1" x="157.48" y="33.02" rot="MR0">
+<attribute name="PARTNO" x="157.48" y="33.02" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C11" gate="G$1" x="134.62" y="33.02" rot="R180">
 <attribute name="PARTNO" x="134.62" y="33.02" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
@@ -1687,17 +1719,31 @@ www.minicircuits.com&lt;br&gt;
 <instance part="C8" gate="G$1" x="-31.75" y="62.23" rot="R90">
 <attribute name="PARTNO" x="-31.75" y="62.23" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="L5" gate="G$1" x="-21.59" y="43.18" rot="R90"/>
-<instance part="R2" gate="G$1" x="-21.59" y="54.61" rot="R90"/>
+<instance part="L5" gate="G$1" x="-21.59" y="43.18" rot="R90">
+<attribute name="PARTNO" x="-21.59" y="43.18" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R2" gate="G$1" x="-21.59" y="54.61" rot="R90">
+<attribute name="PARTNO" x="-21.59" y="54.61" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U3" gate="G$1" x="13.97" y="40.64" rot="R90"/>
 <instance part="GND3" gate="1" x="-31.75" y="54.61"/>
 <instance part="U$4" gate="G$1" x="-21.59" y="76.2"/>
 <instance part="GND5" gate="1" x="-7.62" y="13.97"/>
-<instance part="C9" gate="G$1" x="-5.08" y="111.76" rot="R90"/>
-<instance part="C10" gate="G$1" x="-15.24" y="116.84" rot="R90"/>
-<instance part="C12" gate="G$1" x="66.04" y="127" rot="R90"/>
-<instance part="C13" gate="G$1" x="-26.67" y="127" rot="R90"/>
-<instance part="C24" gate="G$1" x="55.88" y="116.84" rot="R90"/>
+<instance part="C9" gate="G$1" x="-5.08" y="111.76" rot="R90">
+<attribute name="PARTNO" x="-5.08" y="111.76" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C10" gate="G$1" x="-15.24" y="116.84" rot="R90">
+<attribute name="PARTNO" x="-15.24" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C12" gate="G$1" x="66.04" y="127" rot="R90">
+<attribute name="PARTNO" x="66.04" y="127" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C13" gate="G$1" x="-26.67" y="127" rot="R90">
+<attribute name="PARTNO" x="-26.67" y="127" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C24" gate="G$1" x="55.88" y="116.84" rot="R90">
+<attribute name="PARTNO" x="55.88" y="116.84" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND6" gate="1" x="35.56" y="109.22"/>
 <instance part="GND7" gate="1" x="66.04" y="119.38"/>
 <instance part="GND8" gate="1" x="-5.08" y="105.41"/>
@@ -1713,7 +1759,9 @@ www.minicircuits.com&lt;br&gt;
 <attribute name="PARTNO" x="-97.79" y="30.48" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND18" gate="1" x="-97.79" y="20.32"/>
-<instance part="X2" gate="G$1" x="-22.86" y="-11.43" rot="MR0"/>
+<instance part="X2" gate="G$1" x="-22.86" y="-11.43" rot="MR0">
+<attribute name="PARTNO" x="-22.86" y="-11.43" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C22" gate="G$1" x="-45.72" y="-11.43" rot="R180">
 <attribute name="PARTNO" x="-45.72" y="-11.43" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>

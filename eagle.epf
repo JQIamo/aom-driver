@@ -19,7 +19,7 @@ UsedLibrary="/Users/npisenti/Documents/jqi/eagle-config/lbr-jqi/supply1.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="216 167 1211 653"
+Loc="343 166 1338 652"
 State=2
 Number=0
 
