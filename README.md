@@ -2,4 +2,4 @@
 
 Eagle design files for a 2W AOM driver, with some fun bells and whistles.
 
-More info to come soon.
+Still a work in progress, and more info to come soon.
