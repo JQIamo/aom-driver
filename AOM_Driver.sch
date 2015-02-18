@@ -4178,7 +4178,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="P+22" library="supply1" deviceset="+5V" device=""/>
 <part name="P+23" library="supply1" deviceset="V+" device=""/>
 <part name="P-12" library="supply1" deviceset="V-" device=""/>
-<part name="P+24" library="supply1" deviceset="+12V" device=""/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>
 <part name="SV2" library="aom_driver" deviceset="ML16" device=""/>
 <part name="IC8" library="aom_driver" deviceset="L7905" device=""/>
@@ -4263,7 +4262,8 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <text x="-6.35" y="-199.39" size="1.778" layer="98">add 10 ohm (ish) between digital &amp; analog gnd</text>
 <text x="-236.22" y="-187.96" size="1.778" layer="98">Headers to daughter board</text>
 <text x="-269.24" y="-181.61" size="1.778" layer="98">(for future integrator hold...)</text>
-<text x="-168.91" y="-154.94" size="1.778" layer="98">do we want/need +3V on daughter board?</text>
+<text x="-168.91" y="-154.94" size="1.778" layer="98">do we want/need +3V/12V on daughter board?</text>
+<text x="-162.56" y="-157.48" size="1.778" layer="98">what about -5V?</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="123.19" y="134.62"/>
@@ -4944,7 +4944,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="P+22" gate="1" x="-179.07" y="-153.67"/>
 <instance part="P+23" gate="1" x="-194.31" y="-147.32"/>
 <instance part="P-12" gate="1" x="-160.02" y="-170.18"/>
-<instance part="P+24" gate="1" x="-187.96" y="-151.13"/>
 <instance part="GND82" gate="1" x="-170.18" y="-173.99" rot="MR0"/>
 <instance part="SV2" gate="1" x="-416.56" y="-95.25"/>
 <instance part="IC8" gate="G$1" x="285.75" y="91.44"/>
@@ -6055,12 +6054,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="198.12" y1="91.44" x2="199.39" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="199.39" y1="91.44" x2="199.39" y2="104.14" width="0.1524" layer="91"/>
 </segment>
-<segment>
-<pinref part="P+24" gate="1" pin="+12V"/>
-<pinref part="JP3" gate="A" pin="2"/>
-<wire x1="-187.96" y1="-153.67" x2="-187.96" y2="-158.75" width="0.1524" layer="91"/>
-<wire x1="-187.96" y1="-158.75" x2="-210.82" y2="-158.75" width="0.1524" layer="91"/>
-</segment>
 </net>
 <net name="N$28" class="0">
 <segment>
@@ -6758,9 +6751,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="-363.22" y="-125.73" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="9"/>
-<wire x1="-402.59" y1="-146.05" x2="-393.7" y2="-146.05" width="0.1524" layer="91"/>
-<label x="-401.32" y="-146.05" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="7"/>
+<wire x1="-402.59" y1="-148.59" x2="-393.7" y2="-148.59" width="0.1524" layer="91"/>
+<label x="-401.32" y="-148.59" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -6775,9 +6768,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="-363.22" y="-130.81" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="7"/>
-<wire x1="-402.59" y1="-148.59" x2="-393.7" y2="-148.59" width="0.1524" layer="91"/>
-<label x="-401.32" y="-148.59" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="9"/>
+<wire x1="-402.59" y1="-146.05" x2="-393.7" y2="-146.05" width="0.1524" layer="91"/>
+<label x="-401.32" y="-146.05" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$37" class="0">
@@ -6954,21 +6947,21 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="-365.76" y="-120.65" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV2" gate="1" pin="3"/>
-<wire x1="-408.94" y1="-102.87" x2="-397.51" y2="-102.87" width="0.1524" layer="91"/>
-<label x="-406.4" y="-102.87" size="1.778" layer="95"/>
+<pinref part="SV2" gate="1" pin="7"/>
+<wire x1="-408.94" y1="-97.79" x2="-397.51" y2="-97.79" width="0.1524" layer="91"/>
+<label x="-406.4" y="-97.79" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC_B" class="0">
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="10/TX2/PWM"/>
-<wire x1="-347.98" y1="-123.19" x2="-359.41" y2="-123.19" width="0.1524" layer="91"/>
-<label x="-365.76" y="-123.19" size="1.778" layer="95"/>
-</segment>
-<segment>
 <wire x1="-408.94" y1="-100.33" x2="-397.51" y2="-100.33" width="0.1524" layer="91"/>
 <pinref part="SV2" gate="1" pin="5"/>
 <label x="-406.4" y="-100.33" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="TEENSY" gate="G$1" pin="23/A9/T/PWM"/>
+<wire x1="-347.98" y1="-156.21" x2="-363.22" y2="-156.21" width="0.1524" layer="91"/>
+<label x="-368.3" y="-156.21" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LCD_RST" class="0">
@@ -7094,14 +7087,14 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </net>
 <net name="ENC_SW" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="1"/>
-<wire x1="-408.94" y1="-105.41" x2="-397.51" y2="-105.41" width="0.1524" layer="91"/>
-<label x="-403.86" y="-105.41" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TEENSY" gate="G$1" pin="0/RX1/T"/>
 <wire x1="-347.98" y1="-97.79" x2="-359.41" y2="-97.79" width="0.1524" layer="91"/>
 <label x="-365.76" y="-97.79" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="1" pin="1"/>
+<wire x1="-408.94" y1="-105.41" x2="-397.51" y2="-105.41" width="0.1524" layer="91"/>
+<label x="-401.32" y="-105.41" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -7111,9 +7104,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="-363.22" y="-143.51" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
-<wire x1="-237.49" y1="-156.21" x2="-254" y2="-156.21" width="0.1524" layer="91"/>
-<label x="-252.73" y="-156.21" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="8"/>
+<wire x1="-237.49" y1="-173.99" x2="-252.73" y2="-173.99" width="0.1524" layer="91"/>
+<label x="-252.73" y="-173.99" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -7123,9 +7116,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="-363.22" y="-146.05" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
-<wire x1="-237.49" y1="-158.75" x2="-254" y2="-158.75" width="0.1524" layer="91"/>
-<label x="-252.73" y="-158.75" size="1.778" layer="95"/>
+<pinref part="JP2" gate="A" pin="9"/>
+<wire x1="-237.49" y1="-176.53" x2="-252.73" y2="-176.53" width="0.1524" layer="91"/>
+<label x="-252.73" y="-176.53" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GNDA" class="0">
@@ -7294,9 +7287,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="389.89" y="-177.8" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="TEENSY" gate="G$1" pin="23/A9/T/PWM"/>
-<wire x1="-347.98" y1="-156.21" x2="-363.22" y2="-156.21" width="0.1524" layer="91"/>
-<label x="-368.3" y="-156.21" size="1.778" layer="95"/>
+<pinref part="TEENSY" gate="G$1" pin="10/TX2/PWM"/>
+<wire x1="-347.98" y1="-123.19" x2="-359.41" y2="-123.19" width="0.1524" layer="91"/>
+<label x="-365.76" y="-123.19" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EXT_DITHER" class="0">
@@ -7400,14 +7393,14 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </net>
 <net name="SW1" class="0">
 <segment>
-<pinref part="SV2" gate="1" pin="7"/>
-<wire x1="-408.94" y1="-97.79" x2="-397.51" y2="-97.79" width="0.1524" layer="91"/>
-<label x="-400.05" y="-97.79" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="TEENSY" gate="G$1" pin="1/TX1/T"/>
 <wire x1="-347.98" y1="-100.33" x2="-359.41" y2="-100.33" width="0.1524" layer="91"/>
 <label x="-365.76" y="-100.33" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SV2" gate="1" pin="3"/>
+<wire x1="-408.94" y1="-102.87" x2="-397.51" y2="-102.87" width="0.1524" layer="91"/>
+<label x="-406.4" y="-102.87" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SW2" class="0">
@@ -7439,6 +7432,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="JP3" gate="A" pin="4"/>
 <wire x1="-166.37" y1="-157.48" x2="-166.37" y2="-163.83" width="0.1524" layer="91"/>
 <wire x1="-166.37" y1="-163.83" x2="-210.82" y2="-163.83" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$79" class="0">
+<segment>
+<pinref part="SV2" gate="1" pin="13"/>
+<wire x1="-408.94" y1="-90.17" x2="-397.51" y2="-90.17" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
