@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -7191,8 +7191,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </net>
 <net name="INT_EXT_OUTPUT_CTL" class="0">
 <segment>
-<wire x1="67.056" y1="-240.03" x2="79.756" y2="-240.03" width="0.1524" layer="91"/>
 <label x="51.562" y="-239.268" size="1.778" layer="95"/>
+<pinref part="IC7" gate="A" pin="!A!/B"/>
+<wire x1="79.756" y1="-240.03" x2="67.056" y2="-240.03" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="4/CAN-RX-PWM"/>
@@ -7202,8 +7203,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </net>
 <net name="INT_EXT_RF_CTL" class="0">
 <segment>
-<wire x1="63.5" y1="-167.64" x2="81.28" y2="-167.64" width="0.1524" layer="91"/>
 <label x="60.198" y="-167.132" size="1.778" layer="95"/>
+<pinref part="IC6" gate="A" pin="!A!/B"/>
+<wire x1="81.28" y1="-167.64" x2="63.5" y2="-167.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="TEENSY" gate="G$1" pin="2"/>
