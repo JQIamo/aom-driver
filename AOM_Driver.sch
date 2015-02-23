@@ -2476,6 +2476,11 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <text x="-4.0051" y="6.065" size="1.778" layer="25">&gt;NAME</text>
 <text x="-3.9751" y="-7.5601" size="1.778" layer="27">&gt;VALUE</text>
 </package>
+<package name="JUMP">
+<description>SMD "jumper"</description>
+<smd name="P$1" x="0" y="-1.27" dx="2.54" dy="2.54" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="P$2" x="0" y="0" dx="2.54" dy="2.54" layer="1" stop="no" thermals="no" cream="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CHOKE">
@@ -2934,6 +2939,16 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="JUMP">
+<pin name="P$1" x="7.62" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="P$2" x="-5.08" y="0" visible="off" length="middle"/>
+<wire x1="-2.54" y1="0" x2="0" y2="2.54" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="5.08" y2="0" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.27" layer="95">Jumper</text>
+<text x="-2.54" y="-5.08" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3622,6 +3637,22 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <technology name="HCT"/>
 <technology name="LS"/>
 <technology name="S"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER" prefix="J">
+<gates>
+<gate name="G$1" symbol="JUMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="JUMP">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4508,6 +4539,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="GND29" library="supply1" deviceset="GND" device=""/>
 <part name="VDD6" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD3" library="supply1" deviceset="VDD" device=""/>
+<part name="J1" library="aom_driver" deviceset="JUMPER" device=""/>
+<part name="GND36" library="supply1" deviceset="GND" device=""/>
+<part name="VSS2" library="supply1" deviceset="VSS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5292,6 +5326,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="GND29" gate="1" x="95.25" y="-54.61"/>
 <instance part="VDD6" gate="G$1" x="-257.81" y="-165.1"/>
 <instance part="VDD3" gate="G$1" x="182.88" y="-115.57"/>
+<instance part="J1" gate="G$1" x="-373.38" y="-66.04"/>
+<instance part="GND36" gate="1" x="-384.81" y="-71.12" rot="MR0"/>
+<instance part="VSS2" gate="G$1" x="-355.6" y="-71.12"/>
 </instances>
 <busses>
 </busses>
@@ -5878,6 +5915,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="GND29" gate="1" pin="GND"/>
 <wire x1="88.9" y1="-50.8" x2="95.25" y2="-50.8" width="0.1524" layer="91"/>
 <wire x1="95.25" y1="-50.8" x2="95.25" y2="-52.07" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND36" gate="1" pin="GND"/>
+<pinref part="J1" gate="G$1" pin="P$2"/>
+<wire x1="-384.81" y1="-68.58" x2="-384.81" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-384.81" y1="-66.04" x2="-378.46" y2="-66.04" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7875,6 +7918,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="20.32" y1="-222.25" x2="20.32" y2="-226.06" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="-222.25" x2="20.32" y2="-222.25" width="0.1524" layer="91"/>
 <pinref part="VSS21" gate="G$1" pin="VSS"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="P$1"/>
+<pinref part="VSS2" gate="G$1" pin="VSS"/>
+<wire x1="-365.76" y1="-66.04" x2="-355.6" y2="-66.04" width="0.1524" layer="91"/>
+<wire x1="-355.6" y1="-66.04" x2="-355.6" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$53" class="0">
