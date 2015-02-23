@@ -4542,6 +4542,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="J1" library="aom_driver" deviceset="JUMPER" device=""/>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="VSS2" library="supply1" deviceset="VSS" device=""/>
+<part name="C32" library="rlc-jqi" deviceset="CAP" device="0603" value="DNP"/>
+<part name="R28" library="rlc-jqi" deviceset="RES" device="0603" value="DNP"/>
+<part name="GND47" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4615,6 +4618,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <text x="-168.91" y="-154.94" size="1.778" layer="98">do we want/need +3V/12V on daughter board?</text>
 <text x="-162.56" y="-157.48" size="1.778" layer="98">what about -5V?</text>
 <text x="-369.57" y="-180.34" size="1.778" layer="91">make sure these are &lt; 0.2 ohm ESR</text>
+<text x="-140.208" y="-165.354" size="1.778" layer="98">Anti-alias RC filter (optional)</text>
 </plain>
 <instances>
 <instance part="GND1" gate="1" x="123.19" y="134.62"/>
@@ -5329,6 +5333,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="J1" gate="G$1" x="-373.38" y="-66.04"/>
 <instance part="GND36" gate="1" x="-384.81" y="-71.12" rot="MR0"/>
 <instance part="VSS2" gate="G$1" x="-355.6" y="-71.12"/>
+<instance part="C32" gate="G$1" x="-115.57" y="-176.53" rot="R90"/>
+<instance part="R28" gate="G$1" x="-121.92" y="-170.18" rot="R180"/>
+<instance part="GND47" gate="1" x="-115.57" y="-183.896" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -5921,6 +5928,11 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="J1" gate="G$1" pin="P$2"/>
 <wire x1="-384.81" y1="-68.58" x2="-384.81" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-384.81" y1="-66.04" x2="-378.46" y2="-66.04" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND47" gate="1" pin="GND"/>
+<pinref part="C32" gate="G$1" pin="P$1"/>
+<wire x1="-115.57" y1="-181.356" x2="-115.57" y2="-180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7130,14 +7142,19 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </net>
 <net name="DAC_SETPT" class="0">
 <segment>
-<wire x1="-62.23" y1="39.37" x2="-78.74" y2="39.37" width="0.1524" layer="91"/>
-<label x="-83.82" y="39.37" size="1.778" layer="95"/>
-<pinref part="U5" gate="G$1" pin="SB"/>
-</segment>
-<segment>
 <pinref part="IC2" gate="G$1" pin="19_VOUTC"/>
 <wire x1="266.7" y1="-66.04" x2="295.91" y2="-66.04" width="0.1524" layer="91"/>
 <label x="287.02" y="-66.04" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-210.82" y1="-158.75" x2="-178.562" y2="-158.75" width="0.1524" layer="91"/>
+<pinref part="JP3" gate="A" pin="2"/>
+<label x="-192.786" y="-158.496" size="1.778" layer="95"/>
+</segment>
+<segment>
+<wire x1="-140.208" y1="-170.18" x2="-125.73" y2="-170.18" width="0.1524" layer="91"/>
+<label x="-139.7" y="-170.18" size="1.778" layer="95"/>
+<pinref part="R28" gate="G$1" pin="P$2"/>
 </segment>
 </net>
 <net name="VIN" class="0">
@@ -7935,6 +7952,25 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="C83" gate="G$1" pin="P$2"/>
 <pinref part="IC7" gate="P" pin="VCC"/>
 <wire x1="84.836" y1="-252.73" x2="82.296" y2="-252.73" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="DAC_SETP_FROM_DAUGHTER" class="0">
+<segment>
+<pinref part="JP3" gate="A" pin="3"/>
+<wire x1="-210.82" y1="-161.29" x2="-178.562" y2="-161.29" width="0.1524" layer="91"/>
+<label x="-208.788" y="-161.29" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U5" gate="G$1" pin="SB"/>
+<wire x1="-62.23" y1="39.37" x2="-82.042" y2="39.37" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="-118.11" y1="-170.18" x2="-115.57" y2="-170.18" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="P$2"/>
+<wire x1="-115.57" y1="-170.18" x2="-85.852" y2="-170.18" width="0.1524" layer="91"/>
+<wire x1="-115.57" y1="-172.72" x2="-115.57" y2="-170.18" width="0.1524" layer="91"/>
+<label x="-115.57" y="-169.672" size="1.778" layer="95"/>
+<pinref part="R28" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 </nets>
