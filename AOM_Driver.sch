@@ -4466,7 +4466,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="C33" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
 <attribute name="PARTNO" value="1276-2890-1-ND"/>
 </part>
-<part name="SV1" library="aom_driver" deviceset="ML16" device=""/>
+<part name="SV1" library="aom_driver" deviceset="ML16" device="" value="Ribbon Header">
+<attribute name="PARTNO" value="S9171-ND"/>
+</part>
 <part name="JP2" library="pinhead" deviceset="PINHD-1X10" device="" value="1x10 Header">
 <attribute name="PARTNO" value="609-3550-ND"/>
 </part>
@@ -4519,10 +4521,18 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="IC4" library="aom_driver" deviceset="OPAMP-5PIN" device="-SOT23" value="ADA4004-1">
 <attribute name="PARTNO" value="ADA4004-1ARJZ-R7CT-ND"/>
 </part>
-<part name="R22" library="rlc-jqi" deviceset="RES" device="0603"/>
-<part name="R23" library="rlc-jqi" deviceset="RES" device="0603"/>
-<part name="R24" library="rlc-jqi" deviceset="RES" device="0603"/>
-<part name="R25" library="rlc-jqi" deviceset="RES" device="0603"/>
+<part name="R22" library="rlc-jqi" deviceset="RES" device="0603" value="10k">
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+</part>
+<part name="R23" library="rlc-jqi" deviceset="RES" device="0603" value="18k">
+<attribute name="PARTNO" value="P18.0KHCT-ND"/>
+</part>
+<part name="R24" library="rlc-jqi" deviceset="RES" device="0603" value="4.99k">
+<attribute name="PARTNO" value="P4.99KHCT-ND"/>
+</part>
+<part name="R25" library="rlc-jqi" deviceset="RES" device="0603" value="2.8k">
+<attribute name="PARTNO" value="P2.80KHCT-ND"/>
+</part>
 <part name="GND78" library="supply1" deviceset="GND" device=""/>
 <part name="C91" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
@@ -4532,7 +4542,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </part>
 <part name="GND72" library="supply1" deviceset="GND" device=""/>
 <part name="GND79" library="supply1" deviceset="GND" device=""/>
-<part name="C93" library="rlc-jqi" deviceset="CAP" device="0603"/>
+<part name="C93" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
+</part>
 <part name="C94" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
 <attribute name="PARTNO" value="1276-1936-1-ND"/>
 </part>
@@ -4545,8 +4557,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <part name="P+23" library="supply1" deviceset="V+" device=""/>
 <part name="P-12" library="supply1" deviceset="V-" device=""/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>
-<part name="SV2" library="aom_driver" deviceset="ML16" device=""/>
-<part name="IC8" library="aom_driver" deviceset="L7905" device=""/>
+<part name="SV2" library="aom_driver" deviceset="ML16" device="" value="Ribbon Header">
+<attribute name="PARTNO" value="S9171-ND"/>
+</part>
+<part name="IC8" library="aom_driver" deviceset="L7905" device="">
+<attribute name="PARTNO" value="MC79L05ACHXCT-ND"/>
+</part>
 <part name="C96" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
 <attribute name="PARTNO" value="1276-2396-1-ND"/>
 </part>
@@ -5247,7 +5263,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <instance part="C33" gate="G$1" x="74.676" y="-259.08" rot="MR90">
 <attribute name="PARTNO" x="74.676" y="-259.08" size="1.778" layer="96" rot="MR0" display="off"/>
 </instance>
-<instance part="SV1" gate="1" x="-410.21" y="-146.05"/>
+<instance part="SV1" gate="1" x="-410.21" y="-146.05">
+<attribute name="PARTNO" x="-410.21" y="-146.05" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="JP2" gate="A" x="-234.95" y="-166.37">
 <attribute name="PARTNO" x="-234.95" y="-166.37" size="1.778" layer="96" display="off"/>
 </instance>
@@ -5300,10 +5318,18 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <instance part="IC4" gate="G$1" x="457.2" y="-207.01" rot="MR180">
 <attribute name="PARTNO" x="457.2" y="-207.01" size="1.778" layer="96" rot="MR180" display="off"/>
 </instance>
-<instance part="R22" gate="G$1" x="468.63" y="-186.69"/>
-<instance part="R23" gate="G$1" x="424.18" y="-204.47"/>
-<instance part="R24" gate="G$1" x="436.88" y="-198.12" rot="R90"/>
-<instance part="R25" gate="G$1" x="435.61" y="-215.9" rot="R90"/>
+<instance part="R22" gate="G$1" x="468.63" y="-186.69">
+<attribute name="PARTNO" x="468.63" y="-186.69" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R23" gate="G$1" x="424.18" y="-204.47">
+<attribute name="PARTNO" x="424.18" y="-204.47" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R24" gate="G$1" x="436.88" y="-198.12" rot="R90">
+<attribute name="PARTNO" x="436.88" y="-198.12" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R25" gate="G$1" x="435.61" y="-215.9" rot="R90">
+<attribute name="PARTNO" x="435.61" y="-215.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND78" gate="1" x="435.61" y="-224.79"/>
 <instance part="C91" gate="G$1" x="464.82" y="-227.33" rot="R90">
 <attribute name="PARTNO" x="464.82" y="-227.33" size="1.778" layer="96" rot="R90" display="off"/>
@@ -5313,7 +5339,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 </instance>
 <instance part="GND72" gate="1" x="464.82" y="-233.68"/>
 <instance part="GND79" gate="1" x="462.28" y="-182.88"/>
-<instance part="C93" gate="G$1" x="425.45" y="-217.17" rot="R90"/>
+<instance part="C93" gate="G$1" x="425.45" y="-217.17" rot="R90">
+<attribute name="PARTNO" x="425.45" y="-217.17" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C94" gate="G$1" x="-430.53" y="-11.43" rot="R90">
 <attribute name="PARTNO" x="-430.53" y="-11.43" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
@@ -5326,8 +5354,12 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <instance part="P+23" gate="1" x="-194.31" y="-147.32"/>
 <instance part="P-12" gate="1" x="-160.02" y="-170.18"/>
 <instance part="GND82" gate="1" x="-170.18" y="-173.99" rot="MR0"/>
-<instance part="SV2" gate="1" x="-416.56" y="-95.25"/>
-<instance part="IC8" gate="G$1" x="285.75" y="91.44"/>
+<instance part="SV2" gate="1" x="-416.56" y="-95.25">
+<attribute name="PARTNO" x="-416.56" y="-95.25" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="IC8" gate="G$1" x="285.75" y="91.44">
+<attribute name="PARTNO" x="285.75" y="91.44" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C96" gate="G$1" x="262.89" y="95.25" rot="R270">
 <attribute name="PARTNO" x="262.89" y="95.25" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
