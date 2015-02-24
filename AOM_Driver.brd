@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -143,7 +143,7 @@
 <wire x1="96.1898" y1="24.6888" x2="86.6648" y2="24.6888" width="0.2032" layer="51"/>
 <wire x1="86.6648" y1="24.6888" x2="86.6648" y2="5.0038" width="0.2032" layer="51"/>
 <wire x1="86.6648" y1="5.0038" x2="98.0948" y2="5.0038" width="0.2032" layer="51"/>
-<text x="89.8398" y="17.0688" size="1.778" layer="51" rot="R90">digital</text>
+<text x="90.8558" y="16.8148" size="1.778" layer="51" rot="R90">digital</text>
 <wire x1="40.9194" y1="85.1408" x2="51.0794" y2="85.1408" width="0.2032" layer="51"/>
 <wire x1="51.0794" y1="85.1408" x2="51.0794" y2="74.9808" width="0.2032" layer="51"/>
 <wire x1="51.0794" y1="74.9808" x2="40.9194" y2="74.9808" width="0.2032" layer="51"/>
@@ -163,6 +163,7 @@
 <wire x1="109.728" y1="30.734" x2="109.474" y2="30.988" width="0.127" layer="25"/>
 <wire x1="109.474" y1="30.988" x2="109.474" y2="30.48" width="0.127" layer="25"/>
 <wire x1="109.474" y1="30.48" x2="109.728" y2="30.734" width="0.127" layer="25"/>
+<text x="189.484" y="57.912" size="0.889" layer="21" rot="R90">R12-R17</text>
 </plain>
 <libraries>
 <library name="rlc-jqi">
@@ -1338,602 +1339,974 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="CP1" library="rlc-jqi" package="PANASONIC_F" value="220uF" x="56.1594" y="80.0608" rot="R90">
+<element name="CP1" library="rlc-jqi" package="PANASONIC_F" value="220uF" x="56.1594" y="80.0608" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="PCE3955CT-ND" x="129.8194" y="99.1108" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="54.5312" y="74.1634" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="58.5344" y="78.3108" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="CP3" library="rlc-jqi" package="PANASONIC_F" value="220uF" x="35.8394" y="80.0608" rot="R90">
+<element name="CP3" library="rlc-jqi" package="PANASONIC_F" value="220uF" x="35.8394" y="80.0608" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="PCE3955CT-ND" x="109.4994" y="110.5408" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="30.7294" y="78.5648" size="1.016" layer="25" rot="R90"/>
+<attribute name="VALUE" x="38.2144" y="78.3108" size="1.016" layer="27" rot="R90"/>
 </element>
-<element name="L1" library="rlc-jqi" package="0805" value="Ferrite 1k" x="63.7794" y="82.6008">
+<element name="L1" library="rlc-jqi" package="0805" value="Ferrite 1k" x="63.7794" y="82.6008" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="89.1794" y="1.3208" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="61.4934" y="84.1248" size="0.889" layer="25"/>
+<attribute name="VALUE" x="61.2394" y="80.6958" size="0.889" layer="27"/>
 </element>
-<element name="L2" library="rlc-jqi" package="0805" value="Ferrite 1k" x="35.8394" y="71.8058" rot="R270">
+<element name="L2" library="rlc-jqi" package="0805" value="Ferrite 1k" x="35.8394" y="71.8058" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="-45.4406" y="40.0558" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="33.0454" y="73.5838" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="33.9344" y="74.3458" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C1" library="rlc-jqi" package="0805" value="1uF" x="63.7794" y="72.4408">
+<element name="C1" library="rlc-jqi" package="0805" value="1uF" x="63.7794" y="72.4408" smashed="yes">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="132.3594" y="-8.8392" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="59.9694" y="71.9328" size="0.889" layer="25"/>
+<attribute name="VALUE" x="61.2394" y="70.5358" size="0.889" layer="27"/>
 </element>
-<element name="C2" library="rlc-jqi" package="0805" value="1uF" x="45.3644" y="69.9008" rot="R270">
+<element name="C2" library="rlc-jqi" package="0805" value="1uF" x="45.3644" y="69.9008" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="-35.9156" y="-3.7592" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="46.8884" y="69.3928" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="43.4594" y="72.4408" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C3" library="rlc-jqi" package="1206" value="47uF" x="63.2968" y="80.1116">
+<element name="C3" library="rlc-jqi" package="1206" value="47uF" x="63.2968" y="80.1116" smashed="yes">
 <attribute name="PARTNO" value="445-8047-1-ND" x="116.6368" y="7.7216" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="66.3448" y="79.9846" size="0.889" layer="25"/>
+<attribute name="VALUE" x="60.7568" y="77.5716" size="0.889" layer="27"/>
 </element>
-<element name="C4" library="rlc-jqi" package="1206" value="47uF" x="37.9984" y="69.4436" rot="R270">
+<element name="C4" library="rlc-jqi" package="1206" value="47uF" x="37.9984" y="69.4436" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-8047-1-ND" x="-34.3916" y="9.7536" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="37.6174" y="74.0156" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="35.4584" y="71.9836" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L3" library="rlc-jqi" package="0805" value="Ferrite 1k" x="63.7794" y="77.5208" rot="R180">
+<element name="L3" library="rlc-jqi" package="0805" value="Ferrite 1k" x="63.7794" y="77.5208" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="25.6794" y="158.8008" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="67.8434" y="77.7748" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="66.3194" y="79.4258" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="L4" library="rlc-jqi" package="0805" value="Ferrite 1k" x="40.2844" y="69.9008" rot="R270">
+<element name="L4" library="rlc-jqi" package="0805" value="Ferrite 1k" x="40.2844" y="69.9008" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="-40.9956" y="25.4508" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="39.7764" y="73.7108" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="38.3794" y="72.4408" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C5" library="rlc-jqi" package="1206" value="47uF" x="64.2366" y="74.9808" rot="R180">
+<element name="C5" library="rlc-jqi" package="1206" value="47uF" x="64.2366" y="74.9808" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-8047-1-ND" x="-1.8034" y="147.3708" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="61.1886" y="75.3618" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="66.7766" y="77.5208" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C6" library="rlc-jqi" package="1206" value="47uF" x="42.8498" y="70.4088" rot="R90">
+<element name="C6" library="rlc-jqi" package="1206" value="47uF" x="42.8498" y="70.4088" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-8047-1-ND" x="115.2398" y="142.7988" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="43.2308" y="65.8368" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="45.3898" y="67.8688" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="JP1" library="pinhead" package="1X03" value="" x="45.9994" y="80.0608" rot="R90"/>
-<element name="IC3" library="regulator-jqi" package="SO08" value="ADM7150" x="190.5254" y="21.1836" rot="R270">
+<element name="JP1" library="pinhead" package="1X03" value="" x="45.9994" y="80.0608" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.5074" y="87.0966" size="1.27" layer="25" ratio="10" rot="R180"/>
+<attribute name="VALUE" x="49.1744" y="76.2508" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="IC3" library="regulator-jqi" package="SO08" value="ADM7150" x="190.5254" y="21.1836" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="ADM7150ARDZ-3.0-ND" x="130.8354" y="-47.3964" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="193.8274" y="22.3266" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="186.7154" y="23.0886" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C9" library="rlc-jqi" package="0805" value="10uF" x="195.5292" y="24.2062" rot="R180">
+<element name="C9" library="rlc-jqi" package="0805" value="10uF" x="195.5292" y="24.2062" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="116.7892" y="105.4862" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="197.3072" y="23.1902" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="198.0692" y="26.1112" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C10" library="rlc-jqi" package="0805" value="1uF" x="189.0268" y="26.3144">
+<element name="C10" library="rlc-jqi" package="0805" value="1uF" x="189.0268" y="26.3144" smashed="yes">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="204.2668" y="-60.0456" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="187.2488" y="27.8384" size="0.889" layer="25"/>
+<attribute name="VALUE" x="186.4868" y="24.4094" size="0.889" layer="27"/>
 </element>
-<element name="C12" library="rlc-jqi" package="0805" value="10uF" x="192.7606" y="26.289" rot="R180">
+<element name="C12" library="rlc-jqi" package="0805" value="10uF" x="192.7606" y="26.289" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="167.3606" y="112.649" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="195.3006" y="28.321" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="195.3006" y="28.194" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C13" library="rlc-jqi" package="0805" value="10uF" x="194.0052" y="16.4338" rot="R180">
+<element name="C13" library="rlc-jqi" package="0805" value="10uF" x="194.0052" y="16.4338" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="163.5252" y="102.7938" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="198.5772" y="16.9418" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="196.5452" y="18.3388" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C24" library="rlc-jqi" package="0805" value="1uF" x="190.5508" y="15.4178" rot="R90">
+<element name="C24" library="rlc-jqi" package="0805" value="1uF" x="190.5508" y="15.4178" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="276.9108" y="71.2978" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="189.2808" y="13.8938" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="192.4558" y="12.8778" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L6" library="rlc-jqi" package="0805" value="Ferrite 1k" x="194.0052" y="14.5542" rot="R180">
+<element name="L6" library="rlc-jqi" package="0805" value="Ferrite 1k" x="194.0052" y="14.5542" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="143.2052" y="95.8342" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="194.2592" y="13.0302" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="196.5452" y="16.4592" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C7" library="rlc-jqi" package="0603" value="100nF" x="198.541640625" y="40.005" rot="R90">
+<element name="C7" library="rlc-jqi" package="0603" value="100nF" x="198.541640625" y="40.005" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="284.901640625" y="107.315" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="197.525640625" y="38.354" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="200.446640625" y="38.1" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="RF3" library="aom_driver" package="DQ849" value="PMA-5452" x="199.7964" y="47.498" rot="R90">
+<element name="RF3" library="aom_driver" package="DQ849" value="PMA-5452" x="199.7964" y="47.498" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="PMA-5452" x="259.4864" y="127.508" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="203.6064" y="44.958" size="1.27" layer="27" rot="R90"/>
+<attribute name="NAME" x="203.8604" y="45.72" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="C8" library="rlc-jqi" package="0603" value="100nF" x="190.1952" y="46.5836" rot="R270">
+<element name="C8" library="rlc-jqi" package="0603" value="100nF" x="190.1952" y="46.5836" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="103.8352" y="-25.8064" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="188.1632" y="46.4566" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="188.2902" y="48.4886" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L5" library="rlc-jqi" package="0603" value="390nH" x="197.6882" y="42.9006" rot="R180">
+<element name="L5" library="rlc-jqi" package="0603" value="390nH" x="197.6882" y="42.9006" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-6240-1-ND" x="135.4582" y="129.2606" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="198.0692" y="44.6786" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="199.5932" y="44.8056" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R2" library="rlc-jqi" package="0603" value="1k" x="192.786" y="45.7454" rot="R180">
+<element name="R2" library="rlc-jqi" package="0603" value="1k" x="192.786" y="45.7454" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P1.00KHCT-ND" x="141.986" y="137.1854" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="194.5386" y="46.609" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="194.691" y="47.6504" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="U3" library="aom_driver" package="GU1604" value="TCCH-80" x="193.3448" y="50.3936" rot="R270">
+<element name="U3" library="aom_driver" package="GU1604" value="TCCH-80" x="193.3448" y="50.3936" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="TCCH-80" x="132.3848" y="4.6736" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="187.3504" y="49.5808" size="1.27" layer="25"/>
+<attribute name="VALUE" x="188.2648" y="52.9336" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="RF1" library="aom_driver" package="BH292" value="ADEX-R10" x="177.8254" y="48.2854" rot="R270">
+<element name="RF1" library="aom_driver" package="BH292" value="ADEX-R10" x="177.8254" y="48.2854" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="ADEX-R10+" x="115.5954" y="27.9654" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="182.6514" y="52.3494" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="171.4754" y="50.8254" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C21" library="rlc-jqi" package="0603" value="100nF" x="180.3654" y="54.229" rot="R270">
+<element name="C21" library="rlc-jqi" package="0603" value="100nF" x="180.3654" y="54.229" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="88.9254" y="38.989" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="181.6354" y="55.372" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="178.4604" y="56.134" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="RLP1" library="aom_driver" package="PL-176" value="RLP-105+" x="189.611" y="39.116" rot="R270">
+<element name="RLP1" library="aom_driver" package="PL-176" value="RLP-105+" x="189.611" y="39.116" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="RLP-105+" x="143.891" y="-35.814" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="190.5" y="32.131" size="1.27" layer="25"/>
+<attribute name="VALUE" x="190.881" y="32.766" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R3" library="rlc-jqi" package="0603" value="1k" x="170.8658" y="48.2854">
+<element name="R3" library="rlc-jqi" package="0603" value="1k" x="170.8658" y="48.2854" smashed="yes">
 <attribute name="PARTNO" value="P1.00KHCT-ND" x="226.7458" y="-43.1546" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="170.2308" y="49.5554" size="0.889" layer="25"/>
+<attribute name="VALUE" x="168.9608" y="46.3804" size="0.889" layer="27"/>
 </element>
-<element name="IC1" library="regulator-jqi" package="SO08" value="ADM7150" x="204.597" y="21.2852" rot="R270">
+<element name="IC1" library="regulator-jqi" package="SO08" value="ADM7150" x="204.597" y="21.2852" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="ADM7150ARDZ-5.0-ND" x="144.907" y="-35.8648" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="207.899" y="22.4282" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="200.787" y="23.1902" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C11" library="rlc-jqi" package="0805" value="10uF" x="209.4992" y="24.257" rot="R180">
+<element name="C11" library="rlc-jqi" package="0805" value="10uF" x="209.4992" y="24.257" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="189.1792" y="110.617" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="211.963" y="25.3492" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="212.0392" y="26.162" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C14" library="rlc-jqi" package="0805" value="1uF" x="203.0476" y="26.289">
+<element name="C14" library="rlc-jqi" package="0805" value="1uF" x="203.0476" y="26.289" smashed="yes">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="238.6076" y="-60.071" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="201.5236" y="27.559" size="0.889" layer="25"/>
+<attribute name="VALUE" x="200.5076" y="24.384" size="0.889" layer="27"/>
 </element>
-<element name="C15" library="rlc-jqi" package="0805" value="10uF" x="206.9338" y="26.3144" rot="R180">
+<element name="C15" library="rlc-jqi" package="0805" value="10uF" x="206.9338" y="26.3144" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="166.2938" y="112.6744" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="209.4738" y="28.3464" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="209.4738" y="28.2194" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C16" library="rlc-jqi" package="0805" value="10uF" x="208.0514" y="16.4846" rot="R180">
+<element name="C16" library="rlc-jqi" package="0805" value="10uF" x="208.0514" y="16.4846" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="162.3314" y="102.8446" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="212.6234" y="16.9926" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="210.5914" y="18.3896" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C17" library="rlc-jqi" package="0805" value="1uF" x="204.597" y="15.4686" rot="R90">
+<element name="C17" library="rlc-jqi" package="0805" value="1uF" x="204.597" y="15.4686" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="290.957" y="66.2686" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="203.327" y="12.9286" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="206.502" y="12.9286" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L7" library="rlc-jqi" package="0805" value="Ferrite 1k" x="208.0514" y="14.478" rot="R180">
+<element name="L7" library="rlc-jqi" package="0805" value="Ferrite 1k" x="208.0514" y="14.478" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="150.9014" y="95.758" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="210.5914" y="13.208" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="210.5914" y="16.383" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="U1" library="aom_driver" package="LFCSP-CP-8-1" value="AD8319" x="162.0012" y="37.9984" rot="R90">
+<element name="U1" library="aom_driver" package="LFCSP-CP-8-1" value="AD8319" x="162.0012" y="37.9984" smashed="yes" rot="R90">
 <attribute name="PARTNUM" value="AD8319ACPZ-R7CT-ND" x="235.6612" y="86.2584" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="161.2172" y="33.5584" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="165.1012" y="35.9984" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R1" library="rlc-jqi" package="0603" value="52.3R" x="156.1846" y="36.2712" rot="R90">
+<element name="R1" library="rlc-jqi" package="0603" value="52.3R" x="156.1846" y="36.2712" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="P52.3HCT-ND" x="247.6246" y="66.7512" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="154.9146" y="34.1122" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="158.0896" y="34.3662" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C18" library="rlc-jqi" package="0603" value="47nF" x="158.5976" y="37.1094" rot="R180">
+<element name="C18" library="rlc-jqi" package="0603" value="47nF" x="158.5976" y="37.1094" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1063-1-ND" x="117.9576" y="128.5494" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="159.7406" y="35.8394" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="160.5026" y="39.0144" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C19" library="rlc-jqi" package="0603" value="47nF" x="158.5976" y="39.37" rot="R180">
+<element name="C19" library="rlc-jqi" package="0603" value="47nF" x="158.5976" y="39.37" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1063-1-ND" x="112.8776" y="130.81" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="156.9466" y="40.894" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="160.5026" y="41.275" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R4" library="rlc-jqi" package="0603" value="18k" x="162.306" y="44.2468">
+<element name="R4" library="rlc-jqi" package="0603" value="18k" x="162.306" y="44.2468" smashed="yes">
 <attribute name="PARTNO" value="P18.0KHCT-ND" x="223.266" y="-47.1932" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="159.639" y="46.0248" size="0.889" layer="25"/>
+<attribute name="VALUE" x="160.401" y="42.3418" size="0.889" layer="27"/>
 </element>
-<element name="C20" library="rlc-jqi" package="0603" value="100nF" x="160.2994" y="41.8084" rot="R270">
+<element name="C20" library="rlc-jqi" package="0603" value="100nF" x="160.2994" y="41.8084" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="73.9394" y="-35.6616" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="158.3944" y="43.7134" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C22" library="rlc-jqi" package="0603" value="100pF" x="161.7472" y="41.8084" rot="R270">
+<element name="C22" library="rlc-jqi" package="0603" value="100pF" x="161.7472" y="41.8084" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1909-1-ND" x="70.3072" y="21.4884" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="159.8422" y="43.7134" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="RF_FEEDBACK" library="connector-jqi" package="SMA-EDGE" value="SMAJ502" x="84.1502" y="87.4268" rot="R270">
+<element name="RF_FEEDBACK" library="connector-jqi" package="SMA-EDGE" value="SMAJ502" x="84.1502" y="87.4268" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="J502-ND" x="75.2602" y="32.8168" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="72.8218" y="75.0062" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="76.5302" y="87.4268" size="1.778" layer="27" rot="R270"/>
 </element>
-<element name="C23" library="rlc-jqi" package="0603" value="8.2pF" x="163.4236" y="35.4584" rot="R180">
+<element name="C23" library="rlc-jqi" package="0603" value="8.2pF" x="163.4236" y="35.4584" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1257-1-ND" x="127.8636" y="126.8984" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="164.8206" y="32.6644" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="165.3286" y="37.3634" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="L8" library="rlc-jqi" package="0805" value="Ferrite 1k" x="158.5468" y="41.91" rot="R90">
+<element name="L8" library="rlc-jqi" package="0805" value="Ferrite 1k" x="158.5468" y="41.91" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-5223-1-ND" x="239.8268" y="105.41" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="158.8008" y="44.196" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="160.4518" y="39.37" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="RF2" library="aom_driver" package="BH292" value="ADC-10-4" x="177.8254" y="60.6552" rot="R180">
+<element name="RF2" library="aom_driver" package="BH292" value="ADC-10-4" x="177.8254" y="60.6552" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="ADC-10-4+" x="177.8254" y="60.6552" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="169.9006" y="62.2808" size="1.27" layer="25"/>
+<attribute name="VALUE" x="180.3654" y="67.0052" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="RF_OUT" library="aom_driver" package="SMA-EDGE" value="SMAJ502" x="198.6026" y="87.5538" rot="R270">
+<element name="RF_OUT" library="aom_driver" package="SMA-EDGE" value="SMAJ502" x="198.6026" y="87.5538" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="J502-ND" x="198.6026" y="87.5538" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="189.9666" y="87.9348" size="1.778" layer="25" rot="R270"/>
+<attribute name="VALUE" x="190.9826" y="87.5538" size="1.778" layer="27" rot="R270"/>
 </element>
-<element name="C25" library="rlc-jqi" package="0603" value="100nF" x="198.5264" y="55.6768" rot="R90">
+<element name="C25" library="rlc-jqi" package="0603" value="100nF" x="198.5264" y="55.6768" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="289.9664" y="81.0768" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="198.7804" y="51.2318" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="200.4314" y="53.7718" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="R5" library="rlc-jqi" package="0603" value="49.9R" x="176.1236" y="55.3212" rot="R180">
+<element name="R5" library="rlc-jqi" package="0603" value="49.9R" x="176.1236" y="55.3212" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P49.9HCT-ND" x="110.0836" y="146.7612" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="173.9646" y="55.5752" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="178.0286" y="57.2262" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="EXT_RF" library="aom_driver" package="SMA-EDGE" value="SMAJ502" x="180.467" y="87.5284" rot="R270">
+<element name="EXT_RF" library="aom_driver" package="SMA-EDGE" value="SMAJ502" x="180.467" y="87.5284" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="J502-ND" x="180.467" y="87.5284" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="170.815" y="87.9094" size="1.778" layer="25" rot="R270"/>
+<attribute name="VALUE" x="172.847" y="87.5284" size="1.778" layer="27" rot="R270"/>
 </element>
-<element name="VCO1" library="aom_driver" package="BK377" value="JTOS-100" x="160.3756" y="69.342" rot="R270">
+<element name="VCO1" library="aom_driver" package="BK377" value="JTOS-100" x="160.3756" y="69.342" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="JTOS-100+" x="160.3756" y="69.342" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="156.5656" y="79.756" size="1.27" layer="25"/>
+<attribute name="VALUE" x="154.2796" y="58.928" size="1.27" layer="21" align="top-left"/>
 </element>
-<element name="C26" library="rlc-jqi" package="0805" value="10uF" x="148.463" y="72.2122" rot="R90">
+<element name="C26" library="rlc-jqi" package="0805" value="10uF" x="148.463" y="72.2122" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="143.383" y="72.2122" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="147.193" y="69.6722" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="150.368" y="69.6722" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C27" library="rlc-jqi" package="0603" value="100nF" x="181.6862" y="77.6224" rot="R270">
+<element name="C27" library="rlc-jqi" package="0603" value="100nF" x="181.6862" y="77.6224" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="181.6862" y="77.6224" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="178.3842" y="79.5274" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="179.7812" y="79.5274" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C28" library="rlc-jqi" package="0603" value="100nF" x="174.8028" y="74.422">
+<element name="C28" library="rlc-jqi" package="0603" value="100nF" x="174.8028" y="74.422" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="174.8028" y="74.422" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="173.9138" y="76.962" size="0.889" layer="25"/>
+<attribute name="VALUE" x="172.8978" y="72.517" size="0.889" layer="27"/>
 </element>
-<element name="C29" library="rlc-jqi" package="0603" value="100nF" x="104.648" y="78.8416" rot="R270">
+<element name="C29" library="rlc-jqi" package="0603" value="100nF" x="104.648" y="78.8416" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="104.648" y="78.8416" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="105.918" y="80.7466" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="102.743" y="80.7466" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L10" library="rlc-jqi" package="0805" value="Ferrite 1k" x="188.1378" y="70.0024" rot="R270">
+<element name="L10" library="rlc-jqi" package="0805" value="Ferrite 1k" x="188.1378" y="70.0024" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="188.1378" y="70.0024" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="187.6298" y="67.9704" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="186.2328" y="72.5424" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L11" library="rlc-jqi" package="0805" value="Ferrite 1k" x="171.7802" y="70.866" rot="R180">
+<element name="L11" library="rlc-jqi" package="0805" value="Ferrite 1k" x="171.7802" y="70.866" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="171.7802" y="70.866" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="171.7802" y="69.342" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="174.3202" y="72.771" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C30" library="rlc-jqi" package="0805" value="10uF" x="186.055" y="68.0974" rot="R90">
+<element name="C30" library="rlc-jqi" package="0805" value="10uF" x="186.055" y="68.0974" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="186.055" y="68.0974" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="186.309" y="70.1294" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="187.96" y="65.5574" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C31" library="rlc-jqi" package="0805" value="10uF" x="174.8028" y="69.9262" rot="R90">
+<element name="C31" library="rlc-jqi" package="0805" value="10uF" x="174.8028" y="69.9262" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="174.8028" y="69.9262" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="175.0568" y="65.8622" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="176.7078" y="67.3862" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="RF6" library="aom_driver" package="BH292" value="ADP-2-4" x="87.9348" y="71.0438" rot="R270">
+<element name="RF6" library="aom_driver" package="BH292" value="ADP-2-4" x="87.9348" y="71.0438" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="ADP-2-4+" x="87.9348" y="71.0438" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="93.0148" y="71.8058" size="1.27" layer="25" rot="R270"/>
+<attribute name="VALUE" x="81.5848" y="73.5838" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U2" library="aom_driver" package="LFCSP-CP-8-1" value="AD8319" x="74.2442" y="69.2404" rot="R180">
+<element name="U2" library="aom_driver" package="LFCSP-CP-8-1" value="AD8319" x="74.2442" y="69.2404" smashed="yes" rot="R180">
 <attribute name="PARTNUM" value="AD8319ACPZ-R7CT-ND" x="74.2442" y="69.2404" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="75.3822" y="72.7744" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="76.2442" y="72.3404" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R6" library="rlc-jqi" package="0603" value="52.3R" x="79.6544" y="67.6656" rot="R90">
+<element name="R6" library="rlc-jqi" package="0603" value="52.3R" x="79.6544" y="67.6656" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="P52.3HCT-ND" x="79.6544" y="57.5056" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="80.1624" y="64.4906" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="81.5594" y="65.7606" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C34" library="rlc-jqi" package="0603" value="47nF" x="77.4954" y="68.5038">
+<element name="C34" library="rlc-jqi" package="0603" value="47nF" x="77.4954" y="68.5038" smashed="yes">
 <attribute name="PARTNO" value="1276-1063-1-ND" x="72.4154" y="68.5038" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="76.6064" y="64.9478" size="0.889" layer="25"/>
+<attribute name="VALUE" x="75.5904" y="66.5988" size="0.889" layer="27"/>
 </element>
-<element name="C35" library="rlc-jqi" package="0603" value="47nF" x="72.7456" y="65.8876" rot="R270">
+<element name="C35" library="rlc-jqi" package="0603" value="47nF" x="72.7456" y="65.8876" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1063-1-ND" x="67.6656" y="76.0476" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="72.4916" y="63.9826" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="70.8406" y="67.7926" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="R7" library="rlc-jqi" package="0603" value="18k" x="66.421" y="70.358">
+<element name="R7" library="rlc-jqi" package="0603" value="18k" x="66.421" y="70.358" smashed="yes">
 <attribute name="PARTNO" value="P18.0KHCT-ND" x="66.421" y="65.278" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="64.516" y="69.596" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="64.516" y="68.453" size="0.889" layer="27"/>
 </element>
-<element name="C36" library="rlc-jqi" package="0603" value="100nF" x="69.85" y="67.3608">
+<element name="C36" library="rlc-jqi" package="0603" value="100nF" x="69.85" y="67.3608" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="69.85" y="47.0408" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.357" y="67.1068" size="0.889" layer="25"/>
+<attribute name="VALUE" x="67.945" y="65.4558" size="0.889" layer="27"/>
 </element>
-<element name="C37" library="rlc-jqi" package="0603" value="100pF" x="69.85" y="68.9864">
+<element name="C37" library="rlc-jqi" package="0603" value="100pF" x="69.85" y="68.9864" smashed="yes">
 <attribute name="PARTNO" value="1276-1909-1-ND" x="64.77" y="43.5864" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="62.357" y="68.2244" size="0.889" layer="25"/>
+<attribute name="VALUE" x="67.945" y="67.0814" size="0.889" layer="27"/>
 </element>
-<element name="C38" library="rlc-jqi" package="0603" value="8.2pF" x="76.6318" y="70.6628" rot="R270">
+<element name="C38" library="rlc-jqi" package="0603" value="8.2pF" x="76.6318" y="70.6628" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1257-1-ND" x="51.2318" y="70.6628" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="76.3778" y="76.1238" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="74.7268" y="72.5678" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L14" library="rlc-jqi" package="0805" value="Ferrite 1k" x="70.739" y="64.5922" rot="R270">
+<element name="L14" library="rlc-jqi" package="0805" value="Ferrite 1k" x="70.739" y="64.5922" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="27.559" y="73.4822" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="68.707" y="65.6082" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="68.834" y="67.1322" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L15" library="rlc-jqi" package="0805" value="Ferrite 1k" x="169.164" y="43.5356" rot="R270">
+<element name="L15" library="rlc-jqi" package="0805" value="Ferrite 1k" x="169.164" y="43.5356" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="169.164" y="43.5356" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="169.164" y="45.3644" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="167.259" y="46.0756" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L16" library="rlc-jqi" package="0805" value="Ferrite 1k" x="177.3174" y="36.1188" rot="R270">
+<element name="L16" library="rlc-jqi" package="0805" value="Ferrite 1k" x="177.3174" y="36.1188" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="177.3174" y="36.1188" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="177.3174" y="32.3088" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="175.4124" y="38.6588" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C39" library="rlc-jqi" package="0805" value="10uF" x="169.164" y="40.005" rot="R90">
+<element name="C39" library="rlc-jqi" package="0805" value="10uF" x="169.164" y="40.005" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="169.164" y="40.005" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="169.418" y="35.433" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="171.069" y="37.465" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C40" library="rlc-jqi" package="0805" value="10uF" x="179.5526" y="36.1188" rot="R90">
+<element name="C40" library="rlc-jqi" package="0805" value="10uF" x="179.5526" y="36.1188" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="184.6326" y="31.0388" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="179.8066" y="31.8008" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="181.4576" y="33.5788" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="U4" library="aom_driver" package="DGN" value="TPS7A4901" x="137.6934" y="76.2254" rot="R90">
+<element name="U4" library="aom_driver" package="DGN" value="TPS7A4901" x="137.6934" y="76.2254" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="296-27751-1-ND" x="137.6934" y="76.2254" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C41" library="rlc-jqi" package="0805" value="10uF" x="143.7894" y="76.1238" rot="R270">
+<element name="C41" library="rlc-jqi" package="0805" value="10uF" x="143.7894" y="76.1238" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="143.7894" y="76.1238" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="143.2814" y="73.8378" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="141.8844" y="78.6638" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L17" library="rlc-jqi" package="0805" value="Ferrite 1k" x="131.0894" y="69.3674" rot="R90">
+<element name="L17" library="rlc-jqi" package="0805" value="Ferrite 1k" x="131.0894" y="69.3674" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-5223-1-ND" x="131.0894" y="69.3674" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="129.5654" y="68.6054" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="132.9944" y="66.8274" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="R8" library="rlc-jqi" package="0603" value="1k" x="132.1562" y="79.4258">
+<element name="R8" library="rlc-jqi" package="0603" value="1k" x="132.1562" y="79.4258" smashed="yes">
 <attribute name="PARTNO" value="P1.00KHCT-ND" x="132.1562" y="79.4258" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="131.2672" y="80.4418" size="0.889" layer="25"/>
+<attribute name="VALUE" x="130.2512" y="77.5208" size="0.889" layer="27"/>
 </element>
-<element name="C42" library="rlc-jqi" package="0805" value="10uF" x="132.08" y="72.9488" rot="R180">
+<element name="C42" library="rlc-jqi" package="0805" value="10uF" x="132.08" y="72.9488" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="132.08" y="72.9488" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="136.652" y="73.2028" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="134.62" y="74.8538" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C43" library="rlc-jqi" package="0603" value="10nF" x="139.9286" y="76.0222" rot="R270">
+<element name="C43" library="rlc-jqi" package="0603" value="10nF" x="139.9286" y="76.0222" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1921-1-ND" x="139.9286" y="76.0222" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="139.6746" y="74.1172" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="138.0236" y="77.9272" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="R9" library="rlc-jqi" package="0603" value="9.1k" x="141.732" y="76.0222" rot="R270">
+<element name="R9" library="rlc-jqi" package="0603" value="9.1k" x="141.732" y="76.0222" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="P9.10KHCT-ND" x="141.732" y="76.0222" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="141.478" y="74.1172" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="139.827" y="77.9272" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="R10" library="rlc-jqi" package="0603" value="1k" x="141.732" y="79.1972" rot="R270">
+<element name="R10" library="rlc-jqi" package="0603" value="1k" x="141.732" y="79.1972" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="P1.00KHCT-ND" x="141.732" y="79.1972" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="141.224" y="85.4202" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="139.827" y="81.1022" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C44" library="rlc-jqi" package="0603" value="10nF" x="130.7084" y="77.5208">
+<element name="C44" library="rlc-jqi" package="0603" value="10nF" x="130.7084" y="77.5208" smashed="yes">
 <attribute name="PARTNO" value="1276-1921-1-ND" x="130.7084" y="77.5208" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="128.7272" y="76.4794" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="128.8034" y="75.6158" size="0.889" layer="27"/>
 </element>
-<element name="IC2" library="aom_driver" package="TQFP-32" value="AD5762R" x="98.806" y="19.6342">
+<element name="IC2" library="aom_driver" package="TQFP-32" value="AD5762R" x="98.806" y="19.6342" smashed="yes">
 <attribute name="PARTNO" value="AD5762RCSUZ-ND" x="98.806" y="19.6342" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="98.4354" y="21.5642" size="0.8128" layer="25"/>
+<attribute name="VALUE" x="95.6414" y="18.0082" size="0.8128" layer="27"/>
 </element>
-<element name="C45" library="rlc-jqi" package="0805" value="10uF" x="102.9462" y="25.8572" rot="R90">
+<element name="C45" library="rlc-jqi" package="0805" value="10uF" x="102.9462" y="25.8572" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="102.9462" y="25.8572" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="103.4542" y="29.6672" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="104.8512" y="23.3172" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L18" library="rlc-jqi" package="0805" value="Ferrite 1k" x="96.52" y="31.6738" rot="R90">
+<element name="L18" library="rlc-jqi" package="0805" value="Ferrite 1k" x="96.52" y="31.6738" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-5223-1-ND" x="96.52" y="31.6738" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="97.028" y="33.9598" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="98.425" y="29.1338" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C46" library="rlc-jqi" package="0805" value="10uF" x="95.5802" y="28.4226">
+<element name="C46" library="rlc-jqi" package="0805" value="10uF" x="95.5802" y="28.4226" smashed="yes">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="95.5802" y="28.4226" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="92.2274" y="27.2542" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="93.0402" y="26.5176" size="0.889" layer="27"/>
 </element>
-<element name="C47" library="rlc-jqi" package="0603" value="100nF" x="95.8088" y="25.908">
+<element name="C47" library="rlc-jqi" package="0603" value="100nF" x="95.8088" y="25.908" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="95.8088" y="25.908" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="90.3478" y="25.4" size="0.889" layer="25"/>
+<attribute name="VALUE" x="93.9038" y="24.003" size="0.889" layer="27"/>
 </element>
-<element name="L19" library="rlc-jqi" package="0805" value="Ferrite 1k" x="104.7242" y="11.1252">
+<element name="L19" library="rlc-jqi" package="0805" value="Ferrite 1k" x="104.7242" y="11.1252" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="104.7242" y="11.1252" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="103.9622" y="8.8392" size="0.889" layer="25"/>
+<attribute name="VALUE" x="102.1842" y="9.2202" size="0.889" layer="27"/>
 </element>
-<element name="C48" library="rlc-jqi" package="0805" value="10uF" x="100.076" y="26.5684" rot="R270">
+<element name="C48" library="rlc-jqi" package="0805" value="10uF" x="100.076" y="26.5684" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="100.076" y="26.5684" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="99.568" y="32.4104" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="98.171" y="29.1084" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C49" library="rlc-jqi" package="0603" value="100nF" x="98.3488" y="26.4668" rot="R270">
+<element name="C49" library="rlc-jqi" package="0603" value="100nF" x="98.3488" y="26.4668" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="98.3488" y="26.4668" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="98.0948" y="31.9278" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="96.4438" y="28.3718" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C50" library="rlc-jqi" package="0805" value="10uF" x="97.2312" y="10.6934" rot="R180">
+<element name="C50" library="rlc-jqi" package="0805" value="10uF" x="97.2312" y="10.6934" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="97.2312" y="10.6934" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="98.5012" y="9.6774" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="99.7712" y="12.5984" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C51" library="rlc-jqi" package="0603" value="100nF" x="97.9424" y="12.4968" rot="R180">
+<element name="C51" library="rlc-jqi" package="0603" value="100nF" x="97.9424" y="12.4968" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="97.9424" y="12.4968" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="99.8474" y="11.2268" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="99.8474" y="14.4018" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C52" library="rlc-jqi" package="0805" value="10uF" x="97.2312" y="7.1628" rot="R90">
+<element name="C52" library="rlc-jqi" package="0805" value="10uF" x="97.2312" y="7.1628" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="92.1512" y="7.1628" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="98.2472" y="5.0292" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="99.1362" y="4.6228" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L20" library="rlc-jqi" package="0805" value="Ferrite 1k" x="90.9574" y="8.7884">
+<element name="L20" library="rlc-jqi" package="0805" value="Ferrite 1k" x="90.9574" y="8.7884" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="90.9574" y="3.7084" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="89.1794" y="6.7564" size="0.889" layer="25"/>
+<attribute name="VALUE" x="88.4174" y="6.8834" size="0.889" layer="27"/>
 </element>
-<element name="C53" library="rlc-jqi" package="0805" value="10uF" x="101.9556" y="10.2108" rot="R270">
+<element name="C53" library="rlc-jqi" package="0805" value="10uF" x="101.9556" y="10.2108" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="101.9556" y="10.2108" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="101.7016" y="6.6548" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="100.0506" y="12.7508" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C54" library="rlc-jqi" package="0603" value="100nF" x="100.1776" y="11.684" rot="R270">
+<element name="C54" library="rlc-jqi" package="0603" value="100nF" x="100.1776" y="11.684" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="100.1776" y="11.684" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="99.9236" y="8.001" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="98.2726" y="13.589" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C55" library="rlc-jqi" package="0805" value="10uF" x="105.6386" y="14.732">
+<element name="C55" library="rlc-jqi" package="0805" value="10uF" x="105.6386" y="14.732" smashed="yes">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="105.6386" y="14.732" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="109.1946" y="14.224" size="0.889" layer="25"/>
+<attribute name="VALUE" x="103.0986" y="12.827" size="0.889" layer="27"/>
 </element>
-<element name="C56" library="rlc-jqi" package="0603" value="100nF" x="103.7844" y="13.0048">
+<element name="C56" library="rlc-jqi" package="0603" value="100nF" x="103.7844" y="13.0048" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="103.7844" y="13.0048" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="107.4674" y="12.4968" size="0.889" layer="25"/>
+<attribute name="VALUE" x="101.8794" y="11.0998" size="0.889" layer="27"/>
 </element>
-<element name="R11" library="rlc-jqi" package="0603" value="1k" x="91.9988" y="11.3538" rot="R270">
+<element name="R11" library="rlc-jqi" package="0603" value="1k" x="91.9988" y="11.3538" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="P1.00KHCT-ND" x="91.9988" y="11.3538" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="89.9668" y="12.7508" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="90.0938" y="13.2588" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="RF7" library="aom_driver" package="DG983" value="DAT-31R5A-SN" x="199.0344" y="62.1792" rot="R90">
+<element name="RF7" library="aom_driver" package="DG983" value="DAT-31R5A-SN" x="199.0344" y="62.1792" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="DAT-31R5A-SN+" x="199.0344" y="62.1792" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="194.7291" y="66.0273" size="1.27" layer="25" rot="R270"/>
 </element>
 <element name="C57" library="rlc-jqi" package="0603" value="100nF" x="199.8472" y="77.9272" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="199.8472" y="77.9272" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="198.5772" y="76.0222" size="0.889" layer="25" rot="R90"/>
+<attribute name="NAME" x="202.8952" y="78.0542" size="0.889" layer="25" rot="R90"/>
 <attribute name="VALUE" x="201.7522" y="76.0222" size="0.889" layer="27" rot="R90"/>
 </element>
 <element name="L21" library="rlc-jqi" package="0805" value="Ferrite 1k" x="196.6976" y="78.5114" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="191.6176" y="72.1614" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="194.1576" y="79.7814" size="0.889" layer="25"/>
+<attribute name="NAME" x="192.6336" y="78.2574" size="0.889" layer="25"/>
 <attribute name="VALUE" x="194.1576" y="76.6064" size="0.889" layer="27"/>
 </element>
-<element name="L22" library="rlc-jqi" package="0805" value="Ferrite 1k" x="206.6798" y="73.7362">
+<element name="L22" library="rlc-jqi" package="0805" value="Ferrite 1k" x="206.6798" y="73.7362" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="206.6798" y="71.1962" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="205.4098" y="75.2602" size="0.889" layer="25"/>
+<attribute name="VALUE" x="204.1398" y="71.8312" size="0.889" layer="27"/>
 </element>
 <element name="C58" library="rlc-jqi" package="0805" value="10uF" x="196.6976" y="76.4794" smashed="yes">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="190.3476" y="68.8594" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="194.1576" y="77.7494" size="0.889" layer="25"/>
+<attribute name="NAME" x="190.8556" y="75.9714" size="0.889" layer="25"/>
 <attribute name="VALUE" x="194.1576" y="74.5744" size="0.889" layer="27"/>
 </element>
-<element name="C59" library="rlc-jqi" package="0805" value="10uF" x="203.6318" y="74.676" rot="R270">
+<element name="C59" library="rlc-jqi" package="0805" value="10uF" x="203.6318" y="74.676" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="196.0118" y="74.676" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="203.3778" y="80.518" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="201.7268" y="77.216" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C60" library="rlc-jqi" package="0603" value="100nF" x="203.327" y="59.6392" rot="R180">
+<element name="C60" library="rlc-jqi" package="0603" value="100nF" x="203.327" y="59.6392" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="203.327" y="59.6392" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="205.232" y="61.5442" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C61" library="rlc-jqi" package="0603" value="100nF" x="203.3016" y="66.3448" rot="R180">
+<element name="C61" library="rlc-jqi" package="0603" value="100nF" x="203.3016" y="66.3448" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="203.3016" y="66.3448" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="205.2066" y="68.2498" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C62" library="rlc-jqi" package="0603" value="100pF" x="203.327" y="61.1632" rot="R180">
+<element name="C62" library="rlc-jqi" package="0603" value="100pF" x="203.327" y="61.1632" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1909-1-ND" x="203.327" y="61.1632" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="205.232" y="63.0682" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C63" library="rlc-jqi" package="0603" value="100pF" x="203.2508" y="64.897" rot="R180">
+<element name="C63" library="rlc-jqi" package="0603" value="100pF" x="203.2508" y="64.897" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1909-1-ND" x="203.2508" y="64.897" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="205.1558" y="66.802" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R12" library="rlc-jqi" package="0603" value="10k" x="191.897" y="57.277" rot="R180">
+<element name="R12" library="rlc-jqi" package="0603" value="10k" x="191.897" y="57.277" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="191.897" y="57.277" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="193.802" y="59.182" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R13" library="rlc-jqi" package="0603" value="10k" x="191.897" y="59.055" rot="R180">
+<element name="R13" library="rlc-jqi" package="0603" value="10k" x="191.897" y="59.055" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="191.897" y="59.055" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="193.802" y="60.96" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R14" library="rlc-jqi" package="0603" value="10k" x="191.8716" y="60.8584" rot="R180">
+<element name="R14" library="rlc-jqi" package="0603" value="10k" x="191.8716" y="60.8584" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="191.8716" y="60.8584" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="193.7766" y="62.7634" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R15" library="rlc-jqi" package="0603" value="10k" x="191.8716" y="62.6872" rot="R180">
+<element name="R15" library="rlc-jqi" package="0603" value="10k" x="191.8716" y="62.6872" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="191.8716" y="62.6872" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="193.7766" y="64.5922" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R16" library="rlc-jqi" package="0603" value="10k" x="191.8462" y="64.5414" rot="R180">
+<element name="R16" library="rlc-jqi" package="0603" value="10k" x="191.8462" y="64.5414" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="191.8462" y="64.5414" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="193.7512" y="66.4464" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R17" library="rlc-jqi" package="0603" value="10k" x="191.8462" y="66.4464">
+<element name="R17" library="rlc-jqi" package="0603" value="10k" x="191.8462" y="66.4464" smashed="yes">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="191.8462" y="66.4464" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="189.9412" y="64.5414" size="0.889" layer="27"/>
 </element>
-<element name="RF4" library="aom_driver" package="DL805" value="M3SWA-2-50DR" x="180.6702" y="72.7964" rot="R180">
+<element name="RF4" library="aom_driver" package="DL805" value="M3SWA-2-50DR" x="180.6702" y="72.7964" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="M3SWA-2-50DR+" x="180.6702" y="72.7964" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="184.6072" y="71.5264" size="0.635" layer="25" rot="R180"/>
 </element>
-<element name="RF8" library="aom_driver" package="DL805" value="M3SWA-2-50DR" x="199.517" y="70.866">
+<element name="RF8" library="aom_driver" package="DL805" value="M3SWA-2-50DR" x="199.517" y="70.866" smashed="yes">
 <attribute name="PARTNO" value="M3SWA-2-50DR+" x="199.517" y="70.866" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="197.104" y="70.104" size="0.635" layer="25" rot="R90"/>
 </element>
-<element name="C64" library="rlc-jqi" package="0603" value="10pF" x="182.1434" y="68.199" rot="R90">
+<element name="C64" library="rlc-jqi" package="0603" value="10pF" x="182.1434" y="68.199" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2154-1-ND" x="182.1434" y="68.199" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="181.1274" y="66.802" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="184.0484" y="66.294" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C65" library="rlc-jqi" package="0603" value="10pF" x="177.6984" y="70.0278" rot="R90">
+<element name="C65" library="rlc-jqi" package="0603" value="10pF" x="177.6984" y="70.0278" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2154-1-ND" x="177.6984" y="70.0278" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="177.9524" y="66.0908" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="179.6034" y="68.1228" size="0.889" layer="27" rot="R90"/>
 </element>
 <element name="C66" library="rlc-jqi" package="0603" value="10pF" x="197.485" y="74.5236" smashed="yes">
 <attribute name="PARTNO" value="1276-2154-1-ND" x="197.485" y="74.5236" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="194.7418" y="72.644" size="0.889" layer="25"/>
+<attribute name="NAME" x="193.2178" y="73.406" size="0.889" layer="25"/>
 <attribute name="VALUE" x="195.58" y="72.6186" size="0.889" layer="27"/>
 </element>
-<element name="C67" library="rlc-jqi" package="0603" value="10pF" x="201.7014" y="74.5236" rot="R270">
+<element name="C67" library="rlc-jqi" package="0603" value="10pF" x="201.7014" y="74.5236" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-2154-1-ND" x="201.7014" y="74.5236" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="202.4634" y="83.0326" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="199.7964" y="76.4286" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="L23" library="rlc-jqi" package="0805" value="Ferrite 1k" x="210.9216" y="69.342" rot="R180">
+<element name="L23" library="rlc-jqi" package="0805" value="Ferrite 1k" x="210.9216" y="69.342" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="210.9216" y="69.342" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="212.4456" y="71.374" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="213.4616" y="71.247" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C68" library="rlc-jqi" package="0805" value="10uF" x="206.1972" y="68.3768" rot="R90">
+<element name="C68" library="rlc-jqi" package="0805" value="10uF" x="206.1972" y="68.3768" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="206.1972" y="68.3768" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="208.1022" y="65.8368" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L24" library="rlc-jqi" package="0805" value="Ferrite 1k" x="205.105" y="52.8828">
+<element name="L24" library="rlc-jqi" package="0805" value="Ferrite 1k" x="205.105" y="52.8828" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="205.105" y="52.8828" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="202.565" y="50.9778" size="0.889" layer="27"/>
 </element>
-<element name="C69" library="rlc-jqi" package="0805" value="10uF" x="205.0796" y="54.864" rot="R180">
+<element name="C69" library="rlc-jqi" package="0805" value="10uF" x="205.0796" y="54.864" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="205.0796" y="54.864" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="207.6196" y="56.769" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R18" library="rlc-jqi" package="0603" value="365k" x="203.327" y="58.166">
+<element name="R18" library="rlc-jqi" package="0603" value="365k" x="203.327" y="58.166" smashed="yes">
 <attribute name="PARTNO" value="P365KHCT-ND" x="203.327" y="58.166" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="201.422" y="56.261" size="0.889" layer="27"/>
 </element>
-<element name="R19" library="rlc-jqi" package="0603" value="178k" x="203.327" y="56.642">
+<element name="R19" library="rlc-jqi" package="0603" value="178k" x="203.327" y="56.642" smashed="yes">
 <attribute name="PARTNO" value="P178KHCT-ND" x="203.327" y="56.642" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="201.422" y="54.737" size="0.889" layer="27"/>
 </element>
-<element name="R20" library="rlc-jqi" package="0603" value="365k" x="203.3016" y="67.818" rot="R180">
+<element name="R20" library="rlc-jqi" package="0603" value="365k" x="203.3016" y="67.818" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P365KHCT-ND" x="203.3016" y="67.818" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="205.2066" y="69.723" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R21" library="rlc-jqi" package="0603" value="178k" x="203.3016" y="69.3166">
+<element name="R21" library="rlc-jqi" package="0603" value="178k" x="203.3016" y="69.3166" smashed="yes">
 <attribute name="PARTNO" value="P178KHCT-ND" x="203.3016" y="69.3166" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="201.3966" y="67.4116" size="0.889" layer="27"/>
 </element>
-<element name="U5" library="aom_driver" package="MSOP8" value="ADG5419" x="172.7962" y="39.1668">
+<element name="U5" library="aom_driver" package="MSOP8" value="ADG5419" x="172.7962" y="39.1668" smashed="yes">
 <attribute name="PARTNO" value="ADG5419BRMZ-RL7CT-ND" x="172.7962" y="39.1668" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="171.9002" y="34.4908" size="1.016" layer="25"/>
+<attribute name="VALUE" x="172.1462" y="38.1168" size="1.016" layer="27"/>
 </element>
-<element name="C70" library="rlc-jqi" package="0603" value="100nF" x="175.2346" y="36.2712" rot="R90">
+<element name="C70" library="rlc-jqi" package="0603" value="100nF" x="175.2346" y="36.2712" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="175.2346" y="36.2712" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="175.4886" y="30.5562" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="177.1396" y="34.3662" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C71" library="rlc-jqi" package="0603" value="100nF" x="172.466" y="43.434" rot="R270">
+<element name="C71" library="rlc-jqi" package="0603" value="100nF" x="172.466" y="43.434" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="172.466" y="43.434" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="173.609" y="42.926" size="0.889" layer="25"/>
+<attribute name="VALUE" x="170.561" y="45.339" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C75" library="rlc-jqi" package="0603" value="100nF" x="168.91" y="23.6982">
+<element name="C75" library="rlc-jqi" package="0603" value="100nF" x="168.91" y="23.6982" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="168.91" y="23.6982" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="164.465" y="23.4442" size="0.889" layer="25"/>
+<attribute name="VALUE" x="167.005" y="21.7932" size="0.889" layer="27"/>
 </element>
-<element name="C76" library="rlc-jqi" package="0805" value="10uF" x="168.0464" y="21.7932">
+<element name="C76" library="rlc-jqi" package="0805" value="10uF" x="168.0464" y="21.7932" smashed="yes">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="168.0464" y="21.7932" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="161.9504" y="21.2852" size="0.889" layer="25"/>
+<attribute name="VALUE" x="165.5064" y="19.8882" size="0.889" layer="27"/>
 </element>
-<element name="L25" library="rlc-jqi" package="0805" value="Ferrite 1k" x="168.0464" y="19.685">
+<element name="L25" library="rlc-jqi" package="0805" value="Ferrite 1k" x="168.0464" y="19.685" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="168.0464" y="19.685" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="163.7284" y="17.653" size="0.889" layer="25"/>
+<attribute name="VALUE" x="165.5064" y="17.78" size="0.889" layer="27"/>
 </element>
-<element name="C77" library="rlc-jqi" package="0603" value="100nF" x="177.3428" y="23.6728" rot="R180">
+<element name="C77" library="rlc-jqi" package="0603" value="100nF" x="177.3428" y="23.6728" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="177.3428" y="13.9192" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="182.2958" y="24.1808" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="179.2478" y="25.5778" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C78" library="rlc-jqi" package="0805" value="10uF" x="178.0794" y="21.7678" rot="R180">
+<element name="C78" library="rlc-jqi" package="0805" value="10uF" x="178.0794" y="21.7678" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="178.0794" y="21.7678" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="184.6834" y="22.0218" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="180.6194" y="23.6728" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="L26" library="rlc-jqi" package="0805" value="Ferrite 1k" x="178.1302" y="19.7104" rot="R180">
+<element name="L26" library="rlc-jqi" package="0805" value="Ferrite 1k" x="178.1302" y="19.7104" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="178.1302" y="29.464" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="182.7022" y="20.2184" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="180.6702" y="21.6154" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="EXT_SERVO" library="aom_driver" package="BNC90" value="BNC-H" x="171.45" y="7.62" rot="R180">
+<element name="EXT_SERVO" library="aom_driver" package="BNC90" value="BNC-H" x="171.45" y="7.62" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="A32260-ND" x="171.45" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY" value="12345" x="171.45" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="161.29" y="13.081" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="U6" library="aom_driver" package="SO08" value="AD8429" x="172.4406" y="21.1074" rot="R90">
+<element name="U6" library="aom_driver" package="SO08" value="AD8429" x="172.4406" y="21.1074" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="AD8429ARZ-ND" x="172.4406" y="21.1074" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="169.9006" y="19.2024" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="177.5206" y="19.2024" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U7" library="aom_driver" package="MSOP8" value="ADG5419" x="166.1922" y="44.5008" rot="R180">
+<element name="U7" library="aom_driver" package="MSOP8" value="ADG5419" x="166.1922" y="44.5008" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="ADG5419BRMZ-RL7CT-ND" x="166.1922" y="64.008" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="167.3422" y="44.3508" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="166.8422" y="45.5508" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C72" library="rlc-jqi" package="0603" value="100nF" x="163.9824" y="47.3964" rot="R270">
+<element name="C72" library="rlc-jqi" package="0603" value="100nF" x="163.9824" y="47.3964" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="154.2288" y="47.3964" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="161.9504" y="50.3174" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="162.0774" y="49.3014" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C73" library="rlc-jqi" package="0603" value="100nF" x="166.9034" y="40.0812" rot="R90">
+<element name="C73" library="rlc-jqi" package="0603" value="100nF" x="166.9034" y="40.0812" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="181.5338" y="35.6616" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="166.9034" y="35.8902" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="168.8084" y="38.1762" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="TEENSY" library="aom_driver" package="TEENSY_3.1_ALLPINS" value="TEENSY_3.1_ALL_PINS_AND_PADS" x="24.638" y="52.6796" rot="R90"/>
-<element name="C74" library="rlc-jqi" package="0805" value="10uF" x="8.2042" y="53.467" rot="R90">
+<element name="TEENSY" library="aom_driver" package="TEENSY_3.1_ALLPINS" value="TEENSY_3.1_ALL_PINS_AND_PADS" x="24.638" y="52.6796" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.208" y="49.1236" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="18.288" y="48.8696" size="1.27" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C74" library="rlc-jqi" package="0805" value="10uF" x="8.2042" y="53.467" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="3.3274" y="53.467" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="8.4582" y="48.895" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="10.1092" y="50.927" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L27" library="rlc-jqi" package="0805" value="Ferrite 1k" x="4.445" y="55.5498" rot="R90">
+<element name="L27" library="rlc-jqi" package="0805" value="Ferrite 1k" x="4.445" y="55.5498" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="445-5223-1-ND" x="9.3218" y="55.5498" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="2.921" y="55.0418" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="6.35" y="53.0098" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="OUTPUT_TTL" library="aom_driver" package="BNC90" value="BNC-H" x="50.8" y="7.62" rot="R180">
+<element name="OUTPUT_TTL" library="aom_driver" package="BNC90" value="BNC-H" x="50.8" y="7.62" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="A32260-ND" x="50.8" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY" value="12345" x="50.8" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="40.894" y="14.351" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="RF_INPUT_TTL" library="aom_driver" package="BNC90" value="BNC-H" x="25.4" y="7.62" rot="R180">
+<element name="RF_INPUT_TTL" library="aom_driver" package="BNC90" value="BNC-H" x="25.4" y="7.62" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="A32260-ND" x="25.4" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY" value="12345" x="25.4" y="7.62" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="15.24" y="14.351" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="L29" library="rlc-jqi" package="0805" value="Ferrite 1k" x="19.9898" y="24.5872" rot="R180">
+<element name="L29" library="rlc-jqi" package="0805" value="Ferrite 1k" x="19.9898" y="24.5872" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="26.1874" y="24.13" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="17.7038" y="25.0952" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="22.5298" y="26.4922" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C80" library="rlc-jqi" package="0805" value="10uF" x="19.6342" y="21.1328" rot="R90">
+<element name="C80" library="rlc-jqi" package="0805" value="10uF" x="19.6342" y="21.1328" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="24.0538" y="16.383" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="18.1102" y="20.1168" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="21.5392" y="18.5928" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C81" library="rlc-jqi" package="0603" value="100nF" x="21.2852" y="21.2852" rot="R90">
+<element name="C81" library="rlc-jqi" package="0603" value="100nF" x="21.2852" y="21.2852" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="31.0388" y="21.2852" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="21.7932" y="16.5862" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="23.1902" y="19.3802" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="C83" library="rlc-jqi" package="0603" value="100nF" x="49.53" y="27.0256" rot="R180">
+<element name="C83" library="rlc-jqi" package="0603" value="100nF" x="49.53" y="27.0256" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="49.53" y="27.0256" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="54.737" y="27.2796" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="51.435" y="28.9306" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="L13" library="rlc-jqi" package="0805" value="Ferrite 1k" x="46.4058" y="28.4734" rot="R270">
+<element name="L13" library="rlc-jqi" package="0805" value="Ferrite 1k" x="46.4058" y="28.4734" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="445-5223-1-ND" x="46.4058" y="28.4734" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="43.8658" y="29.2354" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="44.5008" y="31.0134" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C33" library="rlc-jqi" package="0805" value="10uF" x="49.3776" y="29.3624" rot="R180">
+<element name="C33" library="rlc-jqi" package="0805" value="10uF" x="49.3776" y="29.3624" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="49.3776" y="29.3624" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="53.9496" y="29.6164" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="51.9176" y="31.2674" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="SV1" library="aom_driver" package="ML16" value="" x="9.7282" y="25.6286" rot="R90">
+<element name="SV1" library="aom_driver" package="ML16" value="" x="9.7282" y="25.6286" smashed="yes" rot="R90">
 <attribute name="OC_NEWARK" value="unknown" x="9.7282" y="25.6286" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="" x="9.7282" y="25.6286" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="" x="9.7282" y="25.6286" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="9.7282" y="25.6286" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="4.6482" y="11.6586" size="1.778" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="4.6482" y="26.8986" size="1.778" layer="27" ratio="10" rot="R90"/>
 </element>
-<element name="JP2" library="pinhead" package="1X10" value="1x10 Header" x="76.2" y="38.1" rot="R90">
+<element name="JP2" library="pinhead" package="1X10" value="1x10 Header" x="76.2" y="38.1" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="609-3550-ND" x="76.2" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="73.1012" y="25.5778" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="79.375" y="25.4" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="JP3" library="pinhead" package="1X10" value="1x10 Header" x="114.3" y="38.1" rot="R90">
+<element name="JP3" library="pinhead" package="1X10" value="1x10 Header" x="114.3" y="38.1" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="609-3550-ND" x="114.3" y="38.1" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="118.0592" y="36.7538" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="117.475" y="25.4" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="MON" library="aom_driver" package="SMA-EDGE" value="SMAJ502" x="103.378" y="87.3252" rot="R270">
+<element name="MON" library="aom_driver" package="SMA-EDGE" value="SMAJ502" x="103.378" y="87.3252" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="J502-ND" x="103.378" y="87.3252" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="111.252" y="87.7062" size="1.778" layer="25" rot="R270"/>
+<attribute name="VALUE" x="95.758" y="87.3252" size="1.778" layer="27" rot="R270"/>
 </element>
-<element name="C85" library="rlc-jqi" package="0603" value="100nF" x="137.3378" y="23.5458">
+<element name="C85" library="rlc-jqi" package="0603" value="100nF" x="137.3378" y="23.5458" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="115.443" y="59.1312" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="132.3848" y="23.2918" size="0.889" layer="25"/>
+<attribute name="VALUE" x="135.4328" y="21.6408" size="0.889" layer="27"/>
 </element>
-<element name="C86" library="rlc-jqi" package="0805" value="10uF" x="136.525" y="21.5646">
+<element name="C86" library="rlc-jqi" package="0805" value="10uF" x="136.525" y="21.5646" smashed="yes">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="124.1298" y="52.2732" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="130.175" y="21.5646" size="0.889" layer="25"/>
+<attribute name="VALUE" x="133.985" y="19.6596" size="0.889" layer="27"/>
 </element>
-<element name="L9" library="rlc-jqi" package="0805" value="Ferrite 1k" x="136.525" y="19.5834">
+<element name="L9" library="rlc-jqi" package="0805" value="Ferrite 1k" x="136.525" y="19.5834" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="136.525" y="45.4152" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="135.509" y="17.2974" size="0.889" layer="25"/>
+<attribute name="VALUE" x="133.985" y="17.6784" size="0.889" layer="27"/>
 </element>
-<element name="C87" library="rlc-jqi" package="0603" value="100nF" x="145.8468" y="23.5966" rot="R180">
+<element name="C87" library="rlc-jqi" package="0603" value="100nF" x="145.8468" y="23.5966" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="145.8468" y="-2.2352" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="151.8158" y="23.8506" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="147.7518" y="25.5016" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C88" library="rlc-jqi" package="0805" value="10uF" x="145.9484" y="25.6032" rot="R180">
+<element name="C88" library="rlc-jqi" package="0805" value="10uF" x="145.9484" y="25.6032" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="163.0934" y="9.525" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="152.0444" y="26.1112" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="148.4884" y="27.5082" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="L30" library="rlc-jqi" package="0805" value="Ferrite 1k" x="145.8976" y="27.7876" rot="R180">
+<element name="L30" library="rlc-jqi" package="0805" value="Ferrite 1k" x="145.8976" y="27.7876" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="152.0952" y="16.5862" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="150.2156" y="28.0416" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="148.4376" y="29.6926" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="EXT_VCO_TUNE" library="aom_driver" package="BNC90" value="BNC-H" x="139.7" y="7.62" rot="R180">
+<element name="EXT_VCO_TUNE" library="aom_driver" package="BNC90" value="BNC-H" x="139.7" y="7.62" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="A32260-ND" x="154.4828" y="1.2954" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIGIKEY" value="12345" x="154.4828" y="1.2954" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="129.286" y="16.383" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="U10" library="aom_driver" package="SO08" value="AD8429" x="140.97" y="20.9296" rot="R90">
+<element name="U10" library="aom_driver" package="SO08" value="AD8429" x="140.97" y="20.9296" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="AD8429ARZ-ND" x="160.401" y="-19.812" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="143.0274" y="21.59" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="146.05" y="19.0246" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U11" library="aom_driver" package="MSOP8" value="ADG5419" x="140.0048" y="30.6832" rot="R180">
+<element name="U11" library="aom_driver" package="MSOP8" value="ADG5419" x="140.0048" y="30.6832" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="ADG5419BRMZ-RL7CT-ND" x="140.0048" y="30.6832" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="138.1068" y="30.0252" size="1.016" layer="25" rot="R180"/>
+<attribute name="VALUE" x="140.6548" y="31.7332" size="1.016" layer="27" rot="R180"/>
 </element>
-<element name="C89" library="rlc-jqi" package="0603" value="100nF" x="137.0076" y="32.9946">
+<element name="C89" library="rlc-jqi" package="0603" value="100nF" x="137.0076" y="32.9946" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="137.0076" y="32.9946" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="132.3086" y="32.7406" size="0.889" layer="25"/>
+<attribute name="VALUE" x="135.1026" y="31.0896" size="0.889" layer="27"/>
 </element>
-<element name="C90" library="rlc-jqi" package="0603" value="100nF" x="138.9634" y="27.1272">
+<element name="C90" library="rlc-jqi" package="0603" value="100nF" x="138.9634" y="27.1272" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="134.5438" y="22.2504" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="132.9944" y="26.8732" size="0.889" layer="25"/>
+<attribute name="VALUE" x="137.0584" y="25.2222" size="0.889" layer="27"/>
 </element>
-<element name="IC4" library="aom_driver" package="SOT23-5L" value="ADA4004-1" x="143.9672" y="37.8206" rot="R180">
+<element name="IC4" library="aom_driver" package="SOT23-5L" value="ADA4004-1" x="143.9672" y="37.8206" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="ADA4004-1ARJZ-R7CT-ND" x="143.9672" y="37.8206" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="150.4442" y="37.1856" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="145.8722" y="41.2496" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R22" library="rlc-jqi" package="0603" value="" x="146.431" y="38.5318" rot="R90"/>
-<element name="R23" library="rlc-jqi" package="0603" value="" x="143.002" y="33.5534" rot="R90"/>
-<element name="R24" library="rlc-jqi" package="0603" value="" x="140.4112" y="36.5252" rot="R180"/>
-<element name="R25" library="rlc-jqi" package="0603" value="" x="140.7668" y="39.1414"/>
-<element name="C91" library="rlc-jqi" package="0603" value="100nF" x="145.7706" y="34.798" rot="R180">
+<element name="R22" library="rlc-jqi" package="0603" value="" x="146.431" y="38.5318" smashed="yes" rot="R90">
+<attribute name="NAME" x="150.241" y="39.1668" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="148.336" y="36.6268" size="0.889" layer="27" rot="R90"/>
+</element>
+<element name="R23" library="rlc-jqi" package="0603" value="" x="143.002" y="33.5534" smashed="yes" rot="R90">
+<attribute name="NAME" x="145.034" y="31.6484" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="144.907" y="31.6484" size="0.889" layer="27" rot="R90"/>
+</element>
+<element name="R24" library="rlc-jqi" package="0603" value="" x="140.4112" y="36.5252" smashed="yes" rot="R180">
+<attribute name="NAME" x="141.3002" y="35.2552" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="142.3162" y="38.4302" size="0.889" layer="27" rot="R180"/>
+</element>
+<element name="R25" library="rlc-jqi" package="0603" value="" x="140.7668" y="39.1414" smashed="yes">
+<attribute name="NAME" x="135.5598" y="38.8874" size="0.889" layer="25"/>
+<attribute name="VALUE" x="138.8618" y="37.2364" size="0.889" layer="27"/>
+</element>
+<element name="C91" library="rlc-jqi" package="0603" value="100nF" x="145.7706" y="34.798" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="145.7706" y="34.798" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="151.4856" y="35.306" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="147.6756" y="36.703" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C92" library="rlc-jqi" package="0603" value="100nF" x="143.9672" y="41.6052" rot="R270">
+<element name="C92" library="rlc-jqi" package="0603" value="100nF" x="143.9672" y="41.6052" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="143.9672" y="41.6052" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="143.7132" y="45.7962" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="142.0622" y="43.5102" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="C93" library="rlc-jqi" package="0603" value="" x="140.7668" y="40.7924"/>
-<element name="C94" library="rlc-jqi" package="0603" value="100nF" x="152.1968" y="73.5076" rot="R90">
+<element name="C93" library="rlc-jqi" package="0603" value="" x="140.7668" y="40.7924" smashed="yes">
+<attribute name="NAME" x="135.3058" y="40.5384" size="0.889" layer="25"/>
+<attribute name="VALUE" x="138.8618" y="38.8874" size="0.889" layer="27"/>
+</element>
+<element name="C94" library="rlc-jqi" package="0603" value="100nF" x="152.1968" y="73.5076" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="152.1968" y="73.5076" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="152.9588" y="75.6666" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="154.1018" y="71.6026" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L31" library="rlc-jqi" package="0805" value="Ferrite 1k" x="147.3962" y="75.0824">
+<element name="L31" library="rlc-jqi" package="0805" value="Ferrite 1k" x="147.3962" y="75.0824" smashed="yes">
 <attribute name="PARTNO" value="445-5223-1-ND" x="147.3962" y="75.0824" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="147.1422" y="76.6064" size="0.889" layer="25"/>
+<attribute name="VALUE" x="144.8562" y="73.1774" size="0.889" layer="27"/>
 </element>
-<element name="C95" library="rlc-jqi" package="0603" value="100nF" x="85.344" y="79.3496" rot="R270">
+<element name="C95" library="rlc-jqi" package="0603" value="100nF" x="85.344" y="79.3496" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="85.344" y="79.3496" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="82.042" y="80.2386" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="83.439" y="81.2546" size="0.889" layer="27" rot="R270"/>
 </element>
-<element name="SV2" library="aom_driver" package="ML16" value="" x="16.383" y="73.4822">
+<element name="SV2" library="aom_driver" package="ML16" value="" x="16.383" y="73.4822" smashed="yes">
 <attribute name="OC_NEWARK" value="unknown" x="16.383" y="73.4822" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="" x="16.383" y="73.4822" size="1.778" layer="27" display="off"/>
 <attribute name="MF" value="" x="16.383" y="73.4822" size="1.778" layer="27" display="off"/>
 <attribute name="OC_FARNELL" value="unknown" x="16.383" y="73.4822" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.747" y="78.5622" size="1.778" layer="25" ratio="10"/>
+<attribute name="VALUE" x="17.653" y="78.5622" size="1.778" layer="27" ratio="10"/>
 </element>
-<element name="IC8" library="aom_driver" package="SOT-89" value="L7905" x="207.1878" y="35.3314" rot="R90"/>
-<element name="C96" library="rlc-jqi" package="0805" value="1uF" x="212.0646" y="35.2806" rot="R180">
+<element name="IC8" library="aom_driver" package="SOT-89" value="L7905" x="207.1878" y="35.3314" smashed="yes" rot="R90">
+<attribute name="NAME" x="203.5048" y="34.0614" size="1.27" layer="25" rot="R90"/>
+<attribute name="VALUE" x="211.5327" y="32.9263" size="1.27" layer="27" rot="R90"/>
+</element>
+<element name="C96" library="rlc-jqi" package="0805" value="1uF" x="212.0646" y="35.2806" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="212.0646" y="35.2806" size="0.4064" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="210.8454" y="34.0106" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="214.6046" y="37.1856" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C97" library="rlc-jqi" package="0603" value="100nF" x="209.9564" y="38.8366">
+<element name="C97" library="rlc-jqi" package="0603" value="100nF" x="209.9564" y="38.8366" smashed="yes">
 <attribute name="PARTNO" value="1276-1936-1-ND" x="209.9564" y="38.8366" size="0.4064" layer="27" display="off"/>
+<attribute name="NAME" x="207.7974" y="39.8526" size="0.889" layer="25"/>
+<attribute name="VALUE" x="208.0514" y="36.9316" size="0.889" layer="27"/>
 </element>
-<element name="IC5" library="regulator-jqi" package="SO08" value="ADM7150" x="22.0218" y="34.671" rot="R270">
+<element name="IC5" library="regulator-jqi" package="SO08" value="ADM7150" x="22.0218" y="34.671" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="ADM7150ARDZ-5.0-ND" x="31.8516" y="44.0944" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="21.336" y="33.9598" size="1.27" layer="25"/>
+<attribute name="VALUE" x="18.2118" y="36.576" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C98" library="rlc-jqi" package="0805" value="10uF" x="27.1018" y="37.4396" rot="R180">
+<element name="C98" library="rlc-jqi" package="0805" value="10uF" x="27.1018" y="37.4396" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="42.7228" y="27.6098" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="33.1978" y="37.6936" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="29.6418" y="39.3446" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C99" library="rlc-jqi" package="0805" value="1uF" x="20.9042" y="40.0558">
+<element name="C99" library="rlc-jqi" package="0805" value="1uF" x="20.9042" y="40.0558" smashed="yes">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="0.5334" y="45.0088" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="20.1422" y="41.3258" size="0.889" layer="25"/>
+<attribute name="VALUE" x="18.3642" y="38.1508" size="0.889" layer="27"/>
 </element>
-<element name="C100" library="rlc-jqi" package="0805" value="10uF" x="24.6888" y="40.0558" rot="R180">
+<element name="C100" library="rlc-jqi" package="0805" value="10uF" x="24.6888" y="40.0558" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="34.0868" y="35.1028" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="26.2128" y="42.0878" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="27.2288" y="41.9608" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C101" library="rlc-jqi" package="0805" value="10uF" x="25.6794" y="29.6418" rot="R180">
+<element name="C101" library="rlc-jqi" package="0805" value="10uF" x="25.6794" y="29.6418" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="1276-2890-1-ND" x="39.8272" y="29.5656" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="31.2674" y="29.8958" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="28.2194" y="31.5468" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="C102" library="rlc-jqi" package="0805" value="1uF" x="21.9202" y="28.3972" rot="R90">
+<element name="C102" library="rlc-jqi" package="0805" value="1uF" x="21.9202" y="28.3972" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="1276-2396-1-ND" x="26.7208" y="9.4996" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="19.1262" y="27.1272" size="0.889" layer="25" rot="R90"/>
+<attribute name="VALUE" x="23.8252" y="25.8572" size="0.889" layer="27" rot="R90"/>
 </element>
-<element name="L32" library="rlc-jqi" package="0805" value="Ferrite 1k" x="25.7302" y="27.5844" rot="R180">
+<element name="L32" library="rlc-jqi" package="0805" value="Ferrite 1k" x="25.7302" y="27.5844" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="445-5223-1-ND" x="35.1282" y="42.1386" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="30.5562" y="27.8384" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="28.2702" y="29.4894" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="IC6" library="aom_driver" package="SO16" value="74ACT157D" x="27.432" y="20.955">
+<element name="IC6" library="aom_driver" package="SO16" value="74ACT157D" x="27.432" y="20.955" smashed="yes">
 <attribute name="PARTNO" value="296-38062-1-ND" x="27.432" y="20.955" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="23.622" y="20.193" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="28.956" y="21.463" size="1.27" layer="25" ratio="10" rot="R180"/>
 </element>
-<element name="IC7" library="aom_driver" package="SO16" value="74ACT157D" x="53.594" y="21.59">
+<element name="IC7" library="aom_driver" package="SO16" value="74ACT157D" x="53.594" y="21.59" smashed="yes">
 <attribute name="PARTNO" value="296-38062-1-ND" x="53.594" y="21.59" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="49.784" y="20.828" size="1.27" layer="27" ratio="10"/>
+<attribute name="NAME" x="47.371" y="20.447" size="1.27" layer="25" ratio="10" rot="R90"/>
 </element>
-<element name="R26" library="rlc-jqi" package="0603" value="10k" x="26.289" y="15.494" rot="R180">
+<element name="R26" library="rlc-jqi" package="0603" value="10k" x="26.289" y="15.494" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="26.289" y="15.494" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.686" y="14.478" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="28.194" y="17.399" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="R27" library="rlc-jqi" package="0603" value="10k" x="52.324" y="15.748" rot="R180">
+<element name="R27" library="rlc-jqi" package="0603" value="10k" x="52.324" y="15.748" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="P10.0KHCT-ND" x="52.324" y="15.748" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="55.753" y="14.732" size="0.889" layer="25" rot="R180"/>
+<attribute name="VALUE" x="54.229" y="17.653" size="0.889" layer="27" rot="R180"/>
 </element>
-<element name="J1" library="aom_driver" package="JUMP" value="JUMPER" x="50.165" y="65.913"/>
-<element name="C32" library="rlc-jqi" package="0603" value="DNP" x="110.49" y="33.9598" rot="R270"/>
-<element name="R28" library="rlc-jqi" package="0603" value="DNP" x="110.49" y="30.734" rot="R270"/>
+<element name="J1" library="aom_driver" package="JUMP" value="JUMPER" x="50.165" y="65.913" smashed="yes"/>
+<element name="C32" library="rlc-jqi" package="0603" value="DNP" x="110.49" y="33.9598" smashed="yes" rot="R270">
+<attribute name="NAME" x="111.506" y="34.8488" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="108.585" y="35.8648" size="0.889" layer="27" rot="R270"/>
+</element>
+<element name="R28" library="rlc-jqi" package="0603" value="DNP" x="110.49" y="30.734" smashed="yes" rot="R270">
+<attribute name="NAME" x="109.982" y="28.829" size="0.889" layer="25" rot="R270"/>
+<attribute name="VALUE" x="108.585" y="32.639" size="0.889" layer="27" rot="R270"/>
+</element>
 </elements>
 <signals>
 <signal name="+15V">
@@ -2459,7 +2832,7 @@ design rules under a new name.</description>
 <via x="190.119" y="48.8442" extent="1-16" drill="0.6"/>
 <via x="193.3702" y="50.419" extent="1-16" drill="0.6"/>
 <via x="193.167" y="53.721" extent="1-16" drill="0.6"/>
-<via x="195.0466" y="53.2892" extent="1-16" drill="0.6"/>
+<via x="190.7286" y="54.3052" extent="1-16" drill="0.6"/>
 <via x="189.7634" y="51.689" extent="1-16" drill="0.6"/>
 <via x="187.198" y="53.975" extent="1-16" drill="0.6"/>
 <via x="184.0992" y="57.658" extent="1-16" drill="0.6"/>
@@ -4888,6 +5261,7 @@ design rules under a new name.</description>
 <approved hash="5,1,f7c27cef050cad25"/>
 <approved hash="5,1,6b6badb9ef299381"/>
 <approved hash="18,29,2434584c584d2435"/>
+<approved hash="18,29,4a363a403fc84fbe"/>
 <approved hash="3,1,f77810001055f72d"/>
 <approved hash="3,1,3a381d0a1d383a0a"/>
 <approved hash="3,1,37c000f200e437d6"/>
@@ -4895,8 +5269,8 @@ design rules under a new name.</description>
 <approved hash="18,29,f33658e14863d4c2"/>
 <approved hash="18,29,dc77b9a92a91fef7"/>
 <approved hash="18,29,6db138070c7c5d14"/>
-<approved hash="18,29,20da44b98f96f3e7"/>
 <approved hash="18,29,81aaf90d1a3999cb"/>
+<approved hash="18,29,20da44b98f96f3e7"/>
 <approved hash="18,29,c9731ad5c49b46cd"/>
 <approved hash="18,29,add60ed64828f5ae"/>
 <approved hash="18,29,d9e768eace6182f6"/>
@@ -4904,102 +5278,102 @@ design rules under a new name.</description>
 <approved hash="18,29,e6381ab6e1b3d550"/>
 <approved hash="18,29,101046bb8f5fb65c"/>
 <approved hash="18,29,660548cd66e34ef3"/>
-<approved hash="18,29,1923983554713eda"/>
-<approved hash="18,29,3721fd3035979a6b"/>
-<approved hash="18,29,5e83060fb3947460"/>
-<approved hash="18,29,3f092a8b1d52349c"/>
-<approved hash="18,29,6f933846bf412e4d"/>
-<approved hash="18,29,2456ade4214c4343"/>
+<approved hash="18,29,5f5d07f5acd5752e"/>
+<approved hash="18,29,19af9bb458ea2146"/>
+<approved hash="18,29,2867fbf227488509"/>
+<approved hash="18,29,3ea32b1501493698"/>
+<approved hash="18,29,70212746b54c30cb"/>
+<approved hash="18,29,2446aee12d4b5c5b"/>
 <approved hash="18,29,5c7b04b7597a76cc"/>
 <approved hash="18,29,19a36c9faccb217a"/>
 <approved hash="18,29,2909fc4cd2a98403"/>
 <approved hash="18,29,715b2642476730a5"/>
 <approved hash="18,29,3db128f3f7143618"/>
 <approved hash="18,29,242e5966d90e5ccb"/>
-<approved hash="18,29,19af9bb458ea2146"/>
-<approved hash="18,29,2867fbf227488509"/>
-<approved hash="18,29,5f5d07f5acd5752e"/>
-<approved hash="18,29,70212746b54c30cb"/>
-<approved hash="18,29,3ea32b1501493698"/>
-<approved hash="18,29,2446aee12d4b5c5b"/>
-<approved hash="18,29,1b59b08706785902"/>
+<approved hash="18,29,1923983554713eda"/>
+<approved hash="18,29,5e83060fb3947460"/>
+<approved hash="18,29,3721fd3035979a6b"/>
+<approved hash="18,29,3f092a8b1d52349c"/>
+<approved hash="18,29,6f933846bf412e4d"/>
+<approved hash="18,29,2456ade4214c4343"/>
 <approved hash="18,29,cc21cc3e3d2cf810"/>
+<approved hash="18,29,1b59b08706785902"/>
 <approved hash="18,29,80d45372fc9b476a"/>
 <approved hash="18,29,947147710028f409"/>
 <approved hash="18,29,8042814f86612353"/>
 <approved hash="18,29,be22997f0cb6c2a2"/>
 <approved hash="18,29,e343f691cd57ac34"/>
 <approved hash="18,29,8205b7f6b419d4eb"/>
-<approved hash="18,29,0a7d7e8b690d69ca"/>
 <approved hash="18,29,a0cb42d7f6569fda"/>
+<approved hash="18,29,0a7d7e8b690d69ca"/>
 <approved hash="18,29,cc6d33cf31e6d582"/>
 <approved hash="18,29,c558b8b1a257a88d"/>
 <approved hash="18,29,d5ded1a2d1a1d5dd"/>
-<approved hash="18,29,d2bcca80ca83d2bf"/>
-<approved hash="18,29,d72dd731d732d72e"/>
 <approved hash="18,29,cc03c817c814cc00"/>
-<approved hash="18,29,da8210b19a93dc06"/>
-<approved hash="18,29,d10465d2068c21d5"/>
-<approved hash="18,29,46ff9e9618d2d68c"/>
-<approved hash="18,29,4f61c17521e455d8"/>
-<approved hash="18,29,1e3dcac7fa035169"/>
-<approved hash="18,29,f4c8372e0f3a407a"/>
-<approved hash="18,29,41cd9e6c3503d164"/>
-<approved hash="18,29,da2e382ac71cdd9a"/>
-<approved hash="18,29,d368667859c5236b"/>
-<approved hash="18,29,1c93c847a4f25387"/>
-<approved hash="18,29,483bc6090c2b55c0"/>
-<approved hash="18,29,f4561dd352874380"/>
-<approved hash="18,29,da227e3b850ddd96"/>
-<approved hash="18,29,41d39e7676e0d164"/>
-<approved hash="18,29,d770627e1fe62771"/>
-<approved hash="18,29,1889cc5fe2c15791"/>
-<approved hash="18,29,4821c6194fde55d8"/>
-<approved hash="18,29,f44c5fd41080479a"/>
-<approved hash="18,29,5ffd800812a9cf0c"/>
-<approved hash="18,29,c5be0334f096dd7a"/>
-<approved hash="18,29,d1846450733721cb"/>
-<approved hash="18,29,56cfd8352bed4b58"/>
-<approved hash="18,29,1e53cac78e0851ab"/>
-<approved hash="18,29,ebf625a9653d4004"/>
-<approved hash="18,29,da220f2ff3f1ddbe"/>
-<approved hash="18,29,40939f3e0044d1d4"/>
-<approved hash="18,29,d02065366f1a2049"/>
-<approved hash="18,29,4929c69939c25450"/>
-<approved hash="18,29,1fe1cb4792f55009"/>
-<approved hash="18,29,f4c4295066f44022"/>
-<approved hash="18,29,d18c6452310821f5"/>
-<approved hash="18,29,43779c2e4cced30c"/>
-<approved hash="18,29,d9c2413daebfdd7e"/>
-<approved hash="18,29,4ad9c4bd75805760"/>
-<approved hash="18,29,1e6dcaffcc0f51a1"/>
-<approved hash="18,29,f7c867a23b564002"/>
-<approved hash="18,29,d03c65302d132043"/>
-<approved hash="18,29,40859f384245d1cc"/>
-<approved hash="18,29,da264d30b102ddba"/>
-<approved hash="18,29,1febcb4fd0f45013"/>
-<approved hash="18,29,493fc68d7bc95450"/>
-<approved hash="18,29,f42e6b4d24e94024"/>
-<approved hash="18,29,d1f86528c48d21eb"/>
-<approved hash="18,29,42cd9e9c5adbd294"/>
-<approved hash="18,29,dabe568258a4dc1a"/>
-<approved hash="18,29,4b5bc57963f355d0"/>
-<approved hash="18,29,1e03cac738fa5197"/>
-<approved hash="18,29,f4c6711bcd3f4060"/>
+<approved hash="18,29,d72dd731d732d72e"/>
+<approved hash="18,29,d2bcca80ca83d2bf"/>
+<approved hash="18,29,ce287b8814212023"/>
+<approved hash="18,29,db4664969688dd1a"/>
+<approved hash="18,29,41059e946bbfd034"/>
+<approved hash="18,29,001bcb4fe8ee4e07"/>
+<approved hash="18,29,4893c68953c755d8"/>
+<approved hash="18,29,f4ae42e702834088"/>
 <approved hash="18,29,41079e9e29b6d02c"/>
 <approved hash="18,29,d23c679256202025"/>
 <approved hash="18,29,db4226a5c897dd1e"/>
 <approved hash="18,29,4899c68d11d855d0"/>
 <approved hash="18,29,1c0dcb4faae75211"/>
 <approved hash="18,29,f4a800fa5c9e40a2"/>
-<approved hash="18,29,ce287b8814212023"/>
-<approved hash="18,29,db4664969688dd1a"/>
-<approved hash="18,29,41059e946bbfd034"/>
-<approved hash="18,29,4893c68953c755d8"/>
-<approved hash="18,29,001bcb4fe8ee4e07"/>
-<approved hash="18,29,f4ae42e702834088"/>
-<approved hash="18,29,d637c60bc60ad636"/>
+<approved hash="18,29,da2e382ac71cdd9a"/>
+<approved hash="18,29,d368667859c5236b"/>
+<approved hash="18,29,41cd9e6c3503d164"/>
+<approved hash="18,29,483bc6090c2b55c0"/>
+<approved hash="18,29,1c93c847a4f25387"/>
+<approved hash="18,29,f4561dd352874380"/>
+<approved hash="18,29,d1846450733721cb"/>
+<approved hash="18,29,c5be0334f096dd7a"/>
+<approved hash="18,29,5ffd800812a9cf0c"/>
+<approved hash="18,29,1e53cac78e0851ab"/>
+<approved hash="18,29,56cfd8352bed4b58"/>
+<approved hash="18,29,ebf625a9653d4004"/>
+<approved hash="18,29,da8210b19a93dc06"/>
+<approved hash="18,29,46ff9e9618d2d68c"/>
+<approved hash="18,29,d10465d2068c21d5"/>
+<approved hash="18,29,1e3dcac7fa035169"/>
+<approved hash="18,29,4f61c17521e455d8"/>
+<approved hash="18,29,f4c8372e0f3a407a"/>
+<approved hash="18,29,40939f3e0044d1d4"/>
+<approved hash="18,29,d02065366f1a2049"/>
+<approved hash="18,29,da220f2ff3f1ddbe"/>
+<approved hash="18,29,4929c69939c25450"/>
+<approved hash="18,29,1fe1cb4792f55009"/>
+<approved hash="18,29,f4c4295066f44022"/>
+<approved hash="18,29,d1f86528c48d21eb"/>
+<approved hash="18,29,dabe568258a4dc1a"/>
+<approved hash="18,29,42cd9e9c5adbd294"/>
+<approved hash="18,29,1e03cac738fa5197"/>
+<approved hash="18,29,4b5bc57963f355d0"/>
+<approved hash="18,29,f4c6711bcd3f4060"/>
+<approved hash="18,29,da227e3b850ddd96"/>
+<approved hash="18,29,d770627e1fe62771"/>
+<approved hash="18,29,41d39e7676e0d164"/>
+<approved hash="18,29,1889cc5fe2c15791"/>
+<approved hash="18,29,4821c6194fde55d8"/>
+<approved hash="18,29,f44c5fd41080479a"/>
+<approved hash="18,29,43779c2e4cced30c"/>
+<approved hash="18,29,d9c2413daebfdd7e"/>
+<approved hash="18,29,d18c6452310821f5"/>
+<approved hash="18,29,4ad9c4bd75805760"/>
+<approved hash="18,29,1e6dcaffcc0f51a1"/>
+<approved hash="18,29,f7c867a23b564002"/>
+<approved hash="18,29,d03c65302d132043"/>
+<approved hash="18,29,da264d30b102ddba"/>
+<approved hash="18,29,40859f384245d1cc"/>
+<approved hash="18,29,493fc68d7bc95450"/>
+<approved hash="18,29,1febcb4fd0f45013"/>
+<approved hash="18,29,f42e6b4d24e94024"/>
 <approved hash="18,29,c888c49cc49dc889"/>
+<approved hash="18,29,d637c60bc60ad636"/>
 <approved hash="18,29,d3a6dbbadbbbd3a7"/>
 <approved hash="18,29,d155dd29dd28d154"/>
 <approved hash="18,29,38b9198e618f5e87"/>
@@ -5007,15 +5381,16 @@ design rules under a new name.</description>
 <approved hash="18,29,dbecf30fb3339bd0"/>
 <approved hash="18,29,d410550ba3db89ec"/>
 <approved hash="18,29,9188b6bcfebeebb6"/>
+<approved hash="18,29,010a2671a671810a"/>
 <approved hash="18,29,05221a699a698522"/>
-<approved hash="18,29,3ada1e019e01bada"/>
-<approved hash="18,29,3ef212399239bef2"/>
-<approved hash="18,29,36820ac98ac9b682"/>
-<approved hash="18,29,32ea16d196d1b2ea"/>
 <approved hash="18,29,96747a3dd3c5a65c"/>
 <approved hash="18,29,23a18bdba4dbc45b"/>
-<approved hash="18,29,010a2671a671810a"/>
+<approved hash="18,29,3ef212399239bef2"/>
+<approved hash="18,29,3ada1e019e01bada"/>
+<approved hash="18,29,36820ac98ac9b682"/>
+<approved hash="18,29,32ea16d196d1b2ea"/>
 <approved hash="18,29,0d122259a2598d12"/>
+<approved hash="18,29,e364d42a749e5b41"/>
 <approved hash="18,29,7f56b4b734b0ff51"/>
 <approved hash="18,29,5752acb32cbcd75d"/>
 <approved hash="18,29,4f5e84bf04b8cf59"/>
@@ -5024,7 +5399,6 @@ design rules under a new name.</description>
 <approved hash="18,29,f7614c80cc8c776d"/>
 <approved hash="18,29,ef6d248ca4886f69"/>
 <approved hash="18,29,c7691c889c944775"/>
-<approved hash="18,29,e364d42a749e5b41"/>
 <approved hash="18,29,97f8a4274b674ff3"/>
 <approved hash="18,29,f4080f688f677407"/>
 <approved hash="18,29,ec042764a7636c03"/>
@@ -5037,112 +5411,112 @@ design rules under a new name.</description>
 <approved hash="18,29,86aca5f750b5bbfc"/>
 <approved hash="18,29,fcce172f54d2bf33"/>
 <approved hash="18,29,5396108a5dc34ef6"/>
-<approved hash="18,29,69494c72cc72e949"/>
-<approved hash="18,29,52d97702f702d2d9"/>
-<approved hash="18,29,6551489ac89ae551"/>
 <approved hash="18,29,56b178faf8fad6b1"/>
-<approved hash="18,29,5e8140cac0cade81"/>
-<approved hash="18,29,617944a2c4a2e179"/>
 <approved hash="18,29,5aa97cd2fcd2daa9"/>
+<approved hash="18,29,617944a2c4a2e179"/>
+<approved hash="18,29,5e8140cac0cade81"/>
+<approved hash="18,29,52d97702f702d2d9"/>
 <approved hash="18,29,6d21506ad06aed21"/>
+<approved hash="18,29,6551489ac89ae551"/>
+<approved hash="18,29,69494c72cc72e949"/>
 <approved hash="18,29,fd659fd1afd0895b"/>
-<approved hash="18,29,2f7cfa7202a08271"/>
-<approved hash="18,29,5fdf06768da67468"/>
-<approved hash="18,29,1a22bd7d7b4b2096"/>
-<approved hash="18,29,748d225b958b3695"/>
-<approved hash="18,29,3c25281d209434dc"/>
-<approved hash="18,29,244b8c9e0cca589d"/>
-<approved hash="18,29,1a268e764f4420ba"/>
-<approved hash="18,29,5e890738b90374c0"/>
-<approved hash="18,29,2830fd3c30558543"/>
-<approved hash="18,29,73ef254ba7be3117"/>
-<approved hash="18,29,3d3b288914833554"/>
-<approved hash="18,29,2429b80738a35f23"/>
+<approved hash="18,29,1abe95c4a6e2211a"/>
+<approved hash="18,29,5cc1069ca19d7798"/>
+<approved hash="18,29,29f4fd24d9cb84eb"/>
+<approved hash="18,29,720724c34fb03093"/>
+<approved hash="18,29,3f5f2b7d0cb934d4"/>
+<approved hash="18,29,24c1a251d1755f67"/>
+<approved hash="18,29,5d7b042eb7887600"/>
 <approved hash="18,29,2980fc5e2c4e84f5"/>
 <approved hash="18,29,19c2827b50f9207e"/>
-<approved hash="18,29,5d7b042eb7887600"/>
-<approved hash="18,29,3edd2ab91aca3664"/>
 <approved hash="18,29,726924fbbb4530a5"/>
+<approved hash="18,29,3edd2ab91aca3664"/>
 <approved hash="18,29,27cfb4e8271c5f05"/>
-<approved hash="18,29,3624e38409678523"/>
-<approved hash="18,29,5f09069490f97538"/>
 <approved hash="18,29,1b46a7d068ce201a"/>
+<approved hash="18,29,5f09069490f97538"/>
+<approved hash="18,29,3624e38409678523"/>
 <approved hash="18,29,6c1f254b9fa42f03"/>
 <approved hash="18,29,3c97288d3c8d34dc"/>
 <approved hash="18,29,24a991ad1ec95f8f"/>
-<approved hash="18,29,5cc1069ca19d7798"/>
-<approved hash="18,29,1abe95c4a6e2211a"/>
-<approved hash="18,29,29f4fd24d9cb84eb"/>
-<approved hash="18,29,3f5f2b7d0cb934d4"/>
-<approved hash="18,29,720724c34fb03093"/>
-<approved hash="18,29,24c1a251d1755f67"/>
-<approved hash="18,29,5f0b069ed2f07520"/>
-<approved hash="18,29,1b42e5e336d1201e"/>
-<approved hash="18,29,2a30ff9e4b668525"/>
-<approved hash="18,29,7009254bddad3315"/>
-<approved hash="18,29,3c9d28897e9234d4"/>
-<approved hash="18,29,24afd3b040d45fa5"/>
-<approved hash="18,29,2b64fe744483866b"/>
-<approved hash="18,29,1a2efb6c395a209a"/>
-<approved hash="18,29,5fc1066cce457468"/>
-<approved hash="18,29,3c3f280d636134c4"/>
-<approved hash="18,29,70972643d3b83283"/>
-<approved hash="18,29,2451ce994ecd5c87"/>
-<approved hash="18,29,2908fdde1bca84d5"/>
 <approved hash="18,29,1a82d3f764d52106"/>
+<approved hash="18,29,2908fdde1bca84d5"/>
 <approved hash="18,29,58f30696e3947380"/>
-<approved hash="18,29,3b652f714eae34dc"/>
 <approved hash="18,29,723924c38d49306d"/>
+<approved hash="18,29,3b652f714eae34dc"/>
 <approved hash="18,29,24cfe46413705f7d"/>
 <approved hash="18,29,5e9f073efb0274d8"/>
 <approved hash="18,29,1a22cc690db720be"/>
 <approved hash="18,29,282cfd3a725c8549"/>
-<approved hash="18,29,73e52543e5bf310d"/>
 <approved hash="18,29,3d2d289d56883554"/>
+<approved hash="18,29,73e52543e5bf310d"/>
 <approved hash="18,29,24c3fa1a7abe5f25"/>
-<approved hash="18,29,2988fc5c6e7184cb"/>
+<approved hash="18,29,5fc1066cce457468"/>
+<approved hash="18,29,2b64fe744483866b"/>
+<approved hash="18,29,1a2efb6c395a209a"/>
+<approved hash="18,29,3c3f280d636134c4"/>
+<approved hash="18,29,70972643d3b83283"/>
+<approved hash="18,29,2451ce994ecd5c87"/>
 <approved hash="18,29,41f11808e9ef6a00"/>
 <approved hash="18,29,05bec0720ed0207a"/>
-<approved hash="18,29,22cb363144a72a5c"/>
+<approved hash="18,29,2988fc5c6e7184cb"/>
 <approved hash="18,29,725724c3f94230af"/>
+<approved hash="18,29,22cb363144a72a5c"/>
 <approved hash="18,29,3bf1f6e379775f03"/>
-<approved hash="18,29,7e7cf872f8717e7f"/>
+<approved hash="18,29,2a30ff9e4b668525"/>
+<approved hash="18,29,1b42e5e336d1201e"/>
+<approved hash="18,29,5f0b069ed2f07520"/>
+<approved hash="18,29,3c9d28897e9234d4"/>
+<approved hash="18,29,7009254bddad3315"/>
+<approved hash="18,29,24afd3b040d45fa5"/>
+<approved hash="18,29,1a268e764f4420ba"/>
+<approved hash="18,29,2830fd3c30558543"/>
+<approved hash="18,29,5e890738b90374c0"/>
+<approved hash="18,29,73ef254ba7be3117"/>
+<approved hash="18,29,3d3b288914833554"/>
+<approved hash="18,29,2429b80738a35f23"/>
+<approved hash="18,29,2f7cfa7202a08271"/>
+<approved hash="18,29,5fdf06768da67468"/>
+<approved hash="18,29,1a22bd7d7b4b2096"/>
+<approved hash="18,29,3c25281d209434dc"/>
+<approved hash="18,29,748d225b958b3695"/>
+<approved hash="18,29,244b8c9e0cca589d"/>
+<approved hash="18,29,799bf1a9f1aa7998"/>
 <approved hash="18,29,f4e676f476f7f4e5"/>
 <approved hash="18,29,fd4f7d5d7d5efd4c"/>
-<approved hash="18,29,799bf1a9f1aa7998"/>
-<approved hash="18,29,a2ef1ce11ce1a2ef"/>
-<approved hash="18,29,21dc99ce99ce21dc"/>
+<approved hash="18,29,7e7cf872f8717e7f"/>
+<approved hash="18,29,a508153a153aa508"/>
 <approved hash="18,29,79d5d62f592bffc7"/>
 <approved hash="18,29,5e7845c01c433983"/>
-<approved hash="18,29,a508153a153aa508"/>
-<approved hash="18,29,7f9a4fd8cfd5ff97"/>
-<approved hash="18,29,ac176355e3562c14"/>
-<approved hash="18,29,c09490d610d34091"/>
-<approved hash="18,29,f511c453444c750e"/>
+<approved hash="18,29,21dc99ce99ce21dc"/>
+<approved hash="18,29,a2ef1ce11ce1a2ef"/>
 <approved hash="18,29,ec02dd415d4c6c0f"/>
 <approved hash="18,29,3f8ff1cc71cfbf8c"/>
 <approved hash="18,29,530c024f824ad309"/>
 <approved hash="18,29,668956cad6d5e696"/>
-<approved hash="18,29,84f4b2eba522e305"/>
+<approved hash="18,29,7f9a4fd8cfd5ff97"/>
+<approved hash="18,29,ac176355e3562c14"/>
+<approved hash="18,29,c09490d610d34091"/>
+<approved hash="18,29,f511c453444c750e"/>
 <approved hash="18,29,8d1bb39da4f2eaf8"/>
+<approved hash="18,29,84f4b2eba522e305"/>
 <approved hash="18,29,2363cf56cf452757"/>
 <approved hash="18,29,23a1cf56cf032775"/>
-<approved hash="18,29,19a0d45bd48f1df5"/>
 <approved hash="18,29,27a0d399d3ad23b3"/>
+<approved hash="18,29,19a0d45bd48f1df5"/>
 <approved hash="18,29,61a1b456b4036575"/>
 <approved hash="18,29,27a0d35bd38f23f5"/>
 <approved hash="18,29,124ad4556a2edcbd"/>
 <approved hash="18,29,1b85d5676bded504"/>
 <approved hash="18,29,7250046b707b0247"/>
 <approved hash="18,29,0fcbce6a99bfa01a"/>
-<approved hash="18,29,59bff2fdf277d5d6"/>
-<approved hash="18,29,23c6923d2793a1da"/>
-<approved hash="18,29,fd5a55ac95ac3d5a"/>
-<approved hash="18,29,f1336905a9053133"/>
-<approved hash="18,29,acfe0630c6306cfe"/>
 <approved hash="18,29,d80572d7b2d71805"/>
+<approved hash="18,29,acfe0630c6306cfe"/>
 <approved hash="18,29,a3571ba9dba96357"/>
+<approved hash="18,29,f1336905a9053133"/>
 <approved hash="18,29,c5ac7d7ebd7e05ac"/>
+<approved hash="18,29,fd5a55ac95ac3d5a"/>
+<approved hash="18,29,23c6923d2793a1da"/>
+<approved hash="18,29,59bff2fdf277d5d6"/>
 <approved hash="18,29,c3d69c5d78e0ef6d"/>
 <approved hash="18,29,ab999c9f9c99ab9f"/>
 <approved hash="18,29,3a9f2d992d9b3a9d"/>
@@ -5152,31 +5526,31 @@ design rules under a new name.</description>
 <approved hash="18,29,b192a49ca49eb190"/>
 <approved hash="18,29,4e91339f33914e9f"/>
 <approved hash="18,29,df9fc291c293df9d"/>
-<approved hash="18,29,b27ac23942343277"/>
-<approved hash="18,29,9df7aeb42eb71df4"/>
-<approved hash="18,29,497499371932c971"/>
-<approved hash="18,29,34f145b2c5adb4ee"/>
 <approved hash="18,29,00d27390f39d80df"/>
 <approved hash="18,29,2f5f1f1d9f1eaf5c"/>
 <approved hash="18,29,fbdc289ea89b7bd9"/>
 <approved hash="18,29,8659f41b74040646"/>
-<approved hash="18,29,ae2002eec2ee6e20"/>
+<approved hash="18,29,b27ac23942343277"/>
+<approved hash="18,29,9df7aeb42eb71df4"/>
+<approved hash="18,29,497499371932c971"/>
+<approved hash="18,29,34f145b2c5adb4ee"/>
+<approved hash="18,29,f3ed6ddbaddb33ed"/>
 <approved hash="18,29,c77279a0b9a00772"/>
+<approved hash="18,29,ec3f44ed84ed2c3f"/>
 <approved hash="18,29,a1891f77df776189"/>
 <approved hash="18,29,ff84517291723f84"/>
+<approved hash="18,29,ae2002eec2ee6e20"/>
 <approved hash="18,29,dadb7609b6091adb"/>
-<approved hash="18,29,f3ed6ddbaddb33ed"/>
-<approved hash="18,29,ec3f44ed84ed2c3f"/>
 <approved hash="18,29,6d00fd47a03777f2"/>
 <approved hash="18,29,b59436dec8564600"/>
-<approved hash="18,29,d5162554a559551b"/>
-<approved hash="18,29,f89bc9d949da7898"/>
-<approved hash="18,29,ac18fc5a7c5f2c1d"/>
-<approved hash="18,29,539da0df20c3d381"/>
 <approved hash="18,29,2ba9d4ec54e1aba4"/>
 <approved hash="18,29,06243861b8628627"/>
 <approved hash="18,29,52a70de28de7d2a2"/>
 <approved hash="18,29,ad225167d17b2d3e"/>
+<approved hash="18,29,d5162554a559551b"/>
+<approved hash="18,29,f89bc9d949da7898"/>
+<approved hash="18,29,ac18fc5a7c5f2c1d"/>
+<approved hash="18,29,539da0df20c3d381"/>
 <approved hash="18,29,b1c18fab0560bf78"/>
 <approved hash="18,29,fed09fe4afe788ee"/>
 <approved hash="18,29,8a2c96f05d32d6fb"/>
@@ -5192,27 +5566,26 @@ design rules under a new name.</description>
 <approved hash="18,29,af41c56705606f46"/>
 <approved hash="18,29,e9c60ee0ceed29cb"/>
 <approved hash="18,29,69b982081955cbc8"/>
+<approved hash="18,29,f82154f554faf82e"/>
 <approved hash="18,29,0bcca310a31f0bc3"/>
 <approved hash="18,29,b29e6da26dadb291"/>
-<approved hash="18,29,f82154f554faf82e"/>
-<approved hash="18,29,87822cc9e3d39620"/>
-<approved hash="18,29,afa1296fdd831531"/>
 <approved hash="18,29,919de2352d788664"/>
 <approved hash="18,29,12cfe04614a99660"/>
+<approved hash="18,29,afa1296fdd831531"/>
+<approved hash="18,29,87822cc9e3d39620"/>
 <approved hash="18,29,973c580828092502"/>
-<approved hash="18,29,28ae904ef16fd1b0"/>
-<approved hash="18,29,45c050a1109b05fa"/>
-<approved hash="18,29,dde5c8f0b30f581c"/>
 <approved hash="18,29,6da0f27f115332b2"/>
 <approved hash="18,29,b958ac39ec03f962"/>
 <approved hash="18,29,0405c665bb460928"/>
 <approved hash="18,29,f839a991268553aa"/>
+<approved hash="18,29,28ae904ef16fd1b0"/>
+<approved hash="18,29,45c050a1109b05fa"/>
+<approved hash="18,29,dde5c8f0b30f581c"/>
 <approved hash="18,29,a2784ba44ba4a278"/>
 <approved hash="18,29,1b2a851685161b2a"/>
 <approved hash="18,29,5195bc41bc415195"/>
 <approved hash="18,29,6fb2e861a3ddb93e"/>
 <approved hash="18,29,61f3f6a0e7204075"/>
-<approved hash="18,29,4a363a403fc84fbe"/>
 <approved hash="18,29,a1b4a7546e1991e8"/>
 <approved hash="18,29,406f271dcd1fb851"/>
 <approved hash="18,29,85ec3036c54bc804"/>
@@ -5220,10 +5593,10 @@ design rules under a new name.</description>
 <approved hash="18,29,55d386c8bd635ad0"/>
 <approved hash="18,29,488e1f4ad597f77a"/>
 <approved hash="18,29,b623d42854283623"/>
-<approved hash="18,29,a84fced44ed4284f"/>
-<approved hash="18,29,b3ded1a351a333de"/>
 <approved hash="18,29,ad59d3de53de2d59"/>
 <approved hash="18,29,aed4cd594d592ed4"/>
+<approved hash="18,29,a84fced44ed4284f"/>
+<approved hash="18,29,b3ded1a351a333de"/>
 <approved hash="18,29,99325c921c9fd93f"/>
 <approved hash="18,29,e23fd99f999da23d"/>
 <approved hash="18,29,6f3d229d629b2f3b"/>
@@ -5244,11 +5617,11 @@ design rules under a new name.</description>
 <approved hash="18,29,656fc84d084ba569"/>
 <approved hash="18,29,9fea01c8c1d75ff5"/>
 <approved hash="18,29,d6753f57ff521670"/>
-<approved hash="18,29,8343a0ce20ce0343"/>
-<approved hash="18,29,80cebe493e4900ce"/>
-<approved hash="18,29,85d8a343234305d8"/>
-<approved hash="18,29,9e49bc343c341e49"/>
 <approved hash="18,29,9bb4b9bf39bf1bb4"/>
+<approved hash="18,29,9e49bc343c341e49"/>
+<approved hash="18,29,80cebe493e4900ce"/>
+<approved hash="18,29,8343a0ce20ce0343"/>
+<approved hash="18,29,85d8a343234305d8"/>
 <approved hash="18,29,66172b4a10e613d6"/>
 <approved hash="18,29,bf309e425841570e"/>
 <approved hash="4,1,99e0c68920d793da"/>
@@ -5273,30 +5646,30 @@ design rules under a new name.</description>
 <approved hash="5,1,f3a781730d4d3015"/>
 <approved hash="5,1,5e608283bcb1ce65"/>
 <approved hash="5,1,f3a5847113543c75"/>
-<approved hash="5,1,f0a382770b3e30f7"/>
 <approved hash="5,1,5de08161a128cde5"/>
+<approved hash="5,1,f0a382770b3e30f7"/>
 <approved hash="5,1,6c3fa7bd844f3fa9"/>
 <approved hash="5,1,f02782f310d43077"/>
-<approved hash="5,1,a152d5130a1e00af"/>
 <approved hash="5,1,a25ed0ae0c430043"/>
+<approved hash="5,1,a152d5130a1e00af"/>
 <approved hash="5,1,743908c76b4a11b8"/>
 <approved hash="5,1,a1decefd11f00023"/>
-<approved hash="5,1,4bfc828e81ab5b1e"/>
 <approved hash="5,1,ceab817e1c52a58a"/>
-<approved hash="5,1,81808418b86d68e7"/>
+<approved hash="5,1,4bfc828e81ab5b1e"/>
 <approved hash="5,1,c242b0b0db8d5fd1"/>
-<approved hash="5,1,8e52d515a9977731"/>
-<approved hash="5,1,5d345674f819053a"/>
-<approved hash="5,1,8edecefbb27977bd"/>
-<approved hash="5,1,d61a8a42ba09ce56"/>
+<approved hash="5,1,81808418b86d68e7"/>
 <approved hash="5,1,8d5ed0a8afca77dd"/>
-<approved hash="5,1,d2c3556470b7f822"/>
-<approved hash="5,1,5db056f4e3ff05b2"/>
+<approved hash="5,1,8e52d515a9977731"/>
 <approved hash="5,1,f8b23d4dcfc0f630"/>
 <approved hash="5,1,d5a813a610595650"/>
+<approved hash="5,1,8edecefbb27977bd"/>
+<approved hash="5,1,5db056f4e3ff05b2"/>
+<approved hash="5,1,d2c3556470b7f822"/>
+<approved hash="5,1,5d345674f819053a"/>
+<approved hash="5,1,d61a8a42ba09ce56"/>
 <approved hash="5,1,cc15f0c6fd13b8aa"/>
-<approved hash="5,1,432f5e62d5f15aad"/>
 <approved hash="5,1,bcb5acf7ad70399e"/>
+<approved hash="5,1,432f5e62d5f15aad"/>
 <approved hash="4,1,a5b24005070006a0"/>
 <approved hash="4,1,2457ea0960fe7aed"/>
 <approved hash="4,1,0addabb0a0125c34"/>
@@ -5318,20 +5691,20 @@ design rules under a new name.</description>
 <approved hash="5,1,3b06a2d9043325ad"/>
 <approved hash="5,1,1fc9678cc53ad7c9"/>
 <approved hash="5,1,91f5acba780416f1"/>
-<approved hash="5,1,3a1fa1770de03dce"/>
-<approved hash="5,1,b9a607e3bc427d99"/>
 <approved hash="5,1,938d479e47c791e4"/>
 <approved hash="5,1,3b5ca069046ebdd5"/>
 <approved hash="5,1,3b5ca069046ebdd5"/>
 <approved hash="5,1,bfbf086f35d6fa80"/>
+<approved hash="5,1,3a1fa1770de03dce"/>
+<approved hash="5,1,b9a607e3bc427d99"/>
 <approved hash="5,1,1f5ca812eeeeacd9"/>
 <approved hash="5,1,a9e6b46ae97f2060"/>
 <approved hash="5,1,8ebc82ad82d28cf3"/>
+<approved hash="5,1,3af4891a882b4c93"/>
+<approved hash="5,1,93a6012a20a8e2b6"/>
+<approved hash="5,1,51f454bb7e0681f0"/>
 <approved hash="5,1,69ca6a517c8ecc8c"/>
 <approved hash="5,1,519754a9769e00d1"/>
-<approved hash="5,1,93a6012a20a8e2b6"/>
-<approved hash="5,1,3af4891a882b4c93"/>
-<approved hash="5,1,51f454bb7e0681f0"/>
 <approved hash="5,1,69ca6a517c8ecc8c"/>
 <approved hash="5,1,519754a9769e00d1"/>
 <approved hash="5,1,8e2ba7e7a77d4a6e"/>
@@ -5346,13 +5719,13 @@ design rules under a new name.</description>
 <approved hash="5,1,bbbf0c6213dbdc80"/>
 <approved hash="5,1,1b64ab47e49d2363"/>
 <approved hash="5,1,bda603ee9a4f5b99"/>
-<approved hash="5,1,cadfb613cc03bd42"/>
 <approved hash="5,1,af75d9a066f52956"/>
+<approved hash="5,1,cadfb613cc03bd42"/>
 <approved hash="5,1,acdfb0030657e556"/>
 <approved hash="5,1,332f2bd0bd105ef9"/>
 <approved hash="5,1,1f2a33b0a5106ae4"/>
-<approved hash="5,1,5fba07435b5c68bc"/>
 <approved hash="5,1,9216a6acfaaaa705"/>
+<approved hash="5,1,5fba07435b5c68bc"/>
 <approved hash="5,1,149d0adcb9dc59f9"/>
 <approved hash="5,1,04ac1c50a11042fa"/>
 <approved hash="5,1,28a90430b91076e7"/>
@@ -5378,13 +5751,13 @@ design rules under a new name.</description>
 <approved hash="19,1,5b52a88e0d006470"/>
 <approved hash="19,1,24dcdcf06a990f6d"/>
 <approved hash="19,1,cfc19561fdb733e6"/>
-<approved hash="19,1,c5da362c3736c4c0"/>
 <approved hash="19,1,cd863e703736c4c0"/>
+<approved hash="19,1,c5da362c3736c4c0"/>
 <approved hash="19,1,a3d5b123b03ca2ca"/>
-<approved hash="19,1,b44f7e77a164649c"/>
-<approved hash="19,1,8d864070493484c2"/>
-<approved hash="19,1,02844f724fb70241"/>
 <approved hash="19,1,050448f2492f04d9"/>
+<approved hash="19,1,b44f7e77a164649c"/>
+<approved hash="19,1,02844f724fb70241"/>
+<approved hash="19,1,8d864070493484c2"/>
 <approved hash="19,1,ab0aa3fcd5c4dd70"/>
 <approved hash="19,1,e53596c3971be4ed"/>
 <approved hash="19,1,fd6c911a9781fbf7"/>
