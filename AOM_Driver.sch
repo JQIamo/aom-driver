@@ -4545,6 +4545,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="C32" library="rlc-jqi" deviceset="CAP" device="0603" value="DNP"/>
 <part name="R28" library="rlc-jqi" deviceset="RES" device="0603" value="DNP"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
+<part name="VSS3" library="supply1" deviceset="VSS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5336,6 +5337,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="C32" gate="G$1" x="-115.57" y="-176.53" rot="R90"/>
 <instance part="R28" gate="G$1" x="-121.92" y="-170.18" rot="R180"/>
 <instance part="GND47" gate="1" x="-115.57" y="-183.896" rot="MR0"/>
+<instance part="VSS3" gate="G$1" x="-386.08" y="-92.71"/>
 </instances>
 <busses>
 </busses>
@@ -7376,6 +7378,11 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-302.26" y1="-100.33" x2="-292.1" y2="-100.33" width="0.1524" layer="91"/>
 <label x="-297.18" y="-100.33" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="1" pin="4"/>
+<wire x1="-424.18" y1="-102.87" x2="-440.69" y2="-102.87" width="0.1524" layer="91"/>
+<label x="-443.23" y="-102.87" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$18" class="0">
 <segment>
@@ -7944,6 +7951,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-365.76" y1="-66.04" x2="-355.6" y2="-66.04" width="0.1524" layer="91"/>
 <wire x1="-355.6" y1="-66.04" x2="-355.6" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="SV2" gate="1" pin="15"/>
+<wire x1="-408.94" y1="-87.63" x2="-386.08" y2="-87.63" width="0.1524" layer="91"/>
+<wire x1="-386.08" y1="-87.63" x2="-386.08" y2="-90.17" width="0.1524" layer="91"/>
+<pinref part="VSS3" gate="G$1" pin="VSS"/>
+</segment>
 </net>
 <net name="N$53" class="0">
 <segment>
@@ -7963,6 +7976,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <segment>
 <pinref part="U5" gate="G$1" pin="SB"/>
 <wire x1="-62.23" y1="39.37" x2="-82.042" y2="39.37" width="0.1524" layer="91"/>
+<label x="-88.9" y="40.64" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="-118.11" y1="-170.18" x2="-115.57" y2="-170.18" width="0.1524" layer="91"/>
