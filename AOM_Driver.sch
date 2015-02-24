@@ -7182,9 +7182,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <label x="-363.22" y="-125.73" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="7"/>
-<wire x1="-402.59" y1="-148.59" x2="-393.7" y2="-148.59" width="0.1524" layer="91"/>
-<label x="-401.32" y="-148.59" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="9"/>
+<wire x1="-402.59" y1="-146.05" x2="-393.7" y2="-146.05" width="0.1524" layer="91"/>
+<label x="-401.32" y="-146.05" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SCK" class="0">
@@ -7199,9 +7199,9 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <label x="-363.22" y="-130.81" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV1" gate="1" pin="9"/>
-<wire x1="-402.59" y1="-146.05" x2="-393.7" y2="-146.05" width="0.1524" layer="91"/>
-<label x="-401.32" y="-146.05" size="1.778" layer="95"/>
+<pinref part="SV1" gate="1" pin="7"/>
+<wire x1="-402.59" y1="-148.59" x2="-393.7" y2="-148.59" width="0.1524" layer="91"/>
+<label x="-401.32" y="-148.59" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$37" class="0">
