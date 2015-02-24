@@ -2481,6 +2481,46 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <smd name="P$1" x="0" y="-1.27" dx="2.54" dy="2.54" layer="1" stop="no" thermals="no" cream="no"/>
 <smd name="P$2" x="0" y="0" dx="2.54" dy="2.54" layer="1" stop="no" thermals="no" cream="no"/>
 </package>
+<package name="SOT89">
+<description>&lt;b&gt;SOT98&lt;/b&gt; PK (R-PDSO-G3)&lt;p&gt;
+Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="21"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="21"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<smd name="1" x="-1.499" y="-1.981" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
+<smd name="3" x="1.499" y="-1.981" dx="1" dy="1.5" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0" y="-1.727" dx="1" dy="2" layer="1" stop="no" cream="no"/>
+<smd name="2@1" x="0" y="0.94" dx="2.2" dy="3.7" layer="1" roundness="100" cream="no"/>
+<text x="-2.54" y="3.175" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2.4051" y="-4.3449" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
+<rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
+<rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
+<rectangle x1="-0.4" y1="-2.68" x2="0.4" y2="-1.28" layer="31"/>
+<rectangle x1="-2.025" y1="-2.775" x2="-0.975" y2="-1.2" layer="29"/>
+<rectangle x1="0.975" y1="-2.775" x2="2.025" y2="-1.2" layer="29"/>
+<rectangle x1="-0.525" y1="-2.775" x2="0.525" y2="-1.2" layer="29"/>
+<rectangle x1="1.1" y1="-2.68" x2="1.9" y2="-1.28" layer="31"/>
+<rectangle x1="-1.9" y1="-2.68" x2="-1.1" y2="-1.28" layer="31"/>
+<rectangle x1="-0.9" y1="0" x2="0.9" y2="2.2" layer="31"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CHOKE">
@@ -2949,6 +2989,19 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="0" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
 <text x="-2.54" y="-2.54" size="1.27" layer="95">Jumper</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="78XX2GND">
+<wire x1="-5.08" y1="-5.08" x2="7.62" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="2.54" x2="-5.08" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-5.08" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="3.175" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.27" y="-4.318" size="1.524" layer="95">GND</text>
+<pin name="VI" x="-7.62" y="0" length="short" direction="in"/>
+<pin name="GND" x="0" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="VO" x="10.16" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="GND@1" x="2.54" y="-7.62" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3653,6 +3706,32 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="78L*" prefix="IC">
+<description>&lt;b&gt;POSITOIV-VOLTAGE REGULATORS&lt;/b&gt;&lt;p&gt;
+Output up to 100 mA&lt;b&gt;
+Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
+<gates>
+<gate name="G$1" symbol="78XX2GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="F" package="SOT89">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GND@1" pad="2@1"/>
+<connect gate="G$1" pin="VI" pad="3"/>
+<connect gate="G$1" pin="VO" pad="1"/>
+</connects>
+<technologies>
+<technology name="05"/>
+<technology name="08"/>
+<technology name="09"/>
+<technology name="10"/>
+<technology name="12"/>
+<technology name="15"/>
 </technologies>
 </device>
 </devices>
@@ -4477,37 +4556,10 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="P-13" library="supply1" deviceset="-5V" device=""/>
 <part name="P-14" library="supply1" deviceset="V-" device=""/>
 <part name="GND83" library="supply1" deviceset="GND" device=""/>
-<part name="IC5" library="regulator-jqi" deviceset="ADM7150" device="">
-<attribute name="PARTNO" value="ADM7150ARDZ-5.0-ND"/>
-</part>
-<part name="C98" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
-<attribute name="PARTNO" value="1276-2890-1-ND"/>
-</part>
-<part name="C99" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
-<attribute name="PARTNO" value="1276-2396-1-ND"/>
-</part>
-<part name="C100" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
-<attribute name="PARTNO" value="1276-2890-1-ND"/>
-</part>
-<part name="C101" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
-<attribute name="PARTNO" value="1276-2890-1-ND"/>
-</part>
-<part name="C102" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
-<attribute name="PARTNO" value="1276-2396-1-ND"/>
-</part>
-<part name="L32" library="rlc-jqi" deviceset="INDUCTOR" device="-0805" value="Ferrite 1k">
-<attribute name="PARTNO" value="445-5223-1-ND"/>
-</part>
-<part name="P+25" library="supply1" deviceset="V+" device=""/>
-<part name="VDD1" library="supply1" deviceset="VDD" device=""/>
 <part name="VDD2" library="supply1" deviceset="VDD" device=""/>
 <part name="VSS1" library="supply1" deviceset="VSS" device=""/>
 <part name="VSS4" library="supply1" deviceset="VSS" device=""/>
 <part name="VSS7" library="supply1" deviceset="VSS" device=""/>
-<part name="VSS5" library="supply1" deviceset="VSS" device=""/>
-<part name="VSS6" library="supply1" deviceset="VSS" device=""/>
-<part name="VSS8" library="supply1" deviceset="VSS" device=""/>
-<part name="VSS9" library="supply1" deviceset="VSS" device=""/>
 <part name="VSS10" library="supply1" deviceset="VSS" device=""/>
 <part name="VSS11" library="supply1" deviceset="VSS" device=""/>
 <part name="VDD4" library="supply1" deviceset="VDD" device=""/>
@@ -4546,6 +4598,25 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <part name="R28" library="rlc-jqi" deviceset="RES" device="0603" value="DNP"/>
 <part name="GND47" library="supply1" deviceset="GND" device=""/>
 <part name="VSS3" library="supply1" deviceset="VSS" device=""/>
+<part name="C79" library="rlc-jqi" deviceset="CAP" device="0805" value="1uF">
+<attribute name="PARTNO" value="1276-2396-1-ND"/>
+</part>
+<part name="C82" library="rlc-jqi" deviceset="CAP" device="0603" value="100nF">
+<attribute name="PARTNO" value="1276-1936-1-ND"/>
+</part>
+<part name="IC9" library="aom_driver" deviceset="78L*" device="F" technology="05">
+<attribute name="PARTNO" value="MC78L05ACHXCT-ND"/>
+</part>
+<part name="VDD7" library="supply1" deviceset="VDD" device=""/>
+<part name="VSS23" library="supply1" deviceset="VSS" device=""/>
+<part name="C84" library="rlc-jqi" deviceset="CAP" device="0805" value="10uF">
+<attribute name="PARTNO" value="1276-2890-1-ND"/>
+</part>
+<part name="L12" library="rlc-jqi" deviceset="INDUCTOR" device="-0805" value="Ferrite 1k">
+<attribute name="PARTNO" value="445-5223-1-ND"/>
+</part>
+<part name="P+9" library="supply1" deviceset="V+" device=""/>
+<part name="VSS24" library="supply1" deviceset="VSS" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4618,7 +4689,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <text x="-269.24" y="-181.61" size="1.778" layer="98">(for future integrator hold...)</text>
 <text x="-168.91" y="-154.94" size="1.778" layer="98">do we want/need +3V/12V on daughter board?</text>
 <text x="-162.56" y="-157.48" size="1.778" layer="98">what about -5V?</text>
-<text x="-369.57" y="-180.34" size="1.778" layer="91">make sure these are &lt; 0.2 ohm ESR</text>
 <text x="-140.208" y="-165.354" size="1.778" layer="98">Anti-alias RC filter (optional)</text>
 </plain>
 <instances>
@@ -5267,37 +5337,10 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="P-13" gate="1" x="313.69" y="86.36"/>
 <instance part="P-14" gate="1" x="262.89" y="85.09"/>
 <instance part="GND83" gate="1" x="314.96" y="102.87"/>
-<instance part="IC5" gate="G$1" x="-345.44" y="-195.58">
-<attribute name="PARTNO" x="-345.44" y="-195.58" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C98" gate="G$1" x="-368.3" y="-204.47" rot="R90">
-<attribute name="PARTNO" x="-368.3" y="-204.47" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C99" gate="G$1" x="-378.46" y="-199.39" rot="R90">
-<attribute name="PARTNO" x="-378.46" y="-199.39" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C100" gate="G$1" x="-297.18" y="-191.77" rot="R90">
-<attribute name="PARTNO" x="-297.18" y="-191.77" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C101" gate="G$1" x="-389.89" y="-189.23" rot="R90">
-<attribute name="PARTNO" x="-389.89" y="-189.23" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C102" gate="G$1" x="-307.34" y="-196.85" rot="R90">
-<attribute name="PARTNO" x="-307.34" y="-196.85" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="L32" gate="G$1" x="-400.05" y="-185.42">
-<attribute name="PARTNO" x="-400.05" y="-185.42" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="P+25" gate="1" x="-410.21" y="-181.61"/>
-<instance part="VDD1" gate="G$1" x="-297.18" y="-180.34"/>
 <instance part="VDD2" gate="G$1" x="-236.22" y="-88.9"/>
 <instance part="VSS1" gate="G$1" x="-266.7" y="-109.22"/>
 <instance part="VSS4" gate="G$1" x="215.9" y="-106.68"/>
 <instance part="VSS7" gate="G$1" x="-261.62" y="-165.1"/>
-<instance part="VSS5" gate="G$1" x="-368.3" y="-213.36"/>
-<instance part="VSS6" gate="G$1" x="-327.66" y="-205.74"/>
-<instance part="VSS8" gate="G$1" x="-297.18" y="-200.66"/>
-<instance part="VSS9" gate="G$1" x="-389.89" y="-195.58"/>
 <instance part="VSS10" gate="G$1" x="77.216" y="-195.58"/>
 <instance part="VSS11" gate="G$1" x="77.216" y="-267.97"/>
 <instance part="VDD4" gate="G$1" x="61.976" y="-248.92"/>
@@ -5338,6 +5381,25 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <instance part="R28" gate="G$1" x="-121.92" y="-170.18" rot="R180"/>
 <instance part="GND47" gate="1" x="-115.57" y="-183.896" rot="MR0"/>
 <instance part="VSS3" gate="G$1" x="-386.08" y="-92.71"/>
+<instance part="C79" gate="G$1" x="-335.28" y="-236.22" rot="R270">
+<attribute name="PARTNO" x="-335.28" y="-236.22" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C82" gate="G$1" x="-294.64" y="-236.22" rot="R90">
+<attribute name="PARTNO" x="-294.64" y="-236.22" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="IC9" gate="G$1" x="-317.5" y="-232.41">
+<attribute name="PARTNO" x="-317.5" y="-232.41" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="VDD7" gate="G$1" x="-294.64" y="-223.52"/>
+<instance part="VSS23" gate="G$1" x="-316.23" y="-248.92"/>
+<instance part="C84" gate="G$1" x="-351.79" y="-236.22" rot="R90">
+<attribute name="PARTNO" x="-351.79" y="-236.22" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="L12" gate="G$1" x="-361.95" y="-232.41">
+<attribute name="PARTNO" x="-361.95" y="-232.41" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="P+9" gate="1" x="-372.11" y="-228.6"/>
+<instance part="VSS24" gate="G$1" x="-351.79" y="-242.57"/>
 </instances>
 <busses>
 </busses>
@@ -6062,10 +6124,10 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-194.31" y1="-156.21" x2="-194.31" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="L32" gate="G$1" pin="P$1"/>
-<wire x1="-410.21" y1="-185.42" x2="-403.86" y2="-185.42" width="0.1524" layer="91"/>
-<pinref part="P+25" gate="1" pin="V+"/>
-<wire x1="-410.21" y1="-184.15" x2="-410.21" y2="-185.42" width="0.1524" layer="91"/>
+<pinref part="L12" gate="G$1" pin="P$1"/>
+<wire x1="-372.11" y1="-232.41" x2="-365.76" y2="-232.41" width="0.1524" layer="91"/>
+<pinref part="P+9" gate="1" pin="V+"/>
+<wire x1="-372.11" y1="-231.14" x2="-372.11" y2="-232.41" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+3V" class="0">
@@ -7686,57 +7748,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-408.94" y1="-90.17" x2="-397.51" y2="-90.17" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$80" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="REF_SENSE"/>
-<wire x1="-330.2" y1="-195.58" x2="-327.66" y2="-195.58" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="REF"/>
-<wire x1="-330.2" y1="-190.5" x2="-327.66" y2="-190.5" width="0.1524" layer="91"/>
-<wire x1="-327.66" y1="-190.5" x2="-327.66" y2="-193.04" width="0.1524" layer="91"/>
-<pinref part="C102" gate="G$1" pin="P$2"/>
-<wire x1="-327.66" y1="-193.04" x2="-327.66" y2="-195.58" width="0.1524" layer="91"/>
-<wire x1="-307.34" y1="-193.04" x2="-327.66" y2="-193.04" width="0.1524" layer="91"/>
-<junction x="-327.66" y="-193.04"/>
-</segment>
-</net>
-<net name="N$81" class="0">
-<segment>
-<pinref part="C99" gate="G$1" pin="P$2"/>
-<wire x1="-358.14" y1="-195.58" x2="-378.46" y2="-195.58" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="BYP"/>
-</segment>
-</net>
-<net name="VLA2" class="0">
-<segment>
-<pinref part="C98" gate="G$1" pin="P$2"/>
-<pinref part="IC5" gate="G$1" pin="VREG"/>
-<wire x1="-368.3" y1="-200.66" x2="-358.14" y2="-200.66" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$82" class="0">
-<segment>
-<pinref part="C101" gate="G$1" pin="P$2"/>
-<pinref part="IC5" gate="G$1" pin="VIN"/>
-<wire x1="-389.89" y1="-185.42" x2="-365.76" y2="-185.42" width="0.1524" layer="91"/>
-<wire x1="-365.76" y1="-185.42" x2="-358.14" y2="-185.42" width="0.1524" layer="91"/>
-<pinref part="IC5" gate="G$1" pin="EN"/>
-<wire x1="-358.14" y1="-190.5" x2="-365.76" y2="-190.5" width="0.1524" layer="91"/>
-<wire x1="-365.76" y1="-190.5" x2="-365.76" y2="-185.42" width="0.1524" layer="91"/>
-<junction x="-365.76" y="-185.42"/>
-<pinref part="L32" gate="G$1" pin="P$2"/>
-<wire x1="-396.24" y1="-185.42" x2="-389.89" y2="-185.42" width="0.1524" layer="91"/>
-<junction x="-389.89" y="-185.42"/>
-</segment>
-</net>
 <net name="VDD" class="0">
-<segment>
-<pinref part="IC5" gate="G$1" pin="VOUT"/>
-<pinref part="VDD1" gate="G$1" pin="VDD"/>
-<wire x1="-330.2" y1="-185.42" x2="-297.18" y2="-185.42" width="0.1524" layer="91"/>
-<wire x1="-297.18" y1="-185.42" x2="-297.18" y2="-182.88" width="0.1524" layer="91"/>
-<pinref part="C100" gate="G$1" pin="P$2"/>
-<wire x1="-297.18" y1="-187.96" x2="-297.18" y2="-185.42" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="L27" gate="G$1" pin="P$1"/>
 <pinref part="VDD2" gate="G$1" pin="VDD"/>
@@ -7767,6 +7779,14 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="182.88" y1="-118.11" x2="182.88" y2="-120.65" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-120.65" x2="189.23" y2="-120.65" width="0.1524" layer="91"/>
 <pinref part="VDD3" gate="G$1" pin="VDD"/>
+</segment>
+<segment>
+<pinref part="IC9" gate="G$1" pin="VO"/>
+<pinref part="C82" gate="G$1" pin="P$2"/>
+<wire x1="-307.34" y1="-232.41" x2="-294.64" y2="-232.41" width="0.1524" layer="91"/>
+<pinref part="VDD7" gate="G$1" pin="VDD"/>
+<wire x1="-294.64" y1="-226.06" x2="-294.64" y2="-232.41" width="0.1524" layer="91"/>
+<junction x="-294.64" y="-232.41"/>
 </segment>
 </net>
 <net name="VSS" class="0">
@@ -7806,35 +7826,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-237.49" y1="-161.29" x2="-261.62" y2="-161.29" width="0.1524" layer="91"/>
 <pinref part="VSS7" gate="G$1" pin="VSS"/>
 <wire x1="-261.62" y1="-161.29" x2="-261.62" y2="-162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C98" gate="G$1" pin="P$1"/>
-<wire x1="-378.46" y1="-208.28" x2="-368.3" y2="-208.28" width="0.1524" layer="91"/>
-<junction x="-368.3" y="-208.28"/>
-<pinref part="C99" gate="G$1" pin="P$1"/>
-<wire x1="-378.46" y1="-203.2" x2="-378.46" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="-368.3" y1="-208.28" x2="-368.3" y2="-210.82" width="0.1524" layer="91"/>
-<pinref part="VSS5" gate="G$1" pin="VSS"/>
-</segment>
-<segment>
-<pinref part="IC5" gate="G$1" pin="GND"/>
-<wire x1="-330.2" y1="-200.66" x2="-327.66" y2="-200.66" width="0.1524" layer="91"/>
-<wire x1="-327.66" y1="-200.66" x2="-327.66" y2="-203.2" width="0.1524" layer="91"/>
-<pinref part="C102" gate="G$1" pin="P$1"/>
-<wire x1="-307.34" y1="-200.66" x2="-327.66" y2="-200.66" width="0.1524" layer="91"/>
-<junction x="-327.66" y="-200.66"/>
-<pinref part="VSS6" gate="G$1" pin="VSS"/>
-</segment>
-<segment>
-<pinref part="C100" gate="G$1" pin="P$1"/>
-<wire x1="-297.18" y1="-198.12" x2="-297.18" y2="-195.58" width="0.1524" layer="91"/>
-<pinref part="VSS8" gate="G$1" pin="VSS"/>
-</segment>
-<segment>
-<pinref part="C101" gate="G$1" pin="P$1"/>
-<wire x1="-389.89" y1="-193.04" x2="-389.89" y2="-191.77" width="0.1524" layer="91"/>
-<pinref part="VSS9" gate="G$1" pin="VSS"/>
-<junction x="-389.89" y="-193.04"/>
 </segment>
 <segment>
 <pinref part="C81" gate="G$1" pin="P$1"/>
@@ -7957,6 +7948,27 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-386.08" y1="-87.63" x2="-386.08" y2="-90.17" width="0.1524" layer="91"/>
 <pinref part="VSS3" gate="G$1" pin="VSS"/>
 </segment>
+<segment>
+<pinref part="C79" gate="G$1" pin="P$2"/>
+<pinref part="IC9" gate="G$1" pin="GND"/>
+<wire x1="-335.28" y1="-240.03" x2="-317.5" y2="-240.03" width="0.1524" layer="91"/>
+<pinref part="IC9" gate="G$1" pin="GND@1"/>
+<wire x1="-317.5" y1="-240.03" x2="-316.23" y2="-240.03" width="0.1524" layer="91"/>
+<junction x="-317.5" y="-240.03"/>
+<pinref part="C82" gate="G$1" pin="P$1"/>
+<wire x1="-316.23" y1="-240.03" x2="-314.96" y2="-240.03" width="0.1524" layer="91"/>
+<wire x1="-314.96" y1="-240.03" x2="-294.64" y2="-240.03" width="0.1524" layer="91"/>
+<junction x="-314.96" y="-240.03"/>
+<pinref part="VSS23" gate="G$1" pin="VSS"/>
+<wire x1="-316.23" y1="-246.38" x2="-316.23" y2="-240.03" width="0.1524" layer="91"/>
+<junction x="-316.23" y="-240.03"/>
+</segment>
+<segment>
+<pinref part="C84" gate="G$1" pin="P$1"/>
+<wire x1="-351.79" y1="-240.03" x2="-351.79" y2="-238.76" width="0.1524" layer="91"/>
+<pinref part="VSS24" gate="G$1" pin="VSS"/>
+<junction x="-351.79" y="-240.03"/>
+</segment>
 </net>
 <net name="N$53" class="0">
 <segment>
@@ -7985,6 +7997,19 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <wire x1="-115.57" y1="-172.72" x2="-115.57" y2="-170.18" width="0.1524" layer="91"/>
 <label x="-115.57" y="-169.672" size="1.778" layer="95"/>
 <pinref part="R28" gate="G$1" pin="P$1"/>
+</segment>
+</net>
+<net name="N$85" class="0">
+<segment>
+<pinref part="C84" gate="G$1" pin="P$2"/>
+<pinref part="L12" gate="G$1" pin="P$2"/>
+<wire x1="-358.14" y1="-232.41" x2="-351.79" y2="-232.41" width="0.1524" layer="91"/>
+<pinref part="IC9" gate="G$1" pin="VI"/>
+<pinref part="C79" gate="G$1" pin="P$1"/>
+<wire x1="-325.12" y1="-232.41" x2="-335.28" y2="-232.41" width="0.1524" layer="91"/>
+<wire x1="-351.79" y1="-232.41" x2="-335.28" y2="-232.41" width="0.1524" layer="91"/>
+<junction x="-351.79" y="-232.41"/>
+<junction x="-335.28" y="-232.41"/>
 </segment>
 </net>
 </nets>
