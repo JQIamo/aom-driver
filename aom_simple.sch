@@ -2337,10 +2337,18 @@ modify as necessary!</description>
 <part name="OUTPUT_TTL" library="aom_driver" deviceset="SP3T" device=""/>
 <part name="U1" library="aom_driver" deviceset="NEWHAVEN_LCD" device=""/>
 <part name="U$1" library="aom_driver" deviceset="TEENSY_3.1_BASIC" device=""/>
-<part name="RF_SEL" library="connector-jqi" deviceset="BNC" device="-V"/>
-<part name="VCO_EXT" library="connector-jqi" deviceset="BNC" device="-V"/>
-<part name="ATT_EXT" library="connector-jqi" deviceset="BNC" device="-V"/>
-<part name="OUTPUT_EXT" library="connector-jqi" deviceset="BNC" device="-V"/>
+<part name="RF_SEL" library="connector-jqi" deviceset="BNC" device="-V">
+<attribute name="PARTNO" value="A32262-ND"/>
+</part>
+<part name="VCO_EXT" library="connector-jqi" deviceset="BNC" device="-V">
+<attribute name="PARTNO" value="A32262-ND"/>
+</part>
+<part name="ATT_EXT" library="connector-jqi" deviceset="BNC" device="-V">
+<attribute name="PARTNO" value="A32262-ND"/>
+</part>
+<part name="OUTPUT_EXT" library="connector-jqi" deviceset="BNC" device="-V">
+<attribute name="PARTNO" value="A32262-ND"/>
+</part>
 <part name="SW_ENC" library="aom_driver" deviceset="ROTARY_PEC11R" device="">
 <attribute name="PARTNO" value="PEC11R-4120F-S0018-ND"/>
 </part>
@@ -2590,10 +2598,18 @@ R2 is lower resistor in partitoin</text>
 <instance part="OUTPUT_TTL" gate="G$1" x="22.86" y="83.82"/>
 <instance part="U1" gate="G$1" x="515.62" y="127"/>
 <instance part="U$1" gate="G$1" x="411.48" y="121.92"/>
-<instance part="RF_SEL" gate="G$1" x="-5.08" y="124.46"/>
-<instance part="VCO_EXT" gate="G$1" x="60.96" y="119.38"/>
-<instance part="ATT_EXT" gate="G$1" x="106.68" y="93.98"/>
-<instance part="OUTPUT_EXT" gate="G$1" x="-2.54" y="83.82"/>
+<instance part="RF_SEL" gate="G$1" x="-5.08" y="124.46">
+<attribute name="PARTNO" x="-5.08" y="124.46" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="VCO_EXT" gate="G$1" x="60.96" y="119.38">
+<attribute name="PARTNO" x="60.96" y="119.38" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="ATT_EXT" gate="G$1" x="106.68" y="93.98">
+<attribute name="PARTNO" x="106.68" y="93.98" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="OUTPUT_EXT" gate="G$1" x="-2.54" y="83.82">
+<attribute name="PARTNO" x="-2.54" y="83.82" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="SW_ENC" gate="G$1" x="365.76" y="193.04">
 <attribute name="PARTNO" x="365.76" y="193.04" size="1.778" layer="96" display="off"/>
 </instance>
