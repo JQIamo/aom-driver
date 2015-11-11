@@ -2966,6 +2966,15 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <text x="-5.08" y="7.62" size="1.778" layer="95">&gt;NAME</text>
 <text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="AND">
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-7.62" width="0.254" layer="94" curve="-180"/>
+<pin name="OUT" x="5.08" y="-2.54" visible="off" length="short" rot="R180"/>
+<pin name="INA" x="-5.08" y="0" visible="off" length="short"/>
+<pin name="INB" x="-5.08" y="-5.08" visible="off" length="short"/>
+<text x="0" y="5.08" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TCCH-80" prefix="L">
@@ -4235,6 +4244,27 @@ Source: http://focus.ti.com/lit/ds/symlink/ua78l05.pdf</description>
 <connect gate="G$2" pin="V-" pad="3"/>
 <connect gate="INVERTER" pin="IN" pad="2"/>
 <connect gate="INVERTER" pin="OUT" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UHS_AND" prefix="IC">
+<description>UHS AND gate, eg, NC7SZ08P5X</description>
+<gates>
+<gate name="G$1" symbol="AND" x="0" y="2.54"/>
+<gate name="G$2" symbol="PWR+-" x="17.78" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="INA" pad="1"/>
+<connect gate="G$1" pin="INB" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$2" pin="V+" pad="5"/>
+<connect gate="G$2" pin="V-" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
