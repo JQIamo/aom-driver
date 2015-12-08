@@ -3651,6 +3651,10 @@ www.minicircuits.com&lt;br&gt;
 <part name="C28" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="445-14417-1-ND"/>
 </part>
+<part name="AUX_TRIGGER" library="connector-jqi" deviceset="BNC" device="-V">
+<attribute name="PARTNO" value="A32262-ND"/>
+</part>
+<part name="GND49" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4089,6 +4093,10 @@ R2 is lower resistor in partitoin</text>
 <instance part="C28" gate="G$1" x="441.96" y="-40.64">
 <attribute name="PARTNO" x="441.96" y="-40.64" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="AUX_TRIGGER" gate="G$1" x="360.68" y="137.16">
+<attribute name="PARTNO" x="360.68" y="137.16" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND49" gate="1" x="365.76" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -4632,6 +4640,12 @@ R2 is lower resistor in partitoin</text>
 <wire x1="553.72" y1="81.28" x2="558.8" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="558.8" y1="81.28" x2="558.8" y2="83.82" width="0.1524" layer="91"/>
 <junction x="558.8" y="83.82"/>
+</segment>
+<segment>
+<pinref part="AUX_TRIGGER" gate="G$1" pin="2"/>
+<pinref part="GND49" gate="1" pin="GND"/>
+<wire x1="363.22" y1="134.62" x2="365.76" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="365.76" y1="134.62" x2="365.76" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -5870,6 +5884,13 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="9/RX2/PWM"/>
 <wire x1="388.62" y1="127" x2="381" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$32" class="0">
+<segment>
+<pinref part="AUX_TRIGGER" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="5/PWM"/>
+<wire x1="363.22" y1="137.16" x2="388.62" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
