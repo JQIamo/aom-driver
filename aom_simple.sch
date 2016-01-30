@@ -3033,6 +3033,20 @@ www.minicircuits.com&lt;br&gt;
 <text x="2.794" y="-1.651" size="0.635" layer="25" rot="R90">&gt;VALUE</text>
 <smd name="PADDLE-GND" x="0" y="0" dx="1.27" dy="0.635" layer="1" stop="no" thermals="no" cream="no"/>
 <circle x="2.032" y="2.032" radius="0.359209375" width="0.127" layer="21"/>
+<polygon width="0.127" layer="29">
+<vertex x="-1.143" y="0.635"/>
+<vertex x="-1.143" y="0.254"/>
+<vertex x="-2.032" y="0.254"/>
+<vertex x="-2.032" y="-0.254"/>
+<vertex x="-1.143" y="-0.254"/>
+<vertex x="-1.143" y="-0.635"/>
+<vertex x="1.143" y="-0.635"/>
+<vertex x="1.143" y="-0.254"/>
+<vertex x="2.032" y="-0.254"/>
+<vertex x="2.032" y="0.254"/>
+<vertex x="1.143" y="0.254"/>
+<vertex x="1.143" y="0.635"/>
+</polygon>
 </package>
 <package name="BH292">
 <description>PCB Layout PL-052 (http://www.minicircuits.com/pcb/98-pl052.pdf)</description>
@@ -3795,42 +3809,6 @@ www.minicircuits.com&lt;br&gt;
 <attribute name="PARTNO" value="P49.9HCT-ND"/>
 </part>
 <part name="GND34" library="supply1" deviceset="GND" device=""/>
-<part name="R21" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R22" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R23" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R24" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R25" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R26" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R27" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R28" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R29" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R30" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R31" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
-<part name="R32" library="jqi_passives" deviceset="R_SMD" device="R0603" value="0R">
-<attribute name="PARTNO" value="P0.0GCT-ND"/>
-</part>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="GND27" library="supply1" deviceset="GND" device=""/>
@@ -3948,7 +3926,9 @@ www.minicircuits.com&lt;br&gt;
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
 <part name="TP2" library="aom_driver" deviceset="TESTPAD" device=""/>
-<part name="L4" library="jqi_passives" deviceset="L_FERRITE_SMD" device="_1008"/>
+<part name="L4" library="jqi_passives" deviceset="L_FERRITE_SMD" device="_1008" value="620nH">
+<attribute name="PARTNO" value="535-10549-1-ND"/>
+</part>
 <part name="RF4" library="rf-jqi" deviceset="ATTENUATOR" device="-0805"/>
 <part name="RF6" library="rf-jqi" deviceset="ATTENUATOR" device="-0805"/>
 <part name="RF7" library="rf-jqi" deviceset="ATTENUATOR" device="-0805"/>
@@ -4243,42 +4223,6 @@ R2 is lower resistor in partitoin</text>
 <attribute name="PARTNO" x="-12.7" y="-68.58" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="GND34" gate="1" x="-20.32" y="-63.5"/>
-<instance part="R21" gate="G$1" x="-190.5" y="-83.82">
-<attribute name="PARTNO" x="-190.5" y="-83.82" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R22" gate="G$1" x="-218.44" y="-58.42" rot="R180">
-<attribute name="PARTNO" x="-218.44" y="-58.42" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R23" gate="G$1" x="-220.98" y="-40.64" rot="R180">
-<attribute name="PARTNO" x="-220.98" y="-40.64" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R24" gate="G$1" x="-114.3" y="-7.62" rot="R90">
-<attribute name="PARTNO" x="-114.3" y="-7.62" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R25" gate="G$1" x="-104.14" y="-5.08" rot="R90">
-<attribute name="PARTNO" x="-104.14" y="-5.08" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R26" gate="G$1" x="-76.2" y="-53.34" rot="R180">
-<attribute name="PARTNO" x="-76.2" y="-53.34" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R27" gate="G$1" x="2.54" y="-48.26" rot="R270">
-<attribute name="PARTNO" x="2.54" y="-48.26" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R28" gate="G$1" x="12.7" y="-48.26" rot="R90">
-<attribute name="PARTNO" x="12.7" y="-48.26" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R29" gate="G$1" x="38.1" y="-91.44">
-<attribute name="PARTNO" x="38.1" y="-91.44" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R30" gate="G$1" x="-162.56" y="53.34" rot="R90">
-<attribute name="PARTNO" x="-162.56" y="53.34" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R31" gate="G$1" x="-152.4" y="48.26" rot="R90">
-<attribute name="PARTNO" x="-152.4" y="48.26" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="R32" gate="G$1" x="-185.42" y="-12.7" rot="R180">
-<attribute name="PARTNO" x="-185.42" y="-12.7" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="GND2" gate="1" x="-185.42" y="-22.86"/>
 <instance part="GND4" gate="1" x="-182.88" y="-99.06"/>
 <instance part="GND27" gate="1" x="-78.74" y="-68.58"/>
@@ -4399,7 +4343,9 @@ R2 is lower resistor in partitoin</text>
 <instance part="GND51" gate="1" x="-50.8" y="-111.76"/>
 <instance part="GND52" gate="1" x="-114.3" y="-170.18"/>
 <instance part="TP2" gate="G$1" x="-40.64" y="-129.54" rot="R90"/>
-<instance part="L4" gate="G$1" x="-114.3" y="-132.08" rot="R90"/>
+<instance part="L4" gate="G$1" x="-114.3" y="-132.08" rot="R90">
+<attribute name="PARTNO" x="-114.3" y="-132.08" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="RF4" gate="G$1" x="91.44" y="10.16" rot="R180"/>
 <instance part="RF6" gate="G$1" x="66.04" y="96.52"/>
 <instance part="RF7" gate="G$1" x="5.08" y="-149.86"/>
@@ -5320,24 +5266,42 @@ R2 is lower resistor in partitoin</text>
 <junction x="447.04" y="40.64"/>
 </segment>
 <segment>
-<pinref part="R28" gate="G$1" pin="2"/>
 <wire x1="12.7" y1="-43.18" x2="30.48" y2="-43.18" width="0.1524" layer="91"/>
 <label x="17.78" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SW4" gate="G$1" pin="V+"/>
+<wire x1="12.7" y1="-71.12" x2="12.7" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C36" gate="G$1" pin="2"/>
+<wire x1="12.7" y1="-55.88" x2="27.94" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="12.7" y="-55.88"/>
+<wire x1="12.7" y1="-43.18" x2="12.7" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R25" gate="G$1" pin="2"/>
-<wire x1="-104.14" y1="0" x2="-104.14" y2="10.16" width="0.1524" layer="91"/>
 <label x="-101.6" y="2.54" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="V+"/>
+<pinref part="C34" gate="G$1" pin="2"/>
+<wire x1="-104.14" y1="-17.78" x2="-104.14" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-104.14" y1="-17.78" x2="-83.82" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-104.14" y="-17.78"/>
+<wire x1="-104.14" y1="10.16" x2="-104.14" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="-162.56" y1="58.42" x2="-162.56" y2="66.04" width="0.1524" layer="91"/>
 <label x="-172.72" y="63.5" size="1.778" layer="95"/>
+<pinref part="SW2" gate="G$1" pin="V+"/>
+<pinref part="C38" gate="G$1" pin="2"/>
+<wire x1="-162.56" y1="43.18" x2="-162.56" y2="5.08" width="0.1524" layer="91"/>
+<wire x1="-185.42" y1="43.18" x2="-162.56" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-162.56" y="43.18"/>
+<wire x1="-162.56" y1="66.04" x2="-162.56" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="-223.52" y1="-58.42" x2="-238.76" y2="-58.42" width="0.1524" layer="91"/>
 <label x="-233.68" y="-58.42" size="1.778" layer="95"/>
+<wire x1="-238.76" y1="-58.42" x2="-187.96" y2="-58.42" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="V+"/>
+<wire x1="-187.96" y1="-58.42" x2="-160.02" y2="-58.42" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-58.42" x2="-160.02" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="C39" gate="G$1" pin="2"/>
+<wire x1="-187.96" y1="-60.96" x2="-187.96" y2="-58.42" width="0.1524" layer="91"/>
+<junction x="-187.96" y="-58.42"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="G$2" pin="V+"/>
@@ -5393,9 +5357,9 @@ R2 is lower resistor in partitoin</text>
 <junction x="-218.44" y="96.52"/>
 </segment>
 <segment>
-<pinref part="R29" gate="G$1" pin="2"/>
-<wire x1="43.18" y1="-91.44" x2="71.12" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="-91.44" x2="71.12" y2="-91.44" width="0.1524" layer="91"/>
 <label x="60.96" y="-91.44" size="1.778" layer="95"/>
+<pinref part="SW4" gate="G$1" pin="TTL"/>
 </segment>
 </net>
 <net name="RF_SEL_TTL" class="0">
@@ -5421,9 +5385,10 @@ R2 is lower resistor in partitoin</text>
 <wire x1="-246.38" y1="116.84" x2="-279.4" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="-71.12" y1="-53.34" x2="-60.96" y2="-53.34" width="0.1524" layer="91"/>
 <label x="-66.04" y="-53.34" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="TTL"/>
+<wire x1="-93.98" y1="-55.88" x2="-93.98" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-53.34" x2="-60.96" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -5777,24 +5742,46 @@ R2 is lower resistor in partitoin</text>
 <pinref part="IC11" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
-<pinref part="R27" gate="G$1" pin="1"/>
 <wire x1="2.54" y1="-43.18" x2="-10.16" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-2.54" y="-40.64" size="1.778" layer="95"/>
+<pinref part="SW4" gate="G$1" pin="V-"/>
+<wire x1="2.54" y1="-71.12" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
+<pinref part="C35" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-50.8" x2="0" y2="-50.8" width="0.1524" layer="91"/>
+<wire x1="0" y1="-50.8" x2="0" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="0" y1="-55.88" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
+<junction x="2.54" y="-55.88"/>
+<wire x1="2.54" y1="-43.18" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R24" gate="G$1" pin="2"/>
-<wire x1="-114.3" y1="-2.54" x2="-114.3" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-17.78" x2="-114.3" y2="10.16" width="0.1524" layer="91"/>
 <label x="-119.38" y="5.08" size="1.778" layer="95"/>
+<pinref part="SW1" gate="G$1" pin="V-"/>
+<pinref part="C33" gate="G$1" pin="2"/>
+<wire x1="-114.3" y1="-17.78" x2="-114.3" y2="-35.56" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="-17.78" x2="-114.3" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-114.3" y="-17.78"/>
 </segment>
 <segment>
-<pinref part="R31" gate="G$1" pin="2"/>
-<wire x1="-152.4" y1="53.34" x2="-152.4" y2="63.5" width="0.1524" layer="91"/>
 <label x="-147.32" y="58.42" size="1.778" layer="95"/>
+<pinref part="SW2" gate="G$1" pin="V-"/>
+<wire x1="-152.4" y1="43.18" x2="-152.4" y2="5.08" width="0.1524" layer="91"/>
+<pinref part="C37" gate="G$1" pin="2"/>
+<wire x1="-152.4" y1="43.18" x2="-142.24" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="43.18" x2="-142.24" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="63.5" x2="-152.4" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-152.4" y="43.18"/>
 </segment>
 <segment>
-<pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="-226.06" y1="-40.64" x2="-241.3" y2="-40.64" width="0.1524" layer="91"/>
 <label x="-236.22" y="-40.64" size="1.778" layer="95"/>
+<wire x1="-241.3" y1="-40.64" x2="-195.58" y2="-40.64" width="0.1524" layer="91"/>
+<pinref part="SW3" gate="G$1" pin="V-"/>
+<wire x1="-195.58" y1="-40.64" x2="-149.86" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="-40.64" x2="-149.86" y2="-66.04" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="2"/>
+<wire x1="-193.04" y1="-43.18" x2="-195.58" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-195.58" y1="-43.18" x2="-195.58" y2="-40.64" width="0.1524" layer="91"/>
+<junction x="-195.58" y="-40.64"/>
 </segment>
 </net>
 <net name="VCO" class="0">
@@ -5862,28 +5849,13 @@ R2 is lower resistor in partitoin</text>
 <wire x1="60.96" y1="-149.86" x2="81.28" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$44" class="0">
+<net name="A" class="0">
 <segment>
-<pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="-93.98" y1="-53.34" x2="-81.28" y2="-53.34" width="0.1524" layer="91"/>
-<pinref part="SW1" gate="G$1" pin="TTL"/>
-<wire x1="-93.98" y1="-55.88" x2="-93.98" y2="-53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$46" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="2"/>
-<wire x1="-172.72" y1="-83.82" x2="-185.42" y2="-83.82" width="0.1524" layer="91"/>
+<wire x1="-172.72" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
+<label x="-220.98" y="-83.82" size="1.778" layer="95"/>
 <pinref part="SW3" gate="G$1" pin="TTL"/>
 <wire x1="-172.72" y1="-83.82" x2="-172.72" y2="-86.36" width="0.1524" layer="91"/>
 <wire x1="-172.72" y1="-86.36" x2="-170.18" y2="-86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="A" class="0">
-<segment>
-<pinref part="R21" gate="G$1" pin="1"/>
-<wire x1="-195.58" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-220.98" y="-81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="IC9" gate="G$1" pin="OUT"/>
@@ -5891,19 +5863,12 @@ R2 is lower resistor in partitoin</text>
 <label x="-172.72" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$50" class="0">
-<segment>
-<pinref part="R32" gate="G$1" pin="1"/>
-<wire x1="-172.72" y1="-12.7" x2="-180.34" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="SW2" gate="G$1" pin="TTL"/>
-<wire x1="-172.72" y1="-12.7" x2="-172.72" y2="-15.24" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="V" class="0">
 <segment>
-<pinref part="R32" gate="G$1" pin="2"/>
-<wire x1="-190.5" y1="-12.7" x2="-210.82" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-172.72" y1="-12.7" x2="-210.82" y2="-12.7" width="0.1524" layer="91"/>
 <label x="-205.74" y="-12.7" size="1.778" layer="95"/>
+<pinref part="SW2" gate="G$1" pin="TTL"/>
+<wire x1="-172.72" y1="-12.7" x2="-172.72" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC10" gate="G$1" pin="OUT"/>
@@ -5925,106 +5890,6 @@ R2 is lower resistor in partitoin</text>
 <pinref part="SW3" gate="G$1" pin="IN2"/>
 <wire x1="-124.46" y1="-53.34" x2="-124.46" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-83.82" x2="-139.7" y2="-83.82" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$22" class="0">
-<segment>
-<pinref part="R25" gate="G$1" pin="1"/>
-<pinref part="SW1" gate="G$1" pin="V+"/>
-<wire x1="-104.14" y1="-10.16" x2="-104.14" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C34" gate="G$1" pin="2"/>
-<wire x1="-104.14" y1="-17.78" x2="-104.14" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-104.14" y1="-17.78" x2="-83.82" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="-104.14" y="-17.78"/>
-</segment>
-</net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="R24" gate="G$1" pin="1"/>
-<pinref part="SW1" gate="G$1" pin="V-"/>
-<wire x1="-114.3" y1="-12.7" x2="-114.3" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="C33" gate="G$1" pin="2"/>
-<wire x1="-114.3" y1="-17.78" x2="-114.3" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-124.46" y1="-17.78" x2="-114.3" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="-114.3" y="-17.78"/>
-</segment>
-</net>
-<net name="N$41" class="0">
-<segment>
-<pinref part="R31" gate="G$1" pin="1"/>
-<pinref part="SW2" gate="G$1" pin="V-"/>
-<wire x1="-152.4" y1="43.18" x2="-152.4" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="C37" gate="G$1" pin="2"/>
-<wire x1="-152.4" y1="43.18" x2="-142.24" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="43.18" x2="-142.24" y2="40.64" width="0.1524" layer="91"/>
-<junction x="-152.4" y="43.18"/>
-</segment>
-</net>
-<net name="N$49" class="0">
-<segment>
-<pinref part="SW2" gate="G$1" pin="V+"/>
-<wire x1="-162.56" y1="48.26" x2="-162.56" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<pinref part="C38" gate="G$1" pin="2"/>
-<wire x1="-162.56" y1="43.18" x2="-162.56" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-185.42" y1="43.18" x2="-162.56" y2="43.18" width="0.1524" layer="91"/>
-<junction x="-162.56" y="43.18"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="R29" gate="G$1" pin="1"/>
-<pinref part="SW4" gate="G$1" pin="TTL"/>
-<wire x1="33.02" y1="-91.44" x2="22.86" y2="-91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="SW4" gate="G$1" pin="V-"/>
-<pinref part="R27" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-71.12" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="2.54" y1="-55.88" x2="2.54" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-5.08" y1="-50.8" x2="0" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="0" y1="-50.8" x2="0" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="0" y1="-55.88" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="2.54" y="-55.88"/>
-</segment>
-</net>
-<net name="N$40" class="0">
-<segment>
-<pinref part="SW4" gate="G$1" pin="V+"/>
-<pinref part="R28" gate="G$1" pin="1"/>
-<wire x1="12.7" y1="-71.12" x2="12.7" y2="-55.88" width="0.1524" layer="91"/>
-<pinref part="C36" gate="G$1" pin="2"/>
-<wire x1="12.7" y1="-55.88" x2="12.7" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="12.7" y1="-55.88" x2="27.94" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="12.7" y="-55.88"/>
-</segment>
-</net>
-<net name="$234" class="0">
-<segment>
-<pinref part="R22" gate="G$1" pin="1"/>
-<wire x1="-213.36" y1="-58.42" x2="-187.96" y2="-58.42" width="0.1524" layer="91"/>
-<pinref part="SW3" gate="G$1" pin="V+"/>
-<wire x1="-187.96" y1="-58.42" x2="-160.02" y2="-58.42" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="-58.42" x2="-160.02" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="C39" gate="G$1" pin="2"/>
-<wire x1="-187.96" y1="-60.96" x2="-187.96" y2="-58.42" width="0.1524" layer="91"/>
-<junction x="-187.96" y="-58.42"/>
-</segment>
-</net>
-<net name="$2352" class="0">
-<segment>
-<pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="-215.9" y1="-40.64" x2="-195.58" y2="-40.64" width="0.1524" layer="91"/>
-<pinref part="SW3" gate="G$1" pin="V-"/>
-<wire x1="-195.58" y1="-40.64" x2="-149.86" y2="-40.64" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="-40.64" x2="-149.86" y2="-66.04" width="0.1524" layer="91"/>
-<pinref part="C40" gate="G$1" pin="2"/>
-<wire x1="-193.04" y1="-43.18" x2="-195.58" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-195.58" y1="-43.18" x2="-195.58" y2="-40.64" width="0.1524" layer="91"/>
-<junction x="-195.58" y="-40.64"/>
 </segment>
 </net>
 <net name="N$24" class="0">
