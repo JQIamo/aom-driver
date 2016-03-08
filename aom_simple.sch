@@ -3062,7 +3062,7 @@ www.minicircuits.com&lt;br&gt;
 <wire x1="-3.81" y1="-3.81" x2="-3.81" y2="3.81" width="0.127" layer="51"/>
 <text x="-2.54" y="5.08" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-6.35" size="1.27" layer="27">&gt;VALUE</text>
-<circle x="-5.08" y="-3.81" radius="0.762" width="0.254" layer="27"/>
+<circle x="-5.08" y="-3.81" radius="0.762" width="0.254" layer="21"/>
 </package>
 <package name="MC1630">
 <description>MC1638 footprint. http://www.minicircuits.com/case_styles/MC1630.pdf</description>
@@ -3886,10 +3886,10 @@ www.minicircuits.com&lt;br&gt;
 <attribute name="PARTNO" value="NC7SZ14M5XCT-ND"/>
 </part>
 <part name="IC9" library="aom_driver" deviceset="UHS_AND" device="">
-<attribute name="PARTNO" value="NC7SZ08P5XCT-ND"/>
+<attribute name="PARTNO" value="NC7SZ08M5XCT-ND"/>
 </part>
 <part name="IC10" library="aom_driver" deviceset="UHS_AND" device="">
-<attribute name="PARTNO" value="NC7SZ08P5XCT-ND"/>
+<attribute name="PARTNO" value="NC7SZ08M5XCT-ND"/>
 </part>
 <part name="GND28" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="+5V" device=""/>
@@ -3940,6 +3940,13 @@ www.minicircuits.com&lt;br&gt;
 <part name="TP3" library="aom_driver" deviceset="TESTPAD" device=""/>
 <part name="TP5" library="aom_driver" deviceset="TESTPAD" device=""/>
 <part name="TP6" library="aom_driver" deviceset="TESTPAD" device=""/>
+<part name="R17" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+</part>
+<part name="GND55" library="supply1" deviceset="GND" device=""/>
+<part name="R21" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="P10.0KHCT-ND"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3952,6 +3959,8 @@ www.minicircuits.com&lt;br&gt;
 R2 is lower resistor in partitoin</text>
 <text x="350.52" y="-15.24" size="1.778" layer="91">-15V</text>
 <text x="495.3" y="-15.24" size="1.778" layer="91">-5V</text>
+<text x="25.4" y="134.62" size="1.778" layer="91">pullup -&gt; VCO default</text>
+<text x="33.02" y="86.36" size="1.778" layer="91">pulldown -&gt; off default</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-35.56" y="-35.56"/>
@@ -4057,8 +4066,8 @@ R2 is lower resistor in partitoin</text>
 <attribute name="PARTNO" x="294.64" y="226.06" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND19" gate="1" x="381" y="228.6"/>
-<instance part="C7" gate="G$1" x="81.28" y="83.82">
-<attribute name="PARTNO" x="81.28" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="C7" gate="G$1" x="83.82" y="83.82">
+<attribute name="PARTNO" x="83.82" y="83.82" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="R9" gate="G$1" x="119.38" y="55.88" rot="MR180">
 <attribute name="PARTNO" x="119.38" y="55.88" size="1.778" layer="96" display="off"/>
@@ -4100,7 +4109,7 @@ R2 is lower resistor in partitoin</text>
 <attribute name="PARTNO" x="55.88" y="-15.24" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND26" gate="1" x="0" y="104.14" rot="MR0"/>
-<instance part="P+8" gate="1" x="-22.86" y="121.92"/>
+<instance part="P+8" gate="1" x="5.08" y="139.7"/>
 <instance part="C13" gate="G$1" x="17.78" y="48.26" rot="R90">
 <attribute name="PARTNO" x="17.78" y="48.26" size="1.778" layer="96" display="off"/>
 </instance>
@@ -4172,8 +4181,10 @@ R2 is lower resistor in partitoin</text>
 <instance part="R14" gate="G$1" x="347.98" y="-40.64" rot="MR90">
 <attribute name="PARTNO" x="347.98" y="-40.64" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R15" gate="G$1" x="347.98" y="-55.88" rot="MR90">
+<instance part="R15" gate="G$1" x="347.98" y="-55.88" smashed="yes" rot="MR90">
 <attribute name="PARTNO" x="347.98" y="-55.88" size="1.778" layer="96" display="off"/>
+<attribute name="NAME" x="350.8375" y="-58.1025" size="1.524" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="343.2175" y="-57.6262" size="1.524" layer="96" rot="MR90"/>
 </instance>
 <instance part="C25" gate="G$1" x="299.72" y="-38.1">
 <attribute name="PARTNO" x="299.72" y="-38.1" size="1.778" layer="96" display="off"/>
@@ -4181,8 +4192,8 @@ R2 is lower resistor in partitoin</text>
 <instance part="C26" gate="G$1" x="360.68" y="-38.1">
 <attribute name="PARTNO" x="360.68" y="-38.1" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="AUX_VNEG" gate="G$1" x="355.6" y="-25.4">
-<attribute name="PARTNO" x="355.6" y="-25.4" size="1.778" layer="96" display="off"/>
+<instance part="AUX_VNEG" gate="G$1" x="358.14" y="-25.4">
+<attribute name="PARTNO" x="358.14" y="-25.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="AUX_VPOS2" gate="G$1" x="393.7" y="48.26">
 <attribute name="PARTNO" x="393.7" y="48.26" size="1.778" layer="96" display="off"/>
@@ -4274,13 +4285,13 @@ R2 is lower resistor in partitoin</text>
 <instance part="RF5" gate="G$1" x="-58.42" y="-35.56">
 <attribute name="PARTNO" x="-58.42" y="-35.56" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="MON" gate="G$1" x="-35.56" y="-73.66" rot="R90">
-<attribute name="PARTNO" x="-35.56" y="-73.66" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="MON" gate="G$1" x="-40.64" y="-50.8" rot="R90">
+<attribute name="PARTNO" x="-40.64" y="-50.8" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
-<instance part="C41" gate="G$1" x="-35.56" y="-63.5" rot="R180">
-<attribute name="PARTNO" x="-35.56" y="-63.5" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="C41" gate="G$1" x="-53.34" y="-48.26" rot="R270">
+<attribute name="PARTNO" x="-53.34" y="-48.26" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="GND44" gate="1" x="-27.94" y="-73.66"/>
+<instance part="GND44" gate="1" x="-30.48" y="-50.8"/>
 <instance part="R33" gate="G$1" x="-58.42" y="-7.62" rot="MR180">
 <attribute name="PARTNO" x="-58.42" y="-7.62" size="1.778" layer="96" display="off"/>
 </instance>
@@ -4296,8 +4307,8 @@ R2 is lower resistor in partitoin</text>
 <instance part="C27" gate="G$1" x="294.64" y="88.9">
 <attribute name="PARTNO" x="294.64" y="88.9" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="IC8" gate="INVERTER" x="-248.92" y="83.82">
-<attribute name="PARTNO" x="-248.92" y="83.82" size="1.778" layer="96" display="off"/>
+<instance part="IC8" gate="INVERTER" x="-248.92" y="78.74">
+<attribute name="PARTNO" x="-248.92" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC8" gate="G$2" x="-152.4" y="170.18"/>
 <instance part="IC9" gate="G$1" x="-198.12" y="116.84">
@@ -4311,8 +4322,8 @@ R2 is lower resistor in partitoin</text>
 <instance part="GND28" gate="1" x="-127" y="157.48" rot="MR0"/>
 <instance part="P+2" gate="1" x="-127" y="190.5"/>
 <instance part="GND18" gate="1" x="154.94" y="86.36" rot="MR0"/>
-<instance part="GND46" gate="1" x="101.6" y="-2.54" rot="MR0"/>
-<instance part="GND47" gate="1" x="53.34" y="71.12" rot="MR0"/>
+<instance part="GND46" gate="1" x="104.14" y="15.24" rot="MR0"/>
+<instance part="GND47" gate="1" x="68.58" y="81.28" rot="MR0"/>
 <instance part="JP2" gate="A" x="548.64" y="78.74">
 <attribute name="PARTNO" x="548.64" y="78.74" size="1.778" layer="96" display="off"/>
 </instance>
@@ -4356,7 +4367,14 @@ R2 is lower resistor in partitoin</text>
 <instance part="TP1" gate="G$1" x="-17.78" y="-154.94" rot="R90"/>
 <instance part="TP3" gate="G$1" x="25.4" y="-144.78" rot="R270"/>
 <instance part="TP5" gate="G$1" x="116.84" y="5.08" rot="R90"/>
-<instance part="TP6" gate="G$1" x="43.18" y="76.2" rot="R90"/>
+<instance part="TP6" gate="G$1" x="40.64" y="101.6" rot="R270"/>
+<instance part="R17" gate="G$1" x="38.1" y="78.74" rot="MR90">
+<attribute name="PARTNO" x="38.1" y="78.74" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND55" gate="1" x="38.1" y="66.04" rot="MR0"/>
+<instance part="R21" gate="G$1" x="45.72" y="121.92" rot="MR270">
+<attribute name="PARTNO" x="45.72" y="121.92" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4651,17 +4669,17 @@ R2 is lower resistor in partitoin</text>
 <wire x1="327.66" y1="-60.96" x2="327.66" y2="-63.5" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="-60.96" x2="327.66" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="327.66" y="-60.96"/>
-<wire x1="347.98" y1="-60.96" x2="353.06" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="-60.96" x2="355.6" y2="-60.96" width="0.1524" layer="91"/>
 <junction x="347.98" y="-60.96"/>
-<wire x1="353.06" y1="-60.96" x2="360.68" y2="-60.96" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="-60.96" x2="360.68" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="-60.96" x2="360.68" y2="-43.18" width="0.1524" layer="91"/>
 <pinref part="C26" gate="G$1" pin="2"/>
 <pinref part="C25" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="-43.18" x2="299.72" y2="-60.96" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="-60.96" x2="327.66" y2="-60.96" width="0.1524" layer="91"/>
 <pinref part="AUX_VNEG" gate="G$1" pin="2"/>
-<wire x1="353.06" y1="-25.4" x2="353.06" y2="-60.96" width="0.1524" layer="91"/>
-<junction x="353.06" y="-60.96"/>
+<wire x1="355.6" y1="-25.4" x2="355.6" y2="-60.96" width="0.1524" layer="91"/>
+<junction x="355.6" y="-60.96"/>
 <junction x="360.68" y="-60.96"/>
 <pinref part="IC11" gate="G$1" pin="GND"/>
 <pinref part="C28" gate="G$1" pin="2"/>
@@ -4782,7 +4800,7 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="MON" gate="G$1" pin="2"/>
 <pinref part="GND44" gate="1" pin="GND"/>
-<wire x1="-33.02" y1="-71.12" x2="-27.94" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-38.1" y1="-48.26" x2="-30.48" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R33" gate="G$1" pin="1"/>
@@ -4903,15 +4921,12 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="RF4" gate="G$1" pin="GND"/>
-<wire x1="101.6" y1="0" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="104.14" y1="17.78" x2="88.9" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND47" gate="1" pin="GND"/>
-<wire x1="53.34" y1="73.66" x2="58.42" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="73.66" x2="58.42" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="83.82" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
 <pinref part="RF6" gate="G$1" pin="GND"/>
-<wire x1="58.42" y1="86.36" x2="68.58" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="86.36" x2="68.58" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="RF7" gate="G$1" pin="GND"/>
@@ -4926,6 +4941,11 @@ R2 is lower resistor in partitoin</text>
 <pinref part="GND54" gate="1" pin="GND"/>
 <pinref part="RF9" gate="G$1" pin="GND"/>
 <wire x1="-149.86" y1="-134.62" x2="-149.86" y2="-132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="GND55" gate="1" pin="GND"/>
+<wire x1="38.1" y1="68.58" x2="38.1" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -4952,11 +4972,10 @@ R2 is lower resistor in partitoin</text>
 <net name="N$6" class="0">
 <segment>
 <pinref part="VCO" gate="VCO" pin="13-RFOUT"/>
-<wire x1="83.82" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="60.96" x2="81.28" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="60.96" x2="83.82" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="AUX_VCO" gate="G$1" pin="1"/>
-<wire x1="60.96" y1="60.96" x2="81.28" y2="60.96" width="0.1524" layer="91"/>
-<junction x="81.28" y="60.96"/>
+<wire x1="60.96" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<junction x="83.82" y="60.96"/>
 <pinref part="C7" gate="G$1" pin="2"/>
 </segment>
 </net>
@@ -5247,9 +5266,13 @@ R2 is lower resistor in partitoin</text>
 <wire x1="12.7" y1="116.84" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="5.08" y1="116.84" x2="5.08" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="P+8" gate="1" pin="+5V"/>
-<wire x1="-22.86" y1="119.38" x2="5.08" y2="119.38" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="119.38" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="137.16" x2="5.08" y2="132.08" width="0.1524" layer="91"/>
 <junction x="5.08" y="116.84"/>
+<pinref part="R21" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="132.08" x2="5.08" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="127" x2="45.72" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="132.08" x2="5.08" y2="132.08" width="0.1524" layer="91"/>
+<junction x="5.08" y="132.08"/>
 </segment>
 <segment>
 <pinref part="IC5" gate="G$1" pin="VOUT"/>
@@ -5342,8 +5365,11 @@ R2 is lower resistor in partitoin</text>
 <net name="OUTPUT_TTL" class="0">
 <segment>
 <pinref part="OUTPUT_TTL" gate="G$1" pin="C"/>
-<wire x1="30.48" y1="83.82" x2="40.64" y2="91.44" width="0.1524" layer="91"/>
-<label x="33.02" y="91.44" size="1.778" layer="95"/>
+<wire x1="30.48" y1="83.82" x2="38.1" y2="83.82" width="0.1524" layer="91"/>
+<label x="33.02" y="83.82" size="1.778" layer="95"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="38.1" y1="83.82" x2="48.26" y2="83.82" width="0.1524" layer="91"/>
+<junction x="38.1" y="83.82"/>
 </segment>
 <segment>
 <label x="-236.22" y="96.52" size="1.778" layer="95"/>
@@ -5366,29 +5392,30 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="RF_SELECT" gate="G$1" pin="C"/>
 <wire x1="30.48" y1="116.84" x2="45.72" y2="116.84" width="0.1524" layer="91"/>
-<label x="35.56" y="116.84" size="1.778" layer="95"/>
+<label x="50.8" y="116.84" size="1.778" layer="95"/>
+<pinref part="R21" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="116.84" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
+<junction x="45.72" y="116.84"/>
 </segment>
 <segment>
 <pinref part="IC8" gate="INVERTER" pin="IN"/>
-<wire x1="-264.16" y1="83.82" x2="-279.4" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-279.4" y1="83.82" x2="-294.64" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="-279.4" y1="83.82" x2="-279.4" y2="104.14" width="0.1524" layer="91"/>
-<junction x="-279.4" y="83.82"/>
+<wire x1="-264.16" y1="78.74" x2="-279.4" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-279.4" y1="78.74" x2="-292.1" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="-279.4" y1="78.74" x2="-279.4" y2="104.14" width="0.1524" layer="91"/>
+<junction x="-279.4" y="78.74"/>
 <wire x1="-279.4" y1="104.14" x2="-254" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="-279.4" y1="104.14" x2="-279.4" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-279.4" y1="104.14" x2="-279.4" y2="111.76" width="0.1524" layer="91"/>
 <junction x="-279.4" y="104.14"/>
 <label x="-264.16" y="104.14" size="1.778" layer="95"/>
-<label x="-297.18" y="86.36" size="1.778" layer="95"/>
+<label x="-297.18" y="78.74" size="1.778" layer="95"/>
 <pinref part="IC9" gate="G$1" pin="INB"/>
-<wire x1="-203.2" y1="111.76" x2="-246.38" y2="111.76" width="0.1524" layer="91"/>
-<wire x1="-246.38" y1="111.76" x2="-246.38" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="-246.38" y1="116.84" x2="-279.4" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="-203.2" y1="111.76" x2="-279.4" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="-66.04" y="-53.34" size="1.778" layer="95"/>
+<label x="-81.28" y="-53.34" size="1.778" layer="95"/>
 <pinref part="SW1" gate="G$1" pin="TTL"/>
 <wire x1="-93.98" y1="-55.88" x2="-93.98" y2="-53.34" width="0.1524" layer="91"/>
-<wire x1="-93.98" y1="-53.34" x2="-60.96" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="-93.98" y1="-53.34" x2="-73.66" y2="-53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
@@ -5470,9 +5497,9 @@ R2 is lower resistor in partitoin</text>
 </segment>
 <segment>
 <pinref part="VCO" gate="VCO" pin="2-VCC"/>
-<wire x1="99.06" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="60.96" x2="111.76" y2="68.58" width="0.1524" layer="91"/>
-<label x="111.76" y="63.5" size="1.778" layer="95" rot="R90"/>
+<wire x1="99.06" y1="60.96" x2="101.6" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="101.6" y1="60.96" x2="101.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="101.6" y="63.5" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="V+2" class="0">
@@ -5537,7 +5564,7 @@ R2 is lower resistor in partitoin</text>
 <pinref part="C26" gate="G$1" pin="1"/>
 <wire x1="347.98" y1="-35.56" x2="360.68" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="AUX_VNEG" gate="G$1" pin="1"/>
-<wire x1="347.98" y1="-22.86" x2="353.06" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="347.98" y1="-22.86" x2="355.6" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="347.98" y1="-22.86" x2="347.98" y2="-12.7" width="0.1524" layer="91"/>
 <junction x="347.98" y="-22.86"/>
 <wire x1="459.74" y1="-45.72" x2="454.66" y2="-45.72" width="0.1524" layer="91"/>
@@ -5642,9 +5669,9 @@ R2 is lower resistor in partitoin</text>
 <label x="558.8" y="78.74" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="20/A6/PWM"/>
-<wire x1="388.62" y1="99.06" x2="378.46" y2="99.06" width="0.1524" layer="91"/>
-<label x="381" y="99.06" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="19/A5/T/SCL0"/>
+<wire x1="388.62" y1="101.6" x2="378.46" y2="101.6" width="0.1524" layer="91"/>
+<label x="381" y="101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RS" class="0">
@@ -5654,9 +5681,9 @@ R2 is lower resistor in partitoin</text>
 <label x="533.4" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="19/A5/T/SCL0"/>
-<wire x1="388.62" y1="101.6" x2="378.46" y2="101.6" width="0.1524" layer="91"/>
-<label x="381" y="101.6" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="18/A4/T/SDA0"/>
+<wire x1="388.62" y1="104.14" x2="378.46" y2="104.14" width="0.1524" layer="91"/>
+<label x="381" y="104.14" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="RST" class="0">
@@ -5666,9 +5693,9 @@ R2 is lower resistor in partitoin</text>
 <label x="558.8" y="76.2" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="18/A4/T/SDA0"/>
-<wire x1="388.62" y1="104.14" x2="378.46" y2="104.14" width="0.1524" layer="91"/>
-<label x="381" y="104.14" size="1.778" layer="95"/>
+<pinref part="U$1" gate="G$1" pin="20/A6/PWM"/>
+<wire x1="388.62" y1="99.06" x2="378.46" y2="99.06" width="0.1524" layer="91"/>
+<label x="381" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="ENC_B" class="0">
@@ -5745,13 +5772,11 @@ R2 is lower resistor in partitoin</text>
 <wire x1="2.54" y1="-43.18" x2="-10.16" y2="-43.18" width="0.1524" layer="91"/>
 <label x="-2.54" y="-40.64" size="1.778" layer="95"/>
 <pinref part="SW4" gate="G$1" pin="V-"/>
-<wire x1="2.54" y1="-71.12" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="2.54" y1="-71.12" x2="2.54" y2="-50.8" width="0.1524" layer="91"/>
 <pinref part="C35" gate="G$1" pin="2"/>
-<wire x1="-5.08" y1="-50.8" x2="0" y2="-50.8" width="0.1524" layer="91"/>
-<wire x1="0" y1="-50.8" x2="0" y2="-55.88" width="0.1524" layer="91"/>
-<wire x1="0" y1="-55.88" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
-<junction x="2.54" y="-55.88"/>
-<wire x1="2.54" y1="-43.18" x2="2.54" y2="-55.88" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="-50.8" x2="2.54" y2="-50.8" width="0.1524" layer="91"/>
+<junction x="2.54" y="-50.8"/>
+<wire x1="2.54" y1="-43.18" x2="2.54" y2="-50.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="-114.3" y1="-17.78" x2="-114.3" y2="10.16" width="0.1524" layer="91"/>
@@ -5791,13 +5816,12 @@ R2 is lower resistor in partitoin</text>
 <pinref part="SW2" gate="G$1" pin="COM"/>
 </segment>
 <segment>
-<label x="38.1" y="81.28" size="1.778" layer="95"/>
-<wire x1="53.34" y1="81.28" x2="43.18" y2="81.28" width="0.1524" layer="91"/>
+<label x="33.02" y="96.52" size="1.778" layer="95"/>
+<wire x1="53.34" y1="96.52" x2="40.64" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="RF6" gate="G$1" pin="IN"/>
-<wire x1="43.18" y1="81.28" x2="35.56" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="81.28" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="96.52" x2="33.02" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="TP6" gate="G$1" pin="P$2"/>
-<junction x="43.18" y="81.28"/>
+<junction x="40.64" y="96.52"/>
 </segment>
 </net>
 <net name="AUX" class="0">
@@ -5851,11 +5875,9 @@ R2 is lower resistor in partitoin</text>
 </net>
 <net name="A" class="0">
 <segment>
-<wire x1="-172.72" y1="-83.82" x2="-220.98" y2="-83.82" width="0.1524" layer="91"/>
-<label x="-220.98" y="-83.82" size="1.778" layer="95"/>
+<wire x1="-170.18" y1="-86.36" x2="-223.52" y2="-86.36" width="0.1524" layer="91"/>
+<label x="-223.52" y="-86.36" size="1.778" layer="95"/>
 <pinref part="SW3" gate="G$1" pin="TTL"/>
-<wire x1="-172.72" y1="-83.82" x2="-172.72" y2="-86.36" width="0.1524" layer="91"/>
-<wire x1="-172.72" y1="-86.36" x2="-170.18" y2="-86.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC9" gate="G$1" pin="OUT"/>
@@ -5896,14 +5918,14 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="C41" gate="G$1" pin="2"/>
 <pinref part="RF5" gate="G$1" pin="COUP"/>
-<wire x1="-35.56" y1="-58.42" x2="-58.42" y2="-43.18" width="0.1524" layer="91"/>
+<wire x1="-58.42" y1="-48.26" x2="-58.42" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$42" class="0">
 <segment>
 <pinref part="C41" gate="G$1" pin="1"/>
 <pinref part="MON" gate="G$1" pin="1"/>
-<wire x1="-35.56" y1="-66.04" x2="-35.56" y2="-71.12" width="0.1524" layer="91"/>
+<wire x1="-50.8" y1="-48.26" x2="-40.64" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -5962,7 +5984,6 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="IC8" gate="INVERTER" pin="OUT"/>
 <pinref part="IC10" gate="G$1" pin="INB"/>
-<wire x1="-241.3" y1="83.82" x2="-241.3" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="-241.3" y1="78.74" x2="-203.2" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5980,7 +6001,7 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="C7" gate="G$1" pin="1"/>
 <pinref part="RF6" gate="G$1" pin="OUT"/>
-<wire x1="83.82" y1="96.52" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="96.52" x2="83.82" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -6162,17 +6183,15 @@ R2 is lower resistor in partitoin</text>
 <segment>
 <pinref part="RF7" gate="G$1" pin="IN"/>
 <wire x1="-7.62" y1="-149.86" x2="-17.78" y2="-149.86" width="0.1524" layer="91"/>
-<label x="-12.7" y="-147.32" size="1.778" layer="95"/>
+<label x="-35.56" y="-149.86" size="1.778" layer="95"/>
 <pinref part="TP1" gate="G$1" pin="P$2"/>
 <wire x1="-17.78" y1="-149.86" x2="-22.86" y2="-149.86" width="0.1524" layer="91"/>
 <junction x="-17.78" y="-149.86"/>
 </segment>
 <segment>
 <pinref part="RF5" gate="G$1" pin="OUT"/>
-<wire x1="-48.26" y1="-35.56" x2="-45.72" y2="-35.56" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="-35.56" x2="-45.72" y2="-43.18" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="-43.18" x2="-40.64" y2="-43.18" width="0.1524" layer="91"/>
-<label x="-40.64" y="-43.18" size="1.778" layer="95"/>
+<wire x1="-48.26" y1="-35.56" x2="-38.1" y2="-35.56" width="0.1524" layer="91"/>
+<label x="-45.72" y="-35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$52" class="0">
