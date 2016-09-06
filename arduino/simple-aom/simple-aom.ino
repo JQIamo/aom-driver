@@ -2,6 +2,7 @@
 #include "Menu/MenuEncoder.h"
 #include <EEPROM.h>
 #include "aom.h"
+#include <Metro.h>
 
 
 
@@ -13,6 +14,8 @@ EncoderStream enc(LCDENC);
 
 AD56XXR dac(DAC_SYNC, DAC_SCK, DAC_MOSI, 16, 5.0, 0.0, 1);
 AOM aom(&dac);
+
+Metro timetocheck = Metro(60000);
 
 typedef void (*callback_t)(char);
 
@@ -31,8 +34,8 @@ void att_context(char);
 void set_max(char);
 
 // menu construction
-MenuContext_t vco = {.val = 0.200, .incr = 0, .increments = {1.000, 0.100, 0.010, 0.001}, .callback=vco_context};
-MenuContext_t att = {.val = 1.05, .incr = 0, .increments = {1, 0.1, 0.01, 0.001}, .callback=att_context};
+MenuContext_t vco = {.val = 0.00, .incr = 0, .increments = {1.000, 0.100, 0.010, 0.001}, .callback=vco_context};
+MenuContext_t att = {.val = 0.00, .incr = 0, .increments = {1, 0.1, 0.01, 0.001}, .callback=att_context};
 MenuContext_t max = {.val = 5.0, .incr = 0, .increments = {1, 0.1, 0.01, 0.001}, .callback=set_max};
 
 MenuContext_t * active_context = &vco;
@@ -207,7 +210,7 @@ void redraw_menu(){
 // }
 
 
-
+ 
 
 void setup() {
 
@@ -220,8 +223,10 @@ void setup() {
 
   // initialize DAC, etc. to default value
   dac.setIntRef(1);
-  dac.setVolt(0, 0.0);
-  dac.setVolt(1, 0.0);
+  dac.setVolt(0, aom.attinit);
+  dac.setVolt(1, aom.vcoinit);
+  att.val = aom.attinit;
+  vco.val = aom.vcoinit;
   //init encoder
   enc.begin();
 
@@ -246,4 +251,8 @@ void loop() {
     //active_context->callback(c);
     menu_incr(active_context, c);
   }
+  if (timetocheck.check()){
+  	EEPROM.put(0,att.val);
+  	EEPROM.put(aom.eepromvco_ptr,vco.val);
+	}
 }
