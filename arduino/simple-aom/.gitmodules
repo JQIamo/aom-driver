@@ -1,6 +1,0 @@
-[submodule "LCD"]
-	path = LCD
-	url = git@github.com:JQIamo/LCD-arduino.git
-[submodule "AD56XXR"]
-	path = AD56XXR
-	url = git@github.com:JQIamo/AD56XXR-arduino.git
