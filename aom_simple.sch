@@ -1364,11 +1364,6 @@ COMPLIANT TO JEDEC STANDARDS MO-187BA</description>
 <rectangle x1="-0.6256" y1="1.5" x2="-0.3756" y2="2.5" layer="51" rot="R180"/>
 <rectangle x1="-1.1256" y1="1.5" x2="-0.8756" y2="2.5" layer="51" rot="R180"/>
 </package>
-<package name="TESTPAD">
-<smd name="P$1" x="0" y="0" dx="0.508" dy="0.8636" layer="1"/>
-<smd name="P$2" x="0.254" y="0" dx="0.508" dy="0.8636" layer="1"/>
-<text x="-1.016" y="1.524" size="1.27" layer="25">&gt;NAME</text>
-</package>
 </packages>
 <symbols>
 <symbol name="SP3T">
@@ -1514,12 +1509,6 @@ DOWN: 1-2; 4-5</text>
 <text x="0" y="5.08" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="2.54" size="1.27" layer="96">&gt;VALUE</text>
 </symbol>
-<symbol name="TESTPAD">
-<pin name="P$1" x="-5.08" y="0" visible="off" length="middle"/>
-<pin name="P$2" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
-<text x="-2.54" y="2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="-2.54" y="-2.54" size="1.27" layer="97">Testpad</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SP3T" prefix="SW">
@@ -1664,22 +1653,6 @@ DOWN: 1-2; 4-5</text>
 <connect gate="G$1" pin="OUT" pad="4"/>
 <connect gate="G$2" pin="V+" pad="5"/>
 <connect gate="G$2" pin="V-" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TESTPAD" prefix="TP">
-<gates>
-<gate name="G$1" symbol="TESTPAD" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TESTPAD">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6570,16 +6543,12 @@ PN 5019; Silver plated phosphor bronze</description>
 </part>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
-<part name="TP2" library="aom_driver" deviceset="TESTPAD" device="" value="DNP"/>
 <part name="RF4" library="rf-jqi" deviceset="ATTENUATOR" device="-0805" value="0dB">
 <attribute name="PARTNO" value="PAT1220-C-0DB-T5"/>
 </part>
 <part name="RF6" library="rf-jqi" deviceset="ATTENUATOR" device="-0805" value="3dB">
 <attribute name="PARTNO" value="PAT1220-C-3DB-T5"/>
 </part>
-<part name="TP1" library="aom_driver" deviceset="TESTPAD" device="" value="DNP"/>
-<part name="TP5" library="aom_driver" deviceset="TESTPAD" device="" value="DNP"/>
-<part name="TP6" library="aom_driver" deviceset="TESTPAD" device="" value="DNP"/>
 <part name="R17" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="ERJ-3EKF1002V"/>
 </part>
@@ -7054,6 +7023,15 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="TP4" library="ZSS" deviceset="5019" device="">
 <attribute name="PARTNO" value="5019"/>
 </part>
+<part name="C33" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
+<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+</part>
+<part name="C34" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
+<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+</part>
+<part name="AMP_POW" library="pinhead" deviceset="PINHD-1X2" device="">
+<attribute name="PARTNO" value="640456-2"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -7133,7 +7111,6 @@ RF protection of amplifiers</text>
 <instance part="RF6" gate="G$1" x="142.24" y="92.71">
 <attribute name="PARTNO" x="142.24" y="92.71" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="TP6" gate="G$1" x="127" y="97.79" rot="R270"/>
 <instance part="R17" gate="G$1" x="130.81" y="148.59" rot="MR90">
 <attribute name="PARTNO" x="130.81" y="148.59" size="1.778" layer="96" display="off"/>
 </instance>
@@ -7205,7 +7182,6 @@ RF protection of amplifiers</text>
 <instance part="RF4" gate="G$1" x="143.51" y="48.26" rot="R180">
 <attribute name="PARTNO" x="143.51" y="48.26" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="TP5" gate="G$1" x="160.02" y="43.18" rot="R90"/>
 <instance part="U7" gate="G$1" x="41.91" y="151.13">
 <attribute name="PARTNO" x="41.91" y="151.13" size="1.778" layer="96" display="off"/>
 </instance>
@@ -7607,11 +7583,8 @@ RF protection of amplifiers</text>
 <net name="VCO" class="0">
 <segment>
 <label x="119.38" y="92.71" size="1.778" layer="95"/>
-<wire x1="129.54" y1="92.71" x2="127" y2="92.71" width="0.1524" layer="91"/>
 <pinref part="RF6" gate="G$1" pin="IN"/>
-<wire x1="127" y1="92.71" x2="119.38" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="TP6" gate="G$1" pin="P$2"/>
-<junction x="127" y="92.71"/>
+<wire x1="129.54" y1="92.71" x2="119.38" y2="92.71" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCOIN" class="0">
@@ -7780,11 +7753,8 @@ RF protection of amplifiers</text>
 <net name="AUX" class="0">
 <segment>
 <pinref part="RF4" gate="G$1" pin="IN"/>
-<wire x1="156.21" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 <label x="160.02" y="48.26" size="1.778" layer="95"/>
-<pinref part="TP5" gate="G$1" pin="P$2"/>
-<wire x1="160.02" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
-<junction x="160.02" y="48.26"/>
+<wire x1="156.21" y1="48.26" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -9515,6 +9485,12 @@ by connecting VOUT3V3 to VCC it should be possibile to avoid using a voltage reg
 <attribute name="PARTNO" x="110.49" y="152.4" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="IC15" gate="G$2" x="21.59" y="186.69"/>
+<instance part="C33" gate="G$1" x="213.36" y="168.91" rot="R270">
+<attribute name="PARTNO" x="213.36" y="168.91" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
+<instance part="C34" gate="G$1" x="213.36" y="102.87" rot="R270">
+<attribute name="PARTNO" x="213.36" y="102.87" size="1.778" layer="96" rot="R180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -9800,18 +9776,32 @@ by connecting VOUT3V3 to VCC it should be possibile to avoid using a voltage reg
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="SW3" gate="G$1" pin="IN1"/>
 <pinref part="SW1" gate="G$1" pin="IN1"/>
-<wire x1="194.31" y1="168.91" x2="218.44" y2="168.91" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="168.91" x2="218.44" y2="125.73" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="168.91" x2="215.9" y2="168.91" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
-<pinref part="SW2" gate="G$1" pin="IN1"/>
 <pinref part="SW1" gate="G$1" pin="IN2"/>
-<wire x1="194.31" y1="102.87" x2="218.44" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="102.87" x2="218.44" y2="118.11" width="0.1524" layer="91"/>
+<pinref part="C34" gate="G$1" pin="1"/>
+<wire x1="218.44" y1="102.87" x2="215.9" y2="102.87" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="C34" gate="G$1" pin="2"/>
+<pinref part="SW2" gate="G$1" pin="IN1"/>
+<wire x1="208.28" y1="102.87" x2="194.31" y2="102.87" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="C33" gate="G$1" pin="2"/>
+<pinref part="SW3" gate="G$1" pin="IN1"/>
+<wire x1="208.28" y1="168.91" x2="194.31" y2="168.91" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
@@ -9833,8 +9823,6 @@ attenuator wants [0,+5] V</text>
 </instance>
 <instance part="GND51" gate="1" x="62.23" y="151.13"/>
 <instance part="GND52" gate="1" x="62.23" y="105.41"/>
-<instance part="TP2" gate="G$1" x="106.68" y="124.46" rot="R90"/>
-<instance part="TP1" gate="G$1" x="148.59" y="124.46" rot="R90"/>
 <instance part="RF5" gate="G$1" x="129.54" y="129.54">
 <attribute name="PARTNO" x="129.54" y="129.54" size="1.778" layer="96" display="off"/>
 </instance>
@@ -10152,11 +10140,8 @@ attenuator wants [0,+5] V</text>
 </net>
 <net name="FROM_PREAMP" class="0">
 <segment>
-<wire x1="95.25" y1="129.54" x2="106.68" y2="129.54" width="0.1524" layer="91"/>
 <label x="100.33" y="130.81" size="1.778" layer="95"/>
-<pinref part="TP2" gate="G$1" pin="P$2"/>
-<wire x1="106.68" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
-<junction x="106.68" y="129.54"/>
+<wire x1="95.25" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="RF5" gate="G$1" pin="IN"/>
 <pinref part="C44" gate="G$1" pin="1"/>
 </segment>
@@ -10164,11 +10149,8 @@ attenuator wants [0,+5] V</text>
 <net name="RF_PREAMP" class="0">
 <segment>
 <pinref part="RF5" gate="G$1" pin="OUT"/>
-<wire x1="139.7" y1="129.54" x2="148.59" y2="129.54" width="0.1524" layer="91"/>
 <label x="142.24" y="129.54" size="1.778" layer="95"/>
-<pinref part="TP1" gate="G$1" pin="P$2"/>
-<wire x1="148.59" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
-<junction x="148.59" y="129.54"/>
+<wire x1="139.7" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
 <pinref part="C16" gate="G$1" pin="1"/>
 </segment>
 </net>
@@ -10714,6 +10696,9 @@ I_hys=10uA</text>
 <instance part="T4" gate="G$1" x="66.04" y="59.69" rot="R90">
 <attribute name="PARTNO" x="66.04" y="59.69" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="AMP_POW" gate="G$1" x="69.85" y="189.23" rot="MR180">
+<attribute name="PARTNO" x="69.85" y="189.23" size="1.778" layer="96" rot="MR180" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -10831,12 +10816,6 @@ I_hys=10uA</text>
 </net>
 <net name="+5V" class="0">
 <segment>
-<pinref part="P+12" gate="1" pin="+5V"/>
-<pinref part="U11" gate="A" pin="ON"/>
-<wire x1="64.77" y1="196.85" x2="64.77" y2="181.61" width="0.1524" layer="91"/>
-<wire x1="64.77" y1="181.61" x2="57.15" y2="181.61" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+11" gate="1" pin="+5V"/>
 <wire x1="97.79" y1="144.78" x2="97.79" y2="148.59" width="0.1524" layer="91"/>
 <pinref part="R41" gate="G$1" pin="1"/>
@@ -10891,6 +10870,12 @@ I_hys=10uA</text>
 <wire x1="31.75" y1="62.23" x2="50.8" y2="62.23" width="0.1524" layer="91"/>
 <junction x="50.8" y="62.23"/>
 <pinref part="T4" gate="G$1" pin="D"/>
+</segment>
+<segment>
+<pinref part="P+12" gate="1" pin="+5V"/>
+<pinref part="AMP_POW" gate="G$1" pin="2"/>
+<wire x1="64.77" y1="196.85" x2="64.77" y2="189.23" width="0.1524" layer="91"/>
+<wire x1="64.77" y1="189.23" x2="67.31" y2="189.23" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="*FAULT" class="0">
@@ -11300,6 +11285,14 @@ I_hys=10uA</text>
 <pinref part="R66" gate="G$1" pin="1"/>
 <wire x1="208.28" y1="175.26" x2="208.28" y2="180.34" width="0.1524" layer="91"/>
 <junction x="208.28" y="175.26"/>
+</segment>
+</net>
+<net name="N$57" class="0">
+<segment>
+<pinref part="AMP_POW" gate="G$1" pin="1"/>
+<pinref part="U11" gate="A" pin="ON"/>
+<wire x1="67.31" y1="186.69" x2="57.15" y2="186.69" width="0.1524" layer="91"/>
+<wire x1="57.15" y1="186.69" x2="57.15" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
