@@ -5950,6 +5950,204 @@ PN 5019; Silver plated phosphor bronze</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="MF_Passives">
+<packages>
+<package name="CP4MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 4MM Round Package for Electrolytic Capacitors. Based on Panasonic Electrolytic Capacitors.&lt;br&gt;</description>
+<smd name="P$2" x="0" y="1.75" dx="2.5" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-1.75" dx="2.5" dy="1.6" layer="1" rot="R90"/>
+<wire x1="-1.2" y1="2.2" x2="-2.2" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="2.2" x2="-2.2" y2="-1.56360625" width="0.127" layer="21"/>
+<wire x1="-2.2" y1="-1.56360625" x2="-1.56360625" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="-1.56360625" y1="-2.2" x2="-1.1" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="1.2" y1="2.2" x2="2.2" y2="2.2" width="0.127" layer="21"/>
+<wire x1="2.2" y1="2.2" x2="2.2" y2="-1.56360625" width="0.127" layer="21"/>
+<wire x1="2.2" y1="-1.56360625" x2="1.56360625" y2="-2.2" width="0.127" layer="21"/>
+<wire x1="1.56360625" y1="-2.2" x2="1.2" y2="-2.2" width="0.127" layer="21"/>
+<text x="-2.2" y="3.5" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="1.5" y1="-0.5" x2="1.5" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="2" y1="-1" x2="1" y2="-1" width="0.127" layer="21"/>
+</package>
+<package name="CP6.3MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 6.3MM Round Package for Electrolytic Capacitors. Based on Panasonic Electrolytic Capacitors.&lt;br&gt;</description>
+<smd name="P$1" x="0" y="-2.7" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="2.7" dx="3.2" dy="1.6" layer="1" rot="R90"/>
+<wire x1="1.1" y1="3.3" x2="3.3" y2="3.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="3.3" x2="3.3" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="3.3" y1="-2.3" x2="2.3" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="2.3" y1="-3.3" x2="1.1" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-1.1" y1="3.3" x2="-3.3" y2="3.3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="3.3" x2="-3.3" y2="-2.3" width="0.127" layer="21"/>
+<wire x1="-3.3" y1="-2.3" x2="-2.3" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="-2.3" y1="-3.3" x2="-1.1" y2="-3.3" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-2" x2="2.5" y2="-2" width="0.127" layer="21"/>
+<text x="-3.3" y="5" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+<package name="CP8MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 8MM Round Package for Electrolytic Capacitors. Based on Panasonic Electrolytic Capacitors.&lt;br&gt;</description>
+<smd name="P$1" x="0" y="-3.1" dx="4" dy="1.6" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="3.1" dx="4" dy="1.6" layer="1" rot="R90"/>
+<wire x1="-1.5" y1="4.15" x2="-4.15" y2="4.15" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="4.15" x2="-4.15" y2="-2.88" width="0.127" layer="21"/>
+<wire x1="-4.15" y1="-2.88" x2="-2.88" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="-2.88" y1="-4.15" x2="-1.5" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="1.5" y1="-4.15" x2="2.88" y2="-4.15" width="0.127" layer="21"/>
+<wire x1="2.88" y1="-4.15" x2="4.15" y2="-2.88" width="0.127" layer="21"/>
+<wire x1="4.15" y1="-2.88" x2="4.15" y2="4.15" width="0.127" layer="21"/>
+<wire x1="4.15" y1="4.15" x2="1.5" y2="4.15" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2" x2="2.5" y2="-3" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.5" x2="2" y2="-2.5" width="0.127" layer="21"/>
+<text x="-4.15" y="6" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+<package name="CP10MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 10MM Round Package for Electrolytic Capacitors. Based on Panasonic Electrolytic Capacitors.
+&lt;br/&gt;</description>
+<smd name="P$1" x="0" y="-4.35" dx="4.1" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="4.35" dx="4.1" dy="2" layer="1" rot="R90"/>
+<text x="-5.15" y="7.5" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+<wire x1="-1.5" y1="5.15" x2="-5.15" y2="5.15" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="5.15" x2="-5.15" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="-3.15" x2="-3.15" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="-3.15" y1="-5.15" x2="-1.5" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="1.5" y1="5.15" x2="5.15" y2="5.15" width="0.127" layer="21"/>
+<wire x1="5.15" y1="5.15" x2="5.15" y2="-3.15" width="0.127" layer="21"/>
+<wire x1="5.15" y1="-3.15" x2="3.15" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="3.15" y1="-5.15" x2="1.5" y2="-5.15" width="0.127" layer="21"/>
+<wire x1="3" y1="-2.5" x2="3" y2="-3.5" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-3" x2="3.5" y2="-3" width="0.127" layer="21"/>
+</package>
+<package name="CP12.5MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 12.5MM Round Package for Electrolytic Capacitors. Based on Panasonic Electrolytic Capacitors.&lt;br&gt;</description>
+<smd name="P$1" x="0" y="-4.85" dx="5.7" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="4.85" dx="5.7" dy="2" layer="1" rot="R90"/>
+<wire x1="-1.75" y1="6.75" x2="-6.75" y2="6.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="6.75" x2="-6.75" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-4.25" x2="-4.25" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="-4.25" y1="-6.75" x2="-1.75" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="1.75" y1="6.75" x2="6.75" y2="6.75" width="0.127" layer="21"/>
+<wire x1="6.75" y1="6.75" x2="6.75" y2="-4.25" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-4.25" x2="4.25" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="4.25" y1="-6.75" x2="1.75" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="4" y1="-3.5" x2="4" y2="-5.5" width="0.127" layer="21"/>
+<wire x1="5" y1="-4.5" x2="3" y2="-4.5" width="0.127" layer="21"/>
+<text x="-6.75" y="9" size="1.016" layer="25" font="vector" ratio="16">&gt;NAME</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CAPACITOR_P">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Passives&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Symbol for Polarized Capacitors&lt;br/&gt;</description>
+<pin name="P$1" x="0" y="2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="P$2" x="0" y="-2.54" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>
+<wire x1="0" y1="2.54" x2="0" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-0.508" width="0.1524" layer="94"/>
+<wire x1="-2.286" y1="-1.524" x2="2.286" y2="-1.524" width="0.1524" layer="94" curve="-100"/>
+<wire x1="-2.286" y1="0.762" x2="0" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="2.286" y2="0.762" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="2.286" x2="1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="1.778" x2="0.762" y2="1.778" width="0.1524" layer="94"/>
+<text x="2.54" y="1.524" size="1.016" layer="95" font="vector" align="top-left">&gt;NAME</text>
+<text x="2.54" y="-1.524" size="1.016" layer="96" font="vector">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CAPACITOR_P" prefix="C" uservalue="yes">
+<description>&lt;b&gt;Library:&lt;/b&gt;  MF_Passives&lt;br/&gt;
+&lt;b&gt;Description:&lt;/b&gt; Device for Polarized Capacitors. Manufacture part number (MPN), Voltage Rating, and Tolerance can be added via Attributes. Check https://factory.macrofab.com/parts for the house parts list.&lt;br/&gt;</description>
+<gates>
+<gate name="G$1" symbol="CAPACITOR_P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_4MM" package="CP4MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_6.3MM" package="CP6.3MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+<attribute name="VOTLAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_8MM" package="CP8MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_10MM" package="CP10MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="_12.5MM" package="CP12.5MM">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+<connect gate="G$1" pin="P$2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="HOUSEPART" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="POPULATE" value="1" constant="no"/>
+<attribute name="TOLERANCE" value="" constant="no"/>
+<attribute name="URL" value="" constant="no"/>
+<attribute name="VALUE" value="" constant="no"/>
+<attribute name="VOLTAGE" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -5971,12 +6169,6 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="V+" device=""/>
 <part name="P-1" library="supply1" deviceset="V-" device=""/>
-<part name="C1" library="jqi_passives" deviceset="C_POL_SMD" device="F" value="220uF">
-<attribute name="PARTNO" value="PCE3955CT-ND"/>
-</part>
-<part name="C2" library="jqi_passives" deviceset="C_POL_SMD" device="F" value="220uF">
-<attribute name="PARTNO" value="PCE3955CT-ND"/>
-</part>
 <part name="SW5" library="aom_driver" deviceset="SP3T" device="">
 <attribute name="PARTNO" value="3-1825139-9"/>
 </part>
@@ -5998,8 +6190,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="ENC1" library="aom_driver" deviceset="PEC11R" device="">
 <attribute name="PARTNO" value="PEC11R-4120F-S0018"/>
 </part>
-<part name="VCO" library="aom_driver" deviceset="JTOS" device="" value="JTOS-150">
-<attribute name="PARTNO" value="JTOS-150+"/>
+<part name="VCO" library="aom_driver" deviceset="JTOS" device="" value="JTOS">
+<attribute name="PARTNO" value="JTOS-100+"/>
 </part>
 <part name="AUX_RF" library="connector-jqi" deviceset="SMA" device="-V">
 <attribute name="PARTNO" value="5-1814832-1"/>
@@ -6065,8 +6257,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="CL10B104KB8SFNC"/>
 </part>
 <part name="GND19" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C7" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
 <part name="R9" library="jqi_passives" deviceset="R_SMD" device="R0603" value="49.9R">
 <attribute name="PARTNO" value="ERJ-3EKF49R9V"/>
@@ -6095,17 +6287,17 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="GND26" library="supply1" deviceset="GND" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
-<part name="C13" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C13" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
-<part name="C14" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C14" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
-<part name="C15" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C15" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
-<part name="C16" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C16" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
 <part name="IC3" library="regulator-jqi" deviceset="LT3080" device="">
 <attribute name="PARTNO" value="LT3080EQ#PBF"/>
@@ -6223,8 +6415,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="B5" library="connector-jqi" deviceset="BNC" device="-V">
 <attribute name="PARTNO" value="5227222-3"/>
 </part>
-<part name="C41" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C41" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
 <part name="GND44" library="supply1" deviceset="GND" device=""/>
 <part name="R33" library="jqi_passives" deviceset="R_SMD" device="R0603" value="49.9R">
@@ -6266,11 +6458,11 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="B6" library="connector-jqi" deviceset="BNC" device="-V">
 <attribute name="PARTNO" value="5227222-3"/>
 </part>
-<part name="C43" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C43" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
-<part name="C44" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C44" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
 <part name="GND51" library="supply1" deviceset="GND" device=""/>
 <part name="GND52" library="supply1" deviceset="GND" device=""/>
@@ -6409,8 +6601,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="C59" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="CL10B104KB8SFNC"/>
 </part>
-<part name="VCO1" library="rf-jqi" deviceset="ROS" device="" value="ROS-150">
-<attribute name="PARTNO" value="ROS-150+"/>
+<part name="VCO1" library="rf-jqi" deviceset="ROS" device="" value="ROS">
+<attribute name="PARTNO" value="ROS-100+"/>
 </part>
 <part name="C60" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
@@ -6573,11 +6765,11 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="TP4" library="ZSS" deviceset="5019" device="">
 <attribute name="PARTNO" value="5019"/>
 </part>
-<part name="C33" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C33" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
-<part name="C34" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="100nF">
-<attribute name="PARTNO" value="CL05B104KA5NNNC"/>
+<part name="C34" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
+<attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
 <part name="IC16" library="rf-jqi" deviceset="HMC920" device="" value="HMC920LP5E">
 <attribute name="PARTNO" value="HMC920LP5E"/>
@@ -6591,7 +6783,9 @@ PN 5019; Silver plated phosphor bronze</description>
 </part>
 <part name="GND36" library="supply1" deviceset="GND" device=""/>
 <part name="GND37" library="supply1" deviceset="GND" device=""/>
-<part name="R37" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k"/>
+<part name="R37" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="TNPW060310K0BEEA"/>
+</part>
 <part name="C39" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1210" value="10uF">
 <attribute name="PARTNO" value="UMK325C7106MM-T"/>
 </part>
@@ -6607,27 +6801,47 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="C55" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
 </part>
-<part name="R38" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M"/>
+<part name="R38" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1M">
+<attribute name="PARTNO" value="ERJ-3EKF1004V"/>
+</part>
 <part name="U9" library="MF_Discrete_Semiconductor" deviceset="N-CHANNEL_FET" device="_SOT-23-3" technology="_BSS138" value="MF-DSC-SOT233-BSS138"/>
 <part name="U10" library="MF_Discrete_Semiconductor" deviceset="N-CHANNEL_FET" device="_SOT-23-3" technology="_BSS138" value="MF-DSC-SOT233-BSS138"/>
 <part name="GND22" library="supply1" deviceset="GND" device=""/>
 <part name="GND38" library="supply1" deviceset="GND" device=""/>
 <part name="D1" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-RED" value="MF-LED-0603-RED"/>
 <part name="D2" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-GREEN" value="MF-LED-0603-GREEN"/>
-<part name="R39" library="jqi_passives" deviceset="R_SMD" device="R0603" value="150"/>
-<part name="R40" library="jqi_passives" deviceset="R_SMD" device="R0603" value="150"/>
+<part name="R39" library="jqi_passives" deviceset="R_SMD" device="R0603" value="150">
+<attribute name="PARTNO" value="ERJ-3EKF1500V"/>
+</part>
+<part name="R40" library="jqi_passives" deviceset="R_SMD" device="R0603" value="150">
+<attribute name="PARTNO" value="ERJ-3EKF1500V"/>
+</part>
 <part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="U11" library="MF_Discrete_Semiconductor" deviceset="N-CHANNEL_FET" device="_SOT-23-3" technology="_BSS138" value="MF-DSC-SOT233-BSS138"/>
-<part name="R41" library="jqi_passives" deviceset="R_SMD" device="R0603" value="150"/>
+<part name="R41" library="jqi_passives" deviceset="R_SMD" device="R0603" value="150">
+<attribute name="PARTNO" value="ERJ-3EKF1500V"/>
+</part>
 <part name="D3" library="MF_LEDs" deviceset="LED_SINGLE" device="-0603-GREEN" value="MF-LED-0603-GREEN"/>
 <part name="GND39" library="supply1" deviceset="GND" device=""/>
-<part name="R42" library="jqi_passives" deviceset="R_SMD" device="R0402" value="2.2k"/>
+<part name="R42" library="jqi_passives" deviceset="R_SMD" device="R0402" value="2.2k">
+<attribute name="PARTNO" value="TNPW04022K20BEED"/>
+</part>
 <part name="GND40" library="supply1" deviceset="GND" device=""/>
-<part name="R43" library="jqi_passives" deviceset="R_SMD" device="R0603" value="3.32k"/>
-<part name="R44" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1.69k"/>
-<part name="R45" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k"/>
-<part name="R46" library="jqi_passives" deviceset="R_SMD" device="R0603" value="15.2k"/>
-<part name="R47" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k"/>
+<part name="R43" library="jqi_passives" deviceset="R_SMD" device="R0603" value="3.32k">
+<attribute name="PARTNO" value="TNPW06033K32BEEA"/>
+</part>
+<part name="R44" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1.69k">
+<attribute name="PARTNO" value="ERA-3AEB1691V"/>
+</part>
+<part name="R45" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
+<attribute name="PARTNO" value="TNPW06031K00BEEN"/>
+</part>
+<part name="R46" library="jqi_passives" deviceset="R_SMD" device="R0603" value="15.4k">
+<attribute name="PARTNO" value="TNPW060315K4BEEA"/>
+</part>
+<part name="R47" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="TNPW060310K0BEEA"/>
+</part>
 <part name="GND41" library="supply1" deviceset="GND" device=""/>
 <part name="U12" library="MF_Discrete_Semiconductor" deviceset="N-CHANNEL_FET" device="_SOT-23-3" technology="_BSS138" value="MF-DSC-SOT233-BSS138"/>
 <part name="R48" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
@@ -6637,7 +6851,9 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="C38" library="jqi_passives" deviceset="C_POL_SMD" device="CPOL_1206" value="10uF">
 <attribute name="PARTNO" value="TPSA106K010R0900"/>
 </part>
-<part name="R49" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k"/>
+<part name="R49" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
+<attribute name="PARTNO" value="TNPW06031K00BEEN"/>
+</part>
 <part name="C36" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="1uF">
 <attribute name="PARTNO" value="CL10B105KA8NNNC"/>
 </part>
@@ -6669,6 +6885,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="R52" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
 <attribute name="PARTNO" value="ERJ-3EKF1001V"/>
 </part>
+<part name="C1" library="MF_Passives" deviceset="CAPACITOR_P" device="_10MM" value="220uF"/>
+<part name="C2" library="MF_Passives" deviceset="CAPACITOR_P" device="_10MM" value="220uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -7586,12 +7804,6 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <instance part="GND1" gate="1" x="158.75" y="17.78"/>
 <instance part="P+1" gate="1" x="135.89" y="35.56"/>
 <instance part="P-1" gate="1" x="135.89" y="7.62"/>
-<instance part="C1" gate="G$1" x="140.97" y="27.94">
-<attribute name="PARTNO" x="140.97" y="27.94" size="1.778" layer="96" display="off"/>
-</instance>
-<instance part="C2" gate="G$1" x="140.97" y="20.32">
-<attribute name="PARTNO" x="140.97" y="20.32" size="1.778" layer="96" display="off"/>
-</instance>
 <instance part="C3" gate="G$1" x="31.75" y="29.21">
 <attribute name="PARTNO" x="31.75" y="29.21" size="1.778" layer="96" display="off"/>
 </instance>
@@ -7661,6 +7873,8 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <instance part="C77" gate="G$1" x="255.27" y="90.17">
 <attribute name="PARTNO" x="255.27" y="90.17" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="C1" gate="G$1" x="140.97" y="27.94"/>
+<instance part="C2" gate="G$1" x="140.97" y="19.05"/>
 </instances>
 <busses>
 </busses>
@@ -7685,10 +7899,10 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <wire x1="121.92" y1="25.4" x2="135.89" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="135.89" y1="25.4" x2="135.89" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="1" pin="V+"/>
-<pinref part="C1" gate="G$1" pin="+"/>
 <wire x1="135.89" y1="30.48" x2="135.89" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="30.48" x2="135.89" y2="30.48" width="0.1524" layer="91"/>
 <junction x="135.89" y="30.48"/>
+<pinref part="C1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="V-" class="0">
@@ -7711,10 +7925,11 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <wire x1="121.92" y1="20.32" x2="135.89" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="135.89" y1="20.32" x2="135.89" y2="15.24" width="0.1524" layer="91"/>
 <pinref part="P-1" gate="1" pin="V-"/>
-<pinref part="C2" gate="G$1" pin="-"/>
 <wire x1="135.89" y1="15.24" x2="135.89" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="15.24" x2="135.89" y2="15.24" width="0.1524" layer="91"/>
 <junction x="135.89" y="15.24"/>
+<pinref part="C2" gate="G$1" pin="P$2"/>
+<wire x1="140.97" y1="15.24" x2="140.97" y2="16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -7831,9 +8046,11 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 <wire x1="140.97" y1="22.86" x2="158.75" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="158.75" y1="22.86" x2="158.75" y2="20.32" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="-"/>
 <junction x="140.97" y="22.86"/>
-<pinref part="C2" gate="G$1" pin="+"/>
+<pinref part="C1" gate="G$1" pin="P$2"/>
+<wire x1="140.97" y1="25.4" x2="140.97" y2="22.86" width="0.1524" layer="91"/>
+<pinref part="C2" gate="G$1" pin="P$1"/>
+<wire x1="140.97" y1="21.59" x2="140.97" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
@@ -10058,7 +10275,9 @@ sets Vdd = 5V</text>
 </instance>
 <instance part="GND36" gate="1" x="119.38" y="68.58"/>
 <instance part="GND37" gate="1" x="161.29" y="95.25"/>
-<instance part="R37" gate="G$1" x="139.7" y="88.9" rot="R90"/>
+<instance part="R37" gate="G$1" x="139.7" y="88.9" rot="R90">
+<attribute name="PARTNO" x="139.7" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="AMP_EN" gate="G$1" x="60.96" y="97.79" rot="R180">
 <attribute name="PARTNO" x="60.96" y="97.79" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
@@ -10071,27 +10290,47 @@ sets Vdd = 5V</text>
 <instance part="C55" gate="G$1" x="154.94" y="76.2">
 <attribute name="PARTNO" x="154.94" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R38" gate="G$1" x="134.62" y="88.9" rot="R90"/>
+<instance part="R38" gate="G$1" x="134.62" y="88.9" rot="R90">
+<attribute name="PARTNO" x="134.62" y="88.9" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="U9" gate="G$1" x="22.86" y="21.59"/>
 <instance part="U10" gate="G$1" x="50.8" y="21.59"/>
 <instance part="GND22" gate="1" x="53.34" y="8.89"/>
 <instance part="GND38" gate="1" x="25.4" y="8.89"/>
 <instance part="D1" gate="G$1" x="25.4" y="34.29" rot="R270"/>
 <instance part="D2" gate="G$1" x="53.34" y="34.29" rot="R270"/>
-<instance part="R39" gate="G$1" x="25.4" y="44.45" rot="R90"/>
-<instance part="R40" gate="G$1" x="53.34" y="44.45" rot="R90"/>
+<instance part="R39" gate="G$1" x="25.4" y="44.45" rot="R90">
+<attribute name="PARTNO" x="25.4" y="44.45" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R40" gate="G$1" x="53.34" y="44.45" rot="R90">
+<attribute name="PARTNO" x="53.34" y="44.45" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="P+13" gate="1" x="43.18" y="58.42"/>
 <instance part="U11" gate="G$1" x="78.74" y="21.59"/>
-<instance part="R41" gate="G$1" x="81.28" y="44.45" rot="R90"/>
+<instance part="R41" gate="G$1" x="81.28" y="44.45" rot="R90">
+<attribute name="PARTNO" x="81.28" y="44.45" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="D3" gate="G$1" x="81.28" y="34.29" rot="R270"/>
 <instance part="GND39" gate="1" x="81.28" y="8.89"/>
-<instance part="R42" gate="G$1" x="158.75" y="129.54" rot="R180"/>
+<instance part="R42" gate="G$1" x="158.75" y="129.54" rot="R180">
+<attribute name="PARTNO" x="158.75" y="129.54" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND40" gate="1" x="184.15" y="125.73"/>
-<instance part="R43" gate="G$1" x="181.61" y="143.51"/>
-<instance part="R44" gate="G$1" x="163.83" y="143.51"/>
-<instance part="R45" gate="G$1" x="147.32" y="143.51"/>
-<instance part="R46" gate="G$1" x="134.62" y="156.21"/>
-<instance part="R47" gate="G$1" x="119.38" y="156.21"/>
+<instance part="R43" gate="G$1" x="181.61" y="143.51">
+<attribute name="PARTNO" x="181.61" y="143.51" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R44" gate="G$1" x="163.83" y="143.51">
+<attribute name="PARTNO" x="163.83" y="143.51" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R45" gate="G$1" x="147.32" y="143.51">
+<attribute name="PARTNO" x="147.32" y="143.51" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R46" gate="G$1" x="134.62" y="156.21">
+<attribute name="PARTNO" x="134.62" y="156.21" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R47" gate="G$1" x="119.38" y="156.21">
+<attribute name="PARTNO" x="119.38" y="156.21" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="GND41" gate="1" x="85.09" y="85.09"/>
 <instance part="U12" gate="G$1" x="82.55" y="97.79"/>
 <instance part="R48" gate="G$1" x="71.12" y="106.68" rot="MR90">
@@ -10101,7 +10340,9 @@ sets Vdd = 5V</text>
 <instance part="C38" gate="G$1" x="104.14" y="120.65" rot="R180">
 <attribute name="PARTNO" x="104.14" y="120.65" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="R49" gate="G$1" x="119.38" y="147.32"/>
+<instance part="R49" gate="G$1" x="119.38" y="147.32">
+<attribute name="PARTNO" x="119.38" y="147.32" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="C36" gate="G$1" x="88.9" y="116.84">
 <attribute name="PARTNO" x="88.9" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
