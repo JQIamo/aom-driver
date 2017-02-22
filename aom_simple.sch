@@ -6206,7 +6206,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
-<part name="IC1" library="opamp-jqi" deviceset="OPAMP" device="-SO">
+<part name="IC1" library="opamp-jqi" deviceset="OPAMP" device="-SO" value="LM7171">
 <attribute name="PARTNO" value="LM7171BIMX/NOPB"/>
 </part>
 <part name="R1" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
@@ -6233,7 +6233,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="AUX_VCO_TUNE" library="pinhead" deviceset="PINHD-1X2" device="" value="DNP">
 <attribute name="PARTNO" value="640456-2"/>
 </part>
-<part name="IC2" library="opamp-jqi" deviceset="OPAMP" device="-SO">
+<part name="IC2" library="opamp-jqi" deviceset="OPAMP" device="-SO" value="LM7171">
 <attribute name="PARTNO" value="LM7171BIMX/NOPB"/>
 </part>
 <part name="R6" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
@@ -6270,7 +6270,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="AD5663RBRMZ-5"/>
 </part>
 <part name="L1" library="jqi_passives" deviceset="L_FERRITE_SMD" device="LFERRITE_0603" value="1000k Ferrite">
-<attribute name="PARTNO" value="MMZ1608R102ATA00"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00"/>
 </part>
 <part name="C8" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
@@ -6333,7 +6333,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
 </part>
 <part name="L2" library="jqi_passives" deviceset="L_FERRITE_SMD" device="LFERRITE_0603" value="1000k Ferrite">
-<attribute name="PARTNO" value="MMZ1608R102ATA00"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00"/>
 </part>
 <part name="C21" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
@@ -6342,7 +6342,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
 </part>
 <part name="L3" library="jqi_passives" deviceset="L_FERRITE_SMD" device="LFERRITE_0603" value="1000k Ferrite">
-<attribute name="PARTNO" value="MMZ1608R102ATA00"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00"/>
 </part>
 <part name="C23" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0805" value="10uF">
 <attribute name="PARTNO" value="C2012JB1V106K125AC"/>
@@ -6522,7 +6522,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="R8" library="jqi_passives" deviceset="R_SMD" device="R0603" value="30k">
 <attribute name="PARTNO" value="ERJ-3EKF3002V"/>
 </part>
-<part name="R28" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
+<part name="R28" library="jqi_passives" deviceset="R_SMD" device="R0603" value="DNP">
 <attribute name="PARTNO" value="ERJ-3EKF1001V"/>
 </part>
 <part name="R5" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
@@ -6550,7 +6550,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="U6" library="rf-jqi" deviceset="HMC8410" device="">
 <attribute name="PARTNO" value="HMC8410LP2FETR"/>
 </part>
-<part name="RF1" library="rf-jqi" deviceset="F2255" device="">
+<part name="RF1" library="rf-jqi" deviceset="F2255" device="" value="F2255">
 <attribute name="PARTNO" value="F2255NLGK"/>
 </part>
 <part name="C12" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
@@ -6867,8 +6867,12 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="R52" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
 <attribute name="PARTNO" value="ERJ-3EKF1001V"/>
 </part>
-<part name="C1" library="MF_Passives" deviceset="CAPACITOR_P" device="_10MM" value="220uF"/>
-<part name="C2" library="MF_Passives" deviceset="CAPACITOR_P" device="_10MM" value="220uF"/>
+<part name="C1" library="MF_Passives" deviceset="CAPACITOR_P" device="_10MM" value="220uF">
+<attribute name="PARTNO" value="MF-CAP-10MM-220uF"/>
+</part>
+<part name="C2" library="MF_Passives" deviceset="CAPACITOR_P" device="_10MM" value="220uF">
+<attribute name="PARTNO" value="MF-CAP-10MM-220uF"/>
+</part>
 <part name="U14" library="MF_Discrete_Semiconductor" deviceset="N-CHANNEL_FET" device="_SOT-23-3" technology="_BSS138" value="MF-DSC-SOT233-BSS138"/>
 <part name="GND43" library="supply1" deviceset="GND" device=""/>
 <part name="IC17" library="regulator-jqi" deviceset="LT3080" device="">
@@ -7729,7 +7733,7 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <text x="111.76" y="30.48" size="1.778" layer="91">Input at +/-24</text>
 <text x="58.42" y="194.31" size="1.778" layer="91">+15V</text>
 <text x="236.22" y="194.31" size="1.778" layer="91">+12V</text>
-<text x="99.06" y="194.31" size="1.778" layer="91">+9V</text>
+<text x="113.03" y="195.58" size="1.778" layer="91">+9V</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -7869,8 +7873,12 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <instance part="C77" gate="G$1" x="255.27" y="90.17">
 <attribute name="PARTNO" x="255.27" y="90.17" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C1" gate="G$1" x="140.97" y="27.94"/>
-<instance part="C2" gate="G$1" x="140.97" y="19.05"/>
+<instance part="C1" gate="G$1" x="140.97" y="27.94">
+<attribute name="PARTNO" x="140.97" y="27.94" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="C2" gate="G$1" x="140.97" y="19.05">
+<attribute name="PARTNO" x="140.97" y="19.05" size="1.778" layer="96" display="off"/>
+</instance>
 <instance part="IC17" gate="G$1" x="34.29" y="147.32">
 <attribute name="PARTNO" x="34.29" y="147.32" size="1.778" layer="96" display="off"/>
 </instance>

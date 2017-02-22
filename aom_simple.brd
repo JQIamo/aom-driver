@@ -3104,7 +3104,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="5-1814832-1" x="24.2824" y="8.9916" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="20.9804" y="13.4366" size="1.27" layer="25"/>
 </element>
-<element name="IC1" library="opamp-jqi" package="SO08" value="" x="108.839" y="42.037" smashed="yes" rot="R270">
+<element name="IC1" library="opamp-jqi" package="SO08" value="LM7171" x="108.839" y="42.037" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.125" y="42.926" size="0.762" layer="25" rot="R270"/>
 <attribute name="VALUE" x="103.759" y="43.942" size="1.27" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="LM7171BIMX/NOPB" x="108.839" y="42.037" size="1.778" layer="27" rot="R270" display="off"/>
@@ -3140,7 +3140,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="VALUE" x="104.902" y="37.719" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="640456-2" x="102.362" y="34.544" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IC2" library="opamp-jqi" package="SO08" value="" x="43.4594" y="27.2796" smashed="yes" rot="R270">
+<element name="IC2" library="opamp-jqi" package="SO08" value="LM7171" x="43.4594" y="27.2796" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="LM7171BIMX/NOPB" x="43.4594" y="27.2796" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="42.1894" y="26.8986" size="0.762" layer="25"/>
 <attribute name="VALUE" x="38.3794" y="29.1846" size="1.27" layer="27" rot="R270"/>
@@ -3188,7 +3188,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="VALUE" x="207.264" y="48.514" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="L1" library="jqi_passives" package="L_FERRITE_0603" value="1000k Ferrite" x="218.694" y="55.118" smashed="yes">
-<attribute name="PARTNO" value="MMZ1608R102ATA00" x="218.694" y="55.118" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00" x="218.694" y="55.118" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="217.748" y="56.172" size="0.762" layer="25" font="vector"/>
 </element>
 <element name="C8" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="220.98" y="54.102" smashed="yes" rot="R270">
@@ -3263,7 +3263,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="NAME" x="191.278" y="37.643" size="0.762" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="L2" library="jqi_passives" package="L_FERRITE_0603" value="1000k Ferrite" x="116.84" y="38.862" smashed="yes">
-<attribute name="PARTNO" value="MMZ1608R102ATA00" x="116.84" y="38.862" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00" x="116.84" y="38.862" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="116.402" y="39.789" size="0.762" layer="25" font="vector"/>
 </element>
 <element name="C21" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="119.126" y="39.751" smashed="yes" rot="R90">
@@ -3275,7 +3275,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="NAME" x="115.586" y="41.58" size="0.762" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="L3" library="jqi_passives" package="L_FERRITE_0603" value="1000k Ferrite" x="116.84" y="36.195" smashed="yes">
-<attribute name="PARTNO" value="MMZ1608R102ATA00" x="116.84" y="36.195" size="1.778" layer="27" display="off"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00" x="116.84" y="36.195" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="116.148" y="34.328" size="0.762" layer="25" font="vector"/>
 </element>
 <element name="C23" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="119.126" y="35.306" smashed="yes" rot="R270">
@@ -3478,7 +3478,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="R8" library="jqi_passives" package="R_0603" value="30k" x="43.815" y="32.639" rot="R270">
 <attribute name="PARTNO" value="ERJ-3EKF3002V" x="43.815" y="32.639" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R28" library="jqi_passives" package="R_0603" value="1k" x="21.082" y="54.102" smashed="yes" rot="R180">
+<element name="R28" library="jqi_passives" package="R_0603" value="DNP" x="21.082" y="54.102" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="ERJ-3EKF1001V" x="21.082" y="54.102" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="22.676" y="54.902" size="1.016" layer="25" font="vector"/>
 </element>
@@ -3510,7 +3510,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="U6" library="rf-jqi" package="HMC8410" value="HMC8410" x="68.199" y="10.287" rot="R180">
 <attribute name="PARTNO" value="HMC8410LP2FETR" x="68.199" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="RF1" library="rf-jqi" package="QFN-16(0.9X3X3)" value="" x="44.831" y="10.0584" smashed="yes" rot="R180">
+<element name="RF1" library="rf-jqi" package="QFN-16(0.9X3X3)" value="F2255" x="44.831" y="10.0584" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="F2255NLGK" x="44.831" y="10.0584" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="43.3826" y="8.487" size="0.5" layer="21" rot="R270"/>
 </element>
@@ -3914,6 +3914,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="POPULATE" value="1" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VOLTAGE" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="244.151" y="35.313" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="PARTNO" value="MF-CAP-10MM-220uF" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C2" library="MF_Passives" package="CP10MM" value="220uF" x="240.157" y="8.763" smashed="yes">
 <attribute name="MPN" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
@@ -3923,6 +3924,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="POPULATE" value="1" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
 <attribute name="VOLTAGE" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="243.389" y="14.104" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="PARTNO" value="MF-CAP-10MM-220uF" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U14" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="14.351" y="14.478" rot="R90">
 <attribute name="POPULATE" value="1" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
