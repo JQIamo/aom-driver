@@ -3548,13 +3548,13 @@ www.minicircuits.com&lt;br&gt;
 <library name="transistor-jqi">
 <packages>
 <package name="4-LEAD_SOP">
-<wire x1="1.524" y1="1.8288" x2="-1.4986" y2="1.8288" width="0.127" layer="21"/>
-<smd name="P$1" x="-1.397" y="1.27" dx="1.27" dy="0.508" layer="1" roundness="85"/>
-<smd name="P$2" x="-1.397" y="-1.27" dx="1.27" dy="0.508" layer="1" roundness="85"/>
-<smd name="P$3" x="1.397" y="-1.27" dx="1.27" dy="0.508" layer="1" roundness="85"/>
-<smd name="P$4" x="1.397" y="1.27" dx="1.27" dy="0.508" layer="1" roundness="85"/>
-<text x="-0.6858" y="1.0922" size="0.6096" layer="21">1</text>
-<text x="-1.27" y="2.54" size="1.27" layer="25">&gt;NAME</text>
+<wire x1="2.794" y1="1.8288" x2="-2.794" y2="1.8288" width="0.127" layer="21"/>
+<smd name="P$1" x="-2.80035" y="1.27" dx="1.30048125" dy="0.55118125" layer="1" roundness="85"/>
+<smd name="P$2" x="-2.80035" y="-1.27" dx="1.30048125" dy="0.55118125" layer="1" roundness="85"/>
+<smd name="P$3" x="2.80035" y="-1.27" dx="1.30048125" dy="0.55118125" layer="1" roundness="85"/>
+<smd name="P$4" x="2.80035" y="1.27" dx="1.30048125" dy="0.55118125" layer="1" roundness="85"/>
+<text x="-1.905" y="1.0922" size="0.6096" layer="21">1</text>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="PG-SOT-223">
 <description>&lt;b&gt;Small Outline Transistor; 4 leads&lt;/b&gt; Wave soldering&lt;p&gt;
