@@ -7243,7 +7243,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="GND11" library="supply1" deviceset="GND" device=""/>
 <part name="IC1" library="opamp-jqi" deviceset="OPAMP" device="-SO" value="LM7171">
-<attribute name="PARTNO" value="LM7171BIMX/NOPB"/>
+<attribute name="PARTNO" value="LM7171AIMX/NOPB"/>
 </part>
 <part name="R1" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="ERJ-3EKF1002V"/>
@@ -7270,7 +7270,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="640456-2"/>
 </part>
 <part name="IC2" library="opamp-jqi" deviceset="OPAMP" device="-SO" value="LM7171">
-<attribute name="PARTNO" value="LM7171BIMX/NOPB"/>
+<attribute name="PARTNO" value="LM7171AIMX/NOPB"/>
 </part>
 <part name="R6" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="ERJ-3EKF1002V"/>
