@@ -7095,6 +7095,63 @@ PN 5019; Silver plated phosphor bronze</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="fiducials-jqi">
+<packages>
+<package name="FID_1.0MM">
+<description>1 mm SMD Fiducial in 3 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1" dy="1" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="29"/>
+<circle x="0" y="0" radius="1.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="0.75" width="1.5" layer="41"/>
+</package>
+<package name="FID_1.5MM">
+<description>1.5 mm SMD Fiducial in 4 mm Opening</description>
+<smd name="FID" x="0" y="0" dx="1.5" dy="1.5" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1" width="2" layer="29"/>
+<circle x="0" y="0" radius="2" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1" width="2" layer="41"/>
+</package>
+<package name="FID_2.0MM">
+<description>2 mm SMD Fiducial in 5mm Opening</description>
+<smd name="FID" x="0" y="0" dx="2" dy="2" layer="1" roundness="100" thermals="no" cream="no"/>
+<circle x="0" y="0" radius="1.25" width="2.5" layer="29"/>
+<circle x="0" y="0" radius="2.5" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1.25" width="2.5" layer="41"/>
+</package>
+</packages>
+<symbols>
+<symbol name="FIDUCIAL">
+<description>Fiducial Name w/ Part Size Value</description>
+<text x="0" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="FIDUCIAL" prefix="FID">
+<description>SMD Fiducials for optical recognition systems</description>
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-1.0MM" package="FID_1.0MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-1.5MM" package="FID_1.5MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-2.0MM" package="FID_2.0MM">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -7868,6 +7925,10 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="R60" library="teensy_block_with_programmer" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="ERJ-3EKF1002V"/>
 </part>
+<part name="FID1" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID2" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID3" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
+<part name="FID4" library="fiducials-jqi" deviceset="FIDUCIAL" device="-1.0MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -8053,6 +8114,10 @@ RF protection of amplifiers</text>
 <instance part="C80" gate="G$1" x="22.86" y="182.88" rot="R90">
 <attribute name="PARTNO" x="22.86" y="182.88" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="FID1" gate="G$1" x="19.05" y="76.2"/>
+<instance part="FID2" gate="G$1" x="35.56" y="76.2"/>
+<instance part="FID3" gate="G$1" x="19.05" y="71.12"/>
+<instance part="FID4" gate="G$1" x="35.56" y="71.12"/>
 </instances>
 <busses>
 </busses>
