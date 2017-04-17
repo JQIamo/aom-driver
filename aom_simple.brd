@@ -3582,8 +3582,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="TPSA106K010R0900" x="7.112" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="8.169" y="24.354" size="0.635" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="R49" library="jqi_passives" package="R_0603" value="1k" x="12.065" y="29.845" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="TNPW06031K00BEEN" x="12.065" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="R49" library="jqi_passives" package="R_0603" value="4.75k" x="12.065" y="29.845" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="TNPW06034K75BEEA" x="12.065" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="11.627" y="27.851" size="0.635" layer="25" font="vector"/>
 </element>
 <element name="C36" library="jqi_passives" package="C_MLCC_0603" value="1uF" x="9.525" y="22.479" smashed="yes">

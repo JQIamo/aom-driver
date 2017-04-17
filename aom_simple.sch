@@ -7828,8 +7828,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="C38" library="jqi_passives" deviceset="C_POL_SMD" device="CPOL_1206" value="10uF">
 <attribute name="PARTNO" value="TPSA106K010R0900"/>
 </part>
-<part name="R49" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
-<attribute name="PARTNO" value="TNPW06031K00BEEN"/>
+<part name="R49" library="jqi_passives" deviceset="R_SMD" device="R0603" value="4.75k">
+<attribute name="PARTNO" value="TNPW06034K75BEEA"/>
 </part>
 <part name="C36" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="1uF">
 <attribute name="PARTNO" value="CL10B105KA8NNNC"/>

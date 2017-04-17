@@ -1,5 +1,5 @@
-#include "LCD/LCD.h"
-#include "Menu/MenuEncoder.h"
+#include "src/LCD/LCD.h"
+#include "src/Menu/MenuEncoder.h"
 #include <EEPROM.h>
 #include "aom.h"
 #include <Metro.h>

@@ -1,21 +1,21 @@
 #include "Arduino.h"
-#include "AD56XXR/AD56XXR.h"
+#include "src/AD56XXR/AD56XXR.h"
 
 
-#define DAC_CLR 0
-#define DAC_LDAC 1
+#define DAC_CLR 7
+#define DAC_LDAC 14
 #define DAC_SYNC 2
 #define DAC_SCK 3
 #define DAC_MOSI 4
 
-#define AUX_TRIGGER 5
+#define AUX_TRIGGER 10
 
-#define DDS_RESET 10
-#define DDS_CS 12
-#define DDS_OSK 14
-#define DDS_PS0 15
-#define DDS_PS1 16
-#define DDS_IOUPDATE 17
+#define DDS_RESET 16
+#define DDS_CS 28
+#define DDS_OSK 12
+#define DDS_PS0 20
+#define DDS_PS1 5
+#define DDS_IOUPDATE 9
 
 
 #define ENC_SW 21
@@ -23,9 +23,9 @@
 #define ENC_B 23
 
 
-#define LCD_RST 20
-#define LCD_RS 18
-#define LCD_CS 19
+#define LCD_RST 19
+#define LCD_RS 17
+#define LCD_CS 16
 
 
 // magic word for factory default
