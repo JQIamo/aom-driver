@@ -338,6 +338,10 @@ PLL_LOCK</text>
 Ready?</text>
 <text x="1.905" y="15.621" size="0.889" layer="21" rot="R90">Pre-Amp Overcurrent?</text>
 <text x="3.429" y="30.607" size="0.889" layer="21" rot="R90">Controller Pwr Okay?</text>
+<text x="10.541" y="52.578" size="0.762" layer="21" rot="R180">Amp
++5V</text>
+<text x="16.637" y="50.8" size="0.762" layer="21">Amp
+Gnd</text>
 </plain>
 <libraries>
 <library name="pinhead">
