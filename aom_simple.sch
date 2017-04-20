@@ -7932,8 +7932,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="C81" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="CL10B104KB8SFNC"/>
 </part>
-<part name="R61" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
-<attribute name="PARTNO" value="ERJ-3EKF1001V"/>
+<part name="R61" library="jqi_passives" deviceset="R_SMD" device="R0603" value="4.02k">
+<attribute name="PARTNO" value="ERJ-3EKF4021V"/>
 </part>
 <part name="R62" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
 <attribute name="PARTNO" value="ERJ-3EKF1001V"/>
@@ -11553,8 +11553,8 @@ sets Vdd = 5V</text>
 <instance part="C81" gate="G$1" x="57.15" y="105.41" rot="R180">
 <attribute name="PARTNO" x="57.15" y="105.41" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R61" gate="G$1" x="46.99" y="97.79" rot="R180">
-<attribute name="PARTNO" x="46.99" y="97.79" size="1.778" layer="96" rot="R90" display="off"/>
+<instance part="R61" gate="G$1" x="48.26" y="97.79" rot="R180">
+<attribute name="PARTNO" x="48.26" y="97.79" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="R62" gate="G$1" x="100.33" y="96.52" rot="R270">
 <attribute name="PARTNO" x="100.33" y="96.52" size="1.778" layer="96" rot="R180" display="off"/>
@@ -11936,7 +11936,7 @@ sets Vdd = 5V</text>
 <pinref part="C81" gate="G$1" pin="1"/>
 <wire x1="57.15" y1="102.87" x2="57.15" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="R61" gate="G$1" pin="1"/>
-<wire x1="52.07" y1="97.79" x2="57.15" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="97.79" x2="57.15" y2="97.79" width="0.1524" layer="91"/>
 <junction x="57.15" y="97.79"/>
 </segment>
 </net>
@@ -12083,7 +12083,7 @@ sets Vdd = 5V</text>
 <segment>
 <pinref part="AMP_EN" gate="G$1" pin="2"/>
 <pinref part="R61" gate="G$1" pin="2"/>
-<wire x1="34.29" y1="97.79" x2="41.91" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="34.29" y1="97.79" x2="43.18" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
