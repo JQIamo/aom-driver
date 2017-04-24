@@ -7938,20 +7938,32 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="R62" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
 <attribute name="PARTNO" value="ERJ-3EKF1001V"/>
 </part>
+<part name="R63" library="jqi_passives" deviceset="R_SMD" device="R0805" value="0R">
+<attribute name="PARTNO" value="MF-RES-0805-0"/>
+</part>
+<part name="R64" library="jqi_passives" deviceset="R_SMD" device="R0805" value="DNP">
+<attribute name="PARTNO" value="MF-RES-0805-0"/>
+</part>
+<part name="C82" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
+<attribute name="PARTNO" value="CL10B104KB8SFNC"/>
+</part>
+<part name="GND49" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="162.56" y="207.01" size="1.778" layer="91">add Vreg</text>
-<text x="90.17" y="203.2" size="1.778" layer="91">pullup -&gt; VCO default</text>
-<text x="128.27" y="158.75" size="1.778" layer="91">pulldown -&gt; off default</text>
-<text x="7.62" y="186.69" size="1.778" layer="91" rot="R90">RF select</text>
-<text x="7.62" y="146.05" size="1.778" layer="91" rot="R90">Output TTL</text>
-<text x="264.16" y="171.45" size="1.778" layer="91" rot="R90">VCO Ctl</text>
-<text x="264.16" y="137.16" size="1.778" layer="91" rot="R90">ATT Ctl</text>
-<text x="115.57" y="101.6" size="1.778" layer="91">Place R28-R30 to disable
+<text x="162.56" y="207.01" size="1.778" layer="98">add Vreg</text>
+<text x="90.17" y="203.2" size="1.778" layer="98">pullup -&gt; VCO default</text>
+<text x="128.27" y="158.75" size="1.778" layer="98">pulldown -&gt; off default</text>
+<text x="7.62" y="186.69" size="1.778" layer="98" rot="R90">RF select</text>
+<text x="7.62" y="146.05" size="1.778" layer="98" rot="R90">Output TTL</text>
+<text x="264.16" y="171.45" size="1.778" layer="98" rot="R90">VCO Ctl</text>
+<text x="264.16" y="137.16" size="1.778" layer="98" rot="R90">ATT Ctl</text>
+<text x="115.57" y="101.6" size="1.778" layer="98">Place R28-R30 to disable
 RF protection of amplifiers</text>
-<text x="8.89" y="40.64" size="1.778" layer="91" rot="R90">AUX Trigger</text>
+<text x="8.89" y="40.64" size="1.778" layer="98" rot="R90">AUX Trigger</text>
+<text x="120.65" y="24.13" size="1.778" layer="98" rot="R90">AUX RF Input</text>
+<text x="125.73" y="44.45" size="1.778" layer="98" rot="R90">VCO Voltage Source</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8073,16 +8085,16 @@ RF protection of amplifiers</text>
 <attribute name="PARTNO" x="106.68" y="116.84" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="P+3" gate="1" x="113.03" y="104.14"/>
-<instance part="AUX_RF" gate="G$1" x="154.94" y="31.75" rot="MR0">
-<attribute name="PARTNO" x="154.94" y="31.75" size="1.778" layer="96" display="off"/>
+<instance part="AUX_RF" gate="G$1" x="114.3" y="31.75" rot="MR0">
+<attribute name="PARTNO" x="114.3" y="31.75" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND5" gate="1" x="149.86" y="25.4" rot="MR0"/>
-<instance part="C15" gate="G$1" x="139.7" y="31.75" rot="R90">
-<attribute name="PARTNO" x="139.7" y="31.75" size="1.778" layer="96" display="off"/>
+<instance part="GND5" gate="1" x="109.22" y="25.4" rot="MR0"/>
+<instance part="C15" gate="G$1" x="99.06" y="31.75" rot="R90">
+<attribute name="PARTNO" x="99.06" y="31.75" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND46" gate="1" x="157.48" y="19.05" rot="MR0"/>
-<instance part="RF4" gate="G$1" x="144.78" y="13.97" rot="R180">
-<attribute name="PARTNO" x="144.78" y="13.97" size="1.778" layer="96" rot="MR90" display="off"/>
+<instance part="GND46" gate="1" x="116.84" y="19.05" rot="MR0"/>
+<instance part="RF4" gate="G$1" x="104.14" y="13.97" rot="R180">
+<attribute name="PARTNO" x="104.14" y="13.97" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
 <instance part="C59" gate="G$1" x="63.5" y="163.83">
 <attribute name="PARTNO" x="63.5" y="163.83" size="1.778" layer="96" display="off"/>
@@ -8127,6 +8139,16 @@ RF protection of amplifiers</text>
 <instance part="FID2" gate="G$1" x="35.56" y="76.2"/>
 <instance part="FID3" gate="G$1" x="19.05" y="71.12"/>
 <instance part="FID4" gate="G$1" x="35.56" y="71.12"/>
+<instance part="R63" gate="G$1" x="129.54" y="64.77" rot="R90">
+<attribute name="PARTNO" x="129.54" y="64.77" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R64" gate="G$1" x="129.54" y="49.53" rot="R90">
+<attribute name="PARTNO" x="129.54" y="49.53" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="C82" gate="G$1" x="142.24" y="53.34">
+<attribute name="PARTNO" x="142.24" y="53.34" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="GND49" gate="1" x="142.24" y="44.45" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -8241,13 +8263,13 @@ RF protection of amplifiers</text>
 <segment>
 <pinref part="AUX_RF" gate="G$1" pin="2"/>
 <pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="152.4" y1="29.21" x2="149.86" y2="29.21" width="0.1524" layer="91"/>
-<wire x1="149.86" y1="29.21" x2="149.86" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="29.21" x2="109.22" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="29.21" x2="109.22" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="RF4" gate="G$1" pin="GND"/>
-<wire x1="157.48" y1="21.59" x2="142.24" y2="21.59" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="21.59" x2="101.6" y2="21.59" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C78" gate="G$1" pin="2"/>
@@ -8257,6 +8279,11 @@ RF protection of amplifiers</text>
 <wire x1="53.34" y1="40.64" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
 <junction x="68.58" y="40.64"/>
 <pinref part="IC22" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C82" gate="G$1" pin="2"/>
+<pinref part="GND49" gate="1" pin="GND"/>
+<wire x1="142.24" y1="48.26" x2="142.24" y2="46.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -8444,6 +8471,11 @@ RF protection of amplifiers</text>
 <wire x1="68.58" y1="50.8" x2="68.58" y2="49.53" width="0.1524" layer="91"/>
 <junction x="68.58" y="50.8"/>
 <pinref part="IC22" gate="G$1" pin="VCC"/>
+</segment>
+<segment>
+<pinref part="R64" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="44.45" x2="135.89" y2="44.45" width="0.1524" layer="91"/>
+<label x="132.08" y="44.45" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="OUTPUT_TTL" class="0">
@@ -8688,25 +8720,25 @@ RF protection of amplifiers</text>
 <net name="AUX" class="0">
 <segment>
 <pinref part="RF4" gate="G$1" pin="IN"/>
-<label x="161.29" y="13.97" size="1.778" layer="95"/>
-<wire x1="157.48" y1="13.97" x2="166.37" y2="13.97" width="0.1524" layer="91"/>
+<label x="120.65" y="13.97" size="1.778" layer="95"/>
+<wire x1="116.84" y1="13.97" x2="125.73" y2="13.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$5" class="0">
 <segment>
 <pinref part="AUX_RF" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="31.75" x2="144.78" y2="31.75" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="31.75" x2="104.14" y2="31.75" width="0.1524" layer="91"/>
 <pinref part="C15" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="AUXIN" class="0">
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
-<wire x1="137.16" y1="31.75" x2="124.46" y2="31.75" width="0.1524" layer="91"/>
-<label x="125.73" y="31.75" size="1.778" layer="95"/>
-<wire x1="124.46" y1="31.75" x2="124.46" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="31.75" x2="83.82" y2="31.75" width="0.1524" layer="91"/>
+<label x="85.09" y="31.75" size="1.778" layer="95"/>
+<wire x1="83.82" y1="31.75" x2="83.82" y2="13.97" width="0.1524" layer="91"/>
 <pinref part="RF4" gate="G$1" pin="OUT"/>
-<wire x1="124.46" y1="13.97" x2="127" y2="13.97" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="13.97" x2="86.36" y2="13.97" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -8726,20 +8758,6 @@ RF protection of amplifiers</text>
 <wire x1="27.94" y1="142.24" x2="30.48" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="142.24" x2="30.48" y2="148.59" width="0.1524" layer="91"/>
 <junction x="30.48" y="148.59"/>
-</segment>
-</net>
-<net name="V+3" class="0">
-<segment>
-<pinref part="VCO1" gate="G$1" pin="2-VCC"/>
-<wire x1="189.23" y1="59.69" x2="191.77" y2="59.69" width="0.1524" layer="91"/>
-<wire x1="191.77" y1="59.69" x2="191.77" y2="66.04" width="0.1524" layer="91"/>
-<label x="191.77" y="62.23" size="1.778" layer="95" rot="R90"/>
-</segment>
-<segment>
-<pinref part="VCO" gate="VCO" pin="2-VCC"/>
-<wire x1="189.23" y1="83.82" x2="191.77" y2="83.82" width="0.1524" layer="91"/>
-<wire x1="191.77" y1="83.82" x2="191.77" y2="90.17" width="0.1524" layer="91"/>
-<label x="191.77" y="86.36" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
 <net name="N$32" class="0">
@@ -8794,19 +8812,51 @@ RF protection of amplifiers</text>
 <label x="77.47" y="121.92" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="V_OSC" class="0">
+<segment>
+<pinref part="VCO1" gate="G$1" pin="2-VCC"/>
+<wire x1="189.23" y1="59.69" x2="191.77" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="59.69" x2="191.77" y2="66.04" width="0.1524" layer="91"/>
+<label x="191.77" y="62.23" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="VCO" gate="VCO" pin="2-VCC"/>
+<wire x1="189.23" y1="83.82" x2="191.77" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="83.82" x2="191.77" y2="90.17" width="0.1524" layer="91"/>
+<label x="191.77" y="86.36" size="1.778" layer="95" rot="R90"/>
+</segment>
+<segment>
+<pinref part="R63" gate="G$1" pin="1"/>
+<pinref part="R64" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="59.69" x2="129.54" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="57.15" x2="129.54" y2="54.61" width="0.1524" layer="91"/>
+<junction x="129.54" y="57.15"/>
+<label x="132.08" y="57.15" size="1.778" layer="95"/>
+<pinref part="C82" gate="G$1" pin="1"/>
+<wire x1="129.54" y1="57.15" x2="142.24" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="57.15" x2="142.24" y2="55.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V+3" class="0">
+<segment>
+<pinref part="R63" gate="G$1" pin="2"/>
+<wire x1="129.54" y1="69.85" x2="135.89" y2="69.85" width="0.1524" layer="91"/>
+<label x="132.08" y="69.85" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
 <plain>
-<text x="26.67" y="113.03" size="1.778" layer="91">Vout = 10uA * Rset</text>
-<text x="63.5" y="44.45" size="1.778" layer="91">Vout = -1.22V * (1 + R2/R1) + 30nA * R2; 
+<text x="26.67" y="113.03" size="1.778" layer="98">Vout = 10uA * Rset</text>
+<text x="63.5" y="44.45" size="1.778" layer="98">Vout = -1.22V * (1 + R2/R1) + 30nA * R2; 
 R2 is upper resistor in partiton; R1 -&gt; gnd</text>
-<text x="80.01" y="97.79" size="1.778" layer="91">-15V</text>
-<text x="161.29" y="97.79" size="1.778" layer="91">-5V</text>
-<text x="111.76" y="30.48" size="1.778" layer="91">Input at +/-24</text>
-<text x="58.42" y="194.31" size="1.778" layer="91">+15V</text>
-<text x="236.22" y="194.31" size="1.778" layer="91">+12V</text>
-<text x="113.03" y="195.58" size="1.778" layer="91">+9V</text>
+<text x="80.01" y="97.79" size="1.778" layer="98">-15V</text>
+<text x="161.29" y="97.79" size="1.778" layer="98">-5V</text>
+<text x="111.76" y="30.48" size="1.778" layer="98">Input at +/-24</text>
+<text x="58.42" y="194.31" size="1.778" layer="98">+15V</text>
+<text x="236.22" y="194.31" size="1.778" layer="98">+12V</text>
+<text x="113.03" y="195.58" size="1.778" layer="98">+9V</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -9532,14 +9582,14 @@ R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 </sheet>
 <sheet>
 <plain>
-<text x="109.22" y="149.86" size="1.778" layer="97">VBAT must be connected because somewhere
+<text x="109.22" y="149.86" size="1.778" layer="98">VBAT must be connected because somewhere
 the Teensy code is writing on the RTC register and
 since the register is powered by VBAT lack of power
 will gererate a bus error.
 This pin must therefore be connected to VCC</text>
-<text x="115.57" y="205.74" size="1.778" layer="97">VREGIN can be used to convert 5V into 3.3
+<text x="115.57" y="205.74" size="1.778" layer="98">VREGIN can be used to convert 5V into 3.3
 by connecting VOUT3V3 to VCC it should be possibile to avoid using a voltage regulator for the teensy.</text>
-<text x="109.22" y="104.14" size="1.778" layer="97">The quartz oscillator does not need capacitors.</text>
+<text x="109.22" y="104.14" size="1.778" layer="98">The quartz oscillator does not need capacitors.</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -10850,7 +10900,7 @@ by connecting VOUT3V3 to VCC it should be possibile to avoid using a voltage reg
 <sheet>
 <plain>
 <text x="143.51" y="107.95" size="1.778" layer="91">MON</text>
-<text x="151.13" y="53.34" size="1.778" layer="91">difference configuration;
+<text x="151.13" y="53.34" size="1.778" layer="98">difference configuration;
 attenuator wants [0,+5] V</text>
 </plain>
 <instances>
@@ -11431,11 +11481,11 @@ attenuator wants [0,+5] V</text>
 </sheet>
 <sheet>
 <plain>
-<text x="150.876" y="123.698" size="1.27" layer="97">R42 = 2.2k
+<text x="150.876" y="123.698" size="1.27" layer="98">R42 = 2.2k
 sets Idd = 75 mA</text>
-<text x="115.57" y="160.02" size="1.27" layer="97">R46 = 15.2k
+<text x="115.57" y="160.02" size="1.27" layer="98">R46 = 15.2k
 sets Vdd = 5V</text>
-<text x="45.72" y="166.37" size="1.778" layer="97">R50=R51*(Vout/1.176-1)</text>
+<text x="45.72" y="166.37" size="1.778" layer="98">R50=R51*(Vout/1.176-1)</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>
