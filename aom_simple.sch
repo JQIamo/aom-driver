@@ -11540,8 +11540,11 @@ attenuator wants [0,+4] V</text>
 <plain>
 <text x="150.876" y="123.698" size="1.27" layer="98">R42 = 2.2k
 sets Idd = 75 mA</text>
-<text x="115.57" y="160.02" size="1.27" layer="98">R46 = 15.2k
-sets Vdd = 5V</text>
+<text x="127" y="160.02" size="1.27" layer="98">R46 = 15.2k
+sets Vdd = 5V
+
+R46 = 20k
+sets Vdd = 6V</text>
 <text x="45.72" y="166.37" size="1.778" layer="98">R50=R51*(Vout/1.176-1)</text>
 </plain>
 <instances>
