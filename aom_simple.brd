@@ -2806,9 +2806,9 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="5-1814832-1" x="97.79" y="5.715" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="101.854" y="8.001" size="1.27" layer="25" rot="R270"/>
 </element>
-<element name="RF_OUT" library="connector-jqi" package="SMA-V" value="SMA-V" x="30.1244" y="8.9916" smashed="yes">
-<attribute name="PARTNO" value="5-1814832-1" x="30.1244" y="8.9916" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="26.8224" y="13.4366" size="1.27" layer="25"/>
+<element name="RF_OUT" library="connector-jqi" package="SMA-V" value="SMA-V" x="33.1724" y="8.9916" smashed="yes">
+<attribute name="PARTNO" value="5-1814832-1" x="33.1724" y="8.9916" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="29.8704" y="13.4366" size="1.27" layer="25"/>
 </element>
 <element name="IC1" library="opamp-jqi" package="SO08" value="LM7171" x="108.839" y="42.037" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.125" y="42.926" size="0.762" layer="25" rot="R270"/>
@@ -2909,21 +2909,21 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="213.614" y="53.467" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="214.084" y="56.485" size="0.762" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C13" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="44.0944" y="10.3251" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="44.0944" y="10.3251" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="42.8452" y="8.4073" size="0.635" layer="25" font="vector"/>
+<element name="C13" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="47.1424" y="10.3251" smashed="yes">
+<attribute name="PARTNO" value="530L104KT16T" x="47.1424" y="10.3251" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="45.8932" y="8.4073" size="0.635" layer="25" font="vector"/>
 </element>
-<element name="C14" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="35.5854" y="8.9916" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="35.5854" y="8.9916" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="34.6664" y="6.9976" size="0.762" layer="25" font="vector"/>
+<element name="C14" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="38.6334" y="8.9916" smashed="yes">
+<attribute name="PARTNO" value="530L104KT16T" x="38.6334" y="8.9916" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="37.7144" y="6.9976" size="0.762" layer="25" font="vector"/>
 </element>
 <element name="C15" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="91.821" y="5.6515" smashed="yes">
 <attribute name="PARTNO" value="530L104KT16T" x="91.821" y="5.6515" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="92.6765" y="7.709" size="0.762" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="C16" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="50.2666" y="10.3124" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="530L104KT16T" x="50.2666" y="10.3124" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="49.7794" y="8.4708" size="0.635" layer="25" font="vector"/>
+<element name="C16" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="53.3146" y="10.3124" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="530L104KT16T" x="53.3146" y="10.3124" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="52.5226" y="10.8838" size="0.635" layer="25" font="vector"/>
 </element>
 <element name="IC3" library="regulator-jqi" package="TO263-5" value="LT3080" x="221.234" y="19.304" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="LT3080EQ#PBF" x="221.234" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3033,14 +3033,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="ERJ-3EKF49R9V" x="92.964" y="18.288" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="91.891" y="19.215" size="0.762" layer="25" font="vector"/>
 </element>
-<element name="R20" library="jqi_passives" package="R_0603" value="49.9R" x="40.259" y="6.1976" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="40.259" y="6.1976" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="41.205" y="5.3976" size="0.762" layer="25" font="vector" rot="R180"/>
+<element name="R20" library="jqi_passives" package="R_0603" value="49.9R" x="43.307" y="6.1976" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="43.307" y="6.1976" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="42.107" y="4.7624" size="0.635" layer="25" font="vector"/>
 </element>
-<element name="RF5" library="rf-jqi" package="BH292" value="ADC-10-4" x="55.8292" y="12.8524" smashed="yes" rot="R180">
-<attribute name="NAME" x="54.3814" y="7.7978" size="0.762" layer="25"/>
-<attribute name="VALUE" x="58.3692" y="19.2024" size="1.27" layer="27" rot="R180"/>
-<attribute name="PARTNO" value="ADC-20-4+" x="55.8292" y="12.8524" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="RF5" library="rf-jqi" package="BH292" value="ADC-10-4" x="58.8772" y="12.8524" smashed="yes" rot="R180">
+<attribute name="NAME" x="55.3974" y="7.7978" size="0.762" layer="25"/>
+<attribute name="VALUE" x="61.4172" y="19.2024" size="1.27" layer="27" rot="R180"/>
+<attribute name="PARTNO" value="ADC-20-4+" x="58.8772" y="12.8524" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="B5" library="connector-jqi" package="BNC-V" value="BNC-V" x="127" y="19.05" smashed="yes" rot="MR0">
 <attribute name="PARTNO" value="5227222-3" x="127" y="19.05" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -3050,9 +3050,9 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="CL05B103JA5NNNC" x="127" y="22.606" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="129.756" y="21.814" size="0.762" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="R33" library="jqi_passives" package="R_0603" value="49.9R" x="53.1622" y="18.6944" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="53.1622" y="18.6944" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="52.3048" y="18.7326" size="0.762" layer="25" font="vector" rot="R180"/>
+<element name="R33" library="jqi_passives" package="R_0603" value="49.9R" x="56.2102" y="18.6944" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="56.2102" y="18.6944" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="55.3528" y="18.7326" size="0.762" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="X1" library="connector-jqi" package="UMC" value="DNP" x="36.6014" y="19.0246" smashed="yes">
 <attribute name="PARTNO" value="1909763-1" x="36.6014" y="19.0246" size="1.778" layer="27" display="off"/>
@@ -3104,7 +3104,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </element>
 <element name="C44" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="64.262" y="10.287" smashed="yes">
 <attribute name="PARTNO" value="530L104KT16T" x="64.262" y="10.287" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="62.962" y="8.166" size="0.762" layer="25" font="vector"/>
+<attribute name="NAME" x="63.47" y="11.468" size="0.762" layer="25" font="vector"/>
 </element>
 <element name="RF6" library="rf-jqi" package="PAT1220" value="0dB" x="99.6569" y="14.986" smashed="yes">
 <attribute name="NAME" x="98.6409" y="12.7" size="0.762" layer="25"/>
@@ -3213,25 +3213,25 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="U6" library="rf-jqi" package="HMC8410" value="HMC8410" x="68.199" y="10.287" rot="R180">
 <attribute name="PARTNO" value="HMC8410LP2FETR" x="68.199" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="RF1" library="rf-jqi" package="QFN-16(0.9X3X3)" value="F2255" x="47.117" y="10.0584" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="F2255NLGK" x="47.117" y="10.0584" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="45.6686" y="8.487" size="0.5" layer="21" rot="R270"/>
+<element name="RF1" library="rf-jqi" package="QFN-16(0.9X3X3)" value="F2255" x="50.165" y="10.0584" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="F2255NLGK" x="50.165" y="10.0584" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="48.7166" y="8.487" size="0.5" layer="21" rot="R270"/>
 </element>
-<element name="C12" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="49.403" y="12.573" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="49.403" y="12.573" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="48.1284" y="13.3476" size="0.635" layer="25" font="vector"/>
+<element name="C12" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="52.451" y="12.573" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="52.451" y="12.573" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="51.1764" y="13.3476" size="0.635" layer="25" font="vector"/>
 </element>
-<element name="C45" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="47.117" y="13.081" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="47.117" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="48.5522" y="14.1178" size="0.635" layer="25" font="vector" rot="R90"/>
+<element name="C45" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="50.165" y="13.081" smashed="yes" rot="R270">
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="50.165" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="51.6002" y="14.1178" size="0.635" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C52" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="44.831" y="12.573" smashed="yes">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="44.831" y="12.573" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="44.42" y="13.3984" size="0.635" layer="25" font="vector"/>
+<element name="C52" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="47.879" y="12.573" smashed="yes">
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="47.879" y="12.573" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="47.468" y="13.3984" size="0.635" layer="25" font="vector"/>
 </element>
-<element name="C53" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="48.641" y="7.493" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="48.641" y="7.493" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="50.0334" y="7.7088" size="0.635" layer="25" font="vector"/>
+<element name="C53" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="53.213" y="8.001" smashed="yes" rot="R180">
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="53.213" y="8.001" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="52.421" y="8.7756" size="0.635" layer="25" font="vector"/>
 </element>
 <element name="R35" library="jqi_passives" package="R_0402" value="15" x="68.58" y="13.589" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="ERJ-3EKF15R0V" x="68.58" y="13.589" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3340,12 +3340,12 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <element name="U16" library="linear-technology-jqi" package="TSOT-23_S5" value="LT6015" x="57.785" y="4.318" rot="R90">
 <attribute name="PARTNO" value="LT6015HS5#TRMPBF" x="48.387" y="-4.318" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="T5" library="transistor-jqi" package="PG-SOT-223" value="BSP89" x="50.927" y="4.191" rot="R90">
-<attribute name="PARTNO" value="BSP89H6327XTSA1" x="55.753" y="4.191" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="T5" library="transistor-jqi" package="PG-SOT-223" value="BSP89" x="50.927" y="3.683" rot="R90">
+<attribute name="PARTNO" value="BSP89H6327XTSA1" x="55.753" y="3.683" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C57" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="57.658" y="6.985" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="57.658" y="1.143" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="57.942" y="8.217" size="0.508" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="59.152" y="7.023" size="0.508" layer="25" font="vector"/>
 </element>
 <element name="R68" library="jqi_passives" package="R_0603" value="200" x="60.96" y="2.413" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="TNPW0603200RBEEA" x="60.96" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3355,13 +3355,13 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="TNPW0603200RBEEA" x="57.15" y="0.0762" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="59.76" y="5.9562" size="0.762" layer="25" font="vector"/>
 </element>
-<element name="R70" library="jqi_passives" package="R_0603" value="100" x="56.134" y="1.524" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF1000V" x="48.514" y="-7.366" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="57.474" y="1.181" size="0.762" layer="25" font="vector"/>
+<element name="R70" library="jqi_passives" package="R_0603" value="100" x="56.134" y="1.27" smashed="yes">
+<attribute name="PARTNO" value="ERJ-3EKF1000V" x="48.514" y="-7.62" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="57.474" y="0.927" size="0.762" layer="25" font="vector"/>
 </element>
-<element name="R71" library="jqi_passives" package="R_0603" value="4.02k" x="45.339" y="3.81" smashed="yes">
-<attribute name="PARTNO" value="TNPW06034K02BEEA" x="33.909" y="-8.89" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="45.282" y="4.61" size="0.508" layer="25" font="vector"/>
+<element name="R71" library="jqi_passives" package="R_0603" value="4.02k" x="41.148" y="4.445" smashed="yes" rot="R90">
+<attribute name="PARTNO" value="TNPW06034K02BEEA" x="53.848" y="-6.985" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="40.348" y="4.388" size="0.508" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="R72" library="rlc-jqi" package="1206_KELVIN" value="0.05" x="62.992" y="2.413" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="LVK12R050DER" x="86.36" y="2.413" size="1.778" layer="27" rot="R90" display="off"/>
@@ -3424,9 +3424,9 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="MASWSS0178TR-3000" x="93.345" y="15.113" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="94.845" y="12.878" size="0.65" layer="21" rot="R180"/>
 </element>
-<element name="SW4" library="rf-jqi" package="MSOP-8EP" value="SPDT Absorptive Switch" x="39.7256" y="9.3218" smashed="yes">
-<attribute name="PARTNO" value="MASWSS0178TR-3000" x="39.7256" y="9.3218" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="38.9876" y="11.5568" size="0.65" layer="21"/>
+<element name="SW4" library="rf-jqi" package="MSOP-8EP" value="SPDT Absorptive Switch" x="42.7736" y="9.3218" smashed="yes">
+<attribute name="PARTNO" value="MASWSS0178TR-3000" x="42.7736" y="9.3218" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="42.0356" y="11.5568" size="0.65" layer="21"/>
 </element>
 <element name="IC15" library="aom_driver" package="SOT23-5L" value="UHS_INVERTER" x="20.828" y="34.798" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="NC7SZ14M5X" x="20.828" y="34.798" size="1.778" layer="27" rot="R180" display="off"/>
@@ -3771,9 +3771,9 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="CL05B103JA5NNNC" x="85.471" y="8.0518" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="84.871" y="7.0502" size="0.762" layer="25" font="vector" rot="R90"/>
 </element>
-<element name="C86" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="42.1386" y="6.8072" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL05B103JA5NNNC" x="42.1386" y="6.8072" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="41.7734" y="5.7768" size="0.762" layer="25" font="vector" rot="R270"/>
+<element name="C86" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="45.1866" y="6.8072" smashed="yes" rot="R90">
+<attribute name="PARTNO" value="CL05B103JA5NNNC" x="45.1866" y="6.8072" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="45.7852" y="6.7214" size="0.635" layer="25" font="vector"/>
 </element>
 </elements>
 <signals>
@@ -3924,39 +3924,37 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="SW8" pad="6"/>
 <contactref element="JP2" pad="2"/>
 <contactref element="JP2" pad="4"/>
-<via x="45.0088" y="9.4488" extent="1-16" drill="0.3048"/>
-<via x="43.9166" y="9.4488" extent="1-16" drill="0.3048"/>
-<via x="42.8244" y="9.4742" extent="1-16" drill="0.3048"/>
-<via x="43.9928" y="11.2014" extent="1-16" drill="0.3048"/>
-<via x="45.0088" y="11.2014" extent="1-16" drill="0.3048"/>
-<via x="42.9768" y="11.1252" extent="1-16" drill="0.3048"/>
-<via x="49.0728" y="9.4996" extent="1-16" drill="0.3048"/>
-<via x="51.308" y="9.4996" extent="1-16" drill="0.3048"/>
-<via x="51.3842" y="11.1252" extent="1-16" drill="0.3048"/>
-<via x="50.2158" y="11.2014" extent="1-16" drill="0.3048"/>
-<via x="49.1744" y="14.4526" extent="1-16" drill="0.3048"/>
-<via x="34.8234" y="11.4046" extent="1-16" drill="0.3048"/>
+<via x="48.0568" y="9.4488" extent="1-16" drill="0.3048"/>
+<via x="46.9646" y="9.4488" extent="1-16" drill="0.3048"/>
+<via x="45.8724" y="9.4742" extent="1-16" drill="0.3048"/>
+<via x="47.0408" y="11.2014" extent="1-16" drill="0.3048"/>
+<via x="48.0568" y="11.2014" extent="1-16" drill="0.3048"/>
+<via x="46.0248" y="11.1252" extent="1-16" drill="0.3048"/>
+<via x="52.1208" y="9.4996" extent="1-16" drill="0.3048"/>
+<via x="54.356" y="9.4996" extent="1-16" drill="0.3048"/>
+<via x="54.4322" y="11.1252" extent="1-16" drill="0.3048"/>
+<via x="53.2638" y="11.2014" extent="1-16" drill="0.3048"/>
+<via x="52.2224" y="14.4526" extent="1-16" drill="0.3048"/>
+<via x="37.8714" y="11.4046" extent="1-16" drill="0.3048"/>
 <via x="30.8864" y="4.4196" extent="1-16" drill="0.3048"/>
-<via x="41.9354" y="11.1252" extent="1-16" drill="0.3048"/>
-<via x="36.0934" y="16.4846" extent="1-16" drill="0.3048"/>
+<via x="44.9834" y="11.1252" extent="1-16" drill="0.3048"/>
+<via x="35.9918" y="16.5862" extent="1-16" drill="0.3048"/>
 <via x="37.3634" y="16.4846" extent="1-16" drill="0.3048"/>
 <via x="38.6334" y="16.9926" extent="1-16" drill="0.3048"/>
 <via x="39.3954" y="18.0086" extent="1-16" drill="0.3048"/>
 <via x="57.7342" y="5.7404" extent="1-16" drill="0.3048"/>
-<via x="53.4162" y="8.7884" extent="1-16" drill="0.3048"/>
-<via x="54.864" y="8.9408" extent="1-16" drill="0.3048"/>
-<via x="56.6674" y="9.0424" extent="1-16" drill="0.3048"/>
-<via x="57.5818" y="8.8646" extent="1-16" drill="0.3048"/>
-<via x="58.5724" y="8.8646" extent="1-16" drill="0.3048"/>
-<via x="62.4332" y="11.1252" extent="1-16" drill="0.3048"/>
-<via x="62.5348" y="9.4742" extent="1-16" drill="0.3048"/>
+<via x="56.388" y="8.8646" extent="1-16" drill="0.3048"/>
+<via x="57.9374" y="8.9916" extent="1-16" drill="0.3048"/>
+<via x="59.7154" y="9.0424" extent="1-16" drill="0.3048"/>
+<via x="60.6298" y="8.8646" extent="1-16" drill="0.3048"/>
+<via x="61.6204" y="8.8646" extent="1-16" drill="0.3048"/>
 <via x="79.4766" y="8.8138" extent="1-16" drill="0.3048"/>
 <via x="71.7042" y="9.398" extent="1-16" drill="0.3048"/>
 <via x="79.3242" y="12.3952" extent="1-16" drill="0.3048"/>
 <via x="63.5254" y="18.9992" extent="1-16" drill="0.3048"/>
 <via x="84.1756" y="10.7442" extent="1-16" drill="0.3048"/>
 <via x="90.7542" y="6.477" extent="1-16" drill="0.3048"/>
-<via x="90.678" y="7.747" extent="1-16" drill="0.3048"/>
+<via x="89.6874" y="6.9596" extent="1-16" drill="0.3048"/>
 <via x="93.6752" y="4.826" extent="1-16" drill="0.3048"/>
 <via x="91.821" y="6.5024" extent="1-16" drill="0.3048"/>
 <via x="81.788" y="10.7569" extent="1-16" drill="0.3048"/>
@@ -3968,7 +3966,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="91.567" y="4.826" extent="1-16" drill="0.3048"/>
 <via x="93.8784" y="6.477" extent="1-16" drill="0.3048"/>
 <via x="113.411" y="3.81" extent="1-16" drill="0.3048"/>
-<via x="98.044" y="14.1732" extent="1-16" drill="0.3048"/>
+<via x="98.2218" y="14.5542" extent="1-16" drill="0.3048"/>
 <via x="98.6536" y="16.2306" extent="1-16" drill="0.3048"/>
 <via x="98.171" y="20.32" extent="1-16" drill="0.3048"/>
 <via x="107.569" y="14.986" extent="1-16" drill="0.3048"/>
@@ -3988,41 +3986,39 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="142.113" y="3.175" extent="1-16" drill="0.3048"/>
 <via x="106.934" y="14.097" extent="1-16" drill="0.3048"/>
 <via x="107.061" y="16.891" extent="1-16" drill="0.3048"/>
-<via x="95.6818" y="17.1704" extent="1-16" drill="0.3048"/>
+<via x="95.758" y="17.145" extent="1-16" drill="0.3048"/>
 <via x="96.4184" y="10.4902" extent="1-16" drill="0.3048"/>
-<via x="101.219" y="13.9954" extent="1-16" drill="0.3048"/>
+<via x="101.0158" y="14.1478" extent="1-16" drill="0.3048"/>
 <via x="100.838" y="12.7" extent="1-16" drill="0.3048"/>
 <via x="101.8794" y="16.3322" extent="1-16" drill="0.3048"/>
-<via x="100.7618" y="16.3322" extent="1-16" drill="0.3048"/>
+<via x="100.8126" y="16.256" extent="1-16" drill="0.3048"/>
 <via x="97.5614" y="16.3068" extent="1-16" drill="0.3048"/>
 <via x="85.852" y="27.813" extent="1-16" drill="0.3048"/>
 <via x="102.997" y="16.256" extent="1-16" drill="0.3048"/>
 <via x="105.029" y="17.018" extent="1-16" drill="0.3048"/>
-<via x="59.182" y="11.7602" extent="1-16" drill="0.3048"/>
+<via x="62.23" y="11.7602" extent="1-16" drill="0.3048"/>
 <via x="179.324" y="44.577" extent="1-16" drill="0.3048"/>
 <via x="143.002" y="20.066" extent="1-16" drill="0.3048"/>
-<via x="102.997" y="14.605" extent="1-16" drill="0.3048"/>
+<via x="103.0224" y="14.5796" extent="1-16" drill="0.3048"/>
 <via x="113.157" y="18.034" extent="1-16" drill="0.3048"/>
 <via x="131.699" y="3.429" extent="1-16" drill="0.3048"/>
-<via x="101.981" y="14.478" extent="1-16" drill="0.3048"/>
+<via x="101.981" y="14.5542" extent="1-16" drill="0.3048"/>
 <via x="73.6346" y="11.0998" extent="1-16" drill="0.3048"/>
-<via x="78.359" y="8.128" extent="1-16" drill="0.3048"/>
-<via x="56.3372" y="15.5194" extent="1-16" drill="0.3048"/>
-<via x="56.4642" y="14.5034" extent="1-16" drill="0.3048"/>
-<via x="56.6674" y="11.684" extent="1-16" drill="0.3048"/>
-<via x="57.9628" y="11.7602" extent="1-16" drill="0.3048"/>
-<via x="60.2488" y="9.4996" extent="1-16" drill="0.3048"/>
+<via x="78.232" y="8.636" extent="1-16" drill="0.3048"/>
+<via x="59.4868" y="15.5702" extent="1-16" drill="0.3048"/>
+<via x="59.5122" y="14.5034" extent="1-16" drill="0.3048"/>
+<via x="59.7154" y="11.684" extent="1-16" drill="0.3048"/>
+<via x="61.0108" y="11.7602" extent="1-16" drill="0.3048"/>
 <via x="44.0182" y="17.5514" extent="1-16" drill="0.3048"/>
-<via x="54.1782" y="16.9164" extent="1-16" drill="0.3048"/>
-<via x="52.4002" y="16.9164" extent="1-16" drill="0.3048"/>
-<via x="51.8922" y="19.4564" extent="1-16" drill="0.3048"/>
-<via x="54.4322" y="19.4564" extent="1-16" drill="0.3048"/>
-<via x="53.1622" y="20.4724" extent="1-16" drill="0.3048"/>
-<via x="60.2488" y="11.1252" extent="1-16" drill="0.3048"/>
-<via x="60.4012" y="15.5194" extent="1-16" drill="0.3048"/>
-<via x="59.4487" y="17.6149" extent="1-16" drill="0.3048"/>
-<via x="60.1472" y="19.9009" extent="1-16" drill="0.3048"/>
-<via x="68.1736" y="25.8953" extent="1-16" drill="0.3048"/>
+<via x="57.0484" y="16.9164" extent="1-16" drill="0.3048"/>
+<via x="55.3974" y="17.1196" extent="1-16" drill="0.3048"/>
+<via x="55.118" y="19.5072" extent="1-16" drill="0.3048"/>
+<via x="57.3786" y="19.4564" extent="1-16" drill="0.3048"/>
+<via x="56.2102" y="20.2184" extent="1-16" drill="0.3048"/>
+<via x="63.4492" y="15.5194" extent="1-16" drill="0.3048"/>
+<via x="62.2427" y="17.8689" extent="1-16" drill="0.3048"/>
+<via x="63.0174" y="21.7551" extent="1-16" drill="0.3048"/>
+<via x="68.1482" y="25.8445" extent="1-16" drill="0.3048"/>
 <via x="72.5932" y="27.8384" extent="1-16" drill="0.3048"/>
 <via x="86.868" y="27.813" extent="1-16" drill="0.3048"/>
 <via x="94.996" y="27.813" extent="1-16" drill="0.3048"/>
@@ -4079,10 +4075,9 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="71.4756" y="26.0858" extent="1-16" drill="0.3048"/>
 <via x="71.5772" y="27.8384" extent="1-16" drill="0.3048"/>
 <via x="69.2404" y="26.0604" extent="1-16" drill="0.3048"/>
-<via x="58.9407" y="21.1709" extent="1-16" drill="0.3048"/>
-<via x="58.5597" y="20.3454" extent="1-16" drill="0.3048"/>
-<via x="58.2422" y="19.5199" extent="1-16" drill="0.3048"/>
-<via x="57.6072" y="16.8529" extent="1-16" drill="0.3048"/>
+<via x="60.8203" y="20.574" extent="1-16" drill="0.3048"/>
+<via x="60.6298" y="19.6469" extent="1-16" drill="0.3048"/>
+<via x="60.6044" y="16.8529" extent="1-16" drill="0.3048"/>
 <via x="43.7134" y="20.1676" extent="1-16" drill="0.3048"/>
 <via x="36.8554" y="27.6606" extent="1-16" drill="0.3048"/>
 <via x="17.1704" y="52.0446" extent="1-16" drill="0.3048"/>
@@ -4094,8 +4089,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="112.268" y="27.813" extent="1-16" drill="0.3048"/>
 <via x="122.809" y="26.0858" extent="1-16" drill="0.3048"/>
 <via x="99.06" y="27.813" extent="1-16" drill="0.3048"/>
-<via x="94.488" y="18.034" extent="1-16" drill="0.3048"/>
-<via x="93.218" y="17.272" extent="1-16" drill="0.3048"/>
+<via x="94.5134" y="18.161" extent="1-16" drill="0.3048"/>
+<via x="93.3196" y="17.272" extent="1-16" drill="0.3048"/>
 <via x="94.361" y="13.208" extent="1-16" drill="0.3048"/>
 <via x="96.4946" y="16.3068" extent="1-16" drill="0.3048"/>
 <via x="91.059" y="10.922" extent="1-16" drill="0.3048"/>
@@ -4107,32 +4102,32 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="37.8714" y="21.5646" extent="1-16" drill="0.3048"/>
 <via x="39.3954" y="20.0406" extent="1-16" drill="0.3048"/>
 <via x="40.9194" y="20.2946" extent="1-16" drill="0.3048"/>
-<via x="45.4914" y="14.4526" extent="1-16" drill="0.3048"/>
-<via x="37.7444" y="7.5946" extent="1-16" drill="0.3048"/>
-<via x="48.4124" y="18.2626" extent="1-16" drill="0.3048"/>
-<via x="43.8404" y="13.6652" extent="1-16" drill="0.3048"/>
-<via x="47.1424" y="14.8336" extent="1-16" drill="0.3048"/>
-<via x="38.5318" y="11.176" extent="1-16" drill="0.3048"/>
+<via x="48.5394" y="14.4526" extent="1-16" drill="0.3048"/>
+<via x="40.7924" y="7.5946" extent="1-16" drill="0.3048"/>
+<via x="49.4284" y="19.5326" extent="1-16" drill="0.3048"/>
+<via x="46.8884" y="13.6652" extent="1-16" drill="0.3048"/>
+<via x="50.1904" y="14.8336" extent="1-16" drill="0.3048"/>
+<via x="41.5798" y="11.176" extent="1-16" drill="0.3048"/>
 <via x="25.2984" y="39.7256" extent="1-16" drill="0.3048"/>
 <via x="43.4594" y="18.7706" extent="1-16" drill="0.3048"/>
-<via x="30.8356" y="15.9258" extent="1-16" drill="0.3048"/>
-<via x="35.814" y="9.8552" extent="1-16" drill="0.3048"/>
-<via x="34.8234" y="9.8552" extent="1-16" drill="0.3048"/>
-<via x="33.8328" y="9.8298" extent="1-16" drill="0.3048"/>
-<via x="33.6042" y="8.1788" extent="1-16" drill="0.3048"/>
-<via x="34.5948" y="8.128" extent="1-16" drill="0.3048"/>
-<via x="35.6108" y="8.128" extent="1-16" drill="0.3048"/>
-<via x="36.6776" y="8.1788" extent="1-16" drill="0.3048"/>
-<via x="39.751" y="11.1633" extent="1-16" drill="0.3048"/>
-<via x="43.0022" y="7.7597" extent="1-16" drill="0.3048"/>
-<via x="39.2938" y="7.4295" extent="1-16" drill="0.3048"/>
-<via x="40.7924" y="7.4676" extent="1-16" drill="0.3048"/>
+<via x="26.0096" y="15.9258" extent="1-16" drill="0.3048"/>
+<via x="38.862" y="9.8552" extent="1-16" drill="0.3048"/>
+<via x="37.8714" y="9.8552" extent="1-16" drill="0.3048"/>
+<via x="36.8808" y="9.8298" extent="1-16" drill="0.3048"/>
+<via x="36.6522" y="8.1788" extent="1-16" drill="0.3048"/>
+<via x="37.6428" y="8.128" extent="1-16" drill="0.3048"/>
+<via x="38.6588" y="8.128" extent="1-16" drill="0.3048"/>
+<via x="39.7256" y="8.1788" extent="1-16" drill="0.3048"/>
+<via x="42.799" y="11.1633" extent="1-16" drill="0.3048"/>
+<via x="46.0502" y="7.7597" extent="1-16" drill="0.3048"/>
+<via x="42.3418" y="7.4295" extent="1-16" drill="0.3048"/>
+<via x="43.8404" y="7.4676" extent="1-16" drill="0.3048"/>
 <via x="58.3184" y="27.4066" extent="1-16" drill="0.3048"/>
-<via x="38.5064" y="6.1341" extent="1-16" drill="0.3048"/>
-<via x="40.9194" y="11.3411" extent="1-16" drill="0.3048"/>
+<via x="41.5544" y="6.1341" extent="1-16" drill="0.3048"/>
+<via x="43.9674" y="11.3411" extent="1-16" drill="0.3048"/>
 <via x="92.583" y="23.368" extent="1-16" drill="0.3048"/>
 <via x="93.091" y="9.144" extent="1-16" drill="0.3048"/>
-<via x="77.597" y="12.573" extent="1-16" drill="0.3048"/>
+<via x="76.9366" y="12.5222" extent="1-16" drill="0.3048"/>
 <via x="86.741" y="7.239" extent="1-16" drill="0.3048"/>
 <via x="83.1977" y="3.6068" extent="1-16" drill="0.3048"/>
 <via x="88.519" y="3.429" extent="1-16" drill="0.3048"/>
@@ -4174,7 +4169,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="192.405" y="39.624" extent="1-16" drill="0.3048"/>
 <via x="125.3744" y="25.146" extent="1-16" drill="0.3048"/>
 <via x="127.7112" y="24.3332" extent="1-16" drill="0.3048"/>
-<via x="59.8932" y="19.1389" extent="1-16" drill="0.3048"/>
+<via x="62.4078" y="19.8247" extent="1-16" drill="0.3048"/>
 <wire x1="207.6909" y1="51.816" x2="207.01" y2="51.816" width="0.254" layer="1"/>
 <wire x1="207.01" y1="51.816" x2="206.248" y2="51.054" width="0.254" layer="1"/>
 <wire x1="207.6909" y1="51.816" x2="209.042" y2="51.816" width="0.254" layer="1"/>
@@ -4244,7 +4239,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="41.275" y="17.526" extent="1-16" drill="0.3048"/>
 <via x="11.938" y="41.148" extent="1-16" drill="0.3048"/>
 <via x="48.0314" y="29.4386" extent="1-16" drill="0.3048"/>
-<via x="68.2244" y="27.6606" extent="1-16" drill="0.3048"/>
+<via x="68.1736" y="27.6098" extent="1-16" drill="0.3048"/>
 <via x="139.954" y="27.686" extent="1-16" drill="0.3048"/>
 <via x="150.368" y="15.494" extent="1-16" drill="0.3048"/>
 <via x="162.052" y="49.53" extent="1-16" drill="0.3048"/>
@@ -4306,10 +4301,10 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="149.098" y="7.874" extent="1-16" drill="0.3048"/>
 <via x="156.337" y="23.622" extent="1-16" drill="0.3048"/>
 <via x="177.546" y="25.273" extent="1-16" drill="0.3048"/>
-<via x="74.4982" y="4.8895" extent="1-16" drill="0.3048"/>
+<via x="72.4662" y="6.4135" extent="1-16" drill="0.3048"/>
 <via x="84.0232" y="23.0251" extent="1-16" drill="0.3048"/>
 <via x="69.6214" y="11.1125" extent="1-16" drill="0.3048"/>
-<via x="69.9516" y="14.6431" extent="1-16" drill="0.3048"/>
+<via x="69.1896" y="14.6685" extent="1-16" drill="0.3048"/>
 <via x="65.2526" y="16.8275" extent="1-16" drill="0.3048"/>
 <contactref element="RF6" pad="3"/>
 <via x="113.792" y="26.035" extent="1-16" drill="0.3048"/>
@@ -4317,14 +4312,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="119.253" y="27.813" extent="1-16" drill="0.3048"/>
 <via x="117.983" y="26.035" extent="1-16" drill="0.3048"/>
 <via x="92.6084" y="4.7752" extent="1-16" drill="0.3048"/>
-<via x="99.0854" y="13.8684" extent="1-16" drill="0.3048"/>
-<via x="100.1268" y="13.8684" extent="1-16" drill="0.3048"/>
-<via x="99.7204" y="16.256" extent="1-16" drill="0.3048"/>
+<via x="98.9584" y="13.9446" extent="1-16" drill="0.3048"/>
+<via x="99.9998" y="13.9192" extent="1-16" drill="0.3048"/>
+<via x="99.7204" y="16.2306" extent="1-16" drill="0.3048"/>
 <via x="72.6694" y="11.1379" extent="1-16" drill="0.3048"/>
 <via x="87.2617" y="30.0355" extent="1-16" drill="0.3048"/>
 <via x="64.643" y="11.1506" extent="1-16" drill="0.3048"/>
 <via x="80.7339" y="10.6045" extent="1-16" drill="0.3048"/>
-<via x="75.184" y="8.509" extent="1-16" drill="0.3048"/>
+<via x="75.7174" y="8.9154" extent="1-16" drill="0.3048"/>
 <via x="71.6153" y="11.1379" extent="1-16" drill="0.3048"/>
 <via x="81.3562" y="8.3566" extent="1-16" drill="0.3048"/>
 <via x="80.518" y="8.8138" extent="1-16" drill="0.3048"/>
@@ -4348,8 +4343,6 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="65.6844" y="11.0998" extent="1-16" drill="0.3048"/>
 <via x="63.5508" y="11.1506" extent="1-16" drill="0.3048"/>
 <via x="64.77" y="9.4234" extent="1-16" drill="0.3048"/>
-<via x="62.8142" y="15.0622" extent="1-16" drill="0.3048"/>
-<via x="61.3156" y="11.1252" extent="1-16" drill="0.3048"/>
 <via x="67.7418" y="8.9662" extent="1-16" drill="0.3048"/>
 <via x="72.6059" y="9.3853" extent="1-16" drill="0.3048"/>
 <via x="81.7118" y="4.7752" extent="1-16" drill="0.3048"/>
@@ -4362,10 +4355,9 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="15.7226" y="46.1264" extent="1-16" drill="0.3048"/>
 <via x="54.9656" y="33.4264" extent="1-16" drill="0.3048"/>
 <via x="13.3604" y="49.7332" extent="1-16" drill="0.3048"/>
-<via x="61.4172" y="9.4996" extent="1-16" drill="0.3048"/>
-<via x="52.0446" y="8.7884" extent="1-16" drill="0.3048"/>
-<via x="59.563" y="8.8646" extent="1-16" drill="0.3048"/>
-<via x="54.9656" y="11.5824" extent="1-16" drill="0.3048"/>
+<via x="55.1688" y="8.89" extent="1-16" drill="0.3048"/>
+<via x="62.611" y="8.8646" extent="1-16" drill="0.3048"/>
+<via x="58.0136" y="11.5824" extent="1-16" drill="0.3048"/>
 <via x="72.5932" y="26.0604" extent="1-16" drill="0.3048"/>
 <via x="73.6092" y="27.8384" extent="1-16" drill="0.3048"/>
 <via x="76.6572" y="27.8384" extent="1-16" drill="0.3048"/>
@@ -4395,11 +4387,11 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="93.98" y="26.035" extent="1-16" drill="0.3048"/>
 <via x="94.996" y="26.035" extent="1-16" drill="0.3048"/>
 <via x="82.804" y="27.813" extent="1-16" drill="0.3048"/>
-<via x="50.2158" y="9.4234" extent="1-16" drill="0.3048"/>
-<via x="49.0728" y="11.1252" extent="1-16" drill="0.3048"/>
+<via x="53.2638" y="9.4234" extent="1-16" drill="0.3048"/>
+<via x="52.1208" y="11.1252" extent="1-16" drill="0.3048"/>
 <via x="105.156" y="27.813" extent="1-16" drill="0.3048"/>
 <via x="106.172" y="26.035" extent="1-16" drill="0.3048"/>
-<via x="76.708" y="8.128" extent="1-16" drill="0.3048"/>
+<via x="76.9366" y="8.6868" extent="1-16" drill="0.3048"/>
 <via x="81.4324" y="6.5786" extent="1-16" drill="0.3048"/>
 <via x="81.4832" y="5.6388" extent="1-16" drill="0.3048"/>
 <via x="73.6092" y="9.4488" extent="1-16" drill="0.3048"/>
@@ -4410,8 +4402,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="87.122" y="13.843" extent="1-16" drill="0.3048"/>
 <via x="92.0496" y="13.335" extent="1-16" drill="0.3048"/>
 <via x="86.741" y="3.429" extent="1-16" drill="0.3048"/>
-<via x="88.773" y="7.239" extent="1-16" drill="0.3048"/>
-<via x="76.962" y="3.937" extent="1-16" drill="0.3048"/>
+<via x="88.2904" y="7.239" extent="1-16" drill="0.3048"/>
+<via x="77.978" y="3.683" extent="1-16" drill="0.3048"/>
 <contactref element="R17" pad="P$1"/>
 <wire x1="219.7608" y1="9.4488" x2="218.0082" y2="9.4488" width="1.016" layer="1"/>
 <wire x1="218.0082" y1="9.4488" x2="217.424" y2="10.033" width="1.016" layer="1"/>
@@ -4602,31 +4594,27 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="303.149" y="28.956" extent="1-16" drill="0.3048"/>
 <via x="125.8824" y="24.384" extent="1-16" drill="0.3048"/>
 <via x="127.889" y="23.4696" extent="1-16" drill="0.3048"/>
-<via x="66.2178" y="27.2034" extent="1-16" drill="0.3048"/>
-<via x="66.2305" y="25.4381" extent="1-16" drill="0.3048"/>
-<via x="65.2653" y="26.8605" extent="1-16" drill="0.3048"/>
-<via x="65.2526" y="25.0317" extent="1-16" drill="0.3048"/>
-<via x="64.3128" y="26.4541" extent="1-16" drill="0.3048"/>
-<via x="63.4492" y="25.9334" extent="1-16" drill="0.3048"/>
-<via x="64.3763" y="24.5618" extent="1-16" drill="0.3048"/>
-<via x="62.6237" y="25.4254" extent="1-16" drill="0.3048"/>
-<via x="63.5254" y="24.003" extent="1-16" drill="0.3048"/>
-<via x="62.7507" y="23.3299" extent="1-16" drill="0.3048"/>
-<via x="62.1157" y="22.7584" extent="1-16" drill="0.3048"/>
-<via x="61.8617" y="24.7904" extent="1-16" drill="0.3048"/>
-<via x="61.1632" y="24.1554" extent="1-16" drill="0.3048"/>
-<via x="60.5282" y="23.4569" extent="1-16" drill="0.3048"/>
-<via x="59.9567" y="22.7584" extent="1-16" drill="0.3048"/>
-<via x="59.4487" y="21.9964" extent="1-16" drill="0.3048"/>
-<via x="61.6077" y="22.1234" extent="1-16" drill="0.3048"/>
+<via x="66.2178" y="27.0256" extent="1-16" drill="0.3048"/>
+<via x="66.2305" y="25.1587" extent="1-16" drill="0.3048"/>
+<via x="65.2653" y="26.5557" extent="1-16" drill="0.3048"/>
+<via x="65.3542" y="24.5745" extent="1-16" drill="0.3048"/>
+<via x="64.4398" y="25.9969" extent="1-16" drill="0.3048"/>
+<via x="63.6524" y="25.3746" extent="1-16" drill="0.3048"/>
+<via x="64.6303" y="23.9522" extent="1-16" drill="0.3048"/>
+<via x="62.9285" y="24.6634" extent="1-16" drill="0.3048"/>
+<via x="63.9826" y="23.2918" extent="1-16" drill="0.3048"/>
+<via x="63.4619" y="22.5425" extent="1-16" drill="0.3048"/>
+<via x="61.7347" y="23.0124" extent="1-16" drill="0.3048"/>
+<via x="62.3189" y="23.876" extent="1-16" drill="0.3048"/>
+<via x="61.3283" y="22.1234" extent="1-16" drill="0.3048"/>
 <via x="61.0362" y="21.4249" extent="1-16" drill="0.3048"/>
-<via x="60.5917" y="20.6629" extent="1-16" drill="0.3048"/>
-<via x="59.3217" y="16.8529" extent="1-16" drill="0.3048"/>
-<via x="57.9882" y="18.6309" extent="1-16" drill="0.3048"/>
-<via x="57.7977" y="17.7419" extent="1-16" drill="0.3048"/>
-<via x="60.1472" y="16.5354" extent="1-16" drill="0.3048"/>
-<via x="60.2742" y="14.5034" extent="1-16" drill="0.3048"/>
-<via x="56.5912" y="16.6624" extent="1-16" drill="0.3048"/>
+<via x="62.6237" y="20.7899" extent="1-16" drill="0.3048"/>
+<via x="62.2427" y="16.8529" extent="1-16" drill="0.3048"/>
+<via x="60.579" y="18.6817" extent="1-16" drill="0.3048"/>
+<via x="60.5917" y="17.7165" extent="1-16" drill="0.3048"/>
+<via x="63.2714" y="16.51" extent="1-16" drill="0.3048"/>
+<via x="63.3222" y="14.5034" extent="1-16" drill="0.3048"/>
+<via x="59.563" y="16.5354" extent="1-16" drill="0.3048"/>
 <via x="83.0072" y="10.6934" extent="1-16" drill="0.3048"/>
 <via x="82.0166" y="9.9568" extent="1-16" drill="0.3048"/>
 <via x="83.1088" y="8.128" extent="1-16" drill="0.3048"/>
@@ -4653,17 +4641,16 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="114.3" y="8.636" extent="1-16" drill="0.3048"/>
 <via x="118.237" y="17.653" extent="1-16" drill="0.3048"/>
 <via x="118.999" y="23.495" extent="1-16" drill="0.3048"/>
-<via x="59.6392" y="18.3769" extent="1-16" drill="0.3048"/>
-<via x="45.2628" y="7.5438" extent="1-16" drill="0.3048"/>
-<via x="45.0342" y="8.5598" extent="1-16" drill="0.3048"/>
-<via x="49.149" y="8.5598" extent="1-16" drill="0.3048"/>
-<via x="50.292" y="13.6398" extent="1-16" drill="0.3048"/>
-<wire x1="45.817" y1="10.8084" x2="46.367" y2="10.8084" width="0.254" layer="1"/>
-<wire x1="46.367" y1="10.8084" x2="46.742" y2="10.4334" width="0.254" layer="1" curve="-90"/>
-<wire x1="46.867" y1="11.3584" x2="46.867" y2="10.5584" width="0.254" layer="1"/>
-<wire x1="46.867" y1="10.5584" x2="46.742" y2="10.4334" width="0.254" layer="1" curve="-90"/>
-<wire x1="48.417" y1="10.8084" x2="47.867" y2="10.8084" width="0.254" layer="1"/>
-<wire x1="47.867" y1="10.8084" x2="47.492" y2="10.4334" width="0.254" layer="1" curve="90"/>
+<via x="62.2554" y="18.8087" extent="1-16" drill="0.3048"/>
+<via x="48.3108" y="7.5438" extent="1-16" drill="0.3048"/>
+<via x="48.0822" y="8.5598" extent="1-16" drill="0.3048"/>
+<via x="53.34" y="13.6398" extent="1-16" drill="0.3048"/>
+<wire x1="48.865" y1="10.8084" x2="49.415" y2="10.8084" width="0.254" layer="1"/>
+<wire x1="49.415" y1="10.8084" x2="49.79" y2="10.4334" width="0.254" layer="1" curve="-90"/>
+<wire x1="49.915" y1="11.3584" x2="49.915" y2="10.5584" width="0.254" layer="1"/>
+<wire x1="49.915" y1="10.5584" x2="49.79" y2="10.4334" width="0.254" layer="1" curve="-90"/>
+<wire x1="51.465" y1="10.8084" x2="50.915" y2="10.8084" width="0.254" layer="1"/>
+<wire x1="50.915" y1="10.8084" x2="50.54" y2="10.4334" width="0.254" layer="1" curve="90"/>
 <via x="68.199" y="10.7696" extent="1-16" drill="0.3048"/>
 <via x="68.199" y="9.8298" extent="1-16" drill="0.3048"/>
 <via x="69.85" y="3.937" extent="1-16" drill="0.3048"/>
@@ -4672,10 +4659,10 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="72.009" y="2.667" extent="1-16" drill="0.3048"/>
 <via x="60.96" y="5.969" extent="1-16" drill="0.3048"/>
 <via x="64.643" y="6.858" extent="1-16" drill="0.3048"/>
-<via x="59.944" y="7.112" extent="1-16" drill="0.3048"/>
+<via x="59.3344" y="6.6548" extent="1-16" drill="0.3048"/>
 <via x="51.0794" y="2.032" extent="1-16" drill="0.3048"/>
-<via x="55.7022" y="5.2324" extent="1-16" drill="0.3048"/>
-<via x="49.6062" y="5.6134" extent="1-16" drill="0.3048"/>
+<via x="55.7022" y="5.9944" extent="1-16" drill="0.3048"/>
+<via x="54.9402" y="7.8994" extent="1-16" drill="0.3048"/>
 <via x="62.357" y="36.449" extent="1-16" drill="0.3048"/>
 <via x="59.182" y="30.734" extent="1-16" drill="0.3048"/>
 <via x="63.4238" y="30.9118" extent="1-16" drill="0.3048"/>
@@ -4725,7 +4712,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="SW10" pad="P$4"/>
 <contactref element="SW10" pad="P$3"/>
 <contactref element="TP3" pad="P$1"/>
-<via x="46.4312" y="4.9276" extent="1-16" drill="0.3048"/>
+<via x="46.5074" y="4.5466" extent="1-16" drill="0.3048"/>
 <via x="168.402" y="32.131" extent="1-16" drill="0.3048"/>
 <via x="126.4666" y="17.6022" extent="1-16" drill="0.3048"/>
 <via x="122.7582" y="17.2466" extent="1-16" drill="0.3048"/>
@@ -4769,14 +4756,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="C72" pad="P$2"/>
 <contactref element="C71" pad="P$2"/>
 <contactref element="C67" pad="P$2"/>
-<via x="46.5074" y="6.3246" extent="1-16" drill="0.3048"/>
+<via x="50.3174" y="5.0546" extent="1-16" drill="0.3048"/>
 <via x="41.9354" y="2.032" extent="1-16" drill="0.3048"/>
 <via x="19.7104" y="4.8006" extent="1-16" drill="0.3048"/>
 <via x="24.7904" y="2.0066" extent="1-16" drill="0.3048"/>
 <via x="19.7104" y="9.1186" extent="1-16" drill="0.3048"/>
 <via x="12.0904" y="2.3876" extent="1-16" drill="0.3048"/>
-<via x="43.0784" y="12.5222" extent="1-16" drill="0.3048"/>
-<via x="51.0286" y="12.5222" extent="1-16" drill="0.3048"/>
+<via x="46.1264" y="12.5222" extent="1-16" drill="0.3048"/>
+<via x="54.0766" y="12.5222" extent="1-16" drill="0.3048"/>
 <wire x1="15.887" y1="22.542" x2="15.887" y2="23.356" width="0.254" layer="1"/>
 <wire x1="15.887" y1="23.356" x2="15.875" y2="23.368" width="0.254" layer="1"/>
 <wire x1="15.875" y1="23.368" x2="14.887" y2="23.368" width="0.254" layer="1"/>
@@ -4798,9 +4785,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="C2" pad="P$1"/>
 <contactref element="U14" pad="P$1"/>
 <via x="12.319" y="13.716" extent="1-16" drill="0.3048"/>
-<via x="51.2572" y="16.1544" extent="1-16" drill="0.3048"/>
-<via x="51.2572" y="14.7574" extent="1-16" drill="0.3048"/>
-<via x="55.3212" y="15.0114" extent="1-16" drill="0.3048"/>
+<via x="58.2422" y="16.1798" extent="1-16" drill="0.3048"/>
+<via x="58.2422" y="15.0114" extent="1-16" drill="0.3048"/>
 <contactref element="C74" pad="P$2"/>
 <via x="194.691" y="4.191" extent="1-16" drill="0.3048"/>
 <via x="208.153" y="4.191" extent="1-16" drill="0.3048"/>
@@ -4830,15 +4816,24 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <vertex x="97.79" y="3.175" curve="-90"/>
 </polygon>
 <polygon width="0.254" layer="1" pour="cutout" isolate="0.3048" rank="2">
-<vertex x="27.5844" y="8.9916" curve="-90"/>
-<vertex x="30.1244" y="11.5316" curve="-90"/>
-<vertex x="32.6644" y="8.9916" curve="-90"/>
-<vertex x="30.1244" y="6.4516" curve="-90"/>
+<vertex x="30.6324" y="8.9916" curve="-90"/>
+<vertex x="33.1724" y="11.5316" curve="-90"/>
+<vertex x="35.7124" y="8.9916" curve="-90"/>
+<vertex x="33.1724" y="6.4516" curve="-90"/>
 </polygon>
 <via x="65.7098" y="35.7378" extent="1-16" drill="0.3048"/>
 <via x="42.9514" y="39.4716" extent="1-16" drill="0.3048"/>
 <via x="104.267" y="5.08" extent="1-16" drill="0.3048"/>
 <via x="93.1926" y="13.2588" extent="1-16" drill="0.3048"/>
+<via x="44.2976" y="5.0673" extent="1-16" drill="0.3048"/>
+<via x="39.37" y="4.8895" extent="1-16" drill="0.3048"/>
+<via x="24.7904" y="8.8646" extent="1-16" drill="0.3048"/>
+<via x="32.1564" y="30.4546" extent="1-16" drill="0.3048"/>
+<via x="73.0504" y="22.0726" extent="1-16" drill="0.3048"/>
+<via x="54.4576" y="16.4338" extent="1-16" drill="0.3048"/>
+<via x="78.2066" y="12.5222" extent="1-16" drill="0.3048"/>
+<via x="92.1004" y="16.9926" extent="1-16" drill="0.3048"/>
+<via x="94.5388" y="16.9672" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="N$5">
 <contactref element="AUX_RF" pad="RF"/>
@@ -4933,13 +4928,15 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="42.1284" y1="18.9756" x2="42.164" y2="18.9756" width="0.381" layer="1"/>
 <wire x1="42.164" y1="18.9756" x2="42.164" y2="18.161" width="0.381" layer="1"/>
 <via x="42.164" y="18.161" extent="1-16" drill="0.3048"/>
-<wire x1="42.164" y1="18.161" x2="43.561" y2="16.764" width="0.381" layer="16"/>
-<wire x1="45.847" y1="8.128" x2="46.355" y2="8.128" width="0.381" layer="16"/>
-<wire x1="46.355" y1="8.128" x2="46.863" y2="7.62" width="0.381" layer="16"/>
-<via x="46.863" y="7.62" extent="1-16" drill="0.3048"/>
-<wire x1="46.863" y1="7.62" x2="46.863" y2="8.7544" width="0.254" layer="1"/>
-<wire x1="46.863" y1="8.7544" x2="46.867" y2="8.7584" width="0.254" layer="1"/>
-<wire x1="46.863" y1="8.7544" x2="43.561" y2="16.764" width="0" layer="19" extent="1-16"/>
+<wire x1="42.164" y1="18.161" x2="44.577" y2="15.748" width="0.381" layer="16"/>
+<wire x1="48.895" y1="8.128" x2="49.403" y2="8.128" width="0.381" layer="16"/>
+<wire x1="49.403" y1="8.128" x2="49.911" y2="7.62" width="0.381" layer="16"/>
+<via x="49.911" y="7.62" extent="1-16" drill="0.3048"/>
+<wire x1="49.911" y1="7.62" x2="49.911" y2="8.7544" width="0.254" layer="1"/>
+<wire x1="49.911" y1="8.7544" x2="49.915" y2="8.7584" width="0.254" layer="1"/>
+<wire x1="44.577" y1="15.748" x2="45.974" y2="15.748" width="0.381" layer="16"/>
+<wire x1="45.974" y1="15.748" x2="48.895" y2="12.827" width="0.381" layer="16"/>
+<wire x1="48.895" y1="12.827" x2="48.895" y2="8.128" width="0.381" layer="16"/>
 </signal>
 <signal name="ATT_EXT_V">
 <contactref element="SW8" pad="2"/>
@@ -5248,24 +5245,20 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="178.435" y="37.719" extent="1-16" drill="0.6096"/>
 <wire x1="178.435" y1="37.719" x2="178.054" y2="37.719" width="0.6096" layer="15"/>
 <via x="32.639" y="42.164" extent="1-16" drill="0.6096" diameter="0.6096"/>
-<wire x1="47.891" y1="7.493" x2="47.891" y2="6.616" width="0.381" layer="1"/>
-<wire x1="47.891" y1="6.616" x2="47.879" y2="6.604" width="0.508" layer="1"/>
-<via x="47.879" y="6.604" extent="1-16" drill="0.381"/>
-<wire x1="47.879" y1="6.604" x2="47.879" y2="8.128" width="0.381" layer="15"/>
-<wire x1="47.879" y1="8.128" x2="48.26" y2="8.509" width="0.381" layer="15"/>
-<wire x1="47.367" y1="8.7584" x2="47.367" y2="8.017" width="0.254" layer="1"/>
-<wire x1="47.367" y1="8.017" x2="47.891" y2="7.493" width="0.254" layer="1"/>
-<via x="55.753" y="8.128" extent="1-16" drill="0.3048"/>
-<wire x1="55.753" y1="8.128" x2="55.753" y2="13.081" width="0.508" layer="16"/>
-<wire x1="55.753" y1="8.128" x2="56.908" y2="8.128" width="0.508" layer="1"/>
-<wire x1="56.908" y1="8.128" x2="56.908" y2="6.985" width="0.508" layer="1"/>
+<wire x1="50.939" y1="7.632" x2="50.927" y2="7.62" width="0.508" layer="1"/>
+<via x="50.927" y="7.62" extent="1-16" drill="0.3048"/>
+<wire x1="50.927" y1="7.62" x2="50.927" y2="8.128" width="0.381" layer="15"/>
+<wire x1="50.415" y1="8.7584" x2="50.415" y2="8.017" width="0.254" layer="1"/>
+<via x="58.801" y="8.128" extent="1-16" drill="0.3048"/>
+<wire x1="58.801" y1="8.128" x2="58.801" y2="13.081" width="0.508" layer="16"/>
 <wire x1="56.908" y1="6.985" x2="56.835" y2="6.985" width="0.508" layer="1"/>
 <wire x1="56.835" y1="6.985" x2="56.835" y2="5.461" width="0.508" layer="1"/>
-<wire x1="65.532" y1="13.081" x2="55.753" y2="13.081" width="1.524" layer="16"/>
-<wire x1="49.784" y1="16.129" x2="43.942" y2="16.129" width="1.524" layer="15"/>
+<wire x1="65.532" y1="13.081" x2="58.801" y2="13.081" width="1.524" layer="16"/>
+<wire x1="52.832" y1="16.129" x2="51.3588" y2="16.129" width="1.524" layer="15"/>
 <contactref element="IC13" pad="5"/>
 <contactref element="IC14" pad="5"/>
 <contactref element="IC15" pad="5"/>
+<wire x1="51.3588" y1="16.129" x2="46.99" y2="16.129" width="1.524" layer="15"/>
 <wire x1="163.927" y1="27.625" x2="161.29" y2="27.625" width="0.508" layer="1"/>
 <wire x1="161.29" y1="27.625" x2="161.29" y2="27.305" width="0.508" layer="1"/>
 <via x="161.29" y="27.305" extent="1-16" drill="0.3048"/>
@@ -5308,7 +5301,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="4.826" y1="34.29" x2="3.683" y2="33.147" width="1.524" layer="15"/>
 <wire x1="3.683" y1="33.147" x2="3.683" y2="19.431" width="1.524" layer="15"/>
 <wire x1="3.683" y1="19.431" x2="4.826" y2="18.288" width="1.524" layer="15"/>
-<via x="49.784" y="16.129" extent="1-16" drill="0.6096"/>
+<via x="52.832" y="16.129" extent="1-16" drill="0.6096"/>
 <contactref element="R57" pad="P$2"/>
 <contactref element="R58" pad="P$2"/>
 <wire x1="176.306" y1="31.303" x2="176.306" y2="32.288" width="0.508" layer="1"/>
@@ -5348,11 +5341,18 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="R64" pad="P$1"/>
 <wire x1="127.762" y1="9.332" x2="127.762" y2="10.668" width="1.524" layer="1"/>
 <via x="127.762" y="10.668" extent="1-16" drill="0.6096"/>
-<wire x1="43.942" y1="16.129" x2="42.291" y2="14.478" width="1.524" layer="15"/>
-<wire x1="42.291" y1="14.478" x2="23.241" y2="14.478" width="1.524" layer="15"/>
-<wire x1="55.753" y1="13.081" x2="52.832" y2="13.081" width="1.524" layer="16"/>
-<wire x1="52.832" y1="13.081" x2="49.784" y2="16.129" width="1.524" layer="16"/>
-<wire x1="52.832" y1="13.081" x2="48.26" y2="8.509" width="0" layer="19" extent="15-16"/>
+<wire x1="46.99" y1="16.129" x2="45.339" y2="14.478" width="1.524" layer="15"/>
+<wire x1="45.339" y1="14.478" x2="23.241" y2="14.478" width="1.524" layer="15"/>
+<wire x1="58.801" y1="13.081" x2="55.88" y2="13.081" width="1.524" layer="16"/>
+<wire x1="55.88" y1="13.081" x2="52.832" y2="16.129" width="1.524" layer="16"/>
+<wire x1="58.801" y1="8.128" x2="56.908" y2="8.128" width="0.508" layer="1"/>
+<wire x1="56.908" y1="8.128" x2="56.908" y2="6.985" width="0.508" layer="1"/>
+<wire x1="50.415" y1="8.017" x2="50.812" y2="7.62" width="0.254" layer="1"/>
+<wire x1="50.812" y1="7.62" x2="50.927" y2="7.62" width="0.254" layer="1"/>
+<wire x1="52.463" y1="8.001" x2="52.082" y2="7.62" width="0.508" layer="1"/>
+<wire x1="52.082" y1="7.62" x2="50.927" y2="7.62" width="0.508" layer="1"/>
+<wire x1="50.927" y1="8.128" x2="51.3588" y2="8.5598" width="0.381" layer="15"/>
+<wire x1="51.3588" y1="8.5598" x2="51.3588" y2="16.129" width="0.381" layer="15"/>
 </signal>
 <signal name="5VDAC">
 <polygon width="0.127" layer="1" isolate="0.254" thermals="no">
@@ -5411,12 +5411,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="20.828" y="37.338" extent="1-16" drill="0.3048"/>
 <wire x1="20.828" y1="37.338" x2="20.828" y2="36.098" width="0.4572" layer="1"/>
 <wire x1="20.828" y1="37.338" x2="20.828" y2="23.749" width="0.4572" layer="16"/>
-<via x="37.592" y="11.811" extent="1-16" drill="0.381"/>
-<wire x1="37.592" y1="11.811" x2="37.592" y2="10.3232" width="0.254" layer="1"/>
-<wire x1="37.592" y1="10.3232" x2="37.5656" y2="10.2968" width="0.254" layer="1"/>
+<via x="40.64" y="11.811" extent="1-16" drill="0.381"/>
+<wire x1="40.64" y1="11.811" x2="40.64" y2="10.3232" width="0.254" layer="1"/>
+<wire x1="40.64" y1="10.3232" x2="40.6136" y2="10.2968" width="0.254" layer="1"/>
 <wire x1="18.288" y1="41.263" x2="18.288" y2="42.418" width="0.4572" layer="1"/>
 <wire x1="18.288" y1="42.418" x2="20.19935" y2="42.418" width="0.4572" layer="1"/>
-<wire x1="20.828" y1="23.749" x2="37.592" y2="11.811" width="0" layer="19" extent="16-16"/>
+<wire x1="20.828" y1="23.749" x2="28.829" y2="15.748" width="0.4572" layer="16"/>
+<wire x1="28.829" y1="15.748" x2="36.703" y2="15.748" width="0.4572" layer="16"/>
+<wire x1="36.703" y1="15.748" x2="40.64" y2="11.811" width="0.4572" layer="16"/>
 </signal>
 <signal name="RF_SEL_TTL">
 <contactref element="SW5" pad="2"/>
@@ -5433,11 +5435,11 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="155.829" y1="31.369" x2="156.718" y2="32.258" width="0.4572" layer="1"/>
 <wire x1="156.718" y1="32.258" x2="165.1" y2="32.258" width="0.4572" layer="1"/>
 <wire x1="165.1" y1="32.258" x2="165.735" y2="32.893" width="0.4572" layer="1"/>
-<wire x1="166.116" y1="33.274" x2="168.148" y2="35.306" width="0.4572" layer="1"/>
-<wire x1="145.796" y1="21.336" x2="83.947" y2="21.336" width="0.254" layer="15"/>
-<wire x1="83.947" y1="21.336" x2="75.565" y2="12.954" width="0.254" layer="15"/>
-<via x="75.565" y="12.954" extent="1-16" drill="0.381"/>
-<wire x1="75.565" y1="12.954" x2="75.565" y2="11.5932" width="0.254" layer="1"/>
+<wire x1="165.735" y1="32.893" x2="168.148" y2="35.306" width="0.4572" layer="1"/>
+<wire x1="145.796" y1="21.336" x2="84.455" y2="21.336" width="0.254" layer="15"/>
+<wire x1="84.455" y1="21.336" x2="75.565" y2="12.446" width="0.254" layer="15"/>
+<via x="75.565" y="12.446" extent="1-16" drill="0.381"/>
+<wire x1="75.565" y1="12.446" x2="75.565" y2="11.5932" width="0.254" layer="1"/>
 <wire x1="75.565" y1="11.5932" x2="75.5386" y2="11.5668" width="0.254" layer="1"/>
 <contactref element="IC10" pad="2"/>
 <contactref element="IC8" pad="2"/>
@@ -5450,26 +5452,25 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="168.148" y="30.48" extent="1-16" drill="0.3048"/>
 <wire x1="168.148" y1="30.48" x2="165.735" y2="32.893" width="0.4572" layer="16"/>
 <via x="165.735" y="32.893" extent="1-16" drill="0.3048"/>
-<wire x1="165.735" y1="32.893" x2="166.116" y2="33.274" width="0.4572" layer="1"/>
 </signal>
 <signal name="N$20">
 <contactref element="RF_OUT" pad="RF"/>
 <contactref element="C14" pad="P$1"/>
-<wire x1="35.0854" y1="8.9916" x2="30.1244" y2="8.9916" width="0.381" layer="1"/>
+<wire x1="38.1334" y1="8.9916" x2="33.1724" y2="8.9916" width="0.381" layer="1"/>
 </signal>
 <signal name="RFOUT">
 <contactref element="C14" pad="P$2"/>
 <contactref element="SW4" pad="3"/>
-<wire x1="37.5656" y1="8.9968" x2="36.0854" y2="8.9968" width="0.381" layer="1"/>
-<wire x1="36.0854" y1="8.9968" x2="36.0854" y2="8.9916" width="0.381" layer="1"/>
+<wire x1="40.6136" y1="8.9968" x2="39.1334" y2="8.9968" width="0.381" layer="1"/>
+<wire x1="39.1334" y1="8.9968" x2="39.1334" y2="8.9916" width="0.381" layer="1"/>
 </signal>
 <signal name="RFATT">
 <contactref element="C13" pad="P$1"/>
-<wire x1="43.5944" y1="10.3251" x2="43.561" y2="10.3251" width="0.381" layer="1"/>
-<wire x1="43.561" y1="10.3251" x2="43.561" y2="10.287" width="0.381" layer="1"/>
+<wire x1="46.6424" y1="10.3251" x2="46.609" y2="10.3251" width="0.381" layer="1"/>
+<wire x1="46.609" y1="10.3251" x2="46.609" y2="10.287" width="0.381" layer="1"/>
 <contactref element="SW4" pad="8"/>
-<wire x1="41.8856" y1="10.2968" x2="43.5944" y2="10.2968" width="0.381" layer="1"/>
-<wire x1="43.5944" y1="10.2968" x2="43.5944" y2="10.3251" width="0.381" layer="1"/>
+<wire x1="44.9336" y1="10.2968" x2="46.6424" y2="10.2968" width="0.381" layer="1"/>
+<wire x1="46.6424" y1="10.2968" x2="46.6424" y2="10.3251" width="0.381" layer="1"/>
 </signal>
 <signal name="V+1">
 <contactref element="C18" pad="P$1"/>
@@ -5931,10 +5932,10 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </signal>
 <signal name="N$43">
 <contactref element="SW4" pad="5"/>
-<wire x1="41.8856" y1="8.3468" x2="41.8084" y2="8.3468" width="0.381" layer="1"/>
+<wire x1="44.9336" y1="8.3468" x2="44.8564" y2="8.3468" width="0.381" layer="1"/>
 <contactref element="C86" pad="P$2"/>
-<wire x1="41.8856" y1="8.3468" x2="41.8856" y2="7.5602" width="0.381" layer="1"/>
-<wire x1="41.8856" y1="7.5602" x2="42.1386" y2="7.3072" width="0.381" layer="1" curve="90"/>
+<wire x1="44.9336" y1="8.3468" x2="44.9336" y2="7.5602" width="0.381" layer="1"/>
+<wire x1="44.9336" y1="7.5602" x2="45.1866" y2="7.3072" width="0.381" layer="1" curve="90"/>
 </signal>
 <signal name="A">
 <contactref element="IC9" pad="4"/>
@@ -5983,7 +5984,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="RF5" pad="P3"/>
 <wire x1="123.432" y1="26.924" x2="69.9008" y2="26.924" width="0.381" layer="1"/>
 <wire x1="123.432" y1="26.924" x2="127" y2="23.106" width="0.381" layer="1" curve="-90"/>
-<wire x1="58.3692" y1="15.3924" x2="69.9008" y2="26.924" width="0.381" layer="1" curve="-90"/>
+<wire x1="61.4172" y1="15.3924" x2="61.4172" y2="18.4404" width="0.381" layer="1"/>
+<wire x1="61.4172" y1="18.4404" x2="69.9008" y2="26.924" width="0.381" layer="1" curve="-90"/>
 </signal>
 <signal name="N$42">
 <contactref element="C41" pad="P$1"/>
@@ -5993,8 +5995,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <signal name="N$45">
 <contactref element="RF5" pad="P4"/>
 <contactref element="R33" pad="P$2"/>
-<wire x1="53.2892" y1="15.3924" x2="53.2892" y2="17.8174" width="0.381" layer="1"/>
-<wire x1="53.2892" y1="17.8174" x2="53.1622" y2="17.9444" width="0.4572" layer="1" curve="90"/>
+<wire x1="56.3372" y1="15.3924" x2="56.2102" y2="15.3924" width="0.381" layer="1"/>
+<wire x1="56.2102" y1="15.3924" x2="56.2102" y2="17.9444" width="0.381" layer="1"/>
 </signal>
 <signal name="N$26">
 <contactref element="C27" pad="P$1"/>
@@ -6052,10 +6054,10 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="156.21" y1="30.48" x2="153.797" y2="30.48" width="0.4572" layer="1"/>
 <via x="153.797" y="30.48" extent="1-16" drill="0.381"/>
 <wire x1="153.797" y1="30.48" x2="145.161" y2="21.844" width="0.254" layer="15"/>
-<wire x1="145.161" y1="21.844" x2="83.058" y2="21.844" width="0.254" layer="15"/>
-<wire x1="83.058" y1="21.844" x2="74.422" y2="13.208" width="0.254" layer="15"/>
-<via x="74.422" y="13.208" extent="1-16" drill="0.381"/>
-<wire x1="74.422" y1="13.208" x2="74.422" y2="11.303" width="0.254" layer="1"/>
+<wire x1="145.161" y1="21.844" x2="83.566" y2="21.844" width="0.254" layer="15"/>
+<wire x1="83.566" y1="21.844" x2="74.422" y2="12.7" width="0.254" layer="15"/>
+<via x="74.422" y="12.7" extent="1-16" drill="0.381"/>
+<wire x1="74.422" y1="12.7" x2="74.422" y2="11.303" width="0.254" layer="1"/>
 <wire x1="74.422" y1="11.303" x2="74.8082" y2="10.9168" width="0.254" layer="1"/>
 <wire x1="74.8082" y1="10.9168" x2="75.5386" y2="10.9168" width="0.254" layer="1"/>
 <contactref element="IC9" pad="2"/>
@@ -6252,14 +6254,13 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <signal name="FROM_PREAMP">
 <contactref element="RF5" pad="P1"/>
 <contactref element="C44" pad="P$1"/>
-<wire x1="63.762" y1="10.287" x2="62.3316" y2="10.287" width="0.381" layer="1"/>
-<wire x1="62.3316" y1="10.3124" x2="58.3692" y2="10.3124" width="0.381" layer="1"/>
-<wire x1="62.3316" y1="10.3124" x2="62.3316" y2="10.287" width="0" layer="19" extent="1-1"/>
+<wire x1="63.762" y1="10.287" x2="61.4172" y2="10.287" width="0.381" layer="1"/>
+<wire x1="61.4172" y1="10.287" x2="61.4172" y2="10.3124" width="0.381" layer="1"/>
 </signal>
 <signal name="RF_PREAMP">
 <contactref element="RF5" pad="P6"/>
 <contactref element="C16" pad="P$1"/>
-<wire x1="50.7666" y1="10.3124" x2="53.2892" y2="10.3124" width="0.381" layer="1"/>
+<wire x1="53.8146" y1="10.3124" x2="56.3372" y2="10.3124" width="0.381" layer="1"/>
 </signal>
 <signal name="N$4">
 <contactref element="U1" pad="1"/>
@@ -6414,8 +6415,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <signal name="N$7">
 <contactref element="C16" pad="P$2"/>
 <contactref element="RF1" pad="3"/>
-<wire x1="48.417" y1="10.3124" x2="49.7666" y2="10.3124" width="0.381" layer="1"/>
-<wire x1="48.417" y1="10.3124" x2="48.417" y2="10.3084" width="0" layer="19" extent="1-1"/>
+<wire x1="51.465" y1="10.3124" x2="52.8146" y2="10.3124" width="0.381" layer="1"/>
+<wire x1="51.465" y1="10.3124" x2="51.465" y2="10.3084" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$35">
 <contactref element="RF1" pad="8"/>
@@ -6425,27 +6426,27 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <contactref element="C45" pad="P$2"/>
 <contactref element="C12" pad="P$2"/>
 <polygon width="0.254" layer="1" isolate="0.3048" thermals="no">
-<vertex x="45.212" y="12.954"/>
-<vertex x="49.022" y="12.954"/>
-<vertex x="49.022" y="12.192"/>
-<vertex x="48.133" y="12.192"/>
-<vertex x="48.133" y="11.938"/>
-<vertex x="46.101" y="11.938"/>
-<vertex x="46.101" y="12.192"/>
-<vertex x="45.212" y="12.192"/>
+<vertex x="48.26" y="12.954"/>
+<vertex x="52.07" y="12.954"/>
+<vertex x="52.07" y="12.192"/>
+<vertex x="51.181" y="12.192"/>
+<vertex x="51.181" y="11.938"/>
+<vertex x="49.149" y="11.938"/>
+<vertex x="49.149" y="12.192"/>
+<vertex x="48.26" y="12.192"/>
 </polygon>
-<wire x1="47.867" y1="11.3584" x2="47.867" y2="12.331" width="0.254" layer="1"/>
-<wire x1="47.867" y1="12.331" x2="47.117" y2="12.331" width="0.254" layer="1"/>
-<wire x1="47.367" y1="11.3584" x2="47.367" y2="12.331" width="0.254" layer="1"/>
-<wire x1="47.367" y1="12.331" x2="47.117" y2="12.331" width="0.254" layer="1"/>
-<wire x1="46.367" y1="11.3584" x2="46.367" y2="12.331" width="0.254" layer="1"/>
-<wire x1="46.367" y1="12.331" x2="47.117" y2="12.331" width="0.254" layer="1"/>
+<wire x1="50.915" y1="11.3584" x2="50.915" y2="12.331" width="0.254" layer="1"/>
+<wire x1="50.915" y1="12.331" x2="50.165" y2="12.331" width="0.254" layer="1"/>
+<wire x1="50.415" y1="11.3584" x2="50.415" y2="12.331" width="0.254" layer="1"/>
+<wire x1="50.415" y1="12.331" x2="50.165" y2="12.331" width="0.254" layer="1"/>
+<wire x1="49.415" y1="11.3584" x2="49.415" y2="12.331" width="0.254" layer="1"/>
+<wire x1="49.415" y1="12.331" x2="50.165" y2="12.331" width="0.254" layer="1"/>
 </signal>
 <signal name="N$8">
 <contactref element="RF1" pad="10"/>
 <contactref element="C13" pad="P$2"/>
-<wire x1="45.817" y1="10.3084" x2="44.5944" y2="10.3084" width="0.381" layer="1"/>
-<wire x1="44.5944" y1="10.3084" x2="44.5944" y2="10.3251" width="0.381" layer="1"/>
+<wire x1="48.865" y1="10.3084" x2="47.6424" y2="10.3084" width="0.381" layer="1"/>
+<wire x1="47.6424" y1="10.3084" x2="47.6424" y2="10.3251" width="0.381" layer="1"/>
 </signal>
 <signal name="N$47">
 <contactref element="U6" pad="P$5"/>
@@ -6951,29 +6952,32 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="60.21" y1="2.413" x2="59.497" y2="2.413" width="0.508" layer="1"/>
 <wire x1="59.497" y1="2.413" x2="58.735" y2="3.175" width="0.508" layer="1"/>
 <wire x1="58.735" y1="3.175" x2="58.735" y2="4.318" width="0.508" layer="1"/>
-<wire x1="58.735" y1="4.318" x2="54.026" y2="4.318" width="0.508" layer="1"/>
-<wire x1="54.026" y1="4.318" x2="54.026" y2="4.191" width="0.508" layer="1"/>
-<wire x1="54.026" y1="4.318" x2="47.955" y2="4.318" width="0.8128" layer="1"/>
-<wire x1="47.955" y1="4.318" x2="47.828" y2="4.191" width="0.8128" layer="1"/>
+<wire x1="47.955" y1="4.318" x2="47.828" y2="3.683" width="0.8128" layer="1"/>
+<wire x1="55.677" y1="4.318" x2="58.735" y2="4.318" width="0.508" layer="1"/>
+<wire x1="54.026" y1="3.683" x2="47.828" y2="3.683" width="1.016" layer="1"/>
+<wire x1="55.677" y1="4.318" x2="55.042" y2="3.683" width="0.508" layer="1"/>
+<wire x1="55.042" y1="3.683" x2="54.026" y2="3.683" width="0.508" layer="1"/>
 </signal>
 <signal name="N$75">
 <contactref element="U16" pad="1"/>
 <contactref element="R70" pad="P$2"/>
-<wire x1="56.835" y1="3.175" x2="56.835" y2="1.573" width="0.508" layer="1"/>
-<wire x1="56.835" y1="1.573" x2="56.884" y2="1.524" width="0.508" layer="1"/>
+<wire x1="56.884" y1="1.27" x2="56.835" y2="3.175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$84">
 <contactref element="R70" pad="P$1"/>
 <contactref element="T5" pad="1"/>
-<wire x1="55.384" y1="1.524" x2="54.382" y2="1.524" width="0.508" layer="1"/>
-<wire x1="54.382" y1="1.524" x2="54.026" y2="1.88" width="0.508" layer="1"/>
+<wire x1="54.026" y1="1.372" x2="55.384" y2="1.27" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$85">
 <contactref element="R71" pad="P$1"/>
 <contactref element="T5" pad="3"/>
 <contactref element="TP4" pad="P$1"/>
-<wire x1="44.589" y1="3.81" x2="54.026" y2="6.502" width="0" layer="19" extent="1-1"/>
-<wire x1="39.116" y1="1.651" x2="44.589" y2="3.81" width="0" layer="19" extent="1-1"/>
+<wire x1="54.026" y1="5.994" x2="54.026" y2="6.096" width="0.6096" layer="1"/>
+<wire x1="54.026" y1="6.096" x2="46.736" y2="6.096" width="0.6096" layer="1"/>
+<wire x1="46.736" y1="6.096" x2="44.335" y2="3.695" width="0.6096" layer="1"/>
+<wire x1="44.335" y1="3.695" x2="41.148" y2="3.695" width="0.6096" layer="1"/>
+<wire x1="41.148" y1="3.695" x2="39.116" y2="3.695" width="0.6096" layer="1"/>
+<wire x1="39.116" y1="3.695" x2="39.116" y2="1.651" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$86">
 <contactref element="R69" pad="P$1"/>
@@ -7088,12 +7092,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="19.878" y1="32.1412" x2="19.8882" y2="32.131" width="0.4572" layer="1"/>
 <via x="19.8882" y="32.131" extent="1-16" drill="0.381"/>
 <wire x1="19.8882" y1="32.131" x2="19.8882" y2="23.4188" width="0.4572" layer="16"/>
-<via x="36.195" y="11.938" extent="1-16" drill="0.381"/>
-<wire x1="36.195" y1="11.938" x2="36.576" y2="11.557" width="0.254" layer="1"/>
-<wire x1="36.576" y1="11.557" x2="36.576" y2="10.033" width="0.254" layer="1"/>
-<wire x1="36.576" y1="10.033" x2="36.9622" y2="9.6468" width="0.254" layer="1"/>
-<wire x1="36.9622" y1="9.6468" x2="37.5656" y2="9.6468" width="0.254" layer="1"/>
-<wire x1="19.8882" y1="23.4188" x2="36.195" y2="11.938" width="0" layer="19" extent="16-16"/>
+<via x="39.243" y="11.938" extent="1-16" drill="0.381"/>
+<wire x1="39.243" y1="11.938" x2="39.624" y2="11.557" width="0.254" layer="1"/>
+<wire x1="39.624" y1="11.557" x2="39.624" y2="10.033" width="0.254" layer="1"/>
+<wire x1="39.624" y1="10.033" x2="40.0102" y2="9.6468" width="0.254" layer="1"/>
+<wire x1="40.0102" y1="9.6468" x2="40.6136" y2="9.6468" width="0.254" layer="1"/>
+<wire x1="19.8882" y1="23.4188" x2="28.575" y2="14.732" width="0.4572" layer="16"/>
+<wire x1="28.575" y1="14.732" x2="36.449" y2="14.732" width="0.4572" layer="16"/>
+<wire x1="36.449" y1="14.732" x2="39.243" y2="11.938" width="0.4572" layer="16"/>
 </signal>
 <signal name="N$34">
 <contactref element="SW1" pad="8"/>
@@ -7377,14 +7383,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </signal>
 <signal name="N$62">
 <polygon width="0.127" layer="2" pour="cutout">
-<vertex x="51.943" y="16.637"/>
-<vertex x="51.943" y="9.017"/>
-<vertex x="59.69" y="9.017"/>
-<vertex x="59.69" y="11.557"/>
-<vertex x="56.388" y="11.557"/>
-<vertex x="56.388" y="13.843"/>
-<vertex x="59.69" y="13.843"/>
-<vertex x="59.69" y="16.637"/>
+<vertex x="54.991" y="16.637"/>
+<vertex x="54.991" y="9.017"/>
+<vertex x="62.738" y="9.017"/>
+<vertex x="62.738" y="11.557"/>
+<vertex x="59.436" y="11.557"/>
+<vertex x="59.436" y="13.843"/>
+<vertex x="62.738" y="13.843"/>
+<vertex x="62.738" y="16.637"/>
 </polygon>
 </signal>
 <signal name="N$79">
@@ -7645,22 +7651,42 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <signal name="N$95">
 <contactref element="C86" pad="P$1"/>
 <contactref element="R20" pad="P$1"/>
-<wire x1="42.1386" y1="6.3072" x2="41.1186" y2="6.3072" width="0.381" layer="1"/>
-<wire x1="41.1186" y1="6.3072" x2="41.009" y2="6.1976" width="0.381" layer="1" curve="90"/>
+<wire x1="45.1866" y1="6.3072" x2="44.1666" y2="6.3072" width="0.381" layer="1"/>
+<wire x1="44.1666" y1="6.3072" x2="44.057" y2="6.1976" width="0.381" layer="1" curve="90"/>
 </signal>
 </signals>
 <errors>
+<approved hash="18,29,cccf2b11fc56a00f"/>
+<approved hash="18,29,3e29b91b6c5384e6"/>
+<approved hash="18,29,d3d00947a380c290"/>
+<approved hash="18,29,4139fb42878a5276"/>
+<approved hash="18,29,f8aa4d4c84d2b05c"/>
+<approved hash="18,29,ec384c288706a7ee"/>
+<approved hash="18,29,bcd65e2dbad9d8da"/>
+<approved hash="18,29,a40c634db545f36c"/>
+<approved hash="18,29,d11511b211b3d114"/>
+<approved hash="18,29,29c648e148e129c6"/>
+<approved hash="18,29,91e3bbc18089c216"/>
+<approved hash="18,29,57ca2dcf2085820d"/>
+<approved hash="18,29,efc9f899ed5092bd"/>
+<approved hash="18,29,79d23e95ad5e3294"/>
+<approved hash="18,29,cd055cab6f027e57"/>
+<approved hash="18,29,f9975dcf6d2249e5"/>
+<approved hash="18,29,042377ab98dc6baf"/>
+<approved hash="18,29,3cf56acf96b8401d"/>
+<approved hash="18,29,217f3fadbfada17f"/>
+<approved hash="18,29,28343462b462a834"/>
 <approved hash="3,1,077a05780578077a"/>
-<approved hash="18,29,3836e640df5c9473"/>
 <approved hash="18,29,18de1449c8a99b5a"/>
+<approved hash="18,29,3836e640df5c9473"/>
 <approved hash="18,29,eb95fbee972ea75e"/>
 <approved hash="18,29,178519fa75055b71"/>
 <approved hash="18,29,cc4c94f5aff423f1"/>
 <approved hash="18,29,6d4d5b0d07f82f39"/>
-<approved hash="18,29,d3058f7386546447"/>
 <approved hash="18,29,41ed7d7d23a16b69"/>
-<approved hash="18,29,a0a642db1c1a7e62"/>
+<approved hash="18,29,d3058f7386546447"/>
 <approved hash="18,29,ceb092c9cc391045"/>
+<approved hash="18,29,a0a642db1c1a7e62"/>
 <approved hash="18,29,67781fc126f43fc5"/>
 <approved hash="18,29,e479d039acf8330d"/>
 <approved hash="18,29,16a92a5f490da743"/>
@@ -7679,26 +7705,18 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <approved hash="18,29,5691c31cc31f5692"/>
 <approved hash="18,29,9493460583742331"/>
 <approved hash="18,29,fddacd2d2002d73f"/>
-<approved hash="18,29,8a9b54e28903d77f"/>
 <approved hash="18,29,9ccefcb32140c138"/>
-<approved hash="18,29,26fbc7dd3ab4e8ac"/>
+<approved hash="18,29,8a9b54e28903d77f"/>
 <approved hash="18,29,443b72d7ae781eb3"/>
+<approved hash="18,29,26fbc7dd3ab4e8ac"/>
+<approved hash="18,29,9416769ef69f1417"/>
+<approved hash="18,29,605982a102a0e058"/>
 <approved hash="18,29,6fca80d200d3efcb"/>
 <approved hash="18,29,9665896d096c1664"/>
 <approved hash="18,29,6d7b8e430e42ed7a"/>
-<approved hash="18,29,9416769ef69f1417"/>
-<approved hash="18,29,605982a102a0e058"/>
-<approved hash="18,29,68f48bfc0bfde8f5"/>
-<approved hash="18,29,673f87870786e73e"/>
 <approved hash="18,29,62a885300531e2a9"/>
-<approved hash="18,29,6ac83037f039aac6"/>
-<approved hash="18,29,1bc5a33a633bdbc4"/>
-<approved hash="18,29,88c3523c923e48c1"/>
-<approved hash="18,29,39c0cd3f0d20f9df"/>
-<approved hash="18,29,b6de7c21bc2376dc"/>
-<approved hash="18,29,27dbef242f25e7da"/>
-<approved hash="18,29,d4d99e265e2814d7"/>
-<approved hash="18,29,45d70928c92a85d5"/>
+<approved hash="18,29,673f87870786e73e"/>
+<approved hash="18,29,68f48bfc0bfde8f5"/>
 <approved hash="18,29,8162d841184f416c"/>
 <approved hash="18,29,f06f4b4c8b4d306e"/>
 <approved hash="18,29,6369ba4a7a48a36b"/>
@@ -7707,56 +7725,54 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <approved hash="18,29,cc710752c7530c70"/>
 <approved hash="18,29,3f737650b65eff7d"/>
 <approved hash="18,29,ae7de15e215c6e7f"/>
+<approved hash="18,29,6ac83037f039aac6"/>
+<approved hash="18,29,1bc5a33a633bdbc4"/>
+<approved hash="18,29,88c3523c923e48c1"/>
+<approved hash="18,29,39c0cd3f0d20f9df"/>
+<approved hash="18,29,b6de7c21bc2376dc"/>
+<approved hash="18,29,27dbef242f25e7da"/>
+<approved hash="18,29,d4d99e265e2814d7"/>
+<approved hash="18,29,45d70928c92a85d5"/>
 <approved hash="18,29,97dd5b64480483c8"/>
 <approved hash="18,29,fb62185a985a7b62"/>
-<approved hash="18,29,f9d316cb96cb79d3"/>
 <approved hash="18,29,f64014b894b87640"/>
+<approved hash="18,29,f9d316cb96cb79d3"/>
 <approved hash="18,29,f126119e919e7126"/>
-<approved hash="18,29,f4b11329932974b1"/>
-<approved hash="18,29,020fe0876087820f"/>
 <approved hash="18,29,feed1de59de57eed"/>
+<approved hash="18,29,f4b11329932974b1"/>
 <approved hash="18,29,007c1f749f74807c"/>
+<approved hash="18,29,020fe0876087820f"/>
 <approved hash="18,29,eba34f054f28efae"/>
 <approved hash="18,29,eba14f5b4f08ec72"/>
-<approved hash="18,29,cccf2b11fc56a00f"/>
-<approved hash="18,29,3e29b91b6c5384e6"/>
-<approved hash="18,29,d3d00947a380c290"/>
-<approved hash="18,29,4139fb42878a5276"/>
-<approved hash="18,29,f8aa4d4c84d2b05c"/>
-<approved hash="18,29,ec384c288706a7ee"/>
-<approved hash="18,29,23ff7755775827d2"/>
 <approved hash="18,29,23a17757748427f2"/>
-<approved hash="18,29,bcd65e2dbad9d8da"/>
-<approved hash="18,29,a40c634db545f36c"/>
-<approved hash="18,29,a5d6b170ee72b883"/>
+<approved hash="18,29,23ff7755775827d2"/>
 <approved hash="18,29,f38ef86fb2058e7b"/>
+<approved hash="18,29,a5d6b170ee72b883"/>
 <approved hash="18,29,568510ecbb1d6571"/>
 <approved hash="18,29,edc60daba6aadec2"/>
-<approved hash="18,29,a16eb1885768b3e9"/>
 <approved hash="18,29,7e5fc486bc8587f3"/>
-<approved hash="18,29,04c35a64a1736096"/>
+<approved hash="18,29,a16eb1885768b3e9"/>
 <approved hash="18,29,bc9b137a1304566f"/>
+<approved hash="18,29,04c35a64a1736096"/>
 <approved hash="18,29,6f908fd9f2291265"/>
 <approved hash="18,29,9af344be39bee7f6"/>
 <approved hash="18,29,d769c9b2f785f7c6"/>
 <approved hash="18,29,ea58bcbdfe68c3dd"/>
-<approved hash="18,29,d11511b211b3d114"/>
-<approved hash="18,29,b839f7d8b7cdf82c"/>
 <approved hash="18,29,c9be8758474d09ab"/>
-<approved hash="18,29,29c648e148e129c6"/>
+<approved hash="18,29,b839f7d8b7cdf82c"/>
 <approved hash="18,29,f8b512405240b8b5"/>
-<approved hash="18,29,8c9818a618a98c97"/>
-<approved hash="18,29,b812442c442fb811"/>
-<approved hash="18,29,e58c73b273b5e58b"/>
-<approved hash="18,29,1106bf38bf3c1102"/>
 <approved hash="18,29,fe026a006a0ffe0d"/>
 <approved hash="18,29,ca88368a3689ca8b"/>
 <approved hash="18,29,9716011401139711"/>
 <approved hash="18,29,639ccd9ecd9a6398"/>
-<approved hash="18,29,70e7ab132b6cf098"/>
+<approved hash="18,29,8c9818a618a98c97"/>
+<approved hash="18,29,b812442c442fb811"/>
+<approved hash="18,29,e58c73b273b5e58b"/>
+<approved hash="18,29,1106bf38bf3c1102"/>
 <approved hash="18,29,2d1df6697616ad62"/>
-<approved hash="18,29,e1abdbbf5bbf61ab"/>
+<approved hash="18,29,70e7ab132b6cf098"/>
 <approved hash="18,29,bc5186c506c53c51"/>
+<approved hash="18,29,e1abdbbf5bbf61ab"/>
 <approved hash="18,29,cd383875b8744d39"/>
 <approved hash="18,29,866e7c9bfc9a066f"/>
 <approved hash="18,29,7c04a9292929fc04"/>
@@ -7764,51 +7780,43 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <approved hash="18,29,64589df79df0645f"/>
 <approved hash="18,29,ade9c5c6c5c6ade9"/>
 <approved hash="18,29,986258d020b9e498"/>
-<approved hash="18,29,927d9ea72bfcf95b"/>
 <approved hash="18,29,48debb06ba6acefc"/>
+<approved hash="18,29,927d9ea72bfcf95b"/>
 <approved hash="18,29,713995b477573851"/>
 <approved hash="18,29,7bc3ad22289d0cc4"/>
 <approved hash="18,29,3f3aff25834c47c0"/>
-<approved hash="18,29,88d96fa91492f0f3"/>
 <approved hash="18,29,85128aae2b3eee90"/>
+<approved hash="18,29,88d96fa91492f0f3"/>
 <approved hash="18,29,7af78949bcacfc75"/>
-<approved hash="18,29,6562823974e52c5a"/>
 <approved hash="18,29,49989faf2e6b3ecd"/>
+<approved hash="18,29,6562823974e52c5a"/>
 <approved hash="18,29,2b51cb0eb435577b"/>
 <approved hash="18,29,ba9b7d3c7d3cba9b"/>
 <approved hash="18,29,724c3a6b3a6b724c"/>
 <approved hash="18,29,0cfed557d5570cfe"/>
 <approved hash="18,29,b5b18d988d98b5b1"/>
-<approved hash="18,29,91e3bbc18089c216"/>
-<approved hash="18,29,57ca2dcf2085820d"/>
-<approved hash="18,29,efc9f899ed5092bd"/>
-<approved hash="18,29,79d23e95ad5e3294"/>
-<approved hash="18,29,cd055cab6f027e57"/>
-<approved hash="18,29,f9975dcf6d2249e5"/>
-<approved hash="18,29,bc0cf3ce0f25c3da"/>
 <approved hash="18,29,6dea02deedd4cdaa"/>
-<approved hash="18,29,9a0af466519aaff2"/>
+<approved hash="18,29,bc0cf3ce0f25c3da"/>
 <approved hash="18,29,1ecbdea37b3f2b53"/>
+<approved hash="18,29,9a0af466519aaff2"/>
 <approved hash="18,29,0645b03e3276fabe"/>
 <approved hash="18,29,62de7c045aeaf6f4"/>
-<approved hash="18,29,042377ab98dc6baf"/>
-<approved hash="18,29,3cf56acf96b8401d"/>
-<approved hash="18,29,7510dad1842683c6"/>
 <approved hash="18,29,e6f62bc224d78db5"/>
+<approved hash="18,29,7510dad1842683c6"/>
 <approved hash="18,29,35d627afc033c24e"/>
 <approved hash="18,29,73064f7ba88784fe"/>
 <approved hash="18,29,dd49bb33eb761eb2"/>
 <approved hash="18,29,bbd2770881ea12f9"/>
-<approved hash="18,29,8c4a2518e5184c4a"/>
 <approved hash="18,29,423c9a825a82823c"/>
-<approved hash="18,29,6907c0550055a907"/>
-<approved hash="18,29,02c961bca0d924b8"/>
-<approved hash="18,29,4392ee419c7b23c9"/>
-<approved hash="18,29,7498ccee0ceeb498"/>
+<approved hash="18,29,8c4a2518e5184c4a"/>
 <approved hash="18,29,4e55e71b271b8e55"/>
 <approved hash="18,29,5deef3bc33bc9dee"/>
 <approved hash="18,29,5b6d7bee9b636890"/>
 <approved hash="18,29,8031d88718874031"/>
+<approved hash="18,29,7498ccee0ceeb498"/>
+<approved hash="18,29,6907c0550055a907"/>
+<approved hash="18,29,02c961bca0d924b8"/>
+<approved hash="18,29,4392ee419c7b23c9"/>
 <approved hash="18,29,156904cbc4c3d561"/>
 <approved hash="18,29,c7575551555cc75a"/>
 <approved hash="18,29,f4d980df80daf4dc"/>
@@ -7819,77 +7827,75 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <approved hash="18,29,b2fc2efe2efab2f8"/>
 <approved hash="18,29,cf7a79787974cf76"/>
 <approved hash="18,29,76db110a83d26427"/>
-<approved hash="18,29,5d2cf57e357e9d2c"/>
 <approved hash="18,29,80f3de451e4540f3"/>
+<approved hash="18,29,4e97e1d921d98e97"/>
+<approved hash="18,29,745aca2c0a2cb45a"/>
 <approved hash="18,29,67c90481fc247878"/>
 <approved hash="18,29,69c5c6970697a9c5"/>
 <approved hash="18,29,8c8823dae3da4c88"/>
 <approved hash="18,29,99f6dac8b86828ea"/>
-<approved hash="18,29,4e97e1d921d98e97"/>
-<approved hash="18,29,745aca2c0a2cb45a"/>
-<approved hash="18,29,d9a66ee0fef7dbb5"/>
+<approved hash="18,29,5d2cf57e357e9d2c"/>
 <approved hash="18,29,d762fe206e09d54f"/>
+<approved hash="18,29,d9a66ee0fef7dbb5"/>
 <approved hash="18,29,d962d2205209174f"/>
-<approved hash="18,29,217f3fadbfada17f"/>
 <approved hash="18,29,1ba652e0d2f7d5b5"/>
-<approved hash="18,29,28343462b462a834"/>
 <approved hash="18,29,1ae65621d236ddf5"/>
 <approved hash="18,29,d1a3d260561916de"/>
 <approved hash="18,29,17a25260b219d6df"/>
 <approved hash="18,29,dae6b22052371bf5"/>
 <approved hash="18,29,14a2afe0be0a174c"/>
 <approved hash="18,29,1b62be24ae361974"/>
-<approved hash="18,29,68a34c1b4c446c6e"/>
 <approved hash="18,29,68614c154c686c52"/>
+<approved hash="18,29,68a34c1b4c446c6e"/>
 <approved hash="18,29,24637fdd7fa82076"/>
 <approved hash="18,29,24a17f9b7fac2056"/>
-<approved hash="18,29,e0af54d754e7e4d1"/>
 <approved hash="18,29,e0a1541554dbe4fd"/>
-<approved hash="18,29,59626e24fe365b74"/>
+<approved hash="18,29,e0af54d754e7e4d1"/>
 <approved hash="18,29,56a2ffe06e0a554c"/>
-<approved hash="18,29,60a75515550064d2"/>
+<approved hash="18,29,59626e24fe365b74"/>
 <approved hash="18,29,60e155d7552064d6"/>
+<approved hash="18,29,60a75515550064d2"/>
 <approved hash="18,29,9aa2d5e45215dd57"/>
 <approved hash="18,29,d1625220d63b957d"/>
-<approved hash="18,29,9762d220b23bd77d"/>
 <approved hash="18,29,d8a2b1e4d2159b57"/>
+<approved hash="18,29,9762d220b23bd77d"/>
 <approved hash="18,29,ec1182b58b968a64"/>
 <approved hash="18,29,a477c946f4e58272"/>
-<approved hash="18,29,bba1c652604eec46"/>
 <approved hash="18,29,64fdd60a70743378"/>
-<approved hash="18,29,697be46d90f9532c"/>
+<approved hash="18,29,bba1c652604eec46"/>
 <approved hash="18,29,8be493a77a665816"/>
-<approved hash="18,29,37ed1d4a3295c898"/>
+<approved hash="18,29,697be46d90f9532c"/>
 <approved hash="18,29,1d8b56ba2fe6c08d"/>
-<approved hash="18,29,3dfd3d05d97bce87"/>
+<approved hash="18,29,37ed1d4a3295c898"/>
 <approved hash="18,29,46ae6f528bb1b549"/>
-<approved hash="18,29,2216eeabd367381b"/>
+<approved hash="18,29,3dfd3d05d97bce87"/>
 <approved hash="18,29,c089996039f83320"/>
+<approved hash="18,29,2216eeabd367381b"/>
 <approved hash="18,29,36faf45e79968a8e"/>
 <approved hash="18,29,569cbfac2ee58299"/>
-<approved hash="18,29,d2e884111e6ee192"/>
 <approved hash="18,29,69baa84732a45a5c"/>
-<approved hash="18,29,079d1674def98f35"/>
+<approved hash="18,29,d2e884111e6ee192"/>
 <approved hash="18,29,c50261be1466840f"/>
-<approved hash="18,29,2526f260527e5b3c"/>
+<approved hash="18,29,079d1674def98f35"/>
 <approved hash="18,29,57665224f21a295c"/>
-<approved hash="18,29,1566be24ae1a175c"/>
+<approved hash="18,29,2526f260527e5b3c"/>
 <approved hash="18,29,1b26ae60be7e193c"/>
+<approved hash="18,29,1566be24ae1a175c"/>
 <approved hash="18,29,b398b606fd7233d3"/>
-<approved hash="18,29,2ea5862a014c5163"/>
 <approved hash="18,29,291b6c2e1acfff02"/>
+<approved hash="18,29,2ea5862a014c5163"/>
 <approved hash="18,29,331a870a006c4ddc"/>
 <approved hash="18,29,dd65bcef6af6ab84"/>
-<approved hash="18,29,c78a510909576774"/>
 <approved hash="18,29,da35502908777bcb"/>
-<approved hash="18,29,090a0c2e1aceff13"/>
+<approved hash="18,29,c78a510909576774"/>
 <approved hash="18,29,bd749cee6af6ab95"/>
-<approved hash="18,29,d4342b56cb573435"/>
+<approved hash="18,29,090a0c2e1aceff13"/>
 <approved hash="18,29,e8ed0e8fee8e08ec"/>
-<approved hash="18,29,751c27aea7aef51c"/>
+<approved hash="18,29,d4342b56cb573435"/>
 <approved hash="18,29,c8419b521b524841"/>
-<approved hash="18,29,f228a4f924f97228"/>
+<approved hash="18,29,751c27aea7aef51c"/>
 <approved hash="18,29,4bb51e079e07cbb5"/>
+<approved hash="18,29,f228a4f924f97228"/>
 <approved hash="18,29,ce9a912b112b4e9a"/>
 <approved hash="18,29,b84a3cc9dcc8584b"/>
 <approved hash="18,29,ed58379dbad96a59"/>
@@ -7921,18 +7927,18 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <approved hash="5,1,26420c3cc654878c"/>
 <approved hash="5,1,b54bc093187227ee"/>
 <approved hash="5,1,4a5aaf75e49c53fb"/>
+<approved hash="5,1,89ed80ffadf12245"/>
 <approved hash="5,1,d9491803b75f245d"/>
 <approved hash="5,1,9ebc9d320df268a8"/>
-<approved hash="5,1,89ed80ffadf12245"/>
 <approved hash="5,1,3e21c7b22eeae93b"/>
 <approved hash="5,1,6f994f09b2c6f805"/>
 <approved hash="5,1,5e9e197464e79702"/>
 <approved hash="5,1,953ae4d9993c5ed2"/>
 <approved hash="5,1,3b595eea7de88ddc"/>
-<approved hash="5,1,b473e74083a25916"/>
-<approved hash="5,1,66b8c36afb6b825e"/>
 <approved hash="5,1,04ab67f344efb230"/>
+<approved hash="5,1,b473e74083a25916"/>
 <approved hash="5,1,9d593bc9c0fa9809"/>
+<approved hash="5,1,66b8c36afb6b825e"/>
 </errors>
 </board>
 </drawing>
