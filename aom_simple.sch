@@ -7704,10 +7704,10 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="LVK12R050DER"/>
 </part>
 <part name="C68" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1210" value="10uF">
-<attribute name="PARTNO" value="UMK325C7106MM-T"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE"/>
 </part>
 <part name="C76" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1210" value="10uF">
-<attribute name="PARTNO" value="UMK325C7106MM-T"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE"/>
 </part>
 <part name="IC12" library="regulator-jqi" deviceset="MIC5205" device="">
 <attribute name="PARTNO" value="MIC5205-3.3YM5-TR"/>
@@ -7784,7 +7784,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="TNPW060310K0BEEA"/>
 </part>
 <part name="C39" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1210" value="10uF">
-<attribute name="PARTNO" value="UMK325C7106MM-T"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE"/>
 </part>
 <part name="AMP_EN" library="pinhead" deviceset="PINHD-1X2" device="">
 <attribute name="PARTNO" value="640456-2"/>
@@ -7833,8 +7833,8 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="R45" library="jqi_passives" deviceset="R_SMD" device="R0603" value="1k">
 <attribute name="PARTNO" value="TNPW06031K00BEEN"/>
 </part>
-<part name="R46" library="jqi_passives" deviceset="R_SMD" device="R0603" value="15.4k">
-<attribute name="PARTNO" value="TNPW060315K4BEEA"/>
+<part name="R46" library="jqi_passives" deviceset="R_SMD" device="R0603" value="22.1k">
+<attribute name="PARTNO" value="TNPW060322K1BEEA"/>
 </part>
 <part name="R47" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
 <attribute name="PARTNO" value="TNPW060310K0BEEA"/>
@@ -7860,11 +7860,11 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="U13" library="regulator-jqi" deviceset="TPS7A30XX" device="">
 <attribute name="PARTNO" value="TPS7A3001DGNR"/>
 </part>
-<part name="C67" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="10uF">
-<attribute name="PARTNO" value="GMK316AB7106KL-TR"/>
+<part name="C67" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1210" value="10uF">
+<attribute name="PARTNO" value="CL32B106KBJNNNE"/>
 </part>
-<part name="C71" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1206" value="10uF">
-<attribute name="PARTNO" value="GMK316AB7106KL-TR"/>
+<part name="C71" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_1210" value="10uF">
+<attribute name="PARTNO" value="CL32B106KBJNNNE"/>
 </part>
 <part name="C72" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
 <attribute name="PARTNO" value="CL05B103KB5NNNC"/>
