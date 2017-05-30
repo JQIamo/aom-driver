@@ -7922,13 +7922,13 @@ PN 5019; Silver plated phosphor bronze</description>
 </part>
 <part name="QR1" library="QR-git.io-vDp5q" deviceset="QR-HTTPS://GIT.IO/VDP5Q" device="-LIGHT-SILK"/>
 <part name="IC20" library="optocoupler-jqi" deviceset="TLP2767" device="" value="TLP2767">
-<attribute name="PARTNO" value="TLP2767(TP,E"/>
+<attribute name="PARTNO" value="TLP2767"/>
 </part>
 <part name="IC21" library="optocoupler-jqi" deviceset="TLP2767" device="" value="TLP2767">
-<attribute name="PARTNO" value="TLP2767(TP,E"/>
+<attribute name="PARTNO" value="TLP2767"/>
 </part>
 <part name="IC22" library="optocoupler-jqi" deviceset="TLP2767" device="" value="TLP2767">
-<attribute name="PARTNO" value="TLP2767(TP,E"/>
+<attribute name="PARTNO" value="TLP2767"/>
 </part>
 <part name="C75" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="22pF">
 <attribute name="PARTNO" value="CL05C220JB5NNNC"/>
