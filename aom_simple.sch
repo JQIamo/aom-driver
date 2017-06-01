@@ -7980,6 +7980,21 @@ PN 5019; Silver plated phosphor bronze</description>
 <part name="C86" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0402" value="10nF">
 <attribute name="PARTNO" value="CL05B103JA5NNNC"/>
 </part>
+<part name="R65" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
+</part>
+<part name="R66" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
+</part>
+<part name="R67" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
+</part>
+<part name="R74" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
+</part>
+<part name="R75" library="jqi_passives" deviceset="R_SMD" device="R0603" value="10k">
+<attribute name="PARTNO" value="ERJ-3EKF1002V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -9707,10 +9722,10 @@ does not need capacitors.</text>
 <attribute name="PARTNO" x="144.78" y="140.97" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="GND63" gate="1" x="163.83" y="31.75"/>
-<instance part="J2" gate="G$1" x="25.4" y="69.85">
-<attribute name="PARTNO" x="25.4" y="69.85" size="1.778" layer="96" display="off"/>
+<instance part="J2" gate="G$1" x="20.32" y="77.47">
+<attribute name="PARTNO" x="20.32" y="77.47" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND80" gate="1" x="15.24" y="49.53"/>
+<instance part="GND80" gate="1" x="10.16" y="33.02"/>
 <instance part="J3" gate="G$1" x="170.18" y="190.5" rot="MR270">
 <attribute name="PARTNO" x="170.18" y="190.5" size="1.778" layer="96" display="off"/>
 </instance>
@@ -9720,6 +9735,21 @@ does not need capacitors.</text>
 </instance>
 <instance part="R60" gate="G$1" x="259.08" y="132.08" rot="R270">
 <attribute name="PARTNO" x="259.08" y="132.08" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="R65" gate="G$1" x="20.32" y="53.34" rot="MR0">
+<attribute name="PARTNO" x="20.32" y="53.34" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R66" gate="G$1" x="20.32" y="49.53" rot="MR0">
+<attribute name="PARTNO" x="20.32" y="49.53" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R67" gate="G$1" x="20.32" y="45.72" rot="MR0">
+<attribute name="PARTNO" x="20.32" y="45.72" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R74" gate="G$1" x="20.32" y="41.91" rot="MR0">
+<attribute name="PARTNO" x="20.32" y="41.91" size="1.778" layer="96" rot="R90" display="off"/>
+</instance>
+<instance part="R75" gate="G$1" x="20.32" y="38.1" rot="MR0">
+<attribute name="PARTNO" x="20.32" y="38.1" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 </instances>
 <busses>
@@ -9858,56 +9888,76 @@ does not need capacitors.</text>
 <segment>
 <pinref part="GND80" gate="1" pin="GND"/>
 <pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="15.24" y1="52.07" x2="15.24" y2="54.61" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="54.61" x2="17.78" y2="54.61" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="35.56" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="38.1" x2="10.16" y2="41.91" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="41.91" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="45.72" x2="10.16" y2="49.53" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="49.53" x2="10.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="53.34" x2="10.16" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="62.23" x2="12.7" y2="62.23" width="0.1524" layer="91"/>
 <pinref part="J2" gate="G$1" pin="4"/>
-<wire x1="15.24" y1="54.61" x2="15.24" y2="57.15" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="57.15" x2="17.78" y2="57.15" width="0.1524" layer="91"/>
-<junction x="15.24" y="54.61"/>
+<wire x1="10.16" y1="62.23" x2="10.16" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="64.77" x2="12.7" y2="64.77" width="0.1524" layer="91"/>
+<junction x="10.16" y="62.23"/>
 <pinref part="J2" gate="G$1" pin="6"/>
-<wire x1="15.24" y1="57.15" x2="15.24" y2="59.69" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="59.69" x2="17.78" y2="59.69" width="0.1524" layer="91"/>
-<junction x="15.24" y="57.15"/>
+<wire x1="10.16" y1="64.77" x2="10.16" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="67.31" x2="12.7" y2="67.31" width="0.1524" layer="91"/>
+<junction x="10.16" y="64.77"/>
 <pinref part="J2" gate="G$1" pin="8"/>
-<wire x1="15.24" y1="59.69" x2="15.24" y2="62.23" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="62.23" x2="17.78" y2="62.23" width="0.1524" layer="91"/>
-<junction x="15.24" y="59.69"/>
+<wire x1="10.16" y1="67.31" x2="10.16" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="69.85" x2="12.7" y2="69.85" width="0.1524" layer="91"/>
+<junction x="10.16" y="67.31"/>
 <pinref part="J2" gate="G$1" pin="10"/>
-<wire x1="15.24" y1="62.23" x2="15.24" y2="64.77" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="64.77" x2="17.78" y2="64.77" width="0.1524" layer="91"/>
-<junction x="15.24" y="62.23"/>
+<wire x1="10.16" y1="69.85" x2="10.16" y2="72.39" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="72.39" x2="12.7" y2="72.39" width="0.1524" layer="91"/>
+<junction x="10.16" y="69.85"/>
 <pinref part="J2" gate="G$1" pin="12"/>
-<wire x1="15.24" y1="64.77" x2="15.24" y2="67.31" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="67.31" x2="17.78" y2="67.31" width="0.1524" layer="91"/>
-<junction x="15.24" y="64.77"/>
+<wire x1="10.16" y1="72.39" x2="10.16" y2="74.93" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="74.93" x2="12.7" y2="74.93" width="0.1524" layer="91"/>
+<junction x="10.16" y="72.39"/>
 <pinref part="J2" gate="G$1" pin="14"/>
-<wire x1="15.24" y1="67.31" x2="15.24" y2="69.85" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="69.85" x2="17.78" y2="69.85" width="0.1524" layer="91"/>
-<junction x="15.24" y="67.31"/>
+<wire x1="10.16" y1="74.93" x2="10.16" y2="77.47" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="77.47" x2="12.7" y2="77.47" width="0.1524" layer="91"/>
+<junction x="10.16" y="74.93"/>
 <pinref part="J2" gate="G$1" pin="16"/>
-<wire x1="15.24" y1="69.85" x2="15.24" y2="72.39" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="72.39" x2="17.78" y2="72.39" width="0.1524" layer="91"/>
-<junction x="15.24" y="69.85"/>
+<wire x1="10.16" y1="77.47" x2="10.16" y2="80.01" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="80.01" x2="12.7" y2="80.01" width="0.1524" layer="91"/>
+<junction x="10.16" y="77.47"/>
 <pinref part="J2" gate="G$1" pin="18"/>
-<wire x1="15.24" y1="72.39" x2="15.24" y2="74.93" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="74.93" x2="17.78" y2="74.93" width="0.1524" layer="91"/>
-<junction x="15.24" y="72.39"/>
+<wire x1="10.16" y1="80.01" x2="10.16" y2="82.55" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="82.55" x2="12.7" y2="82.55" width="0.1524" layer="91"/>
+<junction x="10.16" y="80.01"/>
 <pinref part="J2" gate="G$1" pin="20"/>
-<wire x1="15.24" y1="74.93" x2="15.24" y2="77.47" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="77.47" x2="17.78" y2="77.47" width="0.1524" layer="91"/>
-<junction x="15.24" y="74.93"/>
+<wire x1="10.16" y1="82.55" x2="10.16" y2="85.09" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="85.09" x2="12.7" y2="85.09" width="0.1524" layer="91"/>
+<junction x="10.16" y="82.55"/>
 <pinref part="J2" gate="G$1" pin="22"/>
-<wire x1="15.24" y1="77.47" x2="15.24" y2="80.01" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="80.01" x2="17.78" y2="80.01" width="0.1524" layer="91"/>
-<junction x="15.24" y="77.47"/>
+<wire x1="10.16" y1="85.09" x2="10.16" y2="87.63" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="87.63" x2="12.7" y2="87.63" width="0.1524" layer="91"/>
+<junction x="10.16" y="85.09"/>
 <pinref part="J2" gate="G$1" pin="24"/>
-<wire x1="15.24" y1="80.01" x2="15.24" y2="82.55" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="82.55" x2="17.78" y2="82.55" width="0.1524" layer="91"/>
-<junction x="15.24" y="80.01"/>
+<wire x1="10.16" y1="87.63" x2="10.16" y2="90.17" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="90.17" x2="12.7" y2="90.17" width="0.1524" layer="91"/>
+<junction x="10.16" y="87.63"/>
 <pinref part="J2" gate="G$1" pin="26"/>
-<wire x1="15.24" y1="82.55" x2="15.24" y2="85.09" width="0.1524" layer="91"/>
-<wire x1="15.24" y1="85.09" x2="17.78" y2="85.09" width="0.1524" layer="91"/>
-<junction x="15.24" y="82.55"/>
+<wire x1="10.16" y1="90.17" x2="10.16" y2="92.71" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="92.71" x2="12.7" y2="92.71" width="0.1524" layer="91"/>
+<junction x="10.16" y="90.17"/>
+<pinref part="R65" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="53.34" x2="15.24" y2="53.34" width="0.1524" layer="91"/>
+<junction x="10.16" y="53.34"/>
+<pinref part="R66" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="49.53" x2="10.16" y2="49.53" width="0.1524" layer="91"/>
+<junction x="10.16" y="49.53"/>
+<pinref part="R67" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="45.72" x2="10.16" y2="45.72" width="0.1524" layer="91"/>
+<junction x="10.16" y="45.72"/>
+<pinref part="R74" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="41.91" x2="10.16" y2="41.91" width="0.1524" layer="91"/>
+<junction x="10.16" y="41.91"/>
+<pinref part="R75" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="38.1" x2="10.16" y2="38.1" width="0.1524" layer="91"/>
+<junction x="10.16" y="38.1"/>
 </segment>
 </net>
 <net name="VCO_INT_TUNE" class="0">
@@ -9937,8 +9987,8 @@ does not need capacitors.</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="21"/>
-<wire x1="33.02" y1="80.01" x2="34.29" y2="80.01" width="0.1524" layer="91"/>
-<label x="34.29" y="80.01" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="87.63" x2="29.21" y2="87.63" width="0.1524" layer="91"/>
+<label x="29.21" y="87.63" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -9954,8 +10004,8 @@ does not need capacitors.</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="19"/>
-<wire x1="33.02" y1="77.47" x2="48.26" y2="77.47" width="0.1524" layer="91"/>
-<label x="48.26" y="77.47" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="85.09" x2="43.18" y2="85.09" width="0.1524" layer="91"/>
+<label x="43.18" y="85.09" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DAC_LDAC" class="0">
@@ -10134,8 +10184,8 @@ does not need capacitors.</text>
 <net name="DDS_IOUPDATE" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="11"/>
-<wire x1="33.02" y1="67.31" x2="48.26" y2="67.31" width="0.1524" layer="91"/>
-<label x="48.26" y="67.31" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="74.93" x2="43.18" y2="74.93" width="0.1524" layer="91"/>
+<label x="43.18" y="74.93" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D9/RX2/PWM"/>
@@ -10143,17 +10193,27 @@ does not need capacitors.</text>
 <wire x1="38.1" y1="176.53" x2="38.1" y2="177.8" width="0.1524" layer="91"/>
 <label x="38.1" y="177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R74" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="41.91" x2="31.75" y2="41.91" width="0.1524" layer="91"/>
+<label x="31.75" y="41.91" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="DDS_PS1" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="13"/>
-<wire x1="33.02" y1="69.85" x2="34.29" y2="69.85" width="0.1524" layer="91"/>
-<label x="34.29" y="69.85" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="77.47" x2="29.21" y2="77.47" width="0.1524" layer="91"/>
+<label x="29.21" y="77.47" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D5/PWM"/>
 <wire x1="40.64" y1="186.69" x2="39.37" y2="186.69" width="0.1524" layer="91"/>
 <label x="39.37" y="186.69" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R67" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="45.72" x2="31.75" y2="45.72" width="0.1524" layer="91"/>
+<label x="31.75" y="45.72" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DAC_CLK" class="0">
@@ -10195,32 +10255,42 @@ does not need capacitors.</text>
 <net name="DDS_PS0" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="15"/>
-<wire x1="33.02" y1="72.39" x2="48.26" y2="72.39" width="0.1524" layer="91"/>
-<label x="48.26" y="72.39" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="80.01" x2="43.18" y2="80.01" width="0.1524" layer="91"/>
+<label x="43.18" y="80.01" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D20/A6/PWM"/>
 <wire x1="40.64" y1="148.59" x2="26.67" y2="148.59" width="0.1524" layer="91"/>
 <label x="26.67" y="148.59" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R66" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="49.53" x2="31.75" y2="49.53" width="0.1524" layer="91"/>
+<label x="31.75" y="49.53" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="DDS_OSK" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="17"/>
-<wire x1="33.02" y1="74.93" x2="34.29" y2="74.93" width="0.1524" layer="91"/>
-<label x="34.29" y="74.93" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="82.55" x2="29.21" y2="82.55" width="0.1524" layer="91"/>
+<label x="29.21" y="82.55" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D12/MISO"/>
 <wire x1="40.64" y1="168.91" x2="26.67" y2="168.91" width="0.1524" layer="91"/>
 <label x="26.67" y="168.91" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R75" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="38.1" x2="31.75" y2="38.1" width="0.1524" layer="91"/>
+<label x="31.75" y="38.1" size="1.778" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="DDS_CS" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="23"/>
-<wire x1="33.02" y1="82.55" x2="52.07" y2="82.55" width="0.1524" layer="91"/>
-<label x="52.07" y="82.55" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="90.17" x2="46.99" y2="90.17" width="0.1524" layer="91"/>
+<label x="46.99" y="90.17" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D28/A17"/>
@@ -10231,13 +10301,18 @@ does not need capacitors.</text>
 <net name="DDS_RESET" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="25"/>
-<wire x1="33.02" y1="85.09" x2="34.29" y2="85.09" width="0.1524" layer="91"/>
-<label x="34.29" y="85.09" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="92.71" x2="29.21" y2="92.71" width="0.1524" layer="91"/>
+<label x="29.21" y="92.71" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D15/A1/TOUCH"/>
 <wire x1="40.64" y1="161.29" x2="39.37" y2="161.29" width="0.1524" layer="91"/>
 <label x="39.37" y="161.29" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R65" gate="G$1" pin="1"/>
+<wire x1="25.4" y1="53.34" x2="31.75" y2="53.34" width="0.1524" layer="91"/>
+<label x="31.75" y="53.34" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="JTAG_TMS/SWD_DIO" class="0">
@@ -10467,8 +10542,8 @@ does not need capacitors.</text>
 <net name="DDS_PS2" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="9"/>
-<wire x1="33.02" y1="64.77" x2="34.29" y2="64.77" width="0.1524" layer="91"/>
-<label x="34.29" y="64.77" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="72.39" x2="29.21" y2="72.39" width="0.1524" layer="91"/>
+<label x="29.21" y="72.39" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D25/PWM/TOUCH"/>
@@ -10479,8 +10554,8 @@ does not need capacitors.</text>
 <net name="DDS_DRHOLD" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="7"/>
-<wire x1="33.02" y1="62.23" x2="52.07" y2="62.23" width="0.1524" layer="91"/>
-<label x="52.07" y="62.23" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="69.85" x2="46.99" y2="69.85" width="0.1524" layer="91"/>
+<label x="46.99" y="69.85" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D32/PWM/TOUCH"/>
@@ -10491,8 +10566,8 @@ does not need capacitors.</text>
 <net name="DDS_DRCTL" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="5"/>
-<wire x1="33.02" y1="59.69" x2="34.29" y2="59.69" width="0.1524" layer="91"/>
-<label x="34.29" y="59.69" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="67.31" x2="29.21" y2="67.31" width="0.1524" layer="91"/>
+<label x="29.21" y="67.31" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D1/TX1/TOUCH"/>
@@ -10503,8 +10578,8 @@ does not need capacitors.</text>
 <net name="DDS_DROVER" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="3"/>
-<wire x1="33.02" y1="57.15" x2="55.88" y2="57.15" width="0.1524" layer="91"/>
-<label x="55.88" y="57.15" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="64.77" x2="50.8" y2="64.77" width="0.1524" layer="91"/>
+<label x="50.8" y="64.77" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D0/RX1/TOUCH"/>
@@ -10515,8 +10590,8 @@ does not need capacitors.</text>
 <net name="DDS_PLL_LOCK" class="0">
 <segment>
 <pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="54.61" x2="34.29" y2="54.61" width="0.1524" layer="91"/>
-<label x="34.29" y="54.61" size="1.778" layer="95" xref="yes"/>
+<wire x1="27.94" y1="62.23" x2="29.21" y2="62.23" width="0.1524" layer="91"/>
+<label x="29.21" y="62.23" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="D18/A4/SDA0/TOUCH"/>
