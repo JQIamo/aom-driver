@@ -8010,6 +8010,9 @@ RF protection of amplifiers</text>
 <text x="7.62" y="8.89" size="1.778" layer="98" rot="R90">AUX Trigger</text>
 <text x="6.35" y="29.21" size="1.778" layer="98" rot="MR90">AUX RF Input</text>
 <text x="129.54" y="5.08" size="1.778" layer="98" rot="R90">VCO Voltage Source</text>
+<text x="236.22" y="142.24" size="1.778" layer="98">Do not exceed +10 V</text>
+<text x="173.99" y="6.35" size="3.81" layer="98">Input/Output</text>
+<text x="237.49" y="166.37" size="1.778" layer="98">Do not exceed +10 V</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -8887,10 +8890,15 @@ RF protection of amplifiers</text>
 R2 is upper resistor in partiton; R1 -&gt; gnd</text>
 <text x="64.77" y="100.33" size="1.778" layer="98">-15V</text>
 <text x="148.59" y="95.25" size="1.778" layer="98">-5V</text>
-<text x="175.26" y="64.77" size="1.778" layer="98" rot="R90">Input at +/-24</text>
+<text x="175.26" y="60.96" size="2.54" layer="98" rot="R90">Input at +/-24</text>
 <text x="60.96" y="198.12" size="1.778" layer="98">+15V</text>
 <text x="238.76" y="194.31" size="1.778" layer="98">+12V</text>
 <text x="115.57" y="199.39" size="1.778" layer="98">+9V</text>
+<text x="118.11" y="13.97" size="1.778" layer="98">-15V</text>
+<text x="125.73" y="46.99" size="1.778" layer="98">+15V</text>
+<text x="36.83" y="41.91" size="1.778" layer="98">+15V</text>
+<text x="36.83" y="13.97" size="1.778" layer="98">-15V</text>
+<text x="173.99" y="6.35" size="3.81" layer="98">Power Conditioning</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
@@ -9625,6 +9633,7 @@ This pin must therefore be connected to VCC</text>
 by connecting VOUT3V3 to VCC it should be possibile to avoid using a voltage regulator for the teensy.</text>
 <text x="116.84" y="101.6" size="1.778" layer="98">The quartz oscillator
 does not need capacitors.</text>
+<text x="173.99" y="6.35" size="3.81" layer="98">Digital Logic/Control</text>
 </plain>
 <instances>
 <instance part="FRAME3" gate="G$1" x="0" y="0"/>
@@ -10611,6 +10620,11 @@ does not need capacitors.</text>
 <sheet>
 <plain>
 <text x="121.92" y="82.55" size="1.778" layer="98" rot="R90">RF Out</text>
+<text x="48.26" y="31.75" size="1.778" layer="98">Power pins for UHS logic ICs</text>
+<text x="227.33" y="189.23" size="2.54" layer="98" align="bottom-center">RF source
+control section</text>
+<text x="102.87" y="106.68" size="2.54" layer="98" align="bottom-center">RF On/Off</text>
+<text x="173.99" y="6.35" size="3.81" layer="98">RF Switching</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -11034,6 +11048,7 @@ does not need capacitors.</text>
 <text x="133.35" y="96.52" size="1.778" layer="98" rot="R90">MON</text>
 <text x="175.26" y="43.18" size="1.778" layer="98">difference configuration;
 attenuator wants [0,+4] V</text>
+<text x="173.99" y="6.35" size="3.81" layer="98">RF Amplification</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -11619,8 +11634,13 @@ sets Idd = 75 mA</text>
 sets Vdd = 5V
 
 R46 = 20k
-sets Vdd = 6V</text>
+sets Vdd = 6V
+
+Max. Rating:
+Vdd = 7V</text>
 <text x="45.72" y="166.37" size="1.778" layer="98">R50=R51*(Vout/1.176-1)</text>
+<text x="173.99" y="6.35" size="3.81" layer="98">RF Amplifier Bias Control</text>
+<text x="82.55" y="201.93" size="1.778" layer="98">VNEGIN &lt; -2.5V for proper operation</text>
 </plain>
 <instances>
 <instance part="FRAME6" gate="G$1" x="0" y="0"/>

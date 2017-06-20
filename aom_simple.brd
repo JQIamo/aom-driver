@@ -255,11 +255,6 @@
 <text x="177.927" y="52.451" size="1.27" layer="21">RF Sel</text>
 <text x="200.406" y="54.102" size="1.27" layer="21">Att_V</text>
 <text x="197.866" y="51.816" size="1.27" layer="21">VCO_V</text>
-<wire x1="121.793" y1="31.623" x2="120.65" y2="31.623" width="0.254" layer="21"/>
-<wire x1="120.65" y1="31.623" x2="120.015" y2="30.988" width="0.254" layer="21"/>
-<wire x1="120.015" y1="30.988" x2="120.65" y2="30.988" width="0.254" layer="21"/>
-<wire x1="120.65" y1="30.988" x2="120.015" y2="31.623" width="0.254" layer="21"/>
-<wire x1="120.015" y1="31.623" x2="120.015" y2="30.988" width="0.254" layer="21"/>
 <wire x1="99.314" y1="36.703" x2="105.41" y2="36.703" width="0.254" layer="21"/>
 <wire x1="105.41" y1="36.703" x2="105.41" y2="33.02" width="0.254" layer="21"/>
 <wire x1="99.314" y1="36.703" x2="99.314" y2="32.258" width="0.254" layer="21"/>
@@ -317,7 +312,7 @@ Using app-cad parallele libe model for vias:
 <rectangle x1="145.542" y1="45.085" x2="153.162" y2="55.245" layer="51" rot="R270"/>
 <rectangle x1="145.542" y1="32.385" x2="153.162" y2="42.545" layer="51" rot="R270"/>
 <rectangle x1="145.542" y1="19.685" x2="153.162" y2="29.845" layer="51" rot="R270"/>
-<text x="87.249" y="47.498" size="0.762" layer="23" distance="233" rot="R270" align="bottom-right">PLL_LOCK
+<text x="87.249" y="47.498" size="0.762" layer="21" distance="233" rot="R270" align="bottom-right">PLL_LOCK
 DROVER
 DRCTL
 DRHOLD
@@ -3136,11 +3131,12 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="VALUE" x="76.835" y="44.704" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R24" library="jqi_passives" package="R_0603" value="10k" x="86.868" y="45.212" smashed="yes" rot="R270">
-<attribute name="NAME" x="86.398" y="49.46" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="NAME" x="85.9156" y="42.9452" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="86.868" y="45.212" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R25" library="jqi_passives" package="R_0805" value="49.9R" x="89.916" y="47.117" rot="R90">
+<element name="R25" library="jqi_passives" package="R_0805" value="49.9R" x="89.916" y="47.117" smashed="yes" rot="R90">
 <attribute name="PARTNO" value="ERJ-6ENF49R9V" x="89.916" y="47.117" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="92.118" y="45.717" size="1.016" layer="25" font="vector" rot="R90"/>
 </element>
 <element name="C47" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="78.867" y="39.37" smashed="yes">
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="78.867" y="39.37" size="1.778" layer="27" display="off"/>
@@ -3320,8 +3316,10 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="CL10B222KB8NNNC" x="66.675" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="69.499" y="8.598" size="0.508" layer="25" font="vector" rot="R180"/>
 </element>
-<element name="J2" library="ad9910-dds" package="ML26_INV" value="ML26F" x="102.997" y="57.785" rot="R180">
+<element name="J2" library="ad9910-dds" package="ML26_INV" value="ML26F" x="102.997" y="57.785" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="SFH11-PBPC-D13-ST-BK" x="102.997" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="123.571" y="53.721" size="1.778" layer="25" ratio="10"/>
+<attribute name="VALUE" x="101.727" y="52.705" size="1.778" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="DDS_POW" library="pinhead" package="1X02" value="" x="86.0552" y="17.907" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="PPTC021LFBN-RC" x="86.0552" y="17.907" size="1.778" layer="27" rot="R270" display="off"/>
@@ -4181,7 +4179,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="207.6909" y1="51.816" x2="209.042" y2="51.816" width="0.254" layer="1"/>
 <wire x1="209.042" y1="51.816" x2="209.296" y2="52.07" width="0.254" layer="1"/>
 <wire x1="209.296" y1="52.07" x2="209.55" y2="52.07" width="0.254" layer="1"/>
-<polygon width="0.254" layer="2" isolate="0.3048" rank="3">
+<polygon width="0.254" layer="2" isolate="0.3048" thermals="no" rank="3">
 <vertex x="0" y="63.5"/>
 <vertex x="0" y="0"/>
 <vertex x="304.8" y="0"/>
@@ -4189,7 +4187,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <vertex x="254" y="31.75"/>
 <vertex x="254" y="63.5"/>
 </polygon>
-<polygon width="0.254" layer="15" isolate="0.3048" rank="3">
+<polygon width="0.254" layer="15" isolate="0.3048" thermals="no" rank="3">
 <vertex x="0" y="63.5"/>
 <vertex x="0" y="0"/>
 <vertex x="304.8" y="0"/>
@@ -4851,6 +4849,8 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <via x="106.68" y="51.816" extent="1-16" drill="0.3048"/>
 <via x="104.14" y="51.816" extent="1-16" drill="0.3048"/>
 <via x="101.6" y="51.816" extent="1-16" drill="0.3048"/>
+<via x="68.453" y="61.722" extent="1-16" drill="0.3048"/>
+<via x="26.162" y="58.547" extent="1-16" drill="0.3048"/>
 </signal>
 <signal name="N$5">
 <contactref element="AUX_RF" pad="RF"/>
