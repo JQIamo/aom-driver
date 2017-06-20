@@ -8013,6 +8013,11 @@ RF protection of amplifiers</text>
 <text x="236.22" y="142.24" size="1.778" layer="98">Do not exceed +10 V</text>
 <text x="173.99" y="6.35" size="3.81" layer="98">Input/Output</text>
 <text x="237.49" y="166.37" size="1.778" layer="98">Do not exceed +10 V</text>
+<text x="181.61" y="76.2" size="1.778" layer="98" align="top-left">Total gain of 3
+
+V_int + V_ext &lt; 6 V
+to avoid damage
+</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="0" y="0"/>
@@ -10625,6 +10630,7 @@ does not need capacitors.</text>
 control section</text>
 <text x="102.87" y="106.68" size="2.54" layer="98" align="bottom-center">RF On/Off</text>
 <text x="173.99" y="6.35" size="3.81" layer="98">RF Switching</text>
+<text x="67.31" y="200.66" size="2.54" layer="98" align="bottom-center">TTL Logic</text>
 </plain>
 <instances>
 <instance part="FRAME4" gate="G$1" x="0" y="0"/>
@@ -11046,9 +11052,14 @@ control section</text>
 <sheet>
 <plain>
 <text x="133.35" y="96.52" size="1.778" layer="98" rot="R90">MON</text>
-<text x="175.26" y="43.18" size="1.778" layer="98">difference configuration;
-attenuator wants [0,+4] V</text>
+<text x="175.26" y="55.88" size="1.778" layer="98" align="top-left">difference configuration;
+attenuator wants [0,+4] V
+
+V_int + V_ext/3 &lt; 4 V
+to avoid damage</text>
 <text x="173.99" y="6.35" size="3.81" layer="98">RF Amplification</text>
+<text x="218.44" y="204.47" size="1.778" layer="98">Quiescent current monitor
+for RF amplifier</text>
 </plain>
 <instances>
 <instance part="FRAME5" gate="G$1" x="0" y="0"/>
@@ -11076,18 +11087,18 @@ attenuator wants [0,+4] V</text>
 </instance>
 <instance part="GND45" gate="1" x="125.73" y="140.97"/>
 <instance part="GND6" gate="1" x="213.36" y="92.71" rot="MR0"/>
-<instance part="IC2" gate="G$1" x="191.77" y="66.04" rot="MR0">
-<attribute name="PARTNO" x="191.77" y="66.04" size="1.778" layer="96" display="off"/>
+<instance part="IC2" gate="G$1" x="191.77" y="73.66" rot="MR0">
+<attribute name="PARTNO" x="191.77" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R6" gate="G$1" x="186.69" y="50.8" rot="MR180">
-<attribute name="PARTNO" x="186.69" y="50.8" size="1.778" layer="96" display="off"/>
+<instance part="R6" gate="G$1" x="186.69" y="58.42" rot="MR180">
+<attribute name="PARTNO" x="186.69" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="AUX_ATTEN" gate="G$1" x="165.1" y="53.34">
-<attribute name="PARTNO" x="165.1" y="53.34" size="1.778" layer="96" display="off"/>
+<instance part="AUX_ATTEN" gate="G$1" x="165.1" y="60.96">
+<attribute name="PARTNO" x="165.1" y="60.96" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="GND16" gate="1" x="154.94" y="48.26"/>
-<instance part="R10" gate="G$1" x="163.83" y="66.04" rot="MR180">
-<attribute name="PARTNO" x="163.83" y="66.04" size="1.778" layer="96" display="off"/>
+<instance part="GND16" gate="1" x="154.94" y="55.88"/>
+<instance part="R10" gate="G$1" x="163.83" y="73.66" rot="MR180">
+<attribute name="PARTNO" x="163.83" y="73.66" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C13" gate="G$1" x="209.55" y="124.46" rot="R270">
 <attribute name="PARTNO" x="209.55" y="124.46" size="1.778" layer="96" rot="R180" display="off"/>
@@ -11095,20 +11106,20 @@ attenuator wants [0,+4] V</text>
 <instance part="C16" gate="G$1" x="170.18" y="124.46" rot="R90">
 <attribute name="PARTNO" x="170.18" y="124.46" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="X1" gate="G$1" x="147.32" y="55.88">
-<attribute name="PARTNO" x="147.32" y="55.88" size="1.778" layer="96" rot="MR90" display="off"/>
+<instance part="X1" gate="G$1" x="147.32" y="63.5">
+<attribute name="PARTNO" x="147.32" y="63.5" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="C42" gate="G$1" x="152.4" y="60.96">
-<attribute name="PARTNO" x="152.4" y="60.96" size="1.778" layer="96" rot="R270" display="off"/>
+<instance part="C42" gate="G$1" x="152.4" y="68.58">
+<attribute name="PARTNO" x="152.4" y="68.58" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
-<instance part="R8" gate="G$1" x="220.98" y="50.8" rot="R180">
-<attribute name="PARTNO" x="220.98" y="50.8" size="1.778" layer="96" display="off"/>
+<instance part="R8" gate="G$1" x="220.98" y="58.42" rot="R180">
+<attribute name="PARTNO" x="220.98" y="58.42" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R5" gate="G$1" x="203.2" y="78.74" rot="R90">
-<attribute name="PARTNO" x="203.2" y="78.74" size="1.778" layer="96" display="off"/>
+<instance part="R5" gate="G$1" x="203.2" y="86.36" rot="R90">
+<attribute name="PARTNO" x="203.2" y="86.36" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="R7" gate="G$1" x="212.09" y="68.58" rot="MR180">
-<attribute name="PARTNO" x="212.09" y="68.58" size="1.778" layer="96" display="off"/>
+<instance part="R7" gate="G$1" x="212.09" y="76.2" rot="MR180">
+<attribute name="PARTNO" x="212.09" y="76.2" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="U6" gate="G$1" x="80.01" y="124.46">
 <attribute name="PARTNO" x="80.01" y="124.46" size="1.778" layer="96" display="off"/>
@@ -11211,12 +11222,12 @@ attenuator wants [0,+4] V</text>
 </segment>
 <segment>
 <pinref part="AUX_ATTEN" gate="G$1" pin="2"/>
-<wire x1="162.56" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="154.94" y1="53.34" x2="154.94" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="154.94" y1="60.96" x2="154.94" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="53.34" x2="154.94" y2="53.34" width="0.1524" layer="91"/>
-<junction x="154.94" y="53.34"/>
+<wire x1="149.86" y1="60.96" x2="154.94" y2="60.96" width="0.1524" layer="91"/>
+<junction x="154.94" y="60.96"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -11224,7 +11235,7 @@ attenuator wants [0,+4] V</text>
 <wire x1="207.01" y1="97.79" x2="213.36" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="97.79" x2="213.36" y2="95.25" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="83.82" x2="203.2" y2="97.79" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="91.44" x2="203.2" y2="97.79" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="193.04" y1="99.06" x2="193.04" y2="97.79" width="0.1524" layer="91"/>
 <wire x1="193.04" y1="97.79" x2="198.12" y2="97.79" width="0.1524" layer="91"/>
@@ -11367,77 +11378,77 @@ attenuator wants [0,+4] V</text>
 <net name="N$9" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="-IN"/>
-<wire x1="196.85" y1="63.5" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="63.5" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="71.12" x2="213.36" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="71.12" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="191.77" y1="50.8" x2="213.36" y2="50.8" width="0.1524" layer="91"/>
-<junction x="213.36" y="50.8"/>
-<wire x1="213.36" y1="50.8" x2="215.9" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="191.77" y1="58.42" x2="213.36" y2="58.42" width="0.1524" layer="91"/>
+<junction x="213.36" y="58.42"/>
+<wire x1="213.36" y1="58.42" x2="215.9" y2="58.42" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
-<wire x1="158.75" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="66.04" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="78.74" x2="184.15" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="73.66" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="73.66" x2="152.4" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="86.36" x2="184.15" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
 <pinref part="C42" gate="G$1" pin="1"/>
-<wire x1="152.4" y1="63.5" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
-<junction x="152.4" y="66.04"/>
+<wire x1="152.4" y1="71.12" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
+<junction x="152.4" y="73.66"/>
 <pinref part="RF1" gate="G$1" pin="CTL"/>
-<wire x1="184.15" y1="78.74" x2="184.15" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="184.15" y1="86.36" x2="184.15" y2="109.22" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ATT_EXT_V" class="0">
 <segment>
-<wire x1="226.06" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
-<label x="228.6" y="50.8" size="1.778" layer="95" xref="yes"/>
+<wire x1="226.06" y1="58.42" x2="228.6" y2="58.42" width="0.1524" layer="91"/>
+<label x="228.6" y="58.42" size="1.778" layer="95" xref="yes"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="ATT_INT_V" class="0">
 <segment>
-<wire x1="217.17" y1="68.58" x2="219.71" y2="68.58" width="0.1524" layer="91"/>
-<label x="219.71" y="68.58" size="1.778" layer="95" xref="yes"/>
+<wire x1="217.17" y1="76.2" x2="219.71" y2="76.2" width="0.1524" layer="91"/>
+<label x="219.71" y="76.2" size="1.778" layer="95" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="OUT"/>
-<wire x1="173.99" y1="66.04" x2="181.61" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="173.99" y1="73.66" x2="181.61" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="181.61" y1="50.8" x2="173.99" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="173.99" y1="50.8" x2="173.99" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="181.61" y1="58.42" x2="173.99" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="173.99" y1="58.42" x2="173.99" y2="73.66" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="168.91" y1="66.04" x2="173.99" y2="66.04" width="0.1524" layer="91"/>
-<junction x="173.99" y="66.04"/>
+<wire x1="168.91" y1="73.66" x2="173.99" y2="73.66" width="0.1524" layer="91"/>
+<junction x="173.99" y="73.66"/>
 </segment>
 </net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="+IN"/>
-<wire x1="196.85" y1="68.58" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="196.85" y1="76.2" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="73.66" x2="203.2" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="81.28" x2="203.2" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="68.58" x2="207.01" y2="68.58" width="0.1524" layer="91"/>
-<junction x="203.2" y="68.58"/>
+<wire x1="203.2" y1="76.2" x2="207.01" y2="76.2" width="0.1524" layer="91"/>
+<junction x="203.2" y="76.2"/>
 </segment>
 </net>
 <net name="V-QUIET" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="V-"/>
-<wire x1="191.77" y1="58.42" x2="191.77" y2="55.88" width="0.1524" layer="91"/>
-<label x="191.77" y="55.88" size="1.778" layer="95" xref="yes"/>
+<wire x1="191.77" y1="66.04" x2="191.77" y2="63.5" width="0.1524" layer="91"/>
+<label x="191.77" y="63.5" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="V+QUIET" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="V+"/>
-<wire x1="191.77" y1="73.66" x2="191.77" y2="76.2" width="0.1524" layer="91"/>
-<label x="191.77" y="76.2" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="191.77" y1="81.28" x2="191.77" y2="83.82" width="0.1524" layer="91"/>
+<label x="191.77" y="83.82" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$25" class="0">
@@ -11445,9 +11456,9 @@ attenuator wants [0,+4] V</text>
 <pinref part="AUX_ATTEN" gate="G$1" pin="1"/>
 <pinref part="X1" gate="G$1" pin="1"/>
 <pinref part="C42" gate="G$1" pin="2"/>
-<wire x1="149.86" y1="55.88" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="162.56" y1="55.88" x2="152.4" y2="55.88" width="0.1524" layer="91"/>
-<junction x="152.4" y="55.88"/>
+<wire x1="149.86" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
+<junction x="152.4" y="63.5"/>
 </segment>
 </net>
 <net name="N$33" class="0">
