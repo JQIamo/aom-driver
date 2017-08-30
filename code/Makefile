@@ -8,6 +8,7 @@ TOOLS = $(ARDUINOPATH)/hardware/tools/
 
 SKETCH = $(wildcard *.ino)
 
+GITVERS = $(shell git describe --match NeVeRmATcH --always --abbrev=7 --dirty)
 #CFLAGS =
 
 #src/gitversion.h: .git/head .git/index
@@ -19,11 +20,13 @@ upload: compile
 compile:
 	mkdir -p build
 	mkdir -p bin
+
 	# this is bad: need to modify platform.txt for teensy to include build.flags.extras in the g++ compile command.
-	$(ARDUINOBUILDER) -compile -verbose  -prefs="build.flags.extras=-DGITVERSION=\"$(shell git describe --match NeVeRmATcH --always --abbrev=7 --dirty)\"" -build-options-file build.options.json -build-path $(CURDIR)/build $(SKETCH)
-	cp $(CURDIR)/build/$(SKETCH).hex $(CURDIR)/bin
-	cp $(CURDIR)/build/$(SKETCH).elf $(CURDIR)/bin
+	$(ARDUINOBUILDER) -compile -verbose  -prefs="build.flags.extras=-DGITVERSION=\"$(GITVERS)\"" -build-options-file build.options.json -build-path $(CURDIR)/build $(SKETCH)
+	cp $(CURDIR)/build/$(SKETCH).hex $(CURDIR)/bin/aom.ino.$(GITVERS).hex
+	cp $(CURDIR)/build/$(SKETCH).elf $(CURDIR)/bin/aom.ino.$(GITVERS).elf
 
 
 clean:
 	rm -rf build/
+	rm -rf bin/
