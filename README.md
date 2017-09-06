@@ -1,3 +1,5 @@
+The information in this readme is for the older version of the AOM driver. For documentation on the newest version, go to the Wiki.
+
 # AOM Driver
 
 AOM driver design files. The board is designed to do signal conditioning and pre-amplification to drive a secondary stage power amplifier.
