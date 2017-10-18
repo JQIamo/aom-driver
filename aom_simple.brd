@@ -6992,12 +6992,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <signal name="N$75">
 <contactref element="U16" pad="1"/>
 <contactref element="R70" pad="P$2"/>
-<wire x1="56.884" y1="1.27" x2="56.835" y2="3.175" width="0" layer="19" extent="1-1"/>
+<wire x1="56.835" y1="3.175" x2="56.835" y2="1.319" width="0.6096" layer="1"/>
+<wire x1="56.835" y1="1.319" x2="56.884" y2="1.27" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$84">
 <contactref element="R70" pad="P$1"/>
 <contactref element="T5" pad="1"/>
-<wire x1="54.026" y1="1.372" x2="55.384" y2="1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="55.384" y1="1.27" x2="54.128" y2="1.27" width="0.6096" layer="1"/>
+<wire x1="54.128" y1="1.27" x2="54.026" y2="1.372" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$85">
 <contactref element="R71" pad="P$1"/>
