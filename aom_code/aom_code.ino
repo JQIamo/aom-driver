@@ -33,7 +33,7 @@
 
 #include "src/aom_menus.h"
 
-const char * gitversion = GITVERSION;
+//const char * gitversion = GITVERSION;
 
 uint16_t vcoVal = 32768;  // mid-scale
 uint16_t attVal = 52428;  // = 4V = full attenuation
