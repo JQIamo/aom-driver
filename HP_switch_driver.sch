@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1705,6 +1705,9 @@ Source: Digi-Key, subd.pdf</description>
 <part name="C3" library="jqi_passives" deviceset="C_MLCC_SMD" device="CMLCC_0603" value="100nF">
 <attribute name="PARTNO" value="CL10B104KB8NNNC"/>
 </part>
+<part name="R2" library="jqi_passives" deviceset="R_SMD" device="R0603" value="330">
+<attribute name="PARTNO" value="ERJ-PA3F3300V"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -1799,6 +1802,11 @@ Source: Digi-Key, subd.pdf</description>
 <attribute name="VALUE" x="81.8515" y="173.4185" size="1.524" layer="96"/>
 <attribute name="PARTNO" x="81.28" y="177.8" size="1.778" layer="96" display="off"/>
 </instance>
+<instance part="R2" gate="G$1" x="91.44" y="176.53" smashed="yes" rot="R90">
+<attribute name="NAME" x="91.1225" y="169.2275" size="1.524" layer="95" rot="R90"/>
+<attribute name="VALUE" x="91.1225" y="179.8638" size="1.524" layer="96" rot="R90"/>
+<attribute name="PARTNO" x="91.44" y="176.53" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1848,13 +1856,12 @@ Source: Digi-Key, subd.pdf</description>
 <wire x1="81.28" y1="172.72" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="170.18" x2="73.66" y2="170.18" width="0.1524" layer="91"/>
 <junction x="73.66" y="170.18"/>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="91.44" y1="171.45" x2="91.44" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="170.18" x2="81.28" y2="170.18" width="0.1524" layer="91"/>
+<junction x="81.28" y="170.18"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-1" pin="F"/>
-<wire x1="129.54" y1="187.96" x2="127" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="F"/>
-<wire x1="127" y1="187.96" x2="127" y2="185.42" width="0.1524" layer="91"/>
-<wire x1="127" y1="185.42" x2="129.54" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-6" pin="F"/>
 <wire x1="129.54" y1="175.26" x2="127" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="127" y1="175.26" x2="127" y2="172.72" width="0.1524" layer="91"/>
@@ -1868,16 +1875,21 @@ Source: Digi-Key, subd.pdf</description>
 <wire x1="127" y1="170.18" x2="127" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="127" y1="167.64" x2="129.54" y2="167.64" width="0.1524" layer="91"/>
 <junction x="127" y="170.18"/>
-<wire x1="127" y1="185.42" x2="127" y2="175.26" width="0.1524" layer="91"/>
-<junction x="127" y="185.42"/>
 <junction x="127" y="175.26"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+<wire x1="127" y1="180.34" x2="127" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="127" y1="177.8" x2="127" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="127" y1="165.1" x2="127" y2="167.64" width="0.1524" layer="91"/>
 <junction x="127" y="167.64"/>
 <pinref part="B2" gate="A" pin="1"/>
 <wire x1="115.57" y1="175.26" x2="123.19" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="123.19" y1="175.26" x2="123.19" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="123.19" y1="167.64" x2="127" y2="167.64" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-4" pin="F"/>
+<wire x1="127" y1="180.34" x2="129.54" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-5" pin="F"/>
+<wire x1="127" y1="177.8" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
+<junction x="127" y="177.8"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -1892,6 +1904,10 @@ Source: Digi-Key, subd.pdf</description>
 <wire x1="73.66" y1="184.15" x2="81.28" y2="184.15" width="0.1524" layer="91"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="184.15" x2="81.28" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="184.15" x2="91.44" y2="184.15" width="0.1524" layer="91"/>
+<junction x="81.28" y="184.15"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="91.44" y1="184.15" x2="91.44" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
@@ -1908,11 +1924,13 @@ Source: Digi-Key, subd.pdf</description>
 <wire x1="49.53" y1="163.83" x2="44.45" y2="163.83" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="N$3" class="0">
 <segment>
 <pinref part="B2" gate="A" pin="2"/>
-<pinref part="X1" gate="-5" pin="F"/>
-<wire x1="115.57" y1="177.8" x2="129.54" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="177.8" x2="125.73" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="125.73" y1="177.8" x2="125.73" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="F"/>
+<wire x1="125.73" y1="187.96" x2="129.54" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
