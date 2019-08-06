@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.01" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="inch" altunit="inch"/>
@@ -2646,10 +2647,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="0"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -2752,54 +2757,54 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <elements>
 <element name="POW" library="pinhead" package="1X03" value="" x="237.871" y="20.701" smashed="yes" rot="R180">
 <attribute name="NAME" x="233.7308" y="14.9098" size="0.762" layer="25" ratio="10"/>
-<attribute name="VALUE" x="241.681" y="23.876" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="640456-3" x="237.871" y="20.701" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="241.681" y="23.876" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="SW5" library="aom_driver" package="SP3T_LUG" value="SP3T" x="171.45" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="3-1825139-9" x="152.4" y="34.29" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="176.276" y="51.562" size="1.27" layer="22" rot="MR0"/>
+<attribute name="PARTNO" value="3-1825139-9" x="152.4" y="34.29" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="SW6" library="aom_driver" package="SP3T_LUG" value="SP3T" x="25.4" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="3-1825139-9" x="25.4" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="30.734" y="51.562" size="1.27" layer="22" rot="MR0"/>
+<attribute name="PARTNO" value="3-1825139-9" x="25.4" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="B1" library="connector-jqi" package="BNC-V" value="BNC-V" x="190.5" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="5227222-3" x="190.5" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="194.183" y="46.228" size="1.27" layer="26" rot="MR0"/>
+<attribute name="PARTNO" value="5227222-3" x="190.5" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="B3" library="connector-jqi" package="BNC-V" value="BNC-V" x="146.05" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="5227222-3" x="146.05" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="148.209" y="47.498" size="1.27" layer="26" rot="MR0"/>
+<attribute name="PARTNO" value="5227222-3" x="146.05" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="B4" library="connector-jqi" package="BNC-V" value="BNC-V" x="88.9" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="5227222-3" x="88.9" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="95.123" y="43.815" size="1.27" layer="26" rot="MR0"/>
+<attribute name="PARTNO" value="5227222-3" x="88.9" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="B2" library="connector-jqi" package="BNC-V" value="BNC-V" x="44.45" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="5227222-3" x="44.45" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="48.514" y="46.482" size="1.27" layer="26" rot="MR0"/>
+<attribute name="PARTNO" value="5227222-3" x="44.45" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="ENC1" library="aom_driver" package="PEC11R" value="PEC11R" x="234.95" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="PEC11R-4120F-S0018" x="234.95" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="225.413" y="41.893" size="1.27" layer="22" rot="MR90"/>
+<attribute name="PARTNO" value="PEC11R-4120F-S0018" x="234.95" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="VCO" library="aom_driver" package="BK377" value="JTOS" x="110.617" y="20.574" smashed="yes" rot="R90">
 <attribute name="NAME" x="104.013" y="30.988" size="0.762" layer="25"/>
-<attribute name="VALUE" x="116.713" y="30.988" size="1.27" layer="21" rot="R180" align="top-left"/>
 <attribute name="PARTNO" value="JTOS-100+" x="110.617" y="20.574" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="116.713" y="30.988" size="1.27" layer="21" rot="R180" align="top-left"/>
 </element>
 <element name="AUX_RF" library="connector-jqi" package="SMA-V" value="SMA-V" x="97.79" y="5.715" smashed="yes">
-<attribute name="PARTNO" value="5-1814832-1" x="97.79" y="5.715" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="101.854" y="8.001" size="1.27" layer="25" rot="R270"/>
+<attribute name="PARTNO" value="5-1814832-1" x="97.79" y="5.715" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RF_OUT" library="connector-jqi" package="SMA-V" value="SMA-V" x="33.1724" y="8.9916" smashed="yes">
-<attribute name="PARTNO" value="5-1814832-1" x="33.1724" y="8.9916" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="29.8704" y="13.4366" size="1.27" layer="25"/>
+<attribute name="PARTNO" value="5-1814832-1" x="33.1724" y="8.9916" size="1.778" layer="27" display="off"/>
 </element>
-<element name="IC1" library="opamp-jqi" package="SO08" value="LM7171" x="108.839" y="42.037" smashed="yes" rot="R270">
+<element name="IC1" library="opamp-jqi" package="SO08" value="OPA211" x="108.839" y="42.037" smashed="yes" rot="R270">
 <attribute name="NAME" x="111.125" y="42.926" size="0.762" layer="25" rot="R270"/>
+<attribute name="PARTNO" value="OPA211AIDR" x="108.839" y="42.037" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="103.759" y="43.942" size="1.27" layer="27" rot="R270"/>
-<attribute name="PARTNO" value="LM7171AIMX/NOPB" x="108.839" y="42.037" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R1" library="jqi_passives" package="R_0603" value="10k" x="102.87" y="42.037" smashed="yes" rot="R90">
 <attribute name="NAME" x="101.689" y="41.472" size="0.762" layer="25" font="vector" rot="R90"/>
@@ -2810,14 +2815,14 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="ERJ-3EKF4992V" x="104.521" y="42.037" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="SW7" library="aom_driver" package="SP3T_LUG" value="SP3T" x="127" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNUM" value="450-1536-ND" x="127" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="131.572" y="51.562" size="1.27" layer="22" rot="MR0"/>
 <attribute name="PARTNO" value="3-1825139-9" x="127" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNUM" value="450-1536-ND" x="127" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="SW8" library="aom_driver" package="SP3T_LUG" value="SP3T" x="69.85" y="44.45" smashed="yes" rot="MR0">
-<attribute name="PARTNUM" value="450-1536-ND" x="69.85" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="75.946" y="51.816" size="1.27" layer="22" rot="MR0"/>
 <attribute name="PARTNO" value="3-1825139-9" x="69.85" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="PARTNUM" value="450-1536-ND" x="69.85" y="44.45" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="R3" library="jqi_passives" package="R_0603" value="10k" x="108.331" y="47.244" smashed="yes">
 <attribute name="NAME" x="105.734" y="46.647" size="0.762" layer="25" font="vector"/>
@@ -2829,12 +2834,12 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </element>
 <element name="AUX_VCO_TUNE" library="pinhead" package="1X02" value="DNP" x="102.362" y="34.544" smashed="yes" rot="R180">
 <attribute name="NAME" x="88.4428" y="32.3088" size="0.762" layer="25" ratio="10"/>
-<attribute name="VALUE" x="104.902" y="37.719" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="640456-2" x="102.362" y="34.544" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="104.902" y="37.719" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="IC2" library="opamp-jqi" package="SO08" value="LM7171" x="48.5394" y="27.2796" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="LM7171AIMX/NOPB" x="48.5394" y="27.2796" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="IC2" library="opamp-jqi" package="SO08" value="OPA211" x="48.5394" y="27.2796" smashed="yes" rot="R270">
 <attribute name="NAME" x="50.6984" y="30.2006" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="OPA211AIDR" x="48.5394" y="27.2796" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="43.4594" y="29.1846" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R6" library="jqi_passives" package="R_0603" value="10k" x="51.3334" y="27.2796" smashed="yes" rot="R90">
@@ -2843,144 +2848,144 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </element>
 <element name="AUX_ATTEN" library="pinhead" package="1X02" value="DNP" x="36.2204" y="19.0246" smashed="yes" rot="R180">
 <attribute name="NAME" x="40.6146" y="22.6568" size="0.762" layer="25" ratio="10" rot="R180"/>
-<attribute name="VALUE" x="38.7604" y="22.1996" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="640456-2" x="36.2204" y="19.0246" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="38.7604" y="22.1996" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C3" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="109.728" y="37.084" smashed="yes">
 <attribute name="NAME" x="111.349" y="36.868" size="0.762" layer="25" font="vector"/>
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="109.728" y="37.084" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C4" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="49.0474" y="21.9456" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="49.0474" y="21.9456" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="50.1014" y="21.7216" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="49.0474" y="21.9456" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C5" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="104.394" y="45.466" smashed="yes">
 <attribute name="NAME" x="102.713" y="46.52" size="0.762" layer="25" font="vector"/>
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="104.394" y="45.466" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C6" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="44.0944" y="30.4546" smashed="yes">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="44.0944" y="30.4546" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="42.7944" y="31.2546" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="44.0944" y="30.4546" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C7" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="102.108" y="15.4305" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="102.108" y="15.4305" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="101.57" y="16.7385" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="102.108" y="15.4305" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R9" library="jqi_passives" package="R_0603" value="49.9R" x="107.442" y="36.195" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="107.442" y="36.195" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="106.515" y="35.884" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="107.442" y="36.195" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R10" library="jqi_passives" package="R_0603" value="49.9R" x="47.2694" y="21.8186" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="47.2694" y="21.8186" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="46.2154" y="21.1266" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="47.2694" y="21.8186" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="DAC" library="aom_driver" package="MSOP10" value="AD5663R" x="209.804" y="51.816" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="AD5663RBRMZ-5" x="209.804" y="51.816" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="207.01" y="55.626" size="1.27" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="AD5663RBRMZ-5" x="209.804" y="51.816" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="207.264" y="48.514" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="L1" library="jqi_passives" package="L_FERRITE_0603" value="1000k Ferrite" x="218.694" y="55.118" smashed="yes">
-<attribute name="PARTNO" value="MMZ1608S102ATA00" x="218.694" y="55.118" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="217.748" y="56.172" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00" x="218.694" y="55.118" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C8" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="220.98" y="54.102" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="220.98" y="54.102" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="222.234" y="55.194" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="220.98" y="54.102" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C9" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="216.662" y="52.705" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="216.662" y="52.705" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="216.138" y="56.083" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="216.662" y="52.705" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C10" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="213.614" y="53.467" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="213.614" y="53.467" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="214.084" y="56.485" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="213.614" y="53.467" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C13" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="47.1424" y="10.3251" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="47.1424" y="10.3251" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="45.8932" y="8.4073" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="47.1424" y="10.3251" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C14" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="38.6334" y="8.9916" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="38.6334" y="8.9916" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="37.7144" y="6.9976" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="38.6334" y="8.9916" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C15" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="91.821" y="5.6515" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="91.821" y="5.6515" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="92.6765" y="7.709" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="530L104KT16T" x="91.821" y="5.6515" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C16" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="53.3146" y="10.3124" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="530L104KT16T" x="53.3146" y="10.3124" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="52.5226" y="10.8838" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="53.3146" y="10.3124" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="IC3" library="regulator-jqi" package="TO263-5" value="LT3080" x="221.234" y="19.304" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="221.234" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="220.091" y="25.908" size="0.762" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="221.234" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="226.822" y="26.162" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="IC4" library="regulator-jqi" package="TO263-5" value="LT3080" x="203.454" y="9.398" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="203.454" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="206.375" y="16.002" size="0.762" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="203.454" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="209.042" y="16.256" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="IC5" library="regulator-jqi" package="TO263-5" value="LT3080" x="186.309" y="26.797" smashed="yes">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="186.309" y="26.797" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="182.753" y="35.306" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="186.309" y="26.797" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="193.167" y="21.209" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R11" library="jqi_passives" package="R_0603" value="750k" x="230.632" y="17.653" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF7503V" x="230.632" y="17.653" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="231.832" y="19.393" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF7503V" x="230.632" y="17.653" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R12" library="jqi_passives" package="R_0603" value="453k" x="176.657" y="9.652" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="ERJ-3EKF4533V" x="176.657" y="9.652" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="176.873" y="10.992" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="ERJ-3EKF4533V" x="176.657" y="9.652" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R13" library="jqi_passives" package="R_0603" value="249k" x="183.769" y="18.796" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF2493V" x="183.769" y="18.796" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="182.823" y="17.183" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF2493V" x="183.769" y="18.796" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C17" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="225.171" y="26.289" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="225.171" y="26.289" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="226.873" y="25.892" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="225.171" y="26.289" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C18" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="212.598" y="12.065" smashed="yes">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="212.598" y="12.065" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="211.506" y="10.271" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="212.598" y="12.065" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C19" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="192.278" y="20.701" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="192.278" y="20.701" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="194.072" y="20.752" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="192.278" y="20.701" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C20" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="192.405" y="37.338" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="192.405" y="37.338" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="191.278" y="37.643" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="192.405" y="37.338" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L2" library="jqi_passives" package="L_FERRITE_0603" value="1000k Ferrite" x="116.84" y="38.862" smashed="yes">
-<attribute name="PARTNO" value="MMZ1608S102ATA00" x="116.84" y="38.862" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="116.402" y="39.789" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00" x="116.84" y="38.862" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C21" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="119.126" y="39.751" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="119.126" y="39.751" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="121.047" y="39.675" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="119.126" y="39.751" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C22" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="114.554" y="39.624" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="114.554" y="39.624" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="115.586" y="41.58" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="114.554" y="39.624" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="L3" library="jqi_passives" package="L_FERRITE_0603" value="1000k Ferrite" x="116.84" y="36.195" smashed="yes">
-<attribute name="PARTNO" value="MMZ1608S102ATA00" x="116.84" y="36.195" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="116.148" y="34.328" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="MMZ1608S102ATA00" x="116.84" y="36.195" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C23" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="119.126" y="35.306" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="119.126" y="35.306" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="121.142" y="35.128" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="119.126" y="35.306" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C24" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="114.554" y="35.306" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="114.554" y="35.306" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="111.744" y="35.636" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="114.554" y="35.306" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC6" library="regulator-jqi" package="TO263-5" value="LT3015" x="225.552" y="7.747" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="LT3015EQ#PBF" x="225.552" y="7.747" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="226.441" y="0.762" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="LT3015EQ#PBF" x="225.552" y="7.747" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="219.964" y="0.889" size="1.27" layer="27"/>
 </element>
 <element name="R14" library="jqi_passives" package="R_0603" value="113k" x="217.17" y="5.207" smashed="yes" rot="R270">
@@ -2988,146 +2993,148 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="ERJ-3EKF1133V" x="217.17" y="5.207" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C25" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="216.916" y="8.763" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="216.916" y="8.763" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="215.916" y="7.671" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="216.916" y="8.763" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C26" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="218.186" y="2.159" smashed="yes">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="218.186" y="2.159" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="218.745" y="0.365" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="218.186" y="2.159" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C29" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="242.316" y="52.578" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="242.316" y="52.578" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="244.31" y="51.532" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="242.316" y="52.578" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C30" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="237.49" y="39.116" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="237.49" y="39.116" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="238.536" y="41.11" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="237.49" y="39.116" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C31" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="232.664" y="39.116" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="232.664" y="39.116" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="233.456" y="41.11" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="232.664" y="39.116" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C32" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="172.212" y="8.636" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="163.322" y="-19.304" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="172.542" y="11.065" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="163.322" y="-19.304" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R18" library="jqi_passives" package="R_0603" value="49.9R" x="87.249" y="8.636" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="87.249" y="8.636" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="86.176" y="9.563" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="87.249" y="8.636" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R19" library="jqi_passives" package="R_0603" value="49.9R" x="92.964" y="18.288" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="92.964" y="18.288" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="91.891" y="19.215" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="92.964" y="18.288" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R20" library="jqi_passives" package="R_0603" value="49.9R" x="43.307" y="6.1976" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="43.307" y="6.1976" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="42.107" y="4.7624" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="43.307" y="6.1976" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="RF5" library="rf-jqi" package="BH292" value="ADC-10-4" x="58.8772" y="12.8524" smashed="yes" rot="R180">
 <attribute name="NAME" x="55.3974" y="7.7978" size="0.762" layer="25"/>
-<attribute name="VALUE" x="61.4172" y="19.2024" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="ADC-20-4+" x="58.8772" y="12.8524" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="61.4172" y="19.2024" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="B5" library="connector-jqi" package="BNC-V" value="BNC-V" x="127" y="19.05" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="5227222-3" x="127" y="19.05" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="129.921" y="22.479" size="1.27" layer="26" rot="MR180"/>
+<attribute name="PARTNO" value="5227222-3" x="127" y="19.05" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C41" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="127" y="22.606" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL05B103JA5NNNC" x="127" y="22.606" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="129.756" y="21.814" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL05B103JA5NNNC" x="127" y="22.606" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R33" library="jqi_passives" package="R_0603" value="49.9R" x="56.2102" y="18.6944" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="56.2102" y="18.6944" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="55.3528" y="18.7326" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF49R9V" x="56.2102" y="18.6944" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="X1" library="connector-jqi" package="UMC" value="DNP" x="41.6814" y="19.0246" smashed="yes">
 <attribute name="PARTNO" value="1909763-1" x="41.6814" y="19.0246" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C42" library="jqi_passives" package="C_MLCC_0603" value="DNP" x="46.5074" y="19.0246" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="46.5074" y="19.0246" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="45.0214" y="18.2164" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="46.5074" y="19.0246" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C27" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="212.09" y="54.61" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="212.09" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="212.306" y="57.374" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="212.09" y="54.61" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC8" library="aom_driver" package="SOT23-5L" value="UHS_INVERTER" x="171.323" y="35.306" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="NC7SZ14M5X" x="171.323" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="173.355" y="36.83" size="0.762" layer="25" rot="R270"/>
+<attribute name="PARTNO" value="NC7SZ14M5X" x="171.323" y="35.306" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="173.228" y="38.735" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="IC9" library="aom_driver" package="SOT23-5L" value="UHS_AND" x="175.006" y="30.353" smashed="yes" rot="R270">
 <attribute name="NAME" x="178.0032" y="29.21" size="0.762" layer="25" rot="R90"/>
-<attribute name="VALUE" x="171.577" y="32.258" size="1.27" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="NC7SZ08M5X" x="175.006" y="30.353" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="171.577" y="32.258" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="IC10" library="aom_driver" package="SOT23-5L" value="UHS_AND" x="170.3705" y="29.972" smashed="yes" rot="R180">
 <attribute name="NAME" x="169.1005" y="27.178" size="0.762" layer="25"/>
-<attribute name="VALUE" x="172.2755" y="33.401" size="1.27" layer="27" rot="R180"/>
 <attribute name="PARTNO" value="NC7SZ08M5X" x="170.3705" y="29.972" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="172.2755" y="33.401" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="JP2" library="mcu-accessories" package="ML08" value="" x="274.32" y="25.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="264.033" y="26.416" size="0.762" layer="25" rot="R270"/>
-<attribute name="VALUE" x="273.05" y="20.193" size="1.778" layer="27" ratio="10" rot="R180"/>
 <attribute name="PARTNO" value="75869-132LF" x="274.32" y="25.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="273.05" y="20.193" size="1.778" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="IC11" library="regulator-jqi" package="SOT23-5L" value="LT1964-5" x="170.688" y="5.08" smashed="yes" rot="R270">
 <attribute name="NAME" x="168.021" y="3.683" size="0.762" layer="25" rot="R90"/>
-<attribute name="VALUE" x="167.259" y="6.985" size="1.27" layer="27" rot="R270"/>
 <attribute name="PARTNO" value="LT1964ES5-5#TRMPBF" x="170.688" y="5.08" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="167.259" y="6.985" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C28" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="171.196" y="2.286" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="171.196" y="2.286" size="0.508" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="175.082" y="2.048" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="171.196" y="2.286" size="0.508" layer="27" rot="R180" display="off"/>
 </element>
 <element name="B6" library="connector-jqi" package="BNC-V" value="BNC-V" x="274.066" y="10.16" smashed="yes" rot="MR0">
-<attribute name="PARTNO" value="5227222-3" x="274.066" y="10.16" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="273.685" y="14.351" size="1.27" layer="26" rot="MR180"/>
+<attribute name="PARTNO" value="5227222-3" x="274.066" y="10.16" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="C43" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="72.517" y="10.2616" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="530L104KT16T" x="72.517" y="10.2616" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="73.182" y="11.7476" size="0.508" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="530L104KT16T" x="72.517" y="10.2616" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C44" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="64.262" y="10.287" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="64.262" y="10.287" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="63.47" y="11.468" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="64.262" y="10.287" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RF6" library="rf-jqi" package="PAT1220" value="0dB" x="99.6569" y="14.986" smashed="yes">
 <attribute name="NAME" x="98.6409" y="12.7" size="0.762" layer="25"/>
-<attribute name="VALUE" x="98.3869" y="16.256" size="0.508" layer="27" ratio="15"/>
 <attribute name="PARTNO" value="PAT1220-C-0DB-T5" x="99.6569" y="14.986" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="98.3869" y="16.256" size="0.508" layer="27" ratio="15"/>
 </element>
 <element name="R17" library="jqi_passives" package="R_0603" value="10k" x="18.288" y="40.513" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="18.288" y="40.513" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="17.361" y="40.456" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="18.288" y="40.513" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R21" library="jqi_passives" package="R_0603" value="10k" x="163.322" y="45.085" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="163.322" y="45.085" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="161.074" y="46.539" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="163.322" y="45.085" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U$2" library="JQI_Logo" package="JQI_LOGO_NEGATIVE-SILKSCREEN" value="" x="58.674" y="53.975" smashed="yes"/>
 <element name="C46" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="175.133" y="9.652" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="175.133" y="9.652" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="173.647" y="11.206" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="175.133" y="9.652" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R15" library="jqi_passives" package="R_0603" value="10k" x="214.63" y="5.969" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="214.63" y="5.969" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="213.43" y="6.769" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="214.63" y="5.969" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U1" library="analog-devices-jqi" package="SOIC-8" value="AD8421" x="139.954" y="40.132" rot="R180">
+<element name="U1" library="analog-devices-jqi" package="SOIC-8" value="AD8421" x="139.954" y="40.132" smashed="yes" rot="R180">
+<attribute name="NAME" x="143.764" y="37.465" size="1.27" layer="25" rot="R180"/>
 <attribute name="PARTNO" value="AD8421ARZ-R7" x="139.954" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="143.764" y="44.069" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="R22" library="jqi_passives" package="R_0603" value="10k" x="146.558" y="40.132" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="146.558" y="40.132" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="145.358" y="41.567" size="1.016" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="146.558" y="40.132" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R23" library="jqi_passives" package="R_0805" value="49.9R" x="146.558" y="36.83" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="ERJ-6ENF49R9V" x="146.558" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="143.086" y="36.96" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="ERJ-6ENF49R9V" x="146.558" y="36.83" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="U3" library="analog-devices-jqi" package="SOIC-8" value="AD8421" x="80.772" y="42.799" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="AD8421ARZ-R7" x="80.772" y="42.799" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="81.153" y="45.593" size="1.27" layer="25"/>
+<attribute name="PARTNO" value="AD8421ARZ-R7" x="80.772" y="42.799" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="76.835" y="44.704" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="R24" library="jqi_passives" package="R_0603" value="10k" x="86.868" y="45.212" smashed="yes" rot="R270">
@@ -3135,25 +3142,28 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="86.868" y="45.212" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R25" library="jqi_passives" package="R_0805" value="49.9R" x="89.916" y="47.117" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="ERJ-6ENF49R9V" x="89.916" y="47.117" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="92.118" y="45.717" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="ERJ-6ENF49R9V" x="89.916" y="47.117" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C47" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="78.867" y="39.37" smashed="yes">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="78.867" y="39.37" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="77.313" y="37.503" size="1.016" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="78.867" y="39.37" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C48" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="134.747" y="38.227" rot="R180">
+<element name="C48" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="134.747" y="38.227" smashed="yes" rot="R180">
+<attribute name="NAME" x="136.047" y="37.427" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="134.747" y="38.227" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="C49" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="78.105" y="46.99" rot="R270">
+<element name="C49" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="78.105" y="46.99" smashed="yes" rot="R270">
+<attribute name="NAME" x="78.905" y="48.29" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="78.105" y="46.99" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="C50" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="137.414" y="44.196" rot="R270">
+<element name="C50" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="137.414" y="44.196" smashed="yes" rot="R270">
+<attribute name="NAME" x="138.214" y="45.496" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="137.414" y="44.196" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C51" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="179.197" y="39.243" smashed="yes">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="179.197" y="39.243" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="179.167" y="37.376" size="1.016" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="179.197" y="39.243" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R26" library="jqi_passives" package="R_0603" value="332" x="44.323" y="46.482" smashed="yes" rot="R180">
 <attribute name="NAME" x="45.79" y="46.647" size="0.762" layer="25" font="vector"/>
@@ -3163,89 +3173,96 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="NAME" x="190.57" y="47.536" size="0.762" layer="25" font="vector"/>
 <attribute name="PARTNO" value="ERJ-3EKF3320V" x="189.103" y="46.863" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R8" library="jqi_passives" package="R_0603" value="30k" x="48.895" y="32.639" rot="R270">
+<element name="R8" library="jqi_passives" package="R_0603" value="30k" x="48.895" y="32.639" smashed="yes" rot="R270">
+<attribute name="NAME" x="49.695" y="33.839" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="PARTNO" value="ERJ-3EKF3002V" x="48.895" y="32.639" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R28" library="jqi_passives" package="R_0603" value="DNP" x="21.082" y="54.102" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF1001V" x="21.082" y="54.102" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="22.676" y="54.902" size="1.016" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF1001V" x="21.082" y="54.102" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R5" library="jqi_passives" package="R_0603" value="10k" x="43.942" y="28.194" rot="R180">
+<element name="R5" library="jqi_passives" package="R_0603" value="10k" x="43.942" y="28.194" smashed="yes" rot="R180">
+<attribute name="NAME" x="45.142" y="27.394" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="43.942" y="28.194" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R7" library="jqi_passives" package="R_0603" value="10k" x="47.117" y="32.639" rot="R90">
+<element name="R7" library="jqi_passives" package="R_0603" value="10k" x="47.117" y="32.639" smashed="yes" rot="R90">
+<attribute name="NAME" x="46.317" y="31.439" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="47.117" y="32.639" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U4" library="transistor-jqi" package="4-LEAD_SOP" value="CPC1017NTR" x="17.399" y="43.688" smashed="yes">
-<attribute name="PARTNO" value="CPC1017NTR" x="17.399" y="43.688" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="17.907" y="45.847" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="CPC1017NTR" x="17.399" y="43.688" size="1.778" layer="27" display="off"/>
 </element>
 <element name="RF_ENABLE" library="pinhead" package="1X02" value="" x="13.462" y="51.689" smashed="yes">
-<attribute name="PARTNO" value="640456-2" x="13.462" y="51.689" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="10.3378" y="56.4388" size="1.27" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="640456-2" x="13.462" y="51.689" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="10.922" y="48.514" size="1.27" layer="27"/>
 </element>
 <element name="U5" library="transistor-jqi" package="4-LEAD_SOP" value="CPC1017NTR" x="11.684" y="42.291" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CPC1017NTR" x="11.684" y="42.291" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="12.065" y="37.719" size="0.762" layer="25" rot="R90"/>
+<attribute name="PARTNO" value="CPC1017NTR" x="11.684" y="42.291" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R29" library="jqi_passives" package="R_0603" value="0R" x="15.494" y="40.513" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="MF-RES-0603-0" x="15.494" y="40.513" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="14.694" y="39.313" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="MF-RES-0603-0" x="15.494" y="40.513" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R30" library="jqi_passives" package="R_0603" value="0R" x="11.938" y="46.863" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="MF-RES-0603-0" x="11.938" y="46.863" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="10.503" y="47.06" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="MF-RES-0603-0" x="11.938" y="46.863" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U6" library="rf-jqi" package="HMC8410" value="HMC8410" x="68.199" y="10.287" rot="R180">
+<element name="U6" library="rf-jqi" package="HMC8410" value="HMC8410" x="68.199" y="10.287" smashed="yes" rot="R180">
+<attribute name="NAME" x="68.499" y="11.747" size="0.45" layer="25" rot="R180"/>
 <attribute name="PARTNO" value="HMC8410LP2FETR" x="68.199" y="10.287" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="RF1" library="rf-jqi" package="QFN-16(0.9X3X3)" value="F2255" x="50.165" y="10.0584" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="F2255NLGK" x="50.165" y="10.0584" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="48.7166" y="8.487" size="0.5" layer="21" rot="R270"/>
+<attribute name="PARTNO" value="F2255NLGK" x="50.165" y="10.0584" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C12" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="52.451" y="12.573" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="52.451" y="12.573" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="51.1764" y="13.3476" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="52.451" y="12.573" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C45" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="50.165" y="13.081" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="50.165" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="51.6002" y="14.1178" size="0.635" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="50.165" y="13.081" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C52" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="47.879" y="12.573" smashed="yes">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="47.879" y="12.573" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="47.468" y="13.3984" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="47.879" y="12.573" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C53" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="53.213" y="8.001" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="53.213" y="8.001" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="52.421" y="8.7756" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="53.213" y="8.001" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R35" library="jqi_passives" package="R_0402" value="15" x="68.58" y="13.589" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF15R0V" x="68.58" y="13.589" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="68.31" y="12.989" size="0.762" layer="25" font="vector" ratio="10" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF15R0V" x="68.58" y="13.589" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="IC7" library="regulator-jqi" package="TO263-5" value="LT3080" x="209.804" y="39.497" smashed="yes">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="209.804" y="39.497" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="216.916" y="44.323" size="1.27" layer="25" rot="R90"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="209.804" y="39.497" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="216.662" y="33.909" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R16" library="jqi_passives" package="R_0603" value="1.2M" x="208.026" y="30.988" rot="R90">
+<element name="R16" library="jqi_passives" package="R_0603" value="1.2M" x="208.026" y="30.988" smashed="yes" rot="R90">
+<attribute name="NAME" x="207.226" y="29.788" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="ERJ-3EKF1204V" x="208.026" y="9.398" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C58" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="202.946" y="43.053" rot="R90">
+<element name="C58" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="202.946" y="43.053" smashed="yes" rot="R90">
+<attribute name="NAME" x="201.946" y="41.453" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="C2012JB1V106K125AC" x="206.756" y="25.019" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C59" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="31.242" y="41.402" rot="R270">
+<element name="C59" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="31.242" y="41.402" smashed="yes" rot="R270">
+<attribute name="NAME" x="32.042" y="42.702" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="PARTNO" value="CL10B104KB8SFNC" x="31.242" y="41.402" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="VCO1" library="rf-jqi" package="CK605" value="ROS" x="112.141" y="14.732" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ROS-100+" x="112.141" y="14.732" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="118.491" y="7.366" size="1.27" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="ROS-100+" x="112.141" y="14.732" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="118.491" y="23.368" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C60" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="216.408" y="36.322" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="216.408" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="218.456" y="35.611" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="216.408" y="36.322" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U8" library="teensy_block_with_programmer" package="QFP50P1200X1200X160-64N" value="MK20DX256VLH7" x="291.084" y="9.398" smashed="yes" rot="R180">
 <attribute name="NAME" x="293.7256" y="1.778" size="0.8128" layer="25" font="vector" ratio="15" rot="SR0"/>
@@ -3293,225 +3310,231 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </element>
 <element name="3X3MM1" library="teensy_block_with_programmer" package="QFN50P300X300X100-17N" value="CURRENT_BOOTLOADER3X3MM" x="290.83" y="19.05" smashed="yes">
 <attribute name="NAME" x="291.6428" y="23.6474" size="0.762" layer="25" ratio="10" rot="SR290"/>
-<attribute name="VALUE" x="287.3756" y="13.97" size="2.0828" layer="27" ratio="10" rot="SR0"/>
 <attribute name="PARTNO" value="IC_MKL02Z32_QFN16" x="290.83" y="19.05" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="287.3756" y="13.97" size="2.0828" layer="27" ratio="10" rot="SR0"/>
 </element>
 <element name="R34" library="teensy_block_with_programmer" package="R_0603" value="10k" x="289.814" y="30.226" smashed="yes" rot="R180">
 <attribute name="NAME" x="288.601" y="30.696" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="289.814" y="30.226" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R36" library="teensy_block_with_programmer" package="R_0603" value="10k" x="289.56" y="22.098" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="289.56" y="22.098" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="288.36" y="22.898" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="289.56" y="22.098" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C69" library="jqi_passives" package="C_MLCC_0603" value="2.2nF" x="67.056" y="14.986" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B222KB8NNNC" x="67.056" y="14.986" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="67.086" y="14.186" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B222KB8NNNC" x="67.056" y="14.986" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C70" library="jqi_passives" package="C_MLCC_0603" value="1uF" x="67.056" y="16.51" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B105KA8NNNC" x="67.056" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="65.816" y="16.345" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B105KA8NNNC" x="67.056" y="16.51" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C54" library="jqi_passives" package="C_MLCC_0603" value="2.2nF" x="66.675" y="7.874" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B222KB8NNNC" x="66.675" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="69.499" y="8.598" size="0.508" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B222KB8NNNC" x="66.675" y="7.874" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="J2" library="ad9910-dds" package="ML26_INV" value="ML26F" x="102.997" y="57.785" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="SFH11-PBPC-D13-ST-BK" x="102.997" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="123.571" y="53.721" size="1.778" layer="25" ratio="10"/>
+<attribute name="PARTNO" value="SFH11-PBPC-D13-ST-BK" x="102.997" y="57.785" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="101.727" y="52.705" size="1.778" layer="27" ratio="10" rot="R180"/>
 </element>
 <element name="DDS_POW" library="pinhead" package="1X02" value="" x="86.0552" y="17.907" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="PPTC021LFBN-RC" x="86.0552" y="17.907" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="82.55" y="15.0368" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="PARTNO" value="PPTC021LFBN-RC" x="86.0552" y="17.907" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="82.8802" y="20.447" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="U16" library="linear-technology-jqi" package="TSOT-23_S5" value="LT6015" x="57.785" y="4.318" rot="R90">
+<element name="U16" library="linear-technology-jqi" package="TSOT-23_S5" value="LT6015" x="57.785" y="4.318" smashed="yes" rot="R90">
+<attribute name="NAME" x="55.88" y="3.683" size="0.762" layer="25" rot="R90"/>
 <attribute name="PARTNO" value="LT6015HS5#TRMPBF" x="48.387" y="-4.318" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="T5" library="transistor-jqi" package="PG-SOT-223" value="BSP89" x="50.927" y="3.683" rot="R90">
+<element name="T5" library="transistor-jqi" package="PG-SOT-223" value="BSP89" x="50.927" y="3.683" smashed="yes" rot="R90">
+<attribute name="NAME" x="50.8762" y="1.143" size="1.27" layer="25" rot="R90"/>
 <attribute name="PARTNO" value="BSP89H6327XTSA1" x="55.753" y="3.683" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="52.2478" y="1.143" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C57" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="57.658" y="6.985" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="57.658" y="1.143" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="59.152" y="7.023" size="0.508" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="57.658" y="1.143" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R68" library="jqi_passives" package="R_0603" value="200" x="60.96" y="2.413" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="TNPW0603200RBEEA" x="60.96" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="59.887" y="3.213" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="TNPW0603200RBEEA" x="60.96" y="3.683" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R69" library="jqi_passives" package="R_0603" value="200" x="60.96" y="5.1562" smashed="yes">
-<attribute name="PARTNO" value="TNPW0603200RBEEA" x="57.15" y="0.0762" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="59.76" y="5.9562" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="TNPW0603200RBEEA" x="57.15" y="0.0762" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R70" library="jqi_passives" package="R_0603" value="100" x="56.134" y="1.27" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF1000V" x="48.514" y="-7.62" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="57.474" y="0.927" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF1000V" x="48.514" y="-7.62" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R71" library="jqi_passives" package="R_0603" value="4.02k" x="41.148" y="4.445" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="TNPW06034K02BEEA" x="53.848" y="-6.985" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="40.348" y="4.388" size="0.508" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="TNPW06034K02BEEA" x="53.848" y="-6.985" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R72" library="rlc-jqi" package="1206_KELVIN" value="0.05" x="62.992" y="2.413" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="LVK12R050DER" x="86.36" y="2.413" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="64.188" y="7.178" size="0.762" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="LVK12R050DER" x="86.36" y="2.413" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="66.442" y="0.763" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="C68" library="jqi_passives" package="C_MLCC_1210" value="10uF" x="69.342" y="2.032" smashed="yes">
-<attribute name="PARTNO" value="CL32B106KBJNNNE" x="63.5" y="10.668" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="70.571" y="3.732" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE" x="63.5" y="10.668" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C76" library="jqi_passives" package="C_MLCC_1210" value="10uF" x="67.4624" y="5.461" smashed="yes">
-<attribute name="PARTNO" value="CL32B106KBJNNNE" x="61.6204" y="13.843" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="68.793" y="7.2372" size="0.508" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE" x="61.6204" y="13.843" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC12" library="regulator-jqi" package="SOT23-5L" value="MIC5205" x="258.572" y="28.448" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="MIC5205-3.3YM5-TR" x="258.572" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="255.397" y="30.099" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="MIC5205-3.3YM5-TR" x="258.572" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="255.143" y="30.353" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C77" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="262.636" y="28.448" rot="R270">
+<element name="C77" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="262.636" y="28.448" smashed="yes" rot="R270">
+<attribute name="NAME" x="263.636" y="30.048" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="PARTNO" value="C2012JB1V106K125AC" x="262.636" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C78" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="273.685" y="5.461" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="273.685" y="5.461" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="273.3756" y="3.3146" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="273.685" y="5.461" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R73" library="jqi_passives" package="R_0603" value="332" x="273.177" y="12.827" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF3320V" x="273.177" y="12.827" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="274.517" y="13.5" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="ERJ-3EKF3320V" x="273.177" y="12.827" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="J3" library="Eurocard-HV-piezo-driver" package="1X7_LOW_PROFILE" value="" x="293.878" y="27.559" rot="R180">
+<element name="J3" library="Eurocard-HV-piezo-driver" package="1X7_LOW_PROFILE" value="" x="293.878" y="27.559" smashed="yes" rot="R180">
 <attribute name="PARTNO" value="NRPN071PAEN-RC" x="293.878" y="27.559" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="L4" library="coilcraft-jqi" package="0402" value="590nH" x="65.913" y="9.8044" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="0402DF-591XJRU" x="65.913" y="9.8044" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="66.8274" y="9.017" size="0.254" layer="21" rot="R180"/>
+<attribute name="PARTNO" value="0402DF-591XJRU" x="65.913" y="9.8044" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="L5" library="coilcraft-jqi" package="0402" value="590nH" x="70.612" y="10.7696">
+<element name="L5" library="coilcraft-jqi" package="0402" value="590nH" x="70.612" y="10.7696" smashed="yes">
+<attribute name="NAME" x="70.104" y="10.0076" size="0.254" layer="21" rot="R90"/>
 <attribute name="PARTNO" value="0402DF-591XJRU" x="70.612" y="10.7696" size="1.778" layer="27" display="off"/>
 </element>
 <element name="SW1" library="rf-jqi" package="MSOP-8EP" value="SPDT Absorptive Switch" x="77.6986" y="10.5918" smashed="yes">
-<attribute name="PARTNO" value="MASWSS0178TR-3000" x="77.6986" y="10.5918" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="77.3416" y="13.0808" size="0.65" layer="21"/>
+<attribute name="PARTNO" value="MASWSS0178TR-3000" x="77.6986" y="10.5918" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC13" library="aom_driver" package="SOT23-5L" value="UHS_INVERTER" x="160.02" y="24.511" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="NC7SZ14M5X" x="160.02" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="158.75" y="21.971" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="NC7SZ14M5X" x="160.02" y="24.511" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="156.591" y="26.416" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="IC14" library="aom_driver" package="SOT23-5L" value="UHS_INVERTER" x="165.227" y="28.575" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="NC7SZ14M5X" x="165.227" y="28.575" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="164.846" y="30.226" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="NC7SZ14M5X" x="165.227" y="28.575" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="168.656" y="26.67" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="SW2" library="rf-jqi" package="MSOP-8EP" value="SPDT Absorptive Switch" x="87.63" y="5.334" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="MASWSS0178TR-3000" x="87.63" y="5.334" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="88.241" y="2.972" size="0.65" layer="21" rot="R180"/>
+<attribute name="PARTNO" value="MASWSS0178TR-3000" x="87.63" y="5.334" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="SW3" library="rf-jqi" package="MSOP-8EP" value="SPDT Absorptive Switch" x="93.345" y="15.113" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="MASWSS0178TR-3000" x="93.345" y="15.113" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="94.845" y="12.878" size="0.65" layer="21" rot="R180"/>
+<attribute name="PARTNO" value="MASWSS0178TR-3000" x="93.345" y="15.113" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="SW4" library="rf-jqi" package="MSOP-8EP" value="SPDT Absorptive Switch" x="42.7736" y="9.3218" smashed="yes">
-<attribute name="PARTNO" value="MASWSS0178TR-3000" x="42.7736" y="9.3218" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="42.0356" y="11.5568" size="0.65" layer="21"/>
+<attribute name="PARTNO" value="MASWSS0178TR-3000" x="42.7736" y="9.3218" size="1.778" layer="27" display="off"/>
 </element>
 <element name="IC15" library="aom_driver" package="SOT23-5L" value="UHS_INVERTER" x="20.828" y="34.798" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="NC7SZ14M5X" x="20.828" y="34.798" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="18.542" y="35.941" size="0.635" layer="25" rot="R270"/>
+<attribute name="PARTNO" value="NC7SZ14M5X" x="20.828" y="34.798" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="22.733" y="38.227" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="SW10" library="MF_Switches" package="TACT4.2MM" value="MF-SW-TACT-4.2MM" x="295.402" y="22.098" smashed="yes" rot="R90">
-<attribute name="POPULATE" value="1" x="295.402" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="295.402" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-SW-TACT-4.2MM" x="295.402" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MF-SW-TACT-4.2MM" x="295.402" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="298.228" y="21.33" size="1.016" layer="25" font="vector" ratio="16" rot="R90"/>
+<attribute name="POPULATE" value="1" x="295.402" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-SW-TACT-4.2MM" x="295.402" y="22.098" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="TP3" library="ZSS" package="KEYSTONE5019" value="5019" x="44.577" y="1.651" smashed="yes">
-<attribute name="PARTNO" value="5019" x="44.577" y="1.651" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="46.736" y="0.762" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="5019" x="44.577" y="1.651" size="1.778" layer="27" display="off"/>
 </element>
 <element name="TP4" library="ZSS" package="KEYSTONE5019" value="5019" x="39.116" y="1.651" smashed="yes">
-<attribute name="PARTNO" value="5019" x="39.116" y="1.651" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="36.703" y="1.397" size="0.762" layer="25" rot="R180"/>
+<attribute name="PARTNO" value="5019" x="39.116" y="1.651" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C33" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="83.058" y="11.557" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="83.058" y="11.557" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="82.031" y="12.919" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="83.058" y="11.557" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C34" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="82.296" y="6.858" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="530L104KT16T" x="82.296" y="6.858" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="80.229" y="7.25" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="530L104KT16T" x="82.296" y="6.858" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="IC16" library="rf-jqi" package="HMC920" value="HMC920LP5E" x="16.637" y="24.892" smashed="yes">
-<attribute name="PARTNO" value="HMC920LP5E" x="16.637" y="24.892" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="19.6996" y="25.5846" size="0.635" layer="25"/>
+<attribute name="PARTNO" value="HMC920LP5E" x="16.637" y="24.892" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C35" library="jqi_passives" package="C_MLCC_0402" value="47 pF" x="9.271" y="23.749" smashed="yes">
-<attribute name="PARTNO" value="CL05C470JB5NNNC" x="9.271" y="23.749" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.2914" y="24.038" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL05C470JB5NNNC" x="9.271" y="23.749" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C37" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="15.748" y="19.304" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="15.748" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="16.345" y="16.226" size="0.635" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="15.748" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R37" library="jqi_passives" package="R_0603" value="10k" x="14.224" y="19.431" smashed="yes" rot="R90">
 <attribute name="NAME" x="14.313" y="16.453" size="0.635" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="TNPW060310K0BEEA" x="14.224" y="19.431" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="C39" library="jqi_passives" package="C_MLCC_1210" value="10uF" x="66.2432" y="19.05">
+<element name="C39" library="jqi_passives" package="C_MLCC_1210" value="10uF" x="66.2432" y="19.05" smashed="yes">
+<attribute name="NAME" x="64.0432" y="20.75" size="1.016" layer="25" font="vector"/>
 <attribute name="PARTNO" value="CL32B106KBJNNNE" x="66.2432" y="19.05" size="1.778" layer="27" display="off"/>
 </element>
 <element name="AMP_EN" library="pinhead" package="1X02" value="" x="6.858" y="11.684" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="640456-2" x="6.858" y="11.684" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="1.0668" y="14.5542" size="1.27" layer="25" ratio="10" rot="R270"/>
+<attribute name="PARTNO" value="640456-2" x="6.858" y="11.684" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="VALUE" x="9.398" y="14.859" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="C11" library="jqi_passives" package="C_POL_1206" value="10uF" x="15.113" y="34.671" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="TPSA106K010R0900" x="15.113" y="34.671" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="17.496" y="35.519" size="1.016" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="TPSA106K010R0900" x="15.113" y="34.671" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C40" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="10.287" y="28.575" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="10.287" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="8.239" y="31.699" size="1.016" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="10.287" y="28.575" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C55" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="17.399" y="19.05" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="17.399" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="18.399" y="20.65" size="0.762" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="17.399" y="19.05" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R38" library="jqi_passives" package="R_0603" value="1M" x="12.7" y="19.431" smashed="yes" rot="R90">
 <attribute name="NAME" x="13.424" y="16.453" size="0.635" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="ERJ-3EKF1004V" x="12.7" y="19.431" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U9" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="5.715" y="28.829" smashed="yes" rot="R180">
-<attribute name="POPULATE" value="1" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="5.864" y="31.709" size="1.016" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="POPULATE" value="1" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="5.715" y="28.829" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U10" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="24.638" y="28.829" smashed="yes" rot="R90">
-<attribute name="POPULATE" value="1" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="26.521" y="29.378" size="1.016" layer="25" font="vector" ratio="16"/>
+<attribute name="POPULATE" value="1" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="24.638" y="28.829" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="D1" library="MF_LEDs" package="LED0603" value="MF-LED-0603-RED" x="3.683" y="25.146" smashed="yes" rot="R270">
-<attribute name="POPULATE" value="1" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MF-LED-0603-RED" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MF-LED-0603-RED" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="4.5798" y="24.306" size="0.635" layer="25" font="vector" ratio="16" rot="R270"/>
+<attribute name="POPULATE" value="1" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-RED" x="3.683" y="25.146" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D2" library="MF_LEDs" package="LED0603" value="MF-LED-0603-GREEN" x="24.638" y="32.512" smashed="yes" rot="R90">
-<attribute name="POPULATE" value="1" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="MF-LED-0603-GREEN" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-GREEN" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MF-LED-0603-GREEN" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="23.665" y="31.32" size="0.762" layer="25" font="vector" ratio="16" rot="R90"/>
+<attribute name="POPULATE" value="1" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-GREEN" x="24.638" y="32.512" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R39" library="jqi_passives" package="R_0603" value="150" x="3.683" y="21.463" smashed="yes" rot="R270">
 <attribute name="NAME" x="4.61" y="21.647" size="0.762" layer="25" font="vector" rot="R270"/>
@@ -3522,22 +3545,22 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="ERJ-3EKF1500V" x="24.638" y="35.433" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U11" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="7.62" y="40.132" smashed="yes" rot="R180">
-<attribute name="POPULATE" value="1" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="7.642" y="43.012" size="1.016" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="POPULATE" value="1" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="7.62" y="40.132" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R41" library="jqi_passives" package="R_0603" value="150" x="4.826" y="36.449" smashed="yes" rot="R270">
 <attribute name="NAME" x="5.753" y="36.379" size="1.016" layer="25" font="vector" rot="R270"/>
 <attribute name="PARTNO" value="ERJ-3EKF1500V" x="4.826" y="36.449" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="D3" library="MF_LEDs" package="LED0603" value="MF-LED-0603-GREEN" x="4.826" y="39.37" smashed="yes" rot="R270">
-<attribute name="POPULATE" value="1" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="MF-LED-0603-GREEN" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-GREEN" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="MF-LED-0603-GREEN" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="5.799" y="38.403" size="1.016" layer="25" font="vector" ratio="16" rot="R270"/>
+<attribute name="POPULATE" value="1" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-LED-0603-GREEN" x="4.826" y="39.37" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R42" library="jqi_passives" package="R_0402" value="2.2k" x="19.431" y="28.956" smashed="yes" rot="R270">
 <attribute name="NAME" x="20.031" y="29.956" size="0.5715" layer="25" font="vector" ratio="10" rot="R270"/>
@@ -3564,219 +3587,232 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <attribute name="PARTNO" value="TNPW060310K0BEEA" x="12.573" y="31.877" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U12" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="10.16" y="19.304" smashed="yes" rot="R90">
-<attribute name="POPULATE" value="1" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="HOUSEPART" value="YES" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="11.9092" y="17.358" size="0.635" layer="25" font="vector" ratio="16" rot="R180"/>
+<attribute name="POPULATE" value="1" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="10.16" y="19.304" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="R48" library="jqi_passives" package="R_0603" value="10k" x="7.112" y="18.288" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="7.112" y="18.288" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="5.8482" y="17.8436" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="7.112" y="18.288" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C38" library="jqi_passives" package="C_POL_1206" value="10uF" x="7.112" y="25.654" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="TPSA106K010R0900" x="7.112" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="9.809" y="26.584" size="0.635" layer="25" font="vector" rot="R270"/>
+<attribute name="PARTNO" value="TPSA106K010R0900" x="7.112" y="25.654" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R49" library="jqi_passives" package="R_0603" value="4.75k" x="12.065" y="29.845" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="TNPW06034K75BEEA" x="12.065" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="11.627" y="27.851" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="TNPW06034K75BEEA" x="12.065" y="29.845" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C36" library="jqi_passives" package="C_MLCC_0603" value="1uF" x="9.525" y="22.479" smashed="yes">
-<attribute name="PARTNO" value="CL10B105KA8NNNC" x="9.525" y="22.479" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="8.158" y="22.568" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B105KA8NNNC" x="9.525" y="22.479" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C56" library="jqi_passives" package="C_MLCC_0402" value="47 pF" x="20.955" y="27.686" smashed="yes">
-<attribute name="PARTNO" value="CL05C470JB5NNNC" x="20.955" y="27.686" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="21.198" y="28.286" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL05C470JB5NNNC" x="20.955" y="27.686" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U13" library="regulator-jqi" package="DGN" value="TPS7A30XX" x="14.351" y="9.144" smashed="yes" rot="R270">
 <attribute name="PARTNO" value="TPS7A3001DGNR" x="14.351" y="9.144" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C67" library="jqi_passives" package="C_MLCC_1210" value="10uF" x="17.399" y="8.636" smashed="yes">
-<attribute name="PARTNO" value="CL32B106KBJNNNE" x="17.399" y="8.636" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="19.136" y="10.444" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE" x="17.399" y="8.636" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C71" library="jqi_passives" package="C_MLCC_1210" value="10uF" x="17.399" y="4.445" smashed="yes">
-<attribute name="PARTNO" value="CL32B106KBJNNNE" x="12.446" y="-0.889" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="17.104" y="1.935" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL32B106KBJNNNE" x="12.446" y="-0.889" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C72" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="12.5476" y="3.3274" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL05B103KB5NNNC" x="12.5476" y="8.6614" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="14.7176" y="2.7274" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL05B103KB5NNNC" x="12.5476" y="8.6614" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C73" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="14.8844" y="12.065" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL05B103KB5NNNC" x="18.5674" y="20.447" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="18.1974" y="12.354" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL05B103KB5NNNC" x="18.5674" y="20.447" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R50" library="jqi_passives" package="R_0402" value="11.3k" x="14.8844" y="10.922" smashed="yes">
-<attribute name="PARTNO" value="ERJ-2RKF1132X" x="7.5184" y="-0.508" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="16.2974" y="10.633" size="0.635" layer="25" font="vector" ratio="10"/>
+<attribute name="PARTNO" value="ERJ-2RKF1132X" x="7.5184" y="-0.508" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R51" library="jqi_passives" package="R_0402" value="10k" x="12.827" y="10.922" smashed="yes">
-<attribute name="PARTNO" value="ERJ-2RKF1002X" x="12.827" y="-0.508" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="11.446" y="11.522" size="0.635" layer="25" font="vector" ratio="10"/>
+<attribute name="PARTNO" value="ERJ-2RKF1002X" x="12.827" y="-0.508" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R52" library="jqi_passives" package="R_0603" value="1k" x="8.128" y="46.863" rot="R90">
+<element name="R52" library="jqi_passives" package="R_0603" value="1k" x="8.128" y="46.863" smashed="yes" rot="R90">
+<attribute name="NAME" x="7.328" y="45.663" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="ERJ-3EKF1001V" x="8.128" y="46.863" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="C1" library="MF_Passives" package="CP10MM" value="220uF" x="238.506" y="30.48" smashed="yes" rot="R270">
-<attribute name="MPN" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="URL" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="HOUSEPART" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="TOLERANCE" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="POPULATE" value="1" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VOLTAGE" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="244.151" y="35.313" size="1.016" layer="25" font="vector" ratio="16"/>
 <attribute name="PARTNO" value="MF-CAP-10MM-220uF" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="POPULATE" value="1" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="TOLERANCE" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="URL" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VOLTAGE" value="" x="238.506" y="30.48" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C2" library="MF_Passives" package="CP10MM" value="220uF" x="240.157" y="8.763" smashed="yes">
-<attribute name="MPN" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
-<attribute name="URL" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
 <attribute name="HOUSEPART" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
-<attribute name="TOLERANCE" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
-<attribute name="POPULATE" value="1" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
-<attribute name="VOLTAGE" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="243.389" y="14.104" size="1.016" layer="25" font="vector" ratio="16"/>
 <attribute name="PARTNO" value="MF-CAP-10MM-220uF" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
+<attribute name="POPULATE" value="1" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
+<attribute name="TOLERANCE" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
+<attribute name="URL" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
+<attribute name="VOLTAGE" value="" x="240.157" y="8.763" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U14" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="14.351" y="14.478" rot="R90">
-<attribute name="POPULATE" value="1" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U14" library="MF_Discrete_Semiconductor" package="SOT-23-3" value="MF-DSC-SOT233-BSS138" x="14.351" y="14.478" smashed="yes" rot="R90">
 <attribute name="HOUSEPART" value="YES" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="MF-DSC-SOT233-BSS138" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="17.231" y="12.678" size="1.016" layer="25" font="vector" ratio="16" rot="R90"/>
+<attribute name="POPULATE" value="1" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="URL" value="https://factory.macrofab.com/part/MF-DSC-SOT233-BSS138" x="14.351" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC17" library="regulator-jqi" package="TO263-5" value="LT3080" x="224.536" y="34.417" smashed="yes">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="224.536" y="34.417" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="217.932" y="42.037" size="0.762" layer="25" rot="R270"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="224.536" y="34.417" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="231.394" y="28.829" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="IC18" library="regulator-jqi" package="TO263-5" value="LT3080" x="185.928" y="9.398" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="185.928" y="9.398" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="180.34" y="13.843" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="185.928" y="9.398" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="180.34" y="2.54" size="1.27" layer="27"/>
 </element>
-<element name="R53" library="jqi_passives" package="R_0603" value="10m" x="216.789" y="26.289" rot="R90">
+<element name="R53" library="jqi_passives" package="R_0603" value="10m" x="216.789" y="26.289" smashed="yes" rot="R90">
+<attribute name="NAME" x="215.989" y="25.089" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="WSL0603R0100FEA" x="216.789" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R54" library="jqi_passives" package="R_0603" value="10m" x="217.551" y="33.782" rot="R180">
+<element name="R54" library="jqi_passives" package="R_0603" value="10m" x="217.551" y="33.782" smashed="yes" rot="R180">
+<attribute name="NAME" x="218.751" y="32.982" size="1.016" layer="25" font="vector" rot="R180"/>
 <attribute name="PARTNO" value="WSL0603R0100FEA" x="217.551" y="33.782" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R55" library="jqi_passives" package="R_0603" value="10m" x="188.341" y="16.256" rot="R90">
+<element name="R55" library="jqi_passives" package="R_0603" value="10m" x="188.341" y="16.256" smashed="yes" rot="R90">
+<attribute name="NAME" x="187.541" y="15.056" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="WSL0603R0100FEA" x="188.341" y="16.256" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R56" library="jqi_passives" package="R_0603" value="10m" x="200.914" y="16.256" rot="R90">
+<element name="R56" library="jqi_passives" package="R_0603" value="10m" x="200.914" y="16.256" smashed="yes" rot="R90">
+<attribute name="NAME" x="200.114" y="15.056" size="1.016" layer="25" font="vector" rot="R90"/>
 <attribute name="PARTNO" value="WSL0603R0100FEA" x="200.914" y="16.256" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="IC19" library="regulator-jqi" package="TO263-5" value="LT3080" x="198.374" y="26.797" smashed="yes">
-<attribute name="PARTNO" value="LT3080EQ#PBF" x="198.374" y="26.797" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="199.644" y="35.179" size="0.762" layer="25"/>
+<attribute name="PARTNO" value="LT3080EQ#PBF" x="198.374" y="26.797" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="205.232" y="21.209" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="R57" library="jqi_passives" package="R_0603" value="10m" x="187.198" y="36.068" smashed="yes">
-<attribute name="PARTNO" value="WSL0603R0100FEA" x="187.198" y="36.068" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="185.49" y="36.995" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="WSL0603R0100FEA" x="187.198" y="36.068" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R58" library="jqi_passives" package="R_0603" value="10m" x="197.739" y="36.068" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="WSL0603R0100FEA" x="197.739" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="197.936" y="36.995" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="WSL0603R0100FEA" x="197.739" y="36.068" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C74" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="177.038" y="6.223" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="C2012JB1V106K125AC" x="177.038" y="6.223" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="176.733" y="5.223" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="C2012JB1V106K125AC" x="177.038" y="6.223" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="QR1" library="QR-git.io-vDp5q" package="QR-HTTPS://GIT.IO/VDP5Q-LIGHT-SILK" value="QR-HTTPS://GIT.IO/VDP5Q-LIGHT-SILK" x="32.639" y="58.674" smashed="yes">
-<attribute name="QR_DEST_SHORT" value="git.io/vDp5q" x="28.448" y="53.329" size="0.889" layer="27" font="vector" ratio="15"/>
-<attribute name="QR_DEST" value="https://git.io/vDp5q" x="32.639" y="58.674" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="28.194" y="54.864" size="0.889" layer="25" font="vector" ratio="15" rot="R90"/>
+<attribute name="QR_DEST" value="https://git.io/vDp5q" x="32.639" y="58.674" size="1.778" layer="27" display="off"/>
+<attribute name="QR_DEST_SHORT" value="git.io/vDp5q" x="28.448" y="53.329" size="0.889" layer="27" font="vector" ratio="15"/>
 </element>
-<element name="IC20" library="optocoupler-jqi" package="SO6L" value="TLP2767" x="183.134" y="42.164" rot="R180">
+<element name="IC20" library="optocoupler-jqi" package="SO6L" value="TLP2767" x="183.134" y="42.164" smashed="yes" rot="R180">
+<attribute name="NAME" x="186.634" y="39.914" size="1.27" layer="25" rot="R180"/>
 <attribute name="PARTNO" value="TLP2767" x="183.134" y="42.164" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="IC21" library="optocoupler-jqi" package="SO6L" value="TLP2767" x="36.703" y="45.212" rot="R180">
+<element name="IC21" library="optocoupler-jqi" package="SO6L" value="TLP2767" x="36.703" y="45.212" smashed="yes" rot="R180">
+<attribute name="NAME" x="40.203" y="42.962" size="1.27" layer="25" rot="R180"/>
 <attribute name="PARTNO" value="TLP2767" x="36.703" y="45.212" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="IC22" library="optocoupler-jqi" package="SO6L" value="TLP2767" x="270.637" y="6.35" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="TLP2767" x="270.637" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="268.387" y="2.723" size="1.27" layer="25" rot="R90"/>
+<attribute name="PARTNO" value="TLP2767" x="270.637" y="6.35" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C75" library="jqi_passives" package="C_MLCC_0402" value="22pF" x="273.177" y="14.097" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL05C220JB5NNNC" x="273.177" y="14.097" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="272.277" y="14.697" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL05C220JB5NNNC" x="273.177" y="14.097" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C79" library="jqi_passives" package="C_MLCC_0402" value="22pF" x="44.323" y="47.879" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL05C220JB5NNNC" x="44.323" y="47.879" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="43.423" y="48.479" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL05C220JB5NNNC" x="44.323" y="47.879" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C80" library="jqi_passives" package="C_MLCC_0402" value="22pF" x="189.103" y="48.26" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL05C220JB5NNNC" x="189.103" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="188.203" y="48.86" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL05C220JB5NNNC" x="189.103" y="48.26" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R59" library="teensy_block_with_programmer" package="R_0603" value="10k" x="203.073" y="48.514" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="203.073" y="48.514" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="203.765" y="47.714" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="203.073" y="48.514" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R60" library="teensy_block_with_programmer" package="R_0603" value="10k" x="203.073" y="50.038" smashed="yes">
-<attribute name="PARTNO" value="ERJ-3EKF1002V" x="203.073" y="50.038" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="201.606" y="50.635" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF1002V" x="203.073" y="50.038" size="1.778" layer="27" display="off"/>
 </element>
-<element name="FID1" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="246.634" y="56.261"/>
-<element name="FID2" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="302.133" y="2.413"/>
-<element name="FID3" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="2.413" y="2.413"/>
-<element name="FID4" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="2.921" y="53.594"/>
+<element name="FID1" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="246.634" y="56.261" smashed="yes"/>
+<element name="FID2" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="302.133" y="2.413" smashed="yes"/>
+<element name="FID3" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="2.413" y="2.413" smashed="yes"/>
+<element name="FID4" library="fiducials-jqi" package="FID_1.0MM" value="FIDUCIAL-1.0MM" x="2.921" y="53.594" smashed="yes"/>
 <element name="C81" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="7.112" y="16.764" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="7.112" y="16.764" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="5.872" y="16.3704" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="7.112" y="16.764" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R61" library="jqi_passives" package="R_0603" value="4.02k" x="9.271" y="16.002" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="ERJ-3EKF4021V" x="9.271" y="16.002" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="10.757" y="14.802" size="0.635" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="ERJ-3EKF4021V" x="9.271" y="16.002" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R62" library="jqi_passives" package="R_0603" value="1k" x="7.112" y="20.32" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="ERJ-3EKF1001V" x="7.112" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="8.185" y="21.806" size="0.635" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="ERJ-3EKF1001V" x="7.112" y="20.32" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="R63" library="jqi_passives" package="R_0805" value="0R" x="127.762" y="5.334" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="MF-RES-0805-0" x="127.762" y="5.334" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="126.662" y="3.934" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="MF-RES-0805-0" x="127.762" y="5.334" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="R64" library="jqi_passives" package="R_0805" value="DNP" x="127.762" y="8.382" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="MF-RES-0805-0" x="127.762" y="8.382" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="126.662" y="7.998" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="MF-RES-0805-0" x="127.762" y="8.382" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C82" library="jqi_passives" package="C_MLCC_0603" value="100nF" x="109.728" y="5.334" smashed="yes" rot="R180">
-<attribute name="PARTNO" value="CL10B104KB8SFNC" x="109.728" y="5.334" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="110.012" y="4.534" size="0.762" layer="25" font="vector" rot="R180"/>
+<attribute name="PARTNO" value="CL10B104KB8SFNC" x="109.728" y="5.334" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="C83" library="jqi_passives" package="C_MLCC_0402" value="100nF" x="97.282" y="15.4305" smashed="yes">
-<attribute name="PARTNO" value="530L104KT16T" x="97.282" y="15.4305" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="96.636" y="16.7925" size="0.762" layer="25" font="vector"/>
+<attribute name="PARTNO" value="530L104KT16T" x="97.282" y="15.4305" size="1.778" layer="27" display="off"/>
 </element>
 <element name="C84" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="91.186" y="17.78" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="CL05B103JA5NNNC" x="91.186" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="90.586" y="16.88" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL05B103JA5NNNC" x="91.186" y="17.78" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C85" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="85.471" y="8.0518" smashed="yes" rot="R270">
-<attribute name="PARTNO" value="CL05B103JA5NNNC" x="85.471" y="8.0518" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="84.871" y="7.0502" size="0.762" layer="25" font="vector" rot="R90"/>
+<attribute name="PARTNO" value="CL05B103JA5NNNC" x="85.471" y="8.0518" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="C86" library="jqi_passives" package="C_MLCC_0402" value="10nF" x="45.1866" y="6.8072" smashed="yes" rot="R90">
-<attribute name="PARTNO" value="CL05B103JA5NNNC" x="45.1866" y="6.8072" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="45.7852" y="6.7214" size="0.635" layer="25" font="vector"/>
+<attribute name="PARTNO" value="CL05B103JA5NNNC" x="45.1866" y="6.8072" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R65" library="jqi_passives" package="R_0603" value="10k" x="126.238" y="57.404">
+<element name="R65" library="jqi_passives" package="R_0603" value="10k" x="126.238" y="57.404" smashed="yes">
+<attribute name="NAME" x="125.038" y="58.204" size="1.016" layer="25" font="vector"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="126.238" y="57.404" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R66" library="jqi_passives" package="R_0603" value="10k" x="104.267" y="53.594" rot="MR270">
+<element name="R66" library="jqi_passives" package="R_0603" value="10k" x="104.267" y="53.594" smashed="yes" rot="MR270">
+<attribute name="NAME" x="103.467" y="54.794" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="104.267" y="53.594" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R67" library="jqi_passives" package="R_0603" value="10k" x="101.727" y="53.594" rot="MR270">
+<element name="R67" library="jqi_passives" package="R_0603" value="10k" x="101.727" y="53.594" smashed="yes" rot="MR270">
+<attribute name="NAME" x="100.927" y="54.794" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="101.727" y="53.594" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R74" library="jqi_passives" package="R_0603" value="10k" x="99.187" y="53.594" rot="MR270">
+<element name="R74" library="jqi_passives" package="R_0603" value="10k" x="99.187" y="53.594" smashed="yes" rot="MR270">
+<attribute name="NAME" x="98.387" y="54.794" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="99.187" y="53.594" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="R75" library="jqi_passives" package="R_0603" value="10k" x="106.807" y="53.594" rot="MR270">
+<element name="R75" library="jqi_passives" package="R_0603" value="10k" x="106.807" y="53.594" smashed="yes" rot="MR270">
+<attribute name="NAME" x="106.007" y="54.794" size="1.016" layer="26" font="vector" rot="MR270"/>
 <attribute name="PARTNO" value="ERJ-3EKF1002V" x="106.807" y="53.594" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 </elements>
@@ -7691,6 +7727,13 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 <wire x1="44.1666" y1="6.3072" x2="44.057" y2="6.1976" width="0.381" layer="1" curve="90"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="18,29,cccf2b11fc56a00f"/>
 <approved hash="18,29,3e29b91b6c5384e6"/>
