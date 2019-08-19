@@ -7711,7 +7711,7 @@ PN 5019; Silver plated phosphor bronze</description>
 <attribute name="PARTNO" value="CL32B106KBJNNNE"/>
 </part>
 <part name="IC12" library="regulator-jqi" deviceset="MIC5205" device="">
-<attribute name="PARTNO" value="MIC5205-3.3YM5-TR"/>
+<attribute name="PARTNO" value="MIC5205-3.1YM5-TR"/>
 </part>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="GND82" library="supply1" deviceset="GND" device=""/>

@@ -3387,7 +3387,7 @@ This DRC check is for 4-Layer Standard Capability boards to be manufactured thro
 </element>
 <element name="IC12" library="regulator-jqi" package="SOT23-5L" value="MIC5205" x="258.572" y="28.448" smashed="yes" rot="R270">
 <attribute name="NAME" x="255.397" y="30.099" size="0.762" layer="25"/>
-<attribute name="PARTNO" value="MIC5205-3.3YM5-TR" x="258.572" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="PARTNO" value="MIC5205-3.1YM5-TR" x="258.572" y="28.448" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="255.143" y="30.353" size="1.27" layer="27" rot="R270"/>
 </element>
 <element name="C77" library="jqi_passives" package="C_MLCC_0805" value="10uF" x="262.636" y="28.448" smashed="yes" rot="R270">
